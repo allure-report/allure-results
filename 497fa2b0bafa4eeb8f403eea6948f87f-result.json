@@ -1,0 +1,123 @@
+{
+  "uuid": "ea22b469-8f33-4c29-b73a-ea070748c037-tr-0-1430",
+  "historyId": "OdinUiTests.Tests.Discipline.DisciplineCreationValidationTests.Создание дисциплины ВО: отображение ошибки валидации для поля 'Кредиты' с отрицательным значением",
+  "fullName": "OdinUiTests.Tests.Discipline.DisciplineCreationValidationTests.Создание дисциплины ВО: отображение ошибки валидации для поля 'Кредиты' с отрицательным значением",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "d82212ed766a"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckIfCreditValuesNotAllowed"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineCreationValidationTests"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "Создание дисциплины ВО: отображение ошибки валидации для поля 'Кредиты' с отрицательным значением",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.AggregateException : One or more errors occurred. (Request timed out)\n  ----> System.TimeoutException : Request timed out\n  ----> System.Threading.Tasks.TaskCanceledException : The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.\n  ----> System.TimeoutException : A task was canceled.\n  ----> System.Threading.Tasks.TaskCanceledException : A task was canceled.",
+    "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.CohortService.GetCohortInfo(String cohortId, Boolean forEdit) in /azp/_work/2/s/Services/CohortService.cs:line 179\n   at OdinUiTests.Pages.DisCommonEditPage.<>c__DisplayClass58_0.<OpenDisciplineCreatePage>b__0() in /azp/_work/2/s/Pages/DisCommonEditPage.cs:line 103\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.DisCommonEditPage.OpenDisciplineCreatePage(Boolean isVO, String id) in /azp/_work/2/s/Pages/DisCommonEditPage.cs:line 99\n   at OdinUiTests.Tests.Discipline.DisciplineCreationValidationTests.CheckIfCreditValuesNotAllowed(String cohort, Boolean isVO, String value) in /azp/_work/2/s/Tests/Discipline/DisCreateEditTests.cs:line 187\n--TimeoutException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--TaskCanceledException\n   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at RestSharp.RestClient.ExecuteRequestAsync(RestRequest request, CancellationToken cancellationToken)\n--TimeoutException\n\n--TaskCanceledException\n   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Создание дисциплины ВО: отображение ошибки валидации для поля 'Кредиты' с отрицательным значением",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.AggregateException : One or more errors occurred. (Request timed out)\n  ----> System.TimeoutException : Request timed out\n  ----> System.Threading.Tasks.TaskCanceledException : The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.\n  ----> System.TimeoutException : A task was canceled.\n  ----> System.Threading.Tasks.TaskCanceledException : A task was canceled.",
+        "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.CohortService.GetCohortInfo(String cohortId, Boolean forEdit) in /azp/_work/2/s/Services/CohortService.cs:line 179\n   at OdinUiTests.Pages.DisCommonEditPage.<>c__DisplayClass58_0.<OpenDisciplineCreatePage>b__0() in /azp/_work/2/s/Pages/DisCommonEditPage.cs:line 103\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.DisCommonEditPage.OpenDisciplineCreatePage(Boolean isVO, String id) in /azp/_work/2/s/Pages/DisCommonEditPage.cs:line 99\n   at OdinUiTests.Tests.Discipline.DisciplineCreationValidationTests.CheckIfCreditValuesNotAllowed(String cohort, Boolean isVO, String value) in /azp/_work/2/s/Tests/Discipline/DisCreateEditTests.cs:line 187\n--TimeoutException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--TaskCanceledException\n   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at RestSharp.RestClient.ExecuteRequestAsync(RestRequest request, CancellationToken cancellationToken)\n--TimeoutException\n\n--TaskCanceledException\n   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу создания дисциплины",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "One or more errors occurred. (Request timed out)",
+            "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.CohortService.GetCohortInfo(String cohortId, Boolean forEdit) in /azp/_work/2/s/Services/CohortService.cs:line 179\n   at OdinUiTests.Pages.DisCommonEditPage.<>c__DisplayClass58_0.<OpenDisciplineCreatePage>b__0() in /azp/_work/2/s/Pages/DisCommonEditPage.cs:line 103\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1695798396690,
+          "stop": 1695798496690
+        }
+      ],
+      "attachments": [
+        {
+          "name": "CheckIfCreditValuesNotAllowed.jpg",
+          "source": "932b2292d3d641cab39dd3dd40bb00a7-attachment.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "a9a3ad8d21d14621bcc5f51f7bd206a2-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1695798396687,
+      "stop": 1695798496972
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "Param #0",
+      "value": "39"
+    },
+    {
+      "name": "Param #1",
+      "value": "True"
+    },
+    {
+      "name": "Param #2",
+      "value": "-1"
+    }
+  ],
+  "start": 1695798396687,
+  "stop": 1695798496972
+}
