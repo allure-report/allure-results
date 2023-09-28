@@ -1,0 +1,185 @@
+{
+  "uuid": "8d4dc404-a3e4-404c-813a-01865ef7f5d6-tr-0-1773",
+  "historyId": "OdinUiTests.Tests.Cohort.CohortEditingValidationTests.Редактирование потока ДО (СЗ): нет возможности удалить поток",
+  "fullName": "OdinUiTests.Tests.Cohort.CohortEditingValidationTests.Редактирование потока ДО (СЗ): нет возможности удалить поток",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "1033f120cfff"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckIsNotPossibleRemoveCohortInProgramNatDemography"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortEditingValidationTests"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование потока ДО (СЗ): нет возможности удалить поток",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.ArgumentOutOfRangeException : startIndex cannot be larger than length of string. (Parameter 'startIndex')",
+    "trace": "   at System.String.Substring(Int32 startIndex, Int32 length)\n   at OdinUiTests.Pages.CohortCreateEditPage.<>c__DisplayClass49_0.<CheckErrorMessageIsAppear>b__0() in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 380\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.CohortCreateEditPage.CheckErrorMessageIsAppear(String cohortId) in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 375\n   at OdinUiTests.Tests.Cohort.CohortEditingValidationTests.CheckIsNotPossibleRemoveCohortInProgramNatDemography() in /azp/_work/1/s/Tests/Cohort/CohortCreateEditTests.cs:line 692"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Редактирование потока ДО (СЗ): нет возможности удалить поток",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.ArgumentOutOfRangeException : startIndex cannot be larger than length of string. (Parameter 'startIndex')",
+        "trace": "   at System.String.Substring(Int32 startIndex, Int32 length)\n   at OdinUiTests.Pages.CohortCreateEditPage.<>c__DisplayClass49_0.<CheckErrorMessageIsAppear>b__0() in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 380\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.CohortCreateEditPage.CheckErrorMessageIsAppear(String cohortId) in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 375\n   at OdinUiTests.Tests.Cohort.CohortEditingValidationTests.CheckIsNotPossibleRemoveCohortInProgramNatDemography() in /azp/_work/1/s/Tests/Cohort/CohortCreateEditTests.cs:line 692"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Получить id потока",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1695876864322,
+          "stop": 1695876864382
+        },
+        {
+          "name": "Открыть страницу потока",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1695876864382,
+          "stop": 1695876864708
+        },
+        {
+          "name": "Нажать на кнопку 'Редактировать' потока",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1695876864708,
+          "stop": 1695876866435
+        },
+        {
+          "name": "Нажать на кнопку 'Удалить поток'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1695876866436,
+          "stop": 1695876868182
+        },
+        {
+          "name": "Подтвердить удаление потока нажав на кнопку 'Удалить' из модалки",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1695876868182,
+          "stop": 1695876869341
+        },
+        {
+          "name": "Проверка появление уведомление об ошибки невозможности удаления потока нац.проекта",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "startIndex cannot be larger than length of string. (Parameter 'startIndex')",
+            "trace": "   at System.String.Substring(Int32 startIndex, Int32 length)\n   at OdinUiTests.Pages.CohortCreateEditPage.<>c__DisplayClass49_0.<CheckErrorMessageIsAppear>b__0() in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 380\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1695876869342,
+          "stop": 1695876869981
+        }
+      ],
+      "attachments": [
+        {
+          "name": "CheckIsNotPossibleRemoveCohortInProgramNatDemography.jpg",
+          "source": "684ffce9adc7402987285004a1202a14-attachment.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "9bd55e095da84b649f9a48789f5ab6f8-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1695876864318,
+      "stop": 1695876870280
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1695876864318,
+  "stop": 1695876870280
+}
