@@ -1,0 +1,200 @@
+{
+  "uuid": "f217265e-d879-4e5b-9da5-01f4a2ebfb49-tr-0-1390",
+  "historyId": "OdinUiTests.Tests.Library.RemovingTemplatesTests.Страница библиотеки: можно удалить шаблон программы",
+  "fullName": "OdinUiTests.Tests.Library.RemovingTemplatesTests.Страница библиотеки: можно удалить шаблон программы",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "c95fdda4a35b"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteProgramTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "RemovingTemplatesTests"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "Страница библиотеки: можно удалить шаблон программы",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TearDown : System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+    "trace": "--TearDown\n   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.LibraryService.DeleteCatalogById(Int32 catalogId) in /azp/_work/1/s/Services/LibraryService.cs:line 107\n   at OdinUiTests.Services.LibraryService.RemoveLastAddedCatalog(String libraryId) in /azp/_work/1/s/Services/LibraryService.cs:line 114\n   at OdinUiTests.Tests.Library.RemovingTemplatesTests.ClassTearDown() in /azp/_work/1/s/Tests/Library/UserLibraryTests.cs:line 603\n--HttpRequestException\n   at RestSharp.RestClientExtensions.PostAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+  },
+  "stage": "finished",
+  "description": "\nTearDown TearDown method failed\n\nClassTearDown TearDown method failed\n",
+  "steps": [
+    {
+      "name": "Страница библиотеки: можно удалить шаблон программы",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "TearDown : System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+        "trace": "--TearDown\n   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.LibraryService.DeleteCatalogById(Int32 catalogId) in /azp/_work/1/s/Services/LibraryService.cs:line 107\n   at OdinUiTests.Services.LibraryService.RemoveLastAddedCatalog(String libraryId) in /azp/_work/1/s/Services/LibraryService.cs:line 114\n   at OdinUiTests.Tests.Library.RemovingTemplatesTests.ClassTearDown() in /azp/_work/1/s/Tests/Library/UserLibraryTests.cs:line 603\n--HttpRequestException\n   at RestSharp.RestClientExtensions.PostAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу Библиотеки",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1697104853793,
+          "stop": 1697104854375
+        },
+        {
+          "name": "Открыть каталог по названию",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1697104854375,
+          "stop": 1697104855663
+        },
+        {
+          "name": "Удалить материал из Библиотеки",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1697104855663,
+          "stop": 1697104861227
+        },
+        {
+          "name": "Проверка того, что шаблон был удален",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Открыть страницу Библиотеки",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1697104862336,
+              "stop": 1697104862713
+            },
+            {
+              "name": "Открыть каталог по названию",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1697104863818,
+              "stop": 1697104865000
+            },
+            {
+              "name": "Открыть страницу шаблона образовательной программы",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1697104865700,
+              "stop": 1697104866226
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1697104861228,
+          "stop": 1697104866962
+        }
+      ],
+      "attachments": [
+        {
+          "name": "CheckDeleteProgramTemplate.jpg",
+          "source": "978c4cda3f554a01a81c2cb8901e0486-attachment.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "475d113ef6da47128c280c2137ea5b52-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1697104852420,
+      "stop": 1697104867327
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1697104852420,
+  "stop": 1697104867327
+}
