@@ -1,0 +1,96 @@
+{
+  "uuid": "03da8c50-100e-451b-a56e-d953363bcd51-tr-0-1810",
+  "historyId": "OdinUiTests.Tests.Cohort.CohortInfoTests.Страница потока: студенты не имеют доступ к материалам архивного потока по прямой ссылки",
+  "fullName": "OdinUiTests.Tests.Cohort.CohortInfoTests.Страница потока: студенты не имеют доступ к материалам архивного потока по прямой ссылки",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "ec4c06aaf65c"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckNoAccessStudentToMaterialsCohortArchive"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortInfoTests"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    }
+  ],
+  "links": [],
+  "name": "Страница потока: студенты не имеют доступ к материалам архивного потока по прямой ссылки",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+    "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.CohortService.GetCohortInfo(String cohortId, Boolean forEdit) in /azp/_work/3/s/Services/CohortService.cs:line 181\n   at OdinUiTests.Services.CohortService.GetDisciplinesIdFromCohort(String cohortId) in /azp/_work/3/s/Services/CohortService.cs:line 65\n   at OdinUiTests.Pages.CohortInfoPage.GetMaterialIdFromDisciplineCohort(String cohortId) in /azp/_work/3/s/Pages/CohortInfoPage.cs:line 374\n   at OdinUiTests.Tests.Cohort.CohortInfoTests.CheckNoAccessStudentToMaterialsCohortArchive() in /azp/_work/3/s/Tests/Cohort/CohortInfoPageTests.cs:line 104\n--HttpRequestException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Страница потока: студенты не имеют доступ к материалам архивного потока по прямой ссылки",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+        "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.CohortService.GetCohortInfo(String cohortId, Boolean forEdit) in /azp/_work/3/s/Services/CohortService.cs:line 181\n   at OdinUiTests.Services.CohortService.GetDisciplinesIdFromCohort(String cohortId) in /azp/_work/3/s/Services/CohortService.cs:line 65\n   at OdinUiTests.Pages.CohortInfoPage.GetMaterialIdFromDisciplineCohort(String cohortId) in /azp/_work/3/s/Pages/CohortInfoPage.cs:line 374\n   at OdinUiTests.Tests.Cohort.CohortInfoTests.CheckNoAccessStudentToMaterialsCohortArchive() in /azp/_work/3/s/Tests/Cohort/CohortInfoPageTests.cs:line 104\n--HttpRequestException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "CheckNoAccessStudentToMaterialsCohortArchive.jpg",
+          "source": "8cbaa0542d724534b38b916affef1280-attachment.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "5968409df7d2465dbc3ee6f5e8fe40cc-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1697085440187,
+      "stop": 1697085441393
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1697085440187,
+  "stop": 1697085441393
+}
