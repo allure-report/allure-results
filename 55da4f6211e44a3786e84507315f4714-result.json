@@ -1,0 +1,113 @@
+{
+  "uuid": "5a28653f-0b1b-410f-8983-f650dd900a5f-tr-0-2572",
+  "historyId": "OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.Страница командной контрольной: результат тестирования из попытках зависеть от настройки 'За последнюю попытку'",
+  "fullName": "OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.Страница командной контрольной: результат тестирования из попытках зависеть от настройки 'За последнюю попытку'",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "f8208d5e96f2"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "ResultOfPassingDependOnSettings"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityStatusWithTwoOrMoreAttemptsTests"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Прохождение теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "Страница командной контрольной: результат тестирования из попытках зависеть от настройки 'За последнюю попытку'",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.AggregateException : One or more errors occurred. (Request timed out)\n  ----> System.TimeoutException : Request timed out\n  ----> System.Threading.Tasks.TaskCanceledException : The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.\n  ----> System.TimeoutException : A task was canceled.\n  ----> System.Threading.Tasks.TaskCanceledException : A task was canceled.",
+    "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.ActivityService.GetActivityTestInfo(String actId) in /azp/_work/1/s/Services/ActivityService.cs:line 112\n   at OdinUiTests.Services.ExamineeService.GetActivityExamineesId(String actId) in /azp/_work/1/s/Services/ExamineeService.cs:line 17\n   at OdinUiTests.Services.ExamineeService.CheckTestHasNoAttempts(String actId) in /azp/_work/1/s/Services/ExamineeService.cs:line 75\n   at OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.ResultOfPassingDependOnSettings(String actId, Int32 evaluation, String attemptSetting) in /azp/_work/1/s/Tests/Activity/TestActivityTests.cs:line 669\n--TimeoutException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--TaskCanceledException\n   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at RestSharp.RestClient.ExecuteRequestAsync(RestRequest request, CancellationToken cancellationToken)\n--TimeoutException\n\n--TaskCanceledException\n   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Страница командной контрольной: результат тестирования из попытках зависеть от настройки 'За последнюю попытку'",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.AggregateException : One or more errors occurred. (Request timed out)\n  ----> System.TimeoutException : Request timed out\n  ----> System.Threading.Tasks.TaskCanceledException : The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.\n  ----> System.TimeoutException : A task was canceled.\n  ----> System.Threading.Tasks.TaskCanceledException : A task was canceled.",
+        "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.ActivityService.GetActivityTestInfo(String actId) in /azp/_work/1/s/Services/ActivityService.cs:line 112\n   at OdinUiTests.Services.ExamineeService.GetActivityExamineesId(String actId) in /azp/_work/1/s/Services/ExamineeService.cs:line 17\n   at OdinUiTests.Services.ExamineeService.CheckTestHasNoAttempts(String actId) in /azp/_work/1/s/Services/ExamineeService.cs:line 75\n   at OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.ResultOfPassingDependOnSettings(String actId, Int32 evaluation, String attemptSetting) in /azp/_work/1/s/Tests/Activity/TestActivityTests.cs:line 669\n--TimeoutException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--TaskCanceledException\n   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at RestSharp.RestClient.ExecuteRequestAsync(RestRequest request, CancellationToken cancellationToken)\n--TimeoutException\n\n--TaskCanceledException\n   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "ResultOfPassingDependOnSettings.jpg",
+          "source": "25ede6fcf95a4ae9a0ec5a7da4b45fbd-attachment.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "10194e77f5d44d3ca1200a82dfcf2ddd-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1697096168056,
+      "stop": 1697096268477
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "Param #0",
+      "value": "571"
+    },
+    {
+      "name": "Param #1",
+      "value": "2"
+    },
+    {
+      "name": "Param #2",
+      "value": "lastTry"
+    }
+  ],
+  "start": 1697096168056,
+  "stop": 1697096268477
+}
