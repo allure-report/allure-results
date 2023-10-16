@@ -1,0 +1,149 @@
+{
+  "uuid": "9c7cfa67-a209-48c9-9395-36fbb9288e1a-tr-0-1430",
+  "historyId": "OdinUiTests.Tests.Discipline.DisciplineCreationTests. Cоздание дисциплины в потоке ДО: работает кнопка 'Отмена'",
+  "fullName": "OdinUiTests.Tests.Discipline.DisciplineCreationTests. Cоздание дисциплины в потоке ДО: работает кнопка 'Отмена'",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "ad161fa55883"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CancelCreatingDiscipline"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineCreationTests"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": " Cоздание дисциплины в потоке ДО: работает кнопка 'Отмена'",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/3/s/Services/CommonService.cs:line 255\n   at OdinUiTests.Pages.DisCommonEditPage.<ClickCancelCreateButton>b__90_0() in /azp/_work/3/s/Pages/DisCommonEditPage.cs:line 543\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.DisCommonEditPage.ClickCancelCreateButton() in /azp/_work/3/s/Pages/DisCommonEditPage.cs:line 539\n   at OdinUiTests.Tests.Discipline.DisciplineCreationTests.CancelCreatingDiscipline(String cohort) in /azp/_work/3/s/Tests/Discipline/DisCreateEditTests.cs:line 67"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": " Cоздание дисциплины в потоке ДО: работает кнопка 'Отмена'",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/3/s/Services/CommonService.cs:line 255\n   at OdinUiTests.Pages.DisCommonEditPage.<ClickCancelCreateButton>b__90_0() in /azp/_work/3/s/Pages/DisCommonEditPage.cs:line 543\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.DisCommonEditPage.ClickCancelCreateButton() in /azp/_work/3/s/Pages/DisCommonEditPage.cs:line 539\n   at OdinUiTests.Tests.Discipline.DisciplineCreationTests.CancelCreatingDiscipline(String cohort) in /azp/_work/3/s/Tests/Discipline/DisCreateEditTests.cs:line 67"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу потока",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1697434242555,
+          "stop": 1697434243383
+        },
+        {
+          "name": "Нажать на кнопку добавления дисциплины в потоке",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1697434243383,
+          "stop": 1697434245727
+        },
+        {
+          "name": "Нажать на кнопку 'Отмена' при создание",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 30 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/3/s/Services/CommonService.cs:line 255\n   at OdinUiTests.Pages.DisCommonEditPage.<ClickCancelCreateButton>b__90_0() in /azp/_work/3/s/Pages/DisCommonEditPage.cs:line 543\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1697434245727,
+          "stop": 1697434277776
+        }
+      ],
+      "attachments": [
+        {
+          "name": "CancelCreatingDiscipline.jpg",
+          "source": "0d7e03efe3734089a86853ee49dae33b-attachment.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "79de1e928469493d8ea773fb51d493cd-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1697434242520,
+      "stop": 1697434278108
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "Param #0",
+      "value": "2103"
+    }
+  ],
+  "start": 1697434242520,
+  "stop": 1697434278109
+}
