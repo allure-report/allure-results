@@ -1,0 +1,95 @@
+{
+  "uuid": "98982fd4-1e55-47f3-bec1-91c2e392f370-tc-0-2293",
+  "name": "OdinUiTests.Tests.Call.CallTests.Страница звонка: отображается зеленая рамка у карточки собеседника при разговоре",
+  "children": [
+    "66843efa-7399-4525-a4d3-c02a8edfa748-tr-0-2297"
+  ],
+  "befores": [
+    {
+      "name": "OneTimeSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1697551595323,
+      "stop": 1697551595323
+    },
+    {
+      "name": "SetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1697551595323,
+      "stop": 1697551595323
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\nTearDown : OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//i[contains(text(),'call_end')]\"}\n  (Session info: headless chrome=115.0.5790.110)",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.WaitUntilSpinnersIsDisappear() in /azp/_work/2/s/Pages/CallPage.cs:line 144\n   at OdinUiTests.Pages.CallPage.<>c__DisplayClass9_0.<ToggleMicrophoneState>b__0() in /azp/_work/2/s/Pages/CallPage.cs:line 44\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.CallPage.ToggleMicrophoneState(IWebDriver driver, Boolean callPage, String state) in /azp/_work/2/s/Pages/CallPage.cs:line 42\n   at OdinUiTests.Pages.CallPage.TurnOffTheMicrophone() in /azp/_work/2/s/Pages/CallPage.cs:line 70\n   at OdinUiTests.Tests.Call.CallTests.CheckGreenFrameIsDisplayedOnAnotherUsersCard() in /azp/_work/2/s/Tests/Call/CallTests.cs:line 52\n--TearDown\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.<ClickOnEndCallButton>b__15_0() in /azp/_work/2/s/Pages/CallPage.cs:line 126\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.CallPage.ClickOnEndCallButton() in /azp/_work/2/s/Pages/CallPage.cs:line 122\n   at OdinUiTests.Tests.Call.CallTests.ClassTearDown() in /azp/_work/2/s/Tests/Call/CallTests.cs:line 72\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1697551595323,
+      "stop": 1697551595323
+    },
+    {
+      "name": "ClassTearDown",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\nTearDown : OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//i[contains(text(),'call_end')]\"}\n  (Session info: headless chrome=115.0.5790.110)",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.WaitUntilSpinnersIsDisappear() in /azp/_work/2/s/Pages/CallPage.cs:line 144\n   at OdinUiTests.Pages.CallPage.<>c__DisplayClass9_0.<ToggleMicrophoneState>b__0() in /azp/_work/2/s/Pages/CallPage.cs:line 44\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.CallPage.ToggleMicrophoneState(IWebDriver driver, Boolean callPage, String state) in /azp/_work/2/s/Pages/CallPage.cs:line 42\n   at OdinUiTests.Pages.CallPage.TurnOffTheMicrophone() in /azp/_work/2/s/Pages/CallPage.cs:line 70\n   at OdinUiTests.Tests.Call.CallTests.CheckGreenFrameIsDisplayedOnAnotherUsersCard() in /azp/_work/2/s/Tests/Call/CallTests.cs:line 52\n--TearDown\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.<ClickOnEndCallButton>b__15_0() in /azp/_work/2/s/Pages/CallPage.cs:line 126\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.CallPage.ClickOnEndCallButton() in /azp/_work/2/s/Pages/CallPage.cs:line 122\n   at OdinUiTests.Tests.Call.CallTests.ClassTearDown() in /azp/_work/2/s/Tests/Call/CallTests.cs:line 72\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1697551595323,
+      "stop": 1697551595323
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1697551595323,
+      "stop": 1697551595323
+    }
+  ],
+  "links": [],
+  "start": 1697551502758,
+  "stop": 1697551595323
+}
