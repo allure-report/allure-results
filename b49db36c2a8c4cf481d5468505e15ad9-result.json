@@ -1,0 +1,125 @@
+{
+  "uuid": "fe23e92c-030d-4100-8a8c-b5537aa3e8a8-tr-0-1068",
+  "historyId": "OdinUiTests.Tests.Schedule.ScheduleTests.Проверка кликабельности кнопки Сегодня, если выбрана не сегодняшняя дата",
+  "fullName": "OdinUiTests.Tests.Schedule.ScheduleTests.Проверка кликабельности кнопки Сегодня, если выбрана не сегодняшняя дата",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "e3e2610cd1b0"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Schedule"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckClickabilityOfTodayButton"
+    },
+    {
+      "name": "testClass",
+      "value": "ScheduleTests"
+    },
+    {
+      "name": "tag",
+      "value": "Расписание"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "suite",
+      "value": "Расписание"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    }
+  ],
+  "links": [],
+  "name": "Проверка кликабельности кнопки Сегодня, если выбрана не сегодняшняя дата",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <i class=\"schedule-header-components__steps__left cursor-pointer\" style=\"display: inline-flex; align-items: center; pointer-events: none;\">...</i> is not clickable at point (156, 119). Other element would receive the click: <div class=\"schedule-header-components__steps row items-center q-mr-md\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.SchedulePage.<SelectDateOtherThanToday>b__27_0() in /azp/_work/4/s/Pages/ShedulePage.cs:line 72\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.SchedulePage.SelectDateOtherThanToday() in /azp/_work/4/s/Pages/ShedulePage.cs:line 59\n   at OdinUiTests.Tests.Schedule.ScheduleTests.CheckClickabilityOfTodayButton() in /azp/_work/4/s/Tests/Schedule/SсheduleTests.cs:line 62"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Проверка кликабельности кнопки Сегодня, если выбрана не сегодняшняя дата",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <i class=\"schedule-header-components__steps__left cursor-pointer\" style=\"display: inline-flex; align-items: center; pointer-events: none;\">...</i> is not clickable at point (156, 119). Other element would receive the click: <div class=\"schedule-header-components__steps row items-center q-mr-md\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.SchedulePage.<SelectDateOtherThanToday>b__27_0() in /azp/_work/4/s/Pages/ShedulePage.cs:line 72\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.SchedulePage.SelectDateOtherThanToday() in /azp/_work/4/s/Pages/ShedulePage.cs:line 59\n   at OdinUiTests.Tests.Schedule.ScheduleTests.CheckClickabilityOfTodayButton() in /azp/_work/4/s/Tests/Schedule/SсheduleTests.cs:line 62"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу Расписания",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1698732916172,
+          "stop": 1698732916448
+        },
+        {
+          "name": "Выбрать дату в календаре на странице Расписания кроме Сегодня",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "element click intercepted: Element <i class=\"schedule-header-components__steps__left cursor-pointer\" style=\"display: inline-flex; align-items: center; pointer-events: none;\">...</i> is not clickable at point (156, 119). Other element would receive the click: <div class=\"schedule-header-components__steps row items-center q-mr-md\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.SchedulePage.<SelectDateOtherThanToday>b__27_0() in /azp/_work/4/s/Pages/ShedulePage.cs:line 72\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1698732916448,
+          "stop": 1698732918243
+        }
+      ],
+      "attachments": [
+        {
+          "name": "CheckClickabilityOfTodayButton.jpg",
+          "source": "ce9b15cc558b481a8265d284b673afbd-attachment.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "d69a3dffec464d5e90fad95967a0ff24-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1698732916154,
+      "stop": 1698732918502
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1698732916154,
+  "stop": 1698732918503
+}
