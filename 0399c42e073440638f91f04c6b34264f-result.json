@@ -1,0 +1,101 @@
+{
+  "uuid": "e40ec0d5-b6cd-4eed-93fc-6eee25f50e0f-tr-0-1585",
+  "historyId": "OdinUiTests.Tests.Discipline.DisContingentEditingTests.Редактирование дисциплины: добавление преподавателя по ссылке на профиль",
+  "fullName": "OdinUiTests.Tests.Discipline.DisContingentEditingTests.Редактирование дисциплины: добавление преподавателя по ссылке на профиль",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "d3933b2777db"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddTeacherByUserInfoInEditing"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentEditingTests"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование дисциплины: добавление преподавателя по ссылке на профиль",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+    "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.AccountService.GetAccessToken(UsersEnum user) in /azp/_work/9/s/Services/AccountService.cs:line 20\n   at OdinUiTests.Services.DisciplineService.GetDisciplineInfo(UsersEnum user, String disId, Boolean forEdit) in /azp/_work/9/s/Services/DisciplineService.cs:line 312\n   at OdinUiTests.Services.DisciplineService.GetDisciplineInfo(String disId, Boolean forEdit) in /azp/_work/9/s/Services/DisciplineService.cs:line 330\n   at OdinUiTests.Services.DisciplineService.EditDiscipline(String disId, Int32 otherTeacherId, Boolean withAllStudents, Object groupId, Object studentId, Boolean withTag) in /azp/_work/9/s/Services/DisciplineService.cs:line 40\n   at OdinUiTests.Services.DisciplineService.EditDiscipline(String disId) in /azp/_work/9/s/Services/DisciplineService.cs:line 68\n   at OdinUiTests.Tests.Discipline.DisContingentEditingTests.CheckAddTeacherByUserInfoInEditing(String userInfo) in /azp/_work/9/s/Tests/Discipline/DisCreateEditTests.cs:line 955\n--HttpRequestException\n   at RestSharp.RestClientExtensions.PostAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Редактирование дисциплины: добавление преподавателя по ссылке на профиль",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+        "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.AccountService.GetAccessToken(UsersEnum user) in /azp/_work/9/s/Services/AccountService.cs:line 20\n   at OdinUiTests.Services.DisciplineService.GetDisciplineInfo(UsersEnum user, String disId, Boolean forEdit) in /azp/_work/9/s/Services/DisciplineService.cs:line 312\n   at OdinUiTests.Services.DisciplineService.GetDisciplineInfo(String disId, Boolean forEdit) in /azp/_work/9/s/Services/DisciplineService.cs:line 330\n   at OdinUiTests.Services.DisciplineService.EditDiscipline(String disId, Int32 otherTeacherId, Boolean withAllStudents, Object groupId, Object studentId, Boolean withTag) in /azp/_work/9/s/Services/DisciplineService.cs:line 40\n   at OdinUiTests.Services.DisciplineService.EditDiscipline(String disId) in /azp/_work/9/s/Services/DisciplineService.cs:line 68\n   at OdinUiTests.Tests.Discipline.DisContingentEditingTests.CheckAddTeacherByUserInfoInEditing(String userInfo) in /azp/_work/9/s/Tests/Discipline/DisCreateEditTests.cs:line 955\n--HttpRequestException\n   at RestSharp.RestClientExtensions.PostAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "CheckAddTeacherByUserInfoInEditing.jpg",
+          "source": "72025a9211b544f089f236442e6ee0ad-attachment.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "4cad24960b054cf58fab1d4cca71700e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1700115603000,
+      "stop": 1700115603568
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "Param #0",
+      "value": "User/Info/25"
+    }
+  ],
+  "start": 1700115603000,
+  "stop": 1700115603568
+}
