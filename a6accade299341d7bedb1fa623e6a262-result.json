@@ -1,0 +1,97 @@
+{
+  "uuid": "52fec0ff-a4f0-44eb-b4d6-a549471b5e99-tr-0-2626",
+  "historyId": "OdinUiTests.Tests.Activity.TestTemplateAddingTests.Можно добавить материал типа Текст из Библиотеки в шаблон контрольной",
+  "fullName": "OdinUiTests.Tests.Activity.TestTemplateAddingTests.Можно добавить материал типа Текст из Библиотеки в шаблон контрольной",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "f1135d478789"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddTextMaterialToControlActivityPlan"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateAddingTests"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "suite",
+      "value": "Активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    }
+  ],
+  "links": [],
+  "name": "Можно добавить материал типа Текст из Библиотеки в шаблон контрольной",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+    "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.ActivityService.GetActivityPlanInfo(Int32 contentId) in /azp/_work/6/s/Services/ActivityService.cs:line 220\n   at OdinUiTests.Src.ActivityPayload.EditActivityPlanMethod(Int32 contentId, Boolean withTags) in /azp/_work/6/s/Src/ActivityPayload.cs:line 166\n   at OdinUiTests.Services.ActivityService.NewActivityPlanEditingMethod(Int32 contentId, Boolean withTag) in /azp/_work/6/s/Services/ActivityService.cs:line 408\n   at OdinUiTests.Services.ActivityService.RemoveContentFromActivityPlan(Int32 contentId) in /azp/_work/6/s/Services/ActivityService.cs:line 417\n   at OdinUiTests.Tests.Activity.TestTemplateAddingTests.Setup() in /azp/_work/6/s/Tests/Activity/TestTemplateTests.cs:line 62\n--HttpRequestException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+  },
+  "stage": "finished",
+  "description": "\nSetup SetUp method failed\n",
+  "steps": [
+    {
+      "name": "Можно добавить материал типа Текст из Библиотеки в шаблон контрольной skipped because of OneTimeSetup failure",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+        "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.ActivityService.GetActivityPlanInfo(Int32 contentId) in /azp/_work/6/s/Services/ActivityService.cs:line 220\n   at OdinUiTests.Src.ActivityPayload.EditActivityPlanMethod(Int32 contentId, Boolean withTags) in /azp/_work/6/s/Src/ActivityPayload.cs:line 166\n   at OdinUiTests.Services.ActivityService.NewActivityPlanEditingMethod(Int32 contentId, Boolean withTag) in /azp/_work/6/s/Services/ActivityService.cs:line 408\n   at OdinUiTests.Services.ActivityService.RemoveContentFromActivityPlan(Int32 contentId) in /azp/_work/6/s/Services/ActivityService.cs:line 417\n   at OdinUiTests.Tests.Activity.TestTemplateAddingTests.Setup() in /azp/_work/6/s/Tests/Activity/TestTemplateTests.cs:line 62\n--HttpRequestException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "CheckAddTextMaterialToControlActivityPlan.jpg",
+          "source": "2a41adcc6838423f85147742e1df293f-attachment.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "784ad66036074d31a4ee9fa519f9758a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1701324235478,
+      "stop": 1701324236061
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1701324235478,
+  "stop": 1701324236062
+}
