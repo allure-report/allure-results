@@ -1,0 +1,113 @@
+{
+  "uuid": "a6201bf4-0583-4773-ad2b-9185955f0829-tr-0-2640",
+  "historyId": "OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.Результат тестирования в попытках зависит от настройки За последнюю попытку в командной контрольной",
+  "fullName": "OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.Результат тестирования в попытках зависит от настройки За последнюю попытку в командной контрольной",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "54b08e42daee"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckResultOfPassingDependOnSettings"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityStatusWithTwoOrMoreAttemptsTests"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Прохождение теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "Результат тестирования в попытках зависит от настройки За последнюю попытку в командной контрольной",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+    "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.ActivityService.GetActivityInfo(String actId, Boolean forEdit) in /azp/_work/1/s/Services/ActivityService.cs:line 24\n   at OdinUiTests.Services.ActivityService.GetActivityInfoForEdit(String actId) in /azp/_work/1/s/Services/ActivityService.cs:line 33\n   at OdinUiTests.Services.ActivityService.EditActivity(String actId, Double minThreshold, Int32 evaluation, Boolean withTag, Boolean canSendSolutionAfterDeadline) in /azp/_work/1/s/Services/ActivityService.cs:line 270\n   at OdinUiTests.Services.ActivityService.EditActivity(String actId, Double minThreshold, Int32 evaluation) in /azp/_work/1/s/Services/ActivityService.cs:line 306\n   at OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.CheckResultOfPassingDependOnSettings(String actId, Int32 evaluation, String attemptSetting) in /azp/_work/1/s/Tests/Activity/TestActivityTests.cs:line 692\n--HttpRequestException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Результат тестирования в попытках зависит от настройки За последнюю попытку в командной контрольной",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+        "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.ActivityService.GetActivityInfo(String actId, Boolean forEdit) in /azp/_work/1/s/Services/ActivityService.cs:line 24\n   at OdinUiTests.Services.ActivityService.GetActivityInfoForEdit(String actId) in /azp/_work/1/s/Services/ActivityService.cs:line 33\n   at OdinUiTests.Services.ActivityService.EditActivity(String actId, Double minThreshold, Int32 evaluation, Boolean withTag, Boolean canSendSolutionAfterDeadline) in /azp/_work/1/s/Services/ActivityService.cs:line 270\n   at OdinUiTests.Services.ActivityService.EditActivity(String actId, Double minThreshold, Int32 evaluation) in /azp/_work/1/s/Services/ActivityService.cs:line 306\n   at OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.CheckResultOfPassingDependOnSettings(String actId, Int32 evaluation, String attemptSetting) in /azp/_work/1/s/Tests/Activity/TestActivityTests.cs:line 692\n--HttpRequestException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "CheckResultOfPassingDependOnSettings.jpg",
+          "source": "4bfb8870f9bf43f7a480e6602d5fbb3b-attachment.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "8484517d918643d685ba9f95cb6e9245-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1702358862523,
+      "stop": 1702358863269
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "Param #0",
+      "value": "571"
+    },
+    {
+      "name": "Param #1",
+      "value": "2"
+    },
+    {
+      "name": "Param #2",
+      "value": "lastTry"
+    }
+  ],
+  "start": 1702358862523,
+  "stop": 1702358863269
+}
