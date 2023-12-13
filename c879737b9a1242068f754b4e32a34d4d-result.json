@@ -1,0 +1,144 @@
+{
+  "uuid": "4456b9cb-10d8-440a-be78-02ecf55090f0-tr-0-1458",
+  "historyId": "OdinUiTests.Tests.Division.DivisionPageTests.Можно закрыть/открыть подразделение под суперадминистратором",
+  "fullName": "OdinUiTests.Tests.Division.DivisionPageTests.Можно закрыть/открыть подразделение под суперадминистратором",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "5bcc41e99260"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Division"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCloseAndOpenDivision"
+    },
+    {
+      "name": "testClass",
+      "value": "DivisionPageTests"
+    },
+    {
+      "name": "tag",
+      "value": "Подразделения"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "suite",
+      "value": "Подразделения"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница подразделения"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    }
+  ],
+  "links": [],
+  "name": "Можно закрыть/открыть подразделение под суперадминистратором",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".division-info__header__title div\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at OdinUiTests.Pages.DivisionInfoPage.<>c__DisplayClass49_0.<CheckDivisionOpenOrClosed>b__0() in /azp/_work/3/s/Pages/DivisionInfoPage.cs:line 354\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.DivisionInfoPage.CheckDivisionOpenOrClosed(Boolean isClosed) in /azp/_work/3/s/Pages/DivisionInfoPage.cs:line 342\n   at OdinUiTests.Tests.Division.DivisionPageTests.CheckCloseAndOpenDivision() in /azp/_work/3/s/Tests/Division/DivisionCommonTests.cs:line 296"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Можно закрыть/открыть подразделение под суперадминистратором",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".division-info__header__title div\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at OdinUiTests.Pages.DivisionInfoPage.<>c__DisplayClass49_0.<CheckDivisionOpenOrClosed>b__0() in /azp/_work/3/s/Pages/DivisionInfoPage.cs:line 354\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\n   at OdinUiTests.Pages.DivisionInfoPage.CheckDivisionOpenOrClosed(Boolean isClosed) in /azp/_work/3/s/Pages/DivisionInfoPage.cs:line 342\n   at OdinUiTests.Tests.Division.DivisionPageTests.CheckCloseAndOpenDivision() in /azp/_work/3/s/Tests/Division/DivisionCommonTests.cs:line 296"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу подразделения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1702456056071,
+          "stop": 1702456056291
+        },
+        {
+          "name": "Нажать на кнопку 'Открыть'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1702456056291,
+          "stop": 1702456056902
+        },
+        {
+          "name": "Проверка того, что подразделение было открыто",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".division-info__header__title div\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at OdinUiTests.Pages.DivisionInfoPage.<>c__DisplayClass49_0.<CheckDivisionOpenOrClosed>b__0() in /azp/_work/3/s/Pages/DivisionInfoPage.cs:line 354\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1702456056902,
+          "stop": 1702456057482
+        }
+      ],
+      "attachments": [
+        {
+          "name": "CheckCloseAndOpenDivision.jpg",
+          "source": "aad6bfa97c14453bb94c5994ac1fb25d-attachment.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "49d455ce09ce4e3287cab40b3b126b04-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1702456053431,
+      "stop": 1702456057683
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1702456053431,
+  "stop": 1702456057683
+}
