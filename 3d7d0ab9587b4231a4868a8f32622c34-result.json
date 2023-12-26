@@ -1,0 +1,96 @@
+{
+  "uuid": "6d70c334-99a7-46eb-b650-589ec6ebd856-tr-0-2104",
+  "historyId": "OdinUiTests.Tests.Chat.GroupChatTests.проверка возврата в родительский чат из окна обсуждения",
+  "fullName": "OdinUiTests.Tests.Chat.GroupChatTests.проверка возврата в родительский чат из окна обсуждения",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "591231f44811"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckClosedDiscussWindow"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatTests"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    }
+  ],
+  "links": [],
+  "name": "проверка возврата в родительский чат из окна обсуждения",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.AggregateException : One or more errors occurred. (Connection refused (test3.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test3.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+    "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.AccountService.GetAccessToken(UsersEnum user) in /azp/_work/1/s/Services/AccountService.cs:line 20\n   at OdinUiTests.Services.ChatService.SendOrRestoreChatFromArchive(UsersEnum user, String chatId, Boolean isRestore) in /azp/_work/1/s/Services/ChatService.cs:line 19\n   at OdinUiTests.Tests.Chat.GroupChatTests.CheckClosedDiscussWindow() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 736\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--HttpRequestException\n   at RestSharp.RestClientExtensions.PostAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "проверка возврата в родительский чат из окна обсуждения",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.AggregateException : One or more errors occurred. (Connection refused (test3.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test3.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+        "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.AccountService.GetAccessToken(UsersEnum user) in /azp/_work/1/s/Services/AccountService.cs:line 20\n   at OdinUiTests.Services.ChatService.SendOrRestoreChatFromArchive(UsersEnum user, String chatId, Boolean isRestore) in /azp/_work/1/s/Services/ChatService.cs:line 19\n   at OdinUiTests.Tests.Chat.GroupChatTests.CheckClosedDiscussWindow() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 736\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--HttpRequestException\n   at RestSharp.RestClientExtensions.PostAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "CheckClosedDiscussWindow.jpg",
+          "source": "ec278d689ddb46a99c3d020c027c3970-attachment.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "2ffc7d078ddd412b9d6a63e443bf0e5a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1703583484418,
+      "stop": 1703583484718
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1703583484418,
+  "stop": 1703583484718
+}
