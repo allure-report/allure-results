@@ -1,0 +1,83 @@
+{
+  "uuid": "ff447b64-ab73-4613-82bd-41f2ce79df9b",
+  "historyId": "cb34323b94595a30c49387eeea10932c",
+  "testCaseId": "bb7f02d9df32d9b062acea83ce3a89a6",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Schedule.ScheduleSettingsTests.CheckCancelConnectSyncWithGoogleCalendar()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "dd3df990abb1"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Schedule"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCancelConnectSyncWithGoogleCalendar"
+    },
+    {
+      "name": "testClass",
+      "value": "ScheduleSettingsTests"
+    },
+    {
+      "name": "suite",
+      "value": "Расписание"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Расписание"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Проверка кнопки Отмена синхронизации с Google календарем",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Npgsql.PostgresException : 53300: odyssey: cb24ce7541994: too many active clients for user (pool_size for user odin-domain-test-11.odin_autotests reached 50)\nData:\n  Severity: FATAL\n  InvariantSeverity: FATAL\n  SqlState: 53300\n  MessageText: odyssey: cb24ce7541994: too many active clients for user (pool_size for user odin-domain-test-11.odin_autotests reached 50)",
+    "trace": "   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)\n   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)\n   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlDataReader.NextResult()\n   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)\n   at OdinUiTests.Services.ScheduleService.SetCalendarSync(String userId, Boolean isSyncEnabled) in /azp/_work/1/s/Services/ScheduleService.cs:line 53\n   at OdinUiTests.Tests.Schedule.ScheduleSettingsTests.CheckCancelConnectSyncWithGoogleCalendar() in /azp/_work/1/s/Tests/Schedule/SсheduleTests.cs:line 181\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "CheckCancelConnectSyncWithGoogleCalendar.jpg",
+      "source": "3eb695b4-748e-45ea-afc9-f68906bc805b-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "42d6ae19-aba8-4501-aaef-28e6a905278f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1704867962866,
+  "stop": 1704867964230
+}
