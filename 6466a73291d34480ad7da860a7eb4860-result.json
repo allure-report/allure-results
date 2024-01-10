@@ -1,0 +1,128 @@
+{
+  "uuid": "b36a4986-c48f-47a5-a3a4-85d385d39557",
+  "historyId": "79aa08746fa4075ad42932ea58937e51",
+  "testCaseId": "15b1de055903e0623293cf3991cc7505",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Call.CallTests.CheckGreenFrameIsDisplayedOnAnotherUsersCard()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "eb8c12f4dc86"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Call"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGreenFrameIsDisplayedOnAnotherUsersCard"
+    },
+    {
+      "name": "testClass",
+      "value": "CallTests"
+    },
+    {
+      "name": "suite",
+      "value": "Звонок"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Звонок"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница звонка: отображается зеленая рамка у карточки собеседника при разговоре",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Newtonsoft.Json.JsonSerializationException : Error getting value from 'NetworkConditions' on 'OpenQA.Selenium.Chrome.ChromeDriver'.\n  ----> OpenQA.Selenium.WebDriverException : unknown error: network conditions must be set before it can be retrieved\n  (Session info: headless chrome=115.0.5790.110)\nTearDown : OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//i[contains(text(),'call_end')]\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)\n   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)\n   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)\n   at Newtonsoft.Json.JsonConvert.SerializeObjectInternal(Object value, Type type, JsonSerializer jsonSerializer)\n   at Allure.Net.Commons.Functions.FormatFunctions.Format(Object value, IReadOnlyDictionary`2 formatters)\n   at Allure.Net.Commons.Steps.AllureStepParameterHelper.<>c__DisplayClass8_0.<GetStepParameters>b__1(ValueTuple`2 parameter, Object value)\n   at System.Linq.Enumerable.ZipIterator[TFirst,TSecond,TResult](IEnumerable`1 first, IEnumerable`1 second, Func`3 resultSelector)+MoveNext()\n   at System.Linq.Enumerable.WhereEnumerableIterator`1.ToList()\n   at Allure.Net.Commons.Steps.AllureStepParameterHelper.GetStepParameters(MethodBase metadata, Object[] args, IReadOnlyDictionary`2 formatters)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CallPage.__a$_around_ToggleMicrophoneState_100665590_w_0(Object[])\n   at OdinUiTests.Pages.CallPage.ToggleMicrophoneState(IWebDriver driver, Boolean callPage, String state)\n   at OdinUiTests.Pages.CallPage.TurnOffTheMicrophone() in /azp/_work/5/s/Pages/CallPage.cs:line 67\n   at OdinUiTests.Tests.Call.CallTests.CheckGreenFrameIsDisplayedOnAnotherUsersCard() in /azp/_work/5/s/Tests/Call/CallTests.cs:line 53\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--WebDriverException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Chromium.ChromiumDriver.get_NetworkConditions()\n   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)\n--TearDown\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnEndCallButton_100665596_o() in /azp/_work/5/s/Pages/CallPage.cs:line 116\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnEndCallButton_100665596_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу звонку по айди чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"751030\"",
+          "excluded": false
+        }
+      ],
+      "start": 1704864280511,
+      "stop": 1704864281268
+    },
+    {
+      "name": "Нажать на кнопку завершения звонка",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnEndCallButton_100665596_o() in /azp/_work/5/s/Pages/CallPage.cs:line 116\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnEndCallButton_100665596_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "CheckGreenFrameIsDisplayedOnAnotherUsersCard-FailsBeforeEndOfCall.jpg",
+          "source": "b554a742-87b9-4c0d-a2d4-048ef4623adf-attachment.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "parameters": [],
+      "start": 1704864281294,
+      "stop": 1704864311710
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckGreenFrameIsDisplayedOnAnotherUsersCard.jpg",
+      "source": "a801df41-a79e-4043-b1d5-c8d916c116f9-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b087387f-a701-4f96-af85-10c29ebdfd7f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1704864280503,
+  "stop": 1704864311957
+}
