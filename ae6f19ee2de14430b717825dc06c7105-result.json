@@ -1,0 +1,230 @@
+{
+  "uuid": "2e633cc1-ab41-492d-99a3-919e5e0b4dd2",
+  "historyId": "36945cfd58a7b40406208bef3ce69f1a",
+  "testCaseId": "48c5de1f560795b62302fc96f5ee89fc",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckAddDisciplineChatRoomForCohortGroupStudent()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "d157c1558b32"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddDisciplineChatRoomForCohortGroupStudent"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "можно добавить комнату для групп и студентов",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.ArgumentOutOfRangeException : Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+    "trace": "   at System.Collections.Generic.List`1.get_Item(Int32 index)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SetContingentField_100665657_o(String contingent, Boolean isUser) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 921\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SetContingentField_100665657_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по айди",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"1768\"",
+          "excluded": false
+        }
+      ],
+      "start": 1704956637640,
+      "stop": 1704956637949
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить комнату'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того что чат имеет какое-либо сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1704956639193,
+          "stop": 1704956639235
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1704956637949,
+      "stop": 1704956639973
+    },
+    {
+      "name": "Заполнение поля 'Название' и чексбокс 'Закрытая комната' при создании комнаты",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Вставить значение в поля 'Название'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"47947A4E2467990\"",
+              "excluded": false
+            }
+          ],
+          "start": 1704956639973,
+          "stop": 1704956640621
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"47947A4E2467990\"",
+          "excluded": false
+        },
+        {
+          "name": "isClosed",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1704956639973,
+      "stop": 1704956641293
+    },
+    {
+      "name": "Заполнение полей Поток, Группа, Пользователи при создании комнаты",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n   at System.Reflection.RuntimeMethodInfo.InvokeWithManyArguments(RuntimeMethodInfo mi, Int32 argCount, Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SetContingentField_100665657_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.SetContingentField(String contingent, Boolean isUser)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_FillUserFields_100665656_o() in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 906\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_FillUserFields_100665656_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Рандомна выбрать контингента чата",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+            "trace": "   at System.Collections.Generic.List`1.get_Item(Int32 index)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SetContingentField_100665657_o(String contingent, Boolean isUser) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 921\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SetContingentField_100665657_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contingent",
+              "value": "\"Группы\"",
+              "excluded": false
+            },
+            {
+              "name": "isUser",
+              "value": "false",
+              "excluded": false
+            }
+          ],
+          "start": 1704956641293,
+          "stop": 1704956642462
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1704956641293,
+      "stop": 1704956642462
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddDisciplineChatRoomForCohortGroupStudent.jpg",
+      "source": "46fac248-8ad1-4226-bce1-524b7f43b3f8-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "34ae52ca-de80-4323-8a2c-ff84edd8b56e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1704956637637,
+  "stop": 1704956642779
+}
