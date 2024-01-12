@@ -1,0 +1,180 @@
+{
+  "uuid": "875ead63-fa5f-47f4-a7a4-3bd1f71ef5aa",
+  "historyId": "5efdcb0eb49dd29d786179b3a30ca8a1",
+  "testCaseId": "e9a90f7580c7c11baac8435a3b38e001",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineMiniChatTests.CheckSendMessageByTappingEnterInDisciplineMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "bb5a5de973ec"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendMessageByTappingEnterInDisciplineMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Мини-чат дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "можно отправить сообщения по нажатию на Enter",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 256\n   at OdinUiTests.Services.CommonService.ClearValuesInTextInputFields(IWebDriver driver, By selector, Boolean valueFromAttribute) in /azp/_work/1/s/Services/CommonService.cs:line 317\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_TapEnterToSendMessage_100665648_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 762\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_TapEnterToSendMessage_100665648_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть главную страницу с открытием мини-чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "withRefresh",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1705033259956,
+      "stop": 1705033260875
+    },
+    {
+      "name": "Открыть чат в мини-чате по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705033260875,
+          "stop": 1705033271383
+        },
+        {
+          "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705033271831,
+          "stop": 1705033272499
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Паттерны архитектуры\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705033260875,
+      "stop": 1705033272499
+    },
+    {
+      "name": "Отправить сообщение нажатем на enter",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 256\n   at OdinUiTests.Services.CommonService.ClearValuesInTextInputFields(IWebDriver driver, By selector, Boolean valueFromAttribute) in /azp/_work/1/s/Services/CommonService.cs:line 317\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_TapEnterToSendMessage_100665648_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 762\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_TapEnterToSendMessage_100665648_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "message",
+          "value": "\"A120076A4AF5D04\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705033272499,
+      "stop": 1705033303065
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendMessageByTappingEnterInDisciplineMiniChat.jpg",
+      "source": "af7072df-4d2b-48bd-bf00-38dd81663fde-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "90d7c936-ef3f-4a4d-a6df-a6b01610370c-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705033259950,
+  "stop": 1705033303522
+}

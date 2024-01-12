@@ -1,0 +1,205 @@
+{
+  "uuid": "f5eb3901-be2a-4066-8601-1e4d1519d82e",
+  "historyId": "79aa08746fa4075ad42932ea58937e51",
+  "testCaseId": "15b1de055903e0623293cf3991cc7505",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Call.CallTests.CheckGreenFrameIsDisplayedOnAnotherUsersCard()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "bb5a5de973ec"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Call"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGreenFrameIsDisplayedOnAnotherUsersCard"
+    },
+    {
+      "name": "testClass",
+      "value": "CallTests"
+    },
+    {
+      "name": "suite",
+      "value": "Звонок"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Звонок"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница звонка: отображается зеленая рамка у карточки собеседника при разговоре",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:33957/session/1d9ffeebeb4f717f7b26a6461c142b7c/url timed out after 60 seconds.\n  ----> System.Threading.Tasks.TaskCanceledException : The request was canceled due to the configured HttpClient.Timeout of 60 seconds elapsing.\n  ----> System.TimeoutException : The operation was canceled.\n  ----> System.Threading.Tasks.TaskCanceledException : The operation was canceled.\n  ----> System.IO.IOException : Unable to read data from the transport connection: Operation canceled.\n  ----> System.Net.Sockets.SocketException : Operation canceled",
+    "trace": "   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.set_Url(String value)\n   at OdinUiTests.Pages.CallPage.__a$_around_OpenCallEnterPage_100665594_o(String id) in /azp/_work/1/s/Pages/CallPage.cs:line 26\n   at OdinUiTests.Pages.CallPage.__a$_around_OpenCallEnterPage_100665594_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--TaskCanceledException\n   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.<>c__DisplayClass33_0.<<Execute>b__0>d.MoveNext()\n--- End of stack trace from previous location ---\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)\n--TimeoutException\n\n--TaskCanceledException\n   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n--IOException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)\n   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)\n   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n--SocketException\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу звонку по айди чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"751030\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705032977781,
+      "stop": 1705032978121
+    },
+    {
+      "name": "Переключить состояние микрофона в предбаннике и на странице звонка",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "callPage",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "state",
+          "value": "\"off\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705032978121,
+      "stop": 1705032982623
+    },
+    {
+      "name": "Нажать на кнопку Присоединиться в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705032982623,
+      "stop": 1705032984896
+    },
+    {
+      "name": "Проверка того что звонок был начать",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705032984897,
+      "stop": 1705032988833
+    },
+    {
+      "name": "Открыть страницу звонку по айди чата",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "The HTTP request to the remote WebDriver server for URL http://localhost:33957/session/1d9ffeebeb4f717f7b26a6461c142b7c/url timed out after 60 seconds.",
+        "trace": "   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.set_Url(String value)\n   at OdinUiTests.Pages.CallPage.__a$_around_OpenCallEnterPage_100665594_o(String id) in /azp/_work/1/s/Pages/CallPage.cs:line 26\n   at OdinUiTests.Pages.CallPage.__a$_around_OpenCallEnterPage_100665594_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"751030\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705033049117,
+      "stop": 1705033109122
+    },
+    {
+      "name": "Нажать на кнопку завершения звонка",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "CheckGreenFrameIsDisplayedOnAnotherUsersCard-FailsBeforeEndOfCall.jpg",
+          "source": "8e224200-0292-4dcc-b724-a2fa7cb62a51-attachment.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "parameters": [],
+      "start": 1705033109129,
+      "stop": 1705033110266
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckGreenFrameIsDisplayedOnAnotherUsersCard.jpg",
+      "source": "d798a3de-9983-4f97-a327-a65215a8035e-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "1332f8f2-406f-4a9f-bb3f-4d90ac80595b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705032977776,
+  "stop": 1705033122107
+}

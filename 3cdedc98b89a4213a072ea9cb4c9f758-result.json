@@ -1,0 +1,165 @@
+{
+  "uuid": "1c3c3066-1a6c-439d-956c-e6bce469d317",
+  "historyId": "4be1d3a31cdfa4269ee21ba3ee17ef1e",
+  "testCaseId": "2a2414683d65e561a06cdf42b395d53b",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatTests.CheckDiscussToLastMessageotherUsersInGroupChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "bb5a5de973ec"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDiscussToLastMessageotherUsersInGroupChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "начать обсуждение с другим участником",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q\\-editor__content\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_WaitIfChatHasSomeMessageByOtherUsers_100665616_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 278\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_WaitIfChatHasSomeMessageByOtherUsers_100665616_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSyncVoid(Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSyncVoid(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по айди",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"2179876\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705033491473,
+      "stop": 1705033491911
+    },
+    {
+      "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705033491913,
+      "stop": 1705033502225
+    },
+    {
+      "name": "начать обсуждение",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n   at System.Reflection.RuntimeMethodInfo.InvokeWithManyArguments(RuntimeMethodInfo mi, Int32 argCount, Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_WaitIfChatHasSomeMessageByOtherUsers_100665616_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessageByOtherUsers()\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_DiscussLeftMessage_100665631_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 521\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_DiscussLeftMessage_100665631_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того что чат имеет какое-либо сообщения",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 30 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_WaitIfChatHasSomeMessageByOtherUsers_100665616_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 278\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_WaitIfChatHasSomeMessageByOtherUsers_100665616_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSyncVoid(Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705033502227,
+          "stop": 1705033532259
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "message",
+          "value": "\"BFE7BF36G57FG68\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705033502226,
+      "stop": 1705033532259
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDiscussToLastMessageotherUsersInGroupChat.jpg",
+      "source": "8ef2f22f-ff26-4586-923e-09ed95eb4814-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "5c2b9b86-adf3-4585-8a1d-484eca205d80-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705033491000,
+  "stop": 1705033532545
+}
