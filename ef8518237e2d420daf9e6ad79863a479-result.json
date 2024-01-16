@@ -1,0 +1,175 @@
+{
+  "uuid": "490c6f2e-9262-40dd-8b76-60d12a89e9d1",
+  "historyId": "6cc765a5131769192c22a52f21bc68de",
+  "testCaseId": "7aae962d4f7bb201b925c86a0123e1a3",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.LibraryInListViewTests.CheckMoveMaterialViaActionsButton()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "39312be22e0c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckMoveMaterialViaActionsButton"
+    },
+    {
+      "name": "testClass",
+      "value": "LibraryInListViewTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Библиотека, списочный вид: можно переместить материал через actions-кнопки",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : Удаленная сущность не исчезает из библиотеки",
+    "trace": "   at OdinUiTests.Pages.LibraryPage.CheckMaterialsOrCatalogIsRemoved(String name, Int32 count, Boolean isCatalog) in /azp/_work/5/s/Pages/LibraryPage.cs:line 475\n   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveMaterialToCatalog_100666207_o(String materialName, Boolean isRightClick) in /azp/_work/5/s/Pages/LibraryPage.cs:line 193\n   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveMaterialToCatalog_100666207_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"20\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705383905029,
+      "stop": 1705383905308
+    },
+    {
+      "name": "Переключить текущий вид Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "withRefresh",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "mode",
+          "value": "\"Список\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705383905308,
+      "stop": 1705383907399
+    },
+    {
+      "name": "Переместить материал в другой каталог",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Удаленная сущность не исчезает из библиотеки",
+        "trace": "   at OdinUiTests.Pages.LibraryPage.CheckMaterialsOrCatalogIsRemoved(String name, Int32 count, Boolean isCatalog) in /azp/_work/5/s/Pages/LibraryPage.cs:line 475\n   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveMaterialToCatalog_100666207_o(String materialName, Boolean isRightClick) in /azp/_work/5/s/Pages/LibraryPage.cs:line 193\n   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveMaterialToCatalog_100666207_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка существование каталога в Библиотеке",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705383911909,
+          "stop": 1705383914193
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "materialName",
+          "value": "\"download.jpg\"",
+          "excluded": false
+        },
+        {
+          "name": "isRightClick",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1705383910792,
+      "stop": 1705383924085
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckMoveMaterialViaActionsButton.jpg",
+      "source": "a4610166-cfeb-473f-8101-b126c85117fc-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "1b8578a3-751f-4a77-ac33-5bd24b01cec8-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705383905019,
+  "stop": 1705383924357
+}

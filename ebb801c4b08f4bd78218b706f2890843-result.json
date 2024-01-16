@@ -1,0 +1,167 @@
+{
+  "uuid": "225b0066-c542-4c66-a912-dfa173218226",
+  "historyId": "c3d7374739f08187f3f8ed06b5d50949",
+  "testCaseId": "39587fa99fc88c667a02ef87f57d9a70",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisContingentEditingValidationTests.CheckAddStudentFromGroupInTeachersField()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "39312be22e0c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddStudentFromGroupInTeachersField"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentEditingValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование дисциплины: наличия ошибки при попытке указать преподавателем студента из группы",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q-notification__message.col\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_ShowErrorNotification_100665978_o() in /azp/_work/5/s/Pages/DisCommonEditPage.cs:line 632\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_ShowErrorNotification_100665978_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирование дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"585\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705383787405,
+      "stop": 1705383787695
+    },
+    {
+      "name": "Добавить/выбрать преподавателя из выпадающего списка",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "contingent",
+          "value": "\"Преподаватель\"",
+          "excluded": false
+        },
+        {
+          "name": "userInfo",
+          "value": "\"Борисов Борис Борисович\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705383787696,
+      "stop": 1705383794787
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705383794787,
+      "stop": 1705383794928
+    },
+    {
+      "name": "Отображается сообщение об ошибке",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_ShowErrorNotification_100665978_o() in /azp/_work/5/s/Pages/DisCommonEditPage.cs:line 632\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_ShowErrorNotification_100665978_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705383794928,
+      "stop": 1705383825239
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddStudentFromGroupInTeachersField.jpg",
+      "source": "593064a3-073b-4bbd-97d4-e303b143752d-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "433ec4f0-6fde-412c-aae1-4618eefaa17d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705383781847,
+  "stop": 1705383825518
+}
