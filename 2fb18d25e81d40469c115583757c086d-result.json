@@ -1,0 +1,192 @@
+{
+  "uuid": "c9bbb551-93f0-4c58-8ab0-c28f1eaa0051",
+  "historyId": "02cff2cb6077911a5f5b9c9b632ca634",
+  "testCaseId": "9464dbfdcb41f45b04818f0fff82688e",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisciplineAnalyticsTests.CheckFilterByGroupName()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "9c20b8f23a4d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckFilterByGroupName"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineAnalyticsTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Проверка фильтра аналитики по названию группы",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : Такая группа не добавлено в дисциплины",
+    "trace": "   at OdinUiTests.Services.DisciplineService.GetDisciplineGroupInfoByName(String disId, String groupName) in /azp/_work/4/s/Services/DisciplineService.cs:line 413\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckFilterByGroupIsWorking_100666112_o(String group) in /azp/_work/4/s/Pages/DisCommonInfoPage.cs:line 1775\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckFilterByGroupIsWorking_100666112_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"379\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705497883172,
+      "stop": 1705497883556
+    },
+    {
+      "name": "Нажать на заголовок вкладки 'Аналитика'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705497883556,
+      "stop": 1705497885869
+    },
+    {
+      "name": "Нажать на кнопку ‘Фильтры и поиск’ или 'Скрыть'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705497885869,
+      "stop": 1705497887890
+    },
+    {
+      "name": "В поле ‘Группа’ в выпадающем списке выбрать рандомную группу",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705497887891,
+      "stop": 1705497890577
+    },
+    {
+      "name": "Нажать на кнопку 'Применить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705497890577,
+      "stop": 1705497891046
+    },
+    {
+      "name": "Проверка того, что фильтр по названию группы работает",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Такая группа не добавлено в дисциплины",
+        "trace": "   at OdinUiTests.Services.DisciplineService.GetDisciplineGroupInfoByName(String disId, String groupName) in /azp/_work/4/s/Services/DisciplineService.cs:line 413\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckFilterByGroupIsWorking_100666112_o(String group) in /azp/_work/4/s/Pages/DisCommonInfoPage.cs:line 1775\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckFilterByGroupIsWorking_100666112_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "group",
+          "value": "\"New Group\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705497891046,
+      "stop": 1705497892937
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckFilterByGroupName.jpg",
+      "source": "47a37248-a73a-4061-9758-93a143435b5e-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "10e33a03-e486-4a15-a535-ffcbaf52a867-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705497883163,
+  "stop": 1705497893358
+}
