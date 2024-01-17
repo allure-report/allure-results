@@ -1,0 +1,142 @@
+{
+  "uuid": "38e4f5af-f779-4b5b-bed0-4f82a8357d75",
+  "historyId": "f9f097136dbf55be901479a84b2b70cf",
+  "testCaseId": "aeeb9512afbdcde8ff041be944653f0f",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.TaskChatTests.CheckSendEmojiInTaskChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "9c20b8f23a4d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendEmojiInTaskChat"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат решения"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "можно отправить смайлики",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.ArgumentOutOfRangeException : Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+    "trace": "   at System.Collections.Generic.List`1.get_Item(Int32 index)\n   at OdinUiTests.Pages.ChatCommonPage.TapOnBottomButtons(String typeOfButton) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 720\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_GetRandomEmoji_100665708_o() in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 663\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_GetRandomEmoji_100665708_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по айди",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"2227\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705470602949,
+      "stop": 1705470603534
+    },
+    {
+      "name": "Получить рандомна смайлик",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+        "trace": "   at System.Collections.Generic.List`1.get_Item(Int32 index)\n   at OdinUiTests.Pages.ChatCommonPage.TapOnBottomButtons(String typeOfButton) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 720\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_GetRandomEmoji_100665708_o() in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 663\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_GetRandomEmoji_100665708_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705470634881,
+          "stop": 1705470645164
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705470603534,
+      "stop": 1705470645178
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendEmojiInTaskChat.jpg",
+      "source": "6633426a-4a38-4c21-b82b-4f536d86170c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "a6213ff2-7ac4-4459-adc6-7073fae88e3d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705470602944,
+  "stop": 1705470645412
+}

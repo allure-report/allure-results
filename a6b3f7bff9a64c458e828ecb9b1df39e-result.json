@@ -1,0 +1,172 @@
+{
+  "uuid": "c50e435b-43c9-4ca3-ae11-845dcda25f50",
+  "historyId": "66940f0e75ad398aaeda5af63881840c",
+  "testCaseId": "933b0aecbab2f47dcdba47048d7e79a3",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskWithSolutionStudentTests.CheckAbilityToEditAssessmentOfAnotherStudentsSolution()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "9c20b8f23a4d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAbilityToEditAssessmentOfAnotherStudentsSolution"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskWithSolutionStudentTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница решения задания для студента"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно редактировать поставленную оценку в решении другого студента, если включена опция Взаимопроверка",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Баллы\" id=\"f_4ac9a6b2-d73e-4a96-884f-4bbd7e39b95e\" type=\"text\"> is not clickable at point (1042, 1044). Other element would receive the click: <div class=\"q-notification__message col\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/4/s/Services/CommonService.cs:line 303\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_EditValueScoreField_100665635_o(String score) in /azp/_work/4/s/Pages/ActivitySolutionPage.cs:line 206\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_EditValueScoreField_100665635_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу решения задания",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"91\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705470370688,
+      "stop": 1705470371117
+    },
+    {
+      "name": "Выбрать студента из списка всех решений",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"Doe John\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705470371118,
+      "stop": 1705470372356
+    },
+    {
+      "name": "Нажать на кнопку карандаша для редактирования выставленного балла",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705470372356,
+      "stop": 1705470374626
+    },
+    {
+      "name": "Редактировать балл для решения",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Баллы\" id=\"f_4ac9a6b2-d73e-4a96-884f-4bbd7e39b95e\" type=\"text\"> is not clickable at point (1042, 1044). Other element would receive the click: <div class=\"q-notification__message col\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/4/s/Services/CommonService.cs:line 303\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_EditValueScoreField_100665635_o(String score) in /azp/_work/4/s/Pages/ActivitySolutionPage.cs:line 206\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_EditValueScoreField_100665635_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "score",
+          "value": "\"3\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705470374626,
+      "stop": 1705470376811
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAbilityToEditAssessmentOfAnotherStudentsSolution.jpg",
+      "source": "679191f0-c9cf-4028-b616-ed7f218a4ca7-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "3a913389-453f-4a33-9016-ad17e1b615a6-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705470370688,
+  "stop": 1705470377192
+}
