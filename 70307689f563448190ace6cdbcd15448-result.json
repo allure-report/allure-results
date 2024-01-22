@@ -1,0 +1,137 @@
+{
+  "uuid": "68da51cb-1e4e-48ac-b222-61ae82b6ec2e",
+  "historyId": "487e91e0e5dfd288820f65aa3b372b23",
+  "testCaseId": "f81885fc514f8a3062ff97b7f73e286f",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisContingentEditingValidationTests.CheckUnableAddGroupFromAnotherCohortInEditing()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "3235d3bdc162"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckUnableAddGroupFromAnotherCohortInEditing"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentEditingValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование дисциплины: невозможно добавить группу из стороннего потока",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_CheckAddNotCohortMembersByName_100666003_o(String contingent, String name) in /azp/_work/2/s/Pages/DisCommonEditPage.cs:line 660\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_CheckAddNotCohortMembersByName_100666003_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"585\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705902015537,
+      "stop": 1705902016027
+    },
+    {
+      "name": "Проверка невозможности добавления студента/группы из стороннего потока",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_CheckAddNotCohortMembersByName_100666003_o(String contingent, String name) in /azp/_work/2/s/Pages/DisCommonEditPage.cs:line 660\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_CheckAddNotCohortMembersByName_100666003_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "contingent",
+          "value": "\"Группа\"",
+          "excluded": false
+        },
+        {
+          "name": "name",
+          "value": "\"ТЕСТОВЫЙ\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705902016028,
+      "stop": 1705902049225
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckUnableAddGroupFromAnotherCohortInEditing.jpg",
+      "source": "f04d27f3-549f-4b2a-8a31-47f87f7ce5e3-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "7d6ff381-99a1-4908-8576-4ccf7e16af1e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705902015186,
+  "stop": 1705902049472
+}
