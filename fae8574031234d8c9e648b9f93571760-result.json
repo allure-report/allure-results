@@ -1,0 +1,220 @@
+{
+  "uuid": "e3845909-693d-499a-aacb-425a22d7c74b",
+  "historyId": "78ab0b7f1ba78938d0e85f7d71d54080",
+  "testCaseId": "930a1238b3a1258276685d46d29c70ee",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisciplineMarksAndAttendanceTests.CheckAddTotalFormula()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "4ad8e2d96f9e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddTotalFormula"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineMarksAndAttendanceTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Добавление формулы промежуточного результата дисциплины",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.FormatException : The input string '' was not in a correct format.",
+    "trace": "   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, ReadOnlySpan`1 value, TypeCode type)\n   at System.Double.Parse(String s)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckFormulaIsCorrect_100666083_o(Int32 num) in /azp/_work/2/s/Pages/DisCommonInfoPage.cs:line 1226\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckFormulaIsCorrect_100666083_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"171\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705901544294,
+      "stop": 1705901544625
+    },
+    {
+      "name": "Нажать на заголовок вкладки 'Оценки'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705901544625,
+      "stop": 1705901546901
+    },
+    {
+      "name": "Добавить промежуточный итог",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Удалить промежуточные итоги",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705901548544,
+          "stop": 1705901550578
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "column",
+          "value": "2",
+          "excluded": false
+        }
+      ],
+      "start": 1705901546902,
+      "stop": 1705901550747
+    },
+    {
+      "name": "Редактировать формулу промежуточного итога",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "anotherNumToAdd",
+          "value": "0",
+          "excluded": false
+        }
+      ],
+      "start": 1705901550748,
+      "stop": 1705901552811
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’ для сохранения формулы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705901552811,
+      "stop": 1705901554005
+    },
+    {
+      "name": "Проверка того что итог соответствует формуле",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "The input string '' was not in a correct format.",
+        "trace": "   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, ReadOnlySpan`1 value, TypeCode type)\n   at System.Double.Parse(String s)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckFormulaIsCorrect_100666083_o(Int32 num) in /azp/_work/2/s/Pages/DisCommonInfoPage.cs:line 1226\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckFormulaIsCorrect_100666083_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "num",
+          "value": "0",
+          "excluded": false
+        }
+      ],
+      "start": 1705901554005,
+      "stop": 1705901555257
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddTotalFormula.jpg",
+      "source": "e1135ecc-1955-46e1-a3da-e047bcd435ff-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "fc7110df-6a12-4b4d-8ddf-32e231ac3817-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705901544290,
+  "stop": 1705901555570
+}
