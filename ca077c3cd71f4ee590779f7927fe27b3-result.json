@@ -1,0 +1,207 @@
+{
+  "uuid": "328c7d5c-aba4-48ad-bd44-58ebc6688bd7",
+  "historyId": "49e130fe46f06331acba5aacf8d32604",
+  "testCaseId": "80ab4a06bef64e9671e3452b0380bdbc",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckDeleteMessageInDisciplineRoomChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "91f75e959f6d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteMessageInDisciplineRoomChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "можно удалить сообщение",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "можно удалить сообщение"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по айди",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"2646491\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705938033212,
+      "stop": 1705938033684
+    },
+    {
+      "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705938033684,
+      "stop": 1705938035509
+    },
+    {
+      "name": "Получить id последнего сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того что чат имеет какое-либо сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705938036573,
+          "stop": 1705938036647
+        },
+        {
+          "name": "Ожидать пока появытся слово 'Отправляется...'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705938036647,
+          "stop": 1705938037705
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705938035509,
+      "stop": 1705938037731
+    },
+    {
+      "name": "Удалить отправленное сообщение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "messageId",
+          "value": "\"6983241\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705938037731,
+      "stop": 1705938039965
+    },
+    {
+      "name": "Проверка того что сообщение было удалено",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "messageId",
+          "value": "\"6983241\"",
+          "excluded": false
+        },
+        {
+          "name": "withRefresh",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1705938039965,
+      "stop": 1705938042167
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "435b36db-a47f-4b62-a9be-d542a77b54f0-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705938033212,
+  "stop": 1705938042167
+}

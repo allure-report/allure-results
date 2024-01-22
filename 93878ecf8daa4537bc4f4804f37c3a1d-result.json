@@ -1,0 +1,157 @@
+{
+  "uuid": "60f17f45-c808-4633-b9dc-603a3f82c4ca",
+  "historyId": "8199ba793dd5198a2e4db145f4e06584",
+  "testCaseId": "c51be035416f6d3d179c626f1ec98eab",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisContingentCreationValidationTests.CheckOnlyCohortGroupsAreShownInListOfGroups()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "91f75e959f6d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckOnlyCohortGroupsAreShownInListOfGroups"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentCreationValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "В выпадающем списке поля Группы отображаются только группы потока",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q\\-item__label\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_СheckOnlyGroupsOrStudentsOfCohortAreDisplayed_100666003_o(String groupsOrStudents, String cohortId) in /azp/_work/1/s/Pages/DisCommonEditPage.cs:line 711\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_СheckOnlyGroupsOrStudentsOfCohortAreDisplayed_100666003_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isVO",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"23\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705938377273,
+      "stop": 1705938378246
+    },
+    {
+      "name": "Снять галку с чекбокса Все студенты потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705938378246,
+      "stop": 1705938380780
+    },
+    {
+      "name": "Проверка, что в поле Группы/Студенты отображаются только студенты/группы текущего потока",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_СheckOnlyGroupsOrStudentsOfCohortAreDisplayed_100666003_o(String groupsOrStudents, String cohortId) in /azp/_work/1/s/Pages/DisCommonEditPage.cs:line 711\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_СheckOnlyGroupsOrStudentsOfCohortAreDisplayed_100666003_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "groupsOrStudents",
+          "value": "\"groups\"",
+          "excluded": false
+        },
+        {
+          "name": "cohortId",
+          "value": "\"23\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705938380780,
+      "stop": 1705938412541
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckOnlyCohortGroupsAreShownInListOfGroups.jpg",
+      "source": "bfc8f697-6db6-4d48-9758-29d173cd1f81-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "80bea74b-e78d-4ff6-96c7-f0cc4b13e75f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705938376884,
+  "stop": 1705938412818
+}

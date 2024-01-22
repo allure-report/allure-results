@@ -1,0 +1,444 @@
+{
+  "uuid": "63c90929-9336-427d-89e3-a3bb646e2499",
+  "historyId": "0ef8c7d1d2c63cc34d5270adbb4cf9e1",
+  "testCaseId": "29ca7f866f26a7d547e315d6032888c0",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckPinLastMessageInDisciplineRoomChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "91f75e959f6d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckPinLastMessageInDisciplineRoomChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "можно закреплять сообщения",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='pinned-message']/preceding-sibling::div\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckForPinnedMessage_100665782_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1600\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckForPinnedMessage_100665782_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по айди",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"2646491\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705937986837,
+      "stop": 1705937987148
+    },
+    {
+      "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705937987148,
+      "stop": 1705937988912
+    },
+    {
+      "name": "Закрепить сообщения в чате",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того что чат имеет какое-либо сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705937988912,
+          "stop": 1705937989002
+        },
+        {
+          "name": "Получить id последнего сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Проверка того что чат имеет какое-либо сообщения",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1705937990069,
+              "stop": 1705937990149
+            },
+            {
+              "name": "Ожидать пока появытся слово 'Отправляется...'",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1705937990149,
+              "stop": 1705937991206
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705937989002,
+          "stop": 1705937991231
+        },
+        {
+          "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705937991549,
+          "stop": 1705937992608
+        },
+        {
+          "name": "Получить id последнего сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Проверка того что чат имеет какое-либо сообщения",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1705937994977,
+              "stop": 1705937995046
+            },
+            {
+              "name": "Ожидать пока появытся слово 'Отправляется...'",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1705937995046,
+              "stop": 1705937996161
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705937993912,
+          "stop": 1705937996202
+        },
+        {
+          "name": "Получить id последнего сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Проверка того что чат имеет какое-либо сообщения",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1705937997448,
+              "stop": 1705937997514
+            },
+            {
+              "name": "Ожидать пока появытся слово 'Отправляется...'",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1705937997514,
+              "stop": 1705937998579
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705937996388,
+          "stop": 1705937998606
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1705937988912,
+      "stop": 1705937998670
+    },
+    {
+      "name": "Проверка того что сообщение был закреплен",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n   at System.Reflection.RuntimeMethodInfo.InvokeWithManyArguments(RuntimeMethodInfo mi, Int32 argCount, Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckForPinnedMessage_100665782_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.CheckForPinnedMessage(String message)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageHasBeenPinned_100665781_o(Boolean isChatCall, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1592\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageHasBeenPinned_100665781_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Получить id последнего сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Проверка того что чат имеет какое-либо сообщения",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1705937999730,
+              "stop": 1705937999796
+            },
+            {
+              "name": "Ожидать пока появытся слово 'Отправляется...'",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1705937999797,
+              "stop": 1705938000865
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1705937998670,
+          "stop": 1705938000890
+        },
+        {
+          "name": "Проверка того что сообщение был закреплен",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "message",
+              "value": "\"EDFEGD1DG2G5G3G\"",
+              "excluded": false
+            }
+          ],
+          "start": 1705938000915,
+          "stop": 1705938002059
+        },
+        {
+          "name": "Открыть чат по айди",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "id",
+              "value": "\"2646491\"",
+              "excluded": false
+            }
+          ],
+          "start": 1705938002059,
+          "stop": 1705938002500
+        },
+        {
+          "name": "Проверка того что сообщение был закреплен",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 30 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckForPinnedMessage_100665782_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1600\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckForPinnedMessage_100665782_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "message",
+              "value": "\"EDFEGD1DG2G5G3G\"",
+              "excluded": false
+            }
+          ],
+          "start": 1705938002500,
+          "stop": 1705938032879
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isChatCall",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"2646491\"",
+          "excluded": false
+        }
+      ],
+      "start": 1705937998670,
+      "stop": 1705938032879
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckPinLastMessageInDisciplineRoomChat.jpg",
+      "source": "a8b7b60a-1046-4169-848d-8ac941836932-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "f76e099c-b24a-4aa4-b2be-cd1df40992ad-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1705937986836,
+  "stop": 1705938033210
+}
