@@ -1,0 +1,144 @@
+{
+  "uuid": "18b3280b-db7b-40d4-9ef8-00a200149efe",
+  "historyId": "96187c0546a802ca28920abf4f21d4ac",
+  "testCaseId": "c880ab4c9a051408fc24a1c3938f933c",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestTemplateAddingTests.CheckAddFileToControlActivityPlan()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "4ff9a5986cc2"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddFileToControlActivityPlan"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateAddingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование шаблона контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно загрузить материал типа Файл с компьютера в шаблон контрольной",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:43961/session/51efc7190e6bf7f08a76f4466535a752/url timed out after 60 seconds.\n  ----> System.Threading.Tasks.TaskCanceledException : The request was canceled due to the configured HttpClient.Timeout of 60 seconds elapsing.\n  ----> System.TimeoutException : The operation was canceled.\n  ----> System.Threading.Tasks.TaskCanceledException : The operation was canceled.\n  ----> System.IO.IOException : Unable to read data from the transport connection: Operation canceled.\n  ----> System.Net.Sockets.SocketException : Operation canceled",
+    "trace": "   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.set_Url(String value)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_OpenActivityPlanEditPage_100665408_o(String contentId) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 101\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_OpenActivityPlanEditPage_100665408_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--TaskCanceledException\n   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.<>c__DisplayClass33_0.<<Execute>b__0>d.MoveNext()\n--- End of stack trace from previous location ---\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)\n--TimeoutException\n\n--TaskCanceledException\n   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n--IOException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)\n   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)\n   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n--SocketException\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n   at System.Reflection.RuntimeMethodInfo.InvokeWithManyArguments(RuntimeMethodInfo mi, Int32 argCount, Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_OpenActivityPlanEditPage_100665408_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonEditPage.OpenActivityPlanEditPage(String contentId)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_OpenEditPage_100665409_o(Boolean isTemplate, String id) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 108\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_OpenEditPage_100665409_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "The HTTP request to the remote WebDriver server for URL http://localhost:43961/session/51efc7190e6bf7f08a76f4466535a752/url timed out after 60 seconds.",
+            "trace": "   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.set_Url(String value)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_OpenActivityPlanEditPage_100665408_o(String contentId) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 101\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_OpenActivityPlanEditPage_100665408_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"914\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706001360812,
+          "stop": 1706001420814
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"914\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706001360812,
+      "stop": 1706001420814
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddFileToControlActivityPlan.jpg",
+      "source": "911abe60-fbfd-487b-9fa1-7fe95d69389f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "cd97ffbb-a5d5-43a4-83f5-9013f03d1ba0-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1706001360394,
+  "stop": 1706001430764
+}
