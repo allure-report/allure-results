@@ -1,0 +1,213 @@
+{
+  "uuid": "2fc94054-0704-4245-8a5e-e28edb6fda74",
+  "historyId": "175b08f266e9554a12e2662da95b5bac",
+  "testCaseId": "507eb356edd1bf4f9c0dc3b0ab158409",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckAddDisciplineChatRoom(System.Boolean)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "dcf953a255ad"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddDisciplineChatRoom"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "можно добавить комнату для отдельных студентов",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnCreateButton_100665749_o(String name) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 959\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnCreateButton_100665749_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по айди",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"553\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706153550190,
+      "stop": 1706153550605
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить комнату'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того что чат имеет какое-либо сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1706153551749,
+          "stop": 1706153551804
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1706153550605,
+      "stop": 1706153552600
+    },
+    {
+      "name": "Заполнение поля 'Название' и чексбокс 'Закрытая комната' при создании комнаты",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Вставить значение в поля 'Название'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"E6758B94CF7730G\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706153552600,
+          "stop": 1706153553277
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"E6758B94CF7730G\"",
+          "excluded": false
+        },
+        {
+          "name": "isClosed",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1706153552600,
+      "stop": 1706153553970
+    },
+    {
+      "name": "Клик на кнопку 'Создать'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnCreateButton_100665749_o(String name) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 959\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnCreateButton_100665749_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"E6758B94CF7730G\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706153553971,
+      "stop": 1706153585317
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddDisciplineChatRoom.jpg",
+      "source": "d3efed95-0450-4bc5-af62-763ef8b1e6a8-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "907fb473-98be-4ff9-9e23-c7b987192b52-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "isClosed",
+      "value": "true",
+      "excluded": false
+    }
+  ],
+  "start": 1706153550189,
+  "stop": 1706153585705
+}
