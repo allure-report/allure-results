@@ -1,0 +1,137 @@
+{
+  "uuid": "49f94763-bab9-4d30-8d9f-95b7d72f6541",
+  "historyId": "956b1e81eda743a2137e2c6412cd77ec",
+  "testCaseId": "a04c7166acd159d508f8531d6e47caa2",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisContingentEditingTests.CheckAddGroupAndStudentToDiscipline()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "3a3a895d01e3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddGroupAndStudentToDiscipline"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Добавления к дисциплине групп и студентов",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100665976_o(String contingent, String userInfo) in /azp/_work/1/s/Pages/DisCommonEditPage.cs:line 341\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100665976_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"585\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706182741334,
+      "stop": 1706182741786
+    },
+    {
+      "name": "Добавить/выбрать преподавателя/группу из выпадающего списка",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100665976_o(String contingent, String userInfo) in /azp/_work/1/s/Pages/DisCommonEditPage.cs:line 341\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100665976_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "contingent",
+          "value": "\"Группа\"",
+          "excluded": false
+        },
+        {
+          "name": "userInfo",
+          "value": "\"Группа 11 - бухгалтеры\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706182741787,
+      "stop": 1706182775058
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddGroupAndStudentToDiscipline.jpg",
+      "source": "8d4e0938-9aa7-4490-a5b9-300dad7178e5-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "87d4ee27-3aa6-44d1-a13c-88b2677c87fe-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1706182739080,
+  "stop": 1706182775260
+}

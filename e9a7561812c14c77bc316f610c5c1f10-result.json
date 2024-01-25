@@ -1,0 +1,374 @@
+{
+  "uuid": "69597f29-b0bd-4b9a-a46b-adb75b50a508",
+  "historyId": "d00754ca717eafbb83297128b6bdb873",
+  "testCaseId": "8d50f9005a2a2a06f065e582ebb0fd09",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.IOTGraphTests.CheckAddBlockBelowFirstBlock()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "3a3a895d01e3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddBlockBelowFirstBlock"
+    },
+    {
+      "name": "testClass",
+      "value": "IOTGraphTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина с ИОТ"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница дисциплины с ИОТ: под нижним блоком можно добавить ещё один блок",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : Отсутствует название вид блока",
+    "trace": "   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_o(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 463\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Рандомна получить вид блока для добавления",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "countOfBlock",
+          "value": "3",
+          "excluded": false
+        }
+      ],
+      "start": 1706182754636,
+      "stop": 1706182754636
+    },
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"105406\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706182754636,
+      "stop": 1706182754857
+    },
+    {
+      "name": "Добавить блок в дисциплину с ИОТ если она отсутствует",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Рандомна получить вид блока для добавления",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "countOfBlock",
+              "value": "3",
+              "excluded": false
+            }
+          ],
+          "start": 1706182754857,
+          "stop": 1706182754857
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disId",
+          "value": "\"105406\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706182754857,
+      "stop": 1706182755400
+    },
+    {
+      "name": "Нажать на кнопку добавления блока указав нужную кнопку",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "location",
+          "value": "\"bottom\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706182755400,
+      "stop": 1706182757378
+    },
+    {
+      "name": "Добавления блока в указанное место в дисциплину с ИОТ",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Отсутствует название вид блока",
+        "trace": "   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_o(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 463\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Ввести значение в поле 'Название активности'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"EC6436EBF295AA1\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706182758495,
+          "stop": 1706182759181
+        },
+        {
+          "name": "Ввести значение в поле 'Описание'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "description",
+              "value": "\"EC6436EBF295AA1\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706182759182,
+          "stop": 1706182760430
+        },
+        {
+          "name": "Нажать на кнопку 'Сохранить' и подтвердить сохранение",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1706182760430,
+          "stop": 1706182763619
+        },
+        {
+          "name": "Переход на страницу шаблона дисциплины",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1706182763619,
+          "stop": 1706182763713
+        },
+        {
+          "name": "Проверка того что блок был добавлен в дисциплину с ИОТ",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Проверка того что блок был добавлен с параметрами",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "parameter",
+                  "value": "\"\"",
+                  "excluded": false
+                },
+                {
+                  "name": "titlePath",
+                  "value": "\"//div[@class='title']/a[contains(text(),'EC6436EBF295AA1')]\"",
+                  "excluded": false
+                }
+              ],
+              "start": 1706182765326,
+              "stop": 1706182766407
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "kindOfBlock",
+              "value": "\"Активность\"",
+              "excluded": false
+            },
+            {
+              "name": "randomText",
+              "value": "\"EC6436EBF295AA1\"",
+              "excluded": false
+            },
+            {
+              "name": "withRefresh",
+              "value": "false",
+              "excluded": false
+            },
+            {
+              "name": "nameOfBlock",
+              "value": "\"\"",
+              "excluded": false
+            },
+            {
+              "name": "parameter",
+              "value": "\"\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706182763713,
+          "stop": 1706182766417
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "location",
+          "value": "\"bottom\"",
+          "excluded": false
+        },
+        {
+          "name": "insideBlock",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "kindOfBlock",
+          "value": "\"Активность\"",
+          "excluded": false
+        },
+        {
+          "name": "randomText",
+          "value": "\"EC6436EBF295AA1\"",
+          "excluded": false
+        },
+        {
+          "name": "parameter",
+          "value": "\"\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706182757378,
+      "stop": 1706182766418
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddBlockBelowFirstBlock.jpg",
+      "source": "d5e74a93-e147-49f5-9d9f-6649297cf20d-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "ad74b061-cc75-49a1-a767-51587dac83e9-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1706182754632,
+  "stop": 1706182766640
+}

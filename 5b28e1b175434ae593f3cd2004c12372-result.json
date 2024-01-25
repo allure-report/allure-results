@@ -1,0 +1,262 @@
+{
+  "uuid": "7b42727c-fbac-44d7-90fd-4b8bb9b32fa1",
+  "historyId": "3aa459afae3a8a4176860733b6241aba",
+  "testCaseId": "0e721550da12863abc32808d31025dc2",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.IOTThemesAndModulesTests.CheckCannotCreateModuleInsideModule()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "3a3a895d01e3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCannotCreateModuleInsideModule"
+    },
+    {
+      "name": "testClass",
+      "value": "IOTThemesAndModulesTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина с ИОТ"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница дисциплины с ИОТ: внутри модуля нельзя создать модуль",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : Отсутствует название вид блока",
+    "trace": "   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_o(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 463\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"105407\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706182739990,
+      "stop": 1706182740476
+    },
+    {
+      "name": "Добавить нужный блок в дисциплину с ИОТ если она отсутствует",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n   at System.Reflection.RuntimeMethodInfo.InvokeWithManyArguments(RuntimeMethodInfo mi, Int32 argCount, Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonInfoPage.AddRandomPickedBlock(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddDesiredBlockIfNotExist_100666037_o(String kindOfBlock) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 503\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddDesiredBlockIfNotExist_100666037_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку добавления блока указав нужную кнопку",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "location",
+              "value": "\"main\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706182744718,
+          "stop": 1706182747204
+        },
+        {
+          "name": "Добавления блока в указанное место в дисциплину с ИОТ",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Отсутствует название вид блока",
+            "trace": "   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_o(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 463\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Проверка того что блок был добавлен в дисциплину с ИОТ",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [
+                {
+                  "name": "Проверка того что блок был добавлен с параметрами",
+                  "status": "passed",
+                  "statusDetails": {
+                    "known": false,
+                    "muted": false,
+                    "flaky": false
+                  },
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [
+                    {
+                      "name": "parameter",
+                      "value": "\"\"",
+                      "excluded": false
+                    },
+                    {
+                      "name": "titlePath",
+                      "value": "\"//div[@class='title' and text()='785G4EE3291CDG9']\"",
+                      "excluded": false
+                    }
+                  ],
+                  "start": 1706182750149,
+                  "stop": 1706182751228
+                }
+              ],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "kindOfBlock",
+                  "value": "\"Модуль\"",
+                  "excluded": false
+                },
+                {
+                  "name": "randomText",
+                  "value": "\"785G4EE3291CDG9\"",
+                  "excluded": false
+                },
+                {
+                  "name": "withRefresh",
+                  "value": "false",
+                  "excluded": false
+                },
+                {
+                  "name": "nameOfBlock",
+                  "value": "\"\"",
+                  "excluded": false
+                },
+                {
+                  "name": "parameter",
+                  "value": "\"\"",
+                  "excluded": false
+                }
+              ],
+              "start": 1706182748537,
+              "stop": 1706182751238
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "location",
+              "value": "\"main\"",
+              "excluded": false
+            },
+            {
+              "name": "insideBlock",
+              "value": "false",
+              "excluded": false
+            },
+            {
+              "name": "kindOfBlock",
+              "value": "\"Модуль\"",
+              "excluded": false
+            },
+            {
+              "name": "randomText",
+              "value": "\"785G4EE3291CDG9\"",
+              "excluded": false
+            },
+            {
+              "name": "parameter",
+              "value": "\"\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706182747204,
+          "stop": 1706182751238
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "kindOfBlock",
+          "value": "\"Модуль\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706182740477,
+      "stop": 1706182751239
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCannotCreateModuleInsideModule.jpg",
+      "source": "435f0d9b-16ef-4995-88fb-0ef659e11d9f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "9cd5d864-4093-4977-abe4-eee48140403d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1706182739100,
+  "stop": 1706182751465
+}
