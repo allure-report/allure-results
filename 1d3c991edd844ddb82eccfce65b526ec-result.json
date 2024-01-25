@@ -1,0 +1,262 @@
+{
+  "uuid": "cd012ad5-bde6-401c-9e25-5f7b4bd076d6",
+  "historyId": "1ef4e750f7a1ec5611af236d930cf775",
+  "testCaseId": "fa99ae13f15ab47e1c5e9da056b55dea",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.IOTThemesAndModulesTests.CheckCannotCreateModuleOrTopicInsideTopic()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "3a3a895d01e3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCannotCreateModuleOrTopicInsideTopic"
+    },
+    {
+      "name": "testClass",
+      "value": "IOTThemesAndModulesTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина с ИОТ"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница дисциплины с ИОТ: внутри темы нельзя создать модуль или тему",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : Отсутствует название вид блока",
+    "trace": "   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_o(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 463\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"105402\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706182569867,
+      "stop": 1706182570101
+    },
+    {
+      "name": "Добавить нужный блок в дисциплину с ИОТ если она отсутствует",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n   at System.Reflection.RuntimeMethodInfo.InvokeWithManyArguments(RuntimeMethodInfo mi, Int32 argCount, Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonInfoPage.AddRandomPickedBlock(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddDesiredBlockIfNotExist_100666037_o(String kindOfBlock) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 505\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddDesiredBlockIfNotExist_100666037_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку добавления блока указав нужную кнопку",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "location",
+              "value": "\"top\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706182572296,
+          "stop": 1706182574781
+        },
+        {
+          "name": "Добавления блока в указанное место в дисциплину с ИОТ",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Отсутствует название вид блока",
+            "trace": "   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_o(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 463\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666034_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Проверка того что блок был добавлен в дисциплину с ИОТ",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [
+                {
+                  "name": "Проверка того что блок был добавлен с параметрами",
+                  "status": "passed",
+                  "statusDetails": {
+                    "known": false,
+                    "muted": false,
+                    "flaky": false
+                  },
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [
+                    {
+                      "name": "parameter",
+                      "value": "\"\"",
+                      "excluded": false
+                    },
+                    {
+                      "name": "titlePath",
+                      "value": "\"//div[@class='title' and text()='8DFCE95AA4F12CF']\"",
+                      "excluded": false
+                    }
+                  ],
+                  "start": 1706182577228,
+                  "stop": 1706182578312
+                }
+              ],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "kindOfBlock",
+                  "value": "\"Тема\"",
+                  "excluded": false
+                },
+                {
+                  "name": "randomText",
+                  "value": "\"8DFCE95AA4F12CF\"",
+                  "excluded": false
+                },
+                {
+                  "name": "withRefresh",
+                  "value": "false",
+                  "excluded": false
+                },
+                {
+                  "name": "nameOfBlock",
+                  "value": "\"\"",
+                  "excluded": false
+                },
+                {
+                  "name": "parameter",
+                  "value": "\"\"",
+                  "excluded": false
+                }
+              ],
+              "start": 1706182576128,
+              "stop": 1706182578323
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "location",
+              "value": "\"top\"",
+              "excluded": false
+            },
+            {
+              "name": "insideBlock",
+              "value": "false",
+              "excluded": false
+            },
+            {
+              "name": "kindOfBlock",
+              "value": "\"Тема\"",
+              "excluded": false
+            },
+            {
+              "name": "randomText",
+              "value": "\"8DFCE95AA4F12CF\"",
+              "excluded": false
+            },
+            {
+              "name": "parameter",
+              "value": "\"\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706182574781,
+          "stop": 1706182578323
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "kindOfBlock",
+          "value": "\"Тема\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706182570101,
+      "stop": 1706182578323
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCannotCreateModuleOrTopicInsideTopic.jpg",
+      "source": "f722e5bf-ebae-4470-8bdb-c6a0fd41ae1d-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "2fbd8129-89e5-42c5-b590-6530e24ba00e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1706182569863,
+  "stop": 1706182578550
+}
