@@ -1,0 +1,87 @@
+{
+  "uuid": "781084e0-5318-4116-b952-9cc38bd036a9",
+  "historyId": "11b24f288749b52e77df7d3168764087",
+  "testCaseId": "fa3b69e562385a77b321a6dcc4c85c67",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortCreationWarningModalTests.CheckImpossibleCreateCohortIgnoringMismatchWarningOfDuration()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "fe353878a145"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckImpossibleCreateCohortIgnoringMismatchWarningOfDuration"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortCreationWarningModalTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание потока ДО (СЗ): невозможно создать поток без исправления длительности потока",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Npgsql.PostgresException : 53300: odyssey: c5f5a98067cc9: too many active clients for user (pool_size for user odin-domain-test-11.odin_autotests reached 50)\nData:\n  Severity: FATAL\n  InvariantSeverity: FATAL\n  SqlState: 53300\n  MessageText: odyssey: c5f5a98067cc9: too many active clients for user (pool_size for user odin-domain-test-11.odin_autotests reached 50)",
+    "trace": "   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)\n   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)\n   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlDataReader.NextResult()\n   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)\n   at OdinUiTests.Services.ProgramService.SetProgramDuration(String programId, Int32 duration) in /azp/_work/4/s/Services/ProgramService.cs:line 71\n   at OdinUiTests.Tests.Cohort.CohortCreationWarningModalTests.CheckImpossibleCreateCohortIgnoringMismatchWarningOfDuration() in /azp/_work/4/s/Tests/Cohort/CohortCreateEditTests.cs:line 376\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "CheckImpossibleCreateCohortIgnoringMismatchWarningOfDuration.jpg",
+      "source": "ac881c39-e91d-4427-93b0-8e76bdf38c88-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "1e6e45f7-c012-4b8f-aa79-8479be0f2539-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1706592050332,
+  "stop": 1706592051949
+}
