@@ -1,0 +1,211 @@
+{
+  "uuid": "0c8c512b-1535-4c1f-83ed-d1c7940970a6",
+  "historyId": "02bd146677c54db7c55ad2516d7401a3",
+  "testCaseId": "5236c224564474491ccabad3a026fdaa",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineChatTests.CheckDeleteMessageInDisciplineChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "49e21cb304f5"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteMessageInDisciplineChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно удалить сообщение",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Можно удалить сообщение"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по айди",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"1768\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706580528526,
+      "stop": 1706580528942
+    },
+    {
+      "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1706580528942,
+      "stop": 1706580530409
+    },
+    {
+      "name": "Получить id последнего сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того что чат имеет какое-либо сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1706580531476,
+          "stop": 1706580531562
+        },
+        {
+          "name": "Ожидать пока появытся слово 'Отправляется...'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1706580531562,
+          "stop": 1706580532624
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1706580530409,
+      "stop": 1706580532693
+    },
+    {
+      "name": "Удалить отправленное сообщение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "messageId",
+          "value": "\"6984937\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706580532693,
+      "stop": 1706580535099
+    },
+    {
+      "name": "Проверка того что сообщение было удалено",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "messageId",
+          "value": "\"6984937\"",
+          "excluded": false
+        },
+        {
+          "name": "withRefresh",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1706580535099,
+      "stop": 1706580536674
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "bcc9395a-086c-4fb4-9523-ab3fa9fdae83-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1706580528526,
+  "stop": 1706580536675
+}

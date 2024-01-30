@@ -1,0 +1,132 @@
+{
+  "uuid": "dd0be76e-6e25-4e6d-b7c2-7e579f1d30c1",
+  "historyId": "3512c63e42c75f1e3a303fdfd92a4308",
+  "testCaseId": "f493b7e78697aba7d3be3432d9c0459f",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.NotesChatTests.CheckSendMessageByTappingEnterInNotesChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "49e21cb304f5"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendMessageByTappingEnterInNotesChat"
+    },
+    {
+      "name": "testClass",
+      "value": "NotesChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат для заметок"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "можно отправить сообщения по нажатию на Enter",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'9F10D650B7F5B57')]\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_TapEnterToSendMessage_100665739_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 793\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_TapEnterToSendMessage_100665739_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по айди",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706580501712,
+      "stop": 1706580501997
+    },
+    {
+      "name": "Отправить сообщение нажатем на enter",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_TapEnterToSendMessage_100665739_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 793\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_TapEnterToSendMessage_100665739_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "message",
+          "value": "\"9F10D650B7F5B57\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706580501997,
+      "stop": 1706580534966
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendMessageByTappingEnterInNotesChat.jpg",
+      "source": "a4e06470-29f7-436f-985b-db8aa4ad6a5e-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "85c50e5c-fcce-4195-9088-096cc74cda1c-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1706580501711,
+  "stop": 1706580535452
+}
