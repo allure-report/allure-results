@@ -1,0 +1,169 @@
+{
+  "uuid": "64390e48-2b3e-46df-8202-ff95c504e7a9",
+  "historyId": "86fa42f002d6a52ac385f3037d3a4eed",
+  "testCaseId": "c8e6cae46a992ee8292f825443f01ebf",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatMessageTests.CheckAddQuoteToLastMessageotherUsersInGroupChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "e9dbd8489e33"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddQuoteToLastMessageotherUsersInGroupChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatMessageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно цитировать сообщение другого участника в групповом чате",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <i data-v-52d7296d=\"\" class=\"q-icon notranslate material-icons cursor-pointer q-mr-sm q-mt-sm absolute-top-right\" aria-hidden=\"true\" role=\"presentation\" style=\"font-size: 24px;\">...</i> is not clickable at point (1884, 998). Other element would receive the click: <i class=\"q-icon notranslate material-icons\" aria-hidden=\"true\" role=\"img\">...</i>\n  (Session info: headless chrome=115.0.5790.110)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.TapOnBottomButtons(String typeOfButton) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 743\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_QuoteLeftMessage_100665721_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 525\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_QuoteLeftMessage_100665721_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по айди",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"6330\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706643537895,
+      "stop": 1706643538229
+    },
+    {
+      "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1706643538229,
+      "stop": 1706643552389
+    },
+    {
+      "name": "Цитировать отправленное левое сообщение",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <i data-v-52d7296d=\"\" class=\"q-icon notranslate material-icons cursor-pointer q-mr-sm q-mt-sm absolute-top-right\" aria-hidden=\"true\" role=\"presentation\" style=\"font-size: 24px;\">...</i> is not clickable at point (1884, 998). Other element would receive the click: <i class=\"q-icon notranslate material-icons\" aria-hidden=\"true\" role=\"img\">...</i>\n  (Session info: headless chrome=115.0.5790.110)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.TapOnBottomButtons(String typeOfButton) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 743\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_QuoteLeftMessage_100665721_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 525\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_QuoteLeftMessage_100665721_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того что чат имеет какое-либо сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "id",
+              "value": "\"6330\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706643552390,
+          "stop": 1706643552435
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "message",
+          "value": "\"66670DGE9A1G50B\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706643552389,
+      "stop": 1706643555207
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddQuoteToLastMessageotherUsersInGroupChat.jpg",
+      "source": "9d910049-0efb-4e2d-b566-fab395bc33f2-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "6163fb7c-07c0-40e4-b5bf-81bad8b031d2-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1706643537895,
+  "stop": 1706643555599
+}
