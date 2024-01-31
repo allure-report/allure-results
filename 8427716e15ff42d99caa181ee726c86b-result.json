@@ -1,0 +1,189 @@
+{
+  "uuid": "c4bf832f-8647-49f9-94b9-7df66b8ae559",
+  "historyId": "006d5e4a5b741fcca71d6ce7c567337f",
+  "testCaseId": "2a582846c7bba469e4bf4a391a7fb454",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatMessageTests.CopyMessage()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "513f9ba7e4d4"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CopyMessage"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatMessageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно скопировать сообщение из группового чата",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div class=\"q-editor__content\" contenteditable=\"true\" placeholder=\"Введите сообщение\" style=\"min-height: 56px;\"></div> is not clickable at point (1090, 1052). Other element would receive the click: <div data-v-21fdefad=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInTextInputFields(IWebDriver driver, By selector, Boolean valueFromAttribute) in /azp/_work/1/s/Services/CommonService.cs:line 318\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SendMessageOtherUsers_100665711_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 338\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SendMessageOtherUsers_100665711_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по айди",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"6330\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706660866734,
+      "stop": 1706660867203
+    },
+    {
+      "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1706660867203,
+      "stop": 1706660869879
+    },
+    {
+      "name": "Получить id последнего сообщения",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n   at System.Reflection.RuntimeMethodInfo.InvokeWithManyArguments(RuntimeMethodInfo mi, Int32 argCount, Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_WaitIfChatHasSomeMessageByOtherUsers_100665708_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessageByOtherUsers(String id)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_GetIdOfLastLeftMessage_100665773_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1463\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_GetIdOfLastLeftMessage_100665773_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того что чат имеет какое-либо сообщения",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Exception has been thrown by the target of an invocation.",
+            "trace": "   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n   at System.Reflection.RuntimeMethodInfo.InvokeWithManyArguments(RuntimeMethodInfo mi, Int32 argCount, Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SendMessageOtherUsers_100665711_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.SendMessageOtherUsers(String message)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_WaitIfChatHasSomeMessageByOtherUsers_100665708_o(String id) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 294\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_WaitIfChatHasSomeMessageByOtherUsers_100665708_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSyncVoid(Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Отправить сообщение в чат",
+              "status": "broken",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false,
+                "message": "element click intercepted: Element <div class=\"q-editor__content\" contenteditable=\"true\" placeholder=\"Введите сообщение\" style=\"min-height: 56px;\"></div> is not clickable at point (1090, 1052). Other element would receive the click: <div data-v-21fdefad=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+                "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInTextInputFields(IWebDriver driver, By selector, Boolean valueFromAttribute) in /azp/_work/1/s/Services/CommonService.cs:line 318\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SendMessageOtherUsers_100665711_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 338\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SendMessageOtherUsers_100665711_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "message",
+                  "value": "\"0BFF05B81FDCG7F\"",
+                  "excluded": false
+                }
+              ],
+              "start": 1706660873174,
+              "stop": 1706660881775
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "id",
+              "value": "\"6330\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706660871023,
+          "stop": 1706660881776
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1706660869879,
+      "stop": 1706660881776
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CopyMessage.jpg",
+      "source": "c5a05104-2783-4c03-8a12-9d4d676eca51-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "c462405b-b17a-4023-a169-f9b247cbd328-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1706660866733,
+  "stop": 1706660882225
+}
