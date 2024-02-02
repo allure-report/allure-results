@@ -1,0 +1,332 @@
+{
+  "uuid": "8ff74784-0839-49e2-b7bc-13358447a8a5",
+  "historyId": "9f70348833465ec9075236a1dac4b6b8",
+  "testCaseId": "0e54ef4620af3863f8ea6c147112a5fd",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatTests.CheckAddGroupChatWithUsers()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "f3073c2547ee"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddGroupChatWithUsers"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "можно добавить новый чат для групп и студентов",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "можно добавить новый чат для групп и студентов"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть список чатов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1706844061243,
+      "stop": 1706844061724
+    },
+    {
+      "name": "Нажать на кнопку добавления чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1706844061724,
+      "stop": 1706844063300
+    },
+    {
+      "name": "Заполнение полей Поток, Группа, Пользователи при создании групп.чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Рандомна выбрать контингента чата",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contingent",
+              "value": "\"Группы\"",
+              "excluded": false
+            },
+            {
+              "name": "isUser",
+              "value": "false",
+              "excluded": false
+            }
+          ],
+          "start": 1706844063720,
+          "stop": 1706844066170
+        },
+        {
+          "name": "Рандомна выбрать контингента чата",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contingent",
+              "value": "\"Пользователи\"",
+              "excluded": false
+            },
+            {
+              "name": "isUser",
+              "value": "true",
+              "excluded": false
+            }
+          ],
+          "start": 1706844066170,
+          "stop": 1706844068763
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"47403B27A5EG668\"",
+          "excluded": false
+        },
+        {
+          "name": "withUsers",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1706844063301,
+      "stop": 1706844068763
+    },
+    {
+      "name": "Клик на кнопку 'Создать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"47403B27A5EG668\"",
+          "excluded": false
+        }
+      ],
+      "start": 1706844068763,
+      "stop": 1706844070635
+    },
+    {
+      "name": "Проверка того что чат с пользователями был добавлен",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того что чат был добавлен",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"47403B27A5EG668\"",
+              "excluded": false
+            },
+            {
+              "name": "withRefresh",
+              "value": "true",
+              "excluded": false
+            },
+            {
+              "name": "isDisRoom",
+              "value": "false",
+              "excluded": false
+            }
+          ],
+          "start": 1706844070635,
+          "stop": 1706844072644
+        },
+        {
+          "name": "Нажать на кнопку 'Редактировать' чат",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1706844072644,
+          "stop": 1706844074455
+        },
+        {
+          "name": "Получить названия выбранной контингента чата",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contingent",
+              "value": "\"Группы\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706844074455,
+          "stop": 1706844076242
+        },
+        {
+          "name": "Получить названия выбранной контингента чата",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contingent",
+              "value": "\"Пользователи\"",
+              "excluded": false
+            }
+          ],
+          "start": 1706844076242,
+          "stop": 1706844078115
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"47403B27A5EG668\"",
+          "excluded": false
+        },
+        {
+          "name": "contingentList",
+          "value": "[\"АВИАЦИЯ ПОТОК 1\",\"Akmatova Nurkyz\"]",
+          "excluded": false
+        },
+        {
+          "name": "isDisRoom",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1706844070635,
+      "stop": 1706844078115
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "f945ff68-a857-4681-9868-df99cdb015d3-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1706844061243,
+  "stop": 1706844078121
+}
