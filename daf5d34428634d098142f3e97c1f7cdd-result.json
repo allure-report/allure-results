@@ -1,0 +1,169 @@
+{
+  "uuid": "93dd5f0e-5363-45d3-baa7-86c5ca3bf501",
+  "historyId": "86fa42f002d6a52ac385f3037d3a4eed",
+  "testCaseId": "c8e6cae46a992ee8292f825443f01ebf",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatMessageTests.CheckAddQuoteToLastMessageotherUsersInGroupChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "49c31bd866be"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddQuoteToLastMessageotherUsersInGroupChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatMessageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно цитировать сообщение другого участника в групповом чате",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <svg width=\"16\" height=\"16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"\">...</svg> is not clickable at point (604, 786). Other element would receive the click: <div data-v-21fdefad=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.ClickActionButton(IWebElement actionButton) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 614\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_QuoteLeftMessage_100665721_o(String message) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 520\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_QuoteLeftMessage_100665721_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по айди",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"6330\"",
+          "excluded": false
+        }
+      ],
+      "start": 1707110817065,
+      "stop": 1707110817433
+    },
+    {
+      "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1707110817433,
+      "stop": 1707110818752
+    },
+    {
+      "name": "Цитировать отправленное левое сообщение",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <svg width=\"16\" height=\"16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"\">...</svg> is not clickable at point (604, 786). Other element would receive the click: <div data-v-21fdefad=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.ClickActionButton(IWebElement actionButton) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 614\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_QuoteLeftMessage_100665721_o(String message) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 520\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_QuoteLeftMessage_100665721_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того что чат имеет какое-либо сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "id",
+              "value": "\"6330\"",
+              "excluded": false
+            }
+          ],
+          "start": 1707110818754,
+          "stop": 1707110818854
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "message",
+          "value": "\"D8AA6G763ABB3GG\"",
+          "excluded": false
+        }
+      ],
+      "start": 1707110818753,
+      "stop": 1707110821882
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddQuoteToLastMessageotherUsersInGroupChat.jpg",
+      "source": "48556ab1-7859-44ae-a9c4-c8a6b64b0ed0-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b7fea1b6-aa35-45da-bd70-c6440b6a79e1-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1707110817064,
+  "stop": 1707110822295
+}

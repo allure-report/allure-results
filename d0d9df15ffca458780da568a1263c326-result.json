@@ -1,0 +1,126 @@
+{
+  "uuid": "c06ac662-d67d-47f5-8fb5-7c591e5fea13",
+  "historyId": "2045361b1dad2fe0e711e17737b0db88",
+  "testCaseId": "fe24a02a274f512d05ccb60c869ec5a0",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.TestTrainSettingsValidationTests.RemoveAuthorInTestTrain()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "49c31bd866be"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "RemoveAuthorInTestTrain"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTrainSettingsValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Материал"
+    },
+    {
+      "name": "subSuite",
+      "value": "Конструктор тест-тренажера"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Материал"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Конструктор теста-тренажера: можно удалить автора",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),'Сохранено')]\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.TestCommonEditPage.WaitUntillSaveChangesSpinnerIsDisappear() in /azp/_work/3/s/Pages/TestCommonEditPage.cs:line 851\n   at OdinUiTests.Pages.TestCommonEditPage.__a$_around_RemoveAuthor_100666479_o(String name) in /azp/_work/3/s/Pages/TestCommonEditPage.cs:line 694\n   at OdinUiTests.Pages.TestCommonEditPage.__a$_around_RemoveAuthor_100666479_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования теста-тренажера",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1707111218662,
+      "stop": 1707111219514
+    },
+    {
+      "name": "В поле “Авторы материала” удалить автора",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.TestCommonEditPage.WaitUntillSaveChangesSpinnerIsDisappear() in /azp/_work/3/s/Pages/TestCommonEditPage.cs:line 851\n   at OdinUiTests.Pages.TestCommonEditPage.__a$_around_RemoveAuthor_100666479_o(String name) in /azp/_work/3/s/Pages/TestCommonEditPage.cs:line 694\n   at OdinUiTests.Pages.TestCommonEditPage.__a$_around_RemoveAuthor_100666479_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"Смирнов Семен\"",
+          "excluded": false
+        }
+      ],
+      "start": 1707111219514,
+      "stop": 1707111251185
+    }
+  ],
+  "attachments": [
+    {
+      "name": "RemoveAuthorInTestTrain.jpg",
+      "source": "7de505fd-f67d-4495-8563-593567173c08-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "4ad4fde9-241c-4974-a429-4afa4224c3a1-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1707111218452,
+  "stop": 1707111251570
+}

@@ -1,0 +1,242 @@
+{
+  "uuid": "b1c8b14b-39c7-4f15-8279-08c4039739cc",
+  "historyId": "4a3c7ae0a2fb5d71b8354917d832b9d3",
+  "testCaseId": "abdcc7fb14b738d346176e59a949e34b",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatMessageTests.CheckPinLastMessageInGroupChatByOtherUser()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "49c31bd866be"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckPinLastMessageInGroupChatByOtherUser"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatMessageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Не администратор чата может закрепить сообщение в групповом чате",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <i data-v-52d7296d=\"\" class=\"chat-icon cursor-pointer\" role=\"button\" tabindex=\"0\" aria-label=\"Отправить сообщение\" style=\"display: inline-flex; align-items: center;\">...</i> is not clickable at point (1782, 1052). Other element would receive the click: <button class=\"q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable link-notifications\" tabindex=\"0\" type=\"button\">...</button>\n  (Session info: headless chrome=115.0.5790.110)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.TapOnBottomButtons(String typeOfButton) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 744\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SendMessage_100665710_o(String message) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 323\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SendMessage_100665710_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по айди",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"6330\"",
+          "excluded": false
+        }
+      ],
+      "start": 1707110841169,
+      "stop": 1707110841466
+    },
+    {
+      "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1707110841466,
+      "stop": 1707110842497
+    },
+    {
+      "name": "Закрепить сообщения в чате",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n   at System.Reflection.RuntimeMethodInfo.InvokeWithManyArguments(RuntimeMethodInfo mi, Int32 argCount, Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SendMessage_100665710_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.SendMessage(String message)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_PinMassegeInChat_100665783_o() in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 1630\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_PinMassegeInChat_100665783_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того что чат имеет какое-либо сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1707110842498,
+          "stop": 1707110842672
+        },
+        {
+          "name": "Получить id последнего сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Проверка того что чат имеет какое-либо сообщения",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1707110843751,
+              "stop": 1707110843805
+            },
+            {
+              "name": "Ожидать пока появытся слово 'Отправляется...'",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1707110843805,
+              "stop": 1707110844854
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1707110842672,
+          "stop": 1707110844884
+        },
+        {
+          "name": "Отправить сообщение в чат",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "element click intercepted: Element <i data-v-52d7296d=\"\" class=\"chat-icon cursor-pointer\" role=\"button\" tabindex=\"0\" aria-label=\"Отправить сообщение\" style=\"display: inline-flex; align-items: center;\">...</i> is not clickable at point (1782, 1052). Other element would receive the click: <button class=\"q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable link-notifications\" tabindex=\"0\" type=\"button\">...</button>\n  (Session info: headless chrome=115.0.5790.110)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.TapOnBottomButtons(String typeOfButton) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 744\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SendMessage_100665710_o(String message) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 323\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_SendMessage_100665710_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1707110848608,
+              "stop": 1707110849681
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "message",
+              "value": "\"28F428455025E15\"",
+              "excluded": false
+            }
+          ],
+          "start": 1707110844942,
+          "stop": 1707110850773
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1707110842497,
+      "stop": 1707110850774
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckPinLastMessageInGroupChatByOtherUser.jpg",
+      "source": "ed912c4c-1e6a-4241-83de-409e345d5c28-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "f39d4aa0-2b34-4c64-87f1-9bfef83c8e61-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1707110838183,
+  "stop": 1707110851210
+}
