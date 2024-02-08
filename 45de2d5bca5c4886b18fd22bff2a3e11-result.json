@@ -1,0 +1,223 @@
+{
+  "uuid": "53e01bfd-e280-4a04-8803-e2ea23c01d40",
+  "historyId": "2b6caf0936d180190b3f45aa30bd0c78",
+  "testCaseId": "3e7e47e5bc0be09e0bd6be39b9d7a4a5",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortCreationTests.CheckCreateCohortWhenAllRequiredFieldsAreFilled(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "bfa11d7520aa"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateCohortWhenAllRequiredFieldsAreFilled"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortCreationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание потока ДО: можно создать поток, если все обязательные поля корректно заполнены",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".cohort-info .page-title\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.CohortSavedSuccessfully(String cohortTitle, String startDate, String endDate) in /azp/_work/4/s/Pages/CohortInfoPage.cs:line 414\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100665869_o(String cohortTitle, String startDate, String endDate) in /azp/_work/4/s/Pages/CohortInfoPage.cs:line 432\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100665869_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"3228\"",
+          "excluded": false
+        }
+      ],
+      "start": 1707365295570,
+      "stop": 1707365295868
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить' для добавления потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1707365295868,
+      "stop": 1707365297483
+    },
+    {
+      "name": "Вставить значение в поле 'Название'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1707365297483,
+      "stop": 1707365299287
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата начала'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1707365299287,
+      "stop": 1707365301720
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата окончания'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1707365301720,
+      "stop": 1707365304186
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1707365304186,
+      "stop": 1707365304236
+    },
+    {
+      "name": "Проверка корректности создания потока с выбранными датами",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.CohortSavedSuccessfully(String cohortTitle, String startDate, String endDate) in /azp/_work/4/s/Pages/CohortInfoPage.cs:line 414\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100665869_o(String cohortTitle, String startDate, String endDate) in /azp/_work/4/s/Pages/CohortInfoPage.cs:line 432\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100665869_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortTitle",
+          "value": "\"711D409C2215G36\"",
+          "excluded": false
+        },
+        {
+          "name": "startDate",
+          "value": "\"03.02.2024\"",
+          "excluded": false
+        },
+        {
+          "name": "endDate",
+          "value": "\"13.02.2024\"",
+          "excluded": false
+        }
+      ],
+      "start": 1707365304236,
+      "stop": 1707365334290
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateCohortWhenAllRequiredFieldsAreFilled.jpg",
+      "source": "856739f6-985f-4428-907d-2c91c90f5731-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "7c453c15-4033-4726-be37-30b2fa71f8ab-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "programId",
+      "value": "\"3228\"",
+      "excluded": false
+    }
+  ],
+  "start": 1707365295566,
+  "stop": 1707365334492
+}
