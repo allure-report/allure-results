@@ -1,0 +1,177 @@
+{
+  "uuid": "9a92eff3-e2a0-4097-a897-551f5582d2e3",
+  "historyId": "d37104981f912776fdde8b24cde46d34",
+  "testCaseId": "67c27622aef445b9f125df7bd6ac5058",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisContingentEditingTests.CheckAddTeacherByUserInfoInEditing(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "bfa11d7520aa"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddTeacherByUserInfoInEditing"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование дисциплины: добавление преподавателя из списка",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Преподаватель не был добавлен в дисциплину\nAssert.That(condition, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at OdinUiTests.Tests.Discipline.DisContingentEditingTests.CheckAddTeacherByUserInfoInEditing(String userInfo) in /azp/_work/4/s/Tests/Discipline/DisCreateEditTests.cs:line 935\n   at InvokeStub_DisContingentEditingTests.CheckAddTeacherByUserInfoInEditing(Object, Object, IntPtr*)\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"585\"",
+          "excluded": false
+        }
+      ],
+      "start": 1707364784752,
+      "stop": 1707364785113
+    },
+    {
+      "name": "Добавить/выбрать преподавателя/группу из выпадающего списка",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "contingent",
+          "value": "\"Преподаватель\"",
+          "excluded": false
+        },
+        {
+          "name": "userInfo",
+          "value": "\"Смирнов Семен\"",
+          "excluded": false
+        }
+      ],
+      "start": 1707364785113,
+      "stop": 1707364792106
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1707364792106,
+      "stop": 1707364792231
+    },
+    {
+      "name": "Проверка отображения преподавателя на странице дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "teacher",
+          "value": "\"Смирнов Семен\"",
+          "excluded": false
+        }
+      ],
+      "start": 1707364792231,
+      "stop": 1707364793433
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddTeacherByUserInfoInEditing.jpg",
+      "source": "b9a9a6d9-902f-486e-a0dd-59c967c2a366-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "bc2dcd0e-a68a-4902-8005-16d5be3d1eeb-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "userInfo",
+      "value": "\"Смирнов Семен\"",
+      "excluded": false
+    }
+  ],
+  "start": 1707364783891,
+  "stop": 1707364793787
+}
