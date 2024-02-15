@@ -1,0 +1,165 @@
+{
+  "uuid": "c5ad6f60-109f-45ca-8044-26651f3474f2",
+  "historyId": "207b72cf820319dfca6b6444f459ff32",
+  "testCaseId": "53faabdf96070a8089a64150dec54ef1",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortCreationValidationTests.CheckCreateCohortFromUnsuitableTemplate(System.Int32,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "99ce980d63b2"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateCohortFromUnsuitableTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortCreationValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание потока ДО: невозможно создать поток из шаблона программы ВО",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Allure.Net.Commons.Steps.StepFailedException : Step failed: Проверка того, что шаблон программы ВО не отображается в окне Библиотеки\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".rename-input .ellipsis\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.CohortCreateEditPage.TemplateIsNotAppear(String templateName, String typeOfProgram) in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 290\n   at OdinUiTests.Pages.CohortCreateEditPage.CheckTemplateIsNotAppear(String templateName) in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 285\n   at OdinUiTests.Tests.Cohort.CohortCreationValidationTests.CheckCreateCohortFromUnsuitableTemplate(Int32 templateId, String programId) in /azp/_work/1/s/Tests/Cohort/CohortCreateEditTests.cs:line 247\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortCreateEditPage.<>c__DisplayClass52_0.<TemplateIsNotAppear>b__0() in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 293\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass31_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"3228\"",
+          "excluded": false
+        }
+      ],
+      "start": 1708000253006,
+      "stop": 1708000253274
+    },
+    {
+      "name": "Нажать на кнопку 'Выбрать шаблон'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1708000253275,
+      "stop": 1708000255142
+    },
+    {
+      "name": "Переключиться на Библиотеку 'Высшая IT школа'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1708000255143,
+      "stop": 1708000308021
+    },
+    {
+      "name": "Проверка того, что шаблон программы ВО не отображается в окне Библиотеки",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1708000317501,
+      "stop": 1708000347674
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateCohortFromUnsuitableTemplate.jpg",
+      "source": "ae70d0e9-3500-4e54-801c-c430b578e7ea-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "78143632-d6dd-4a08-a896-956c115f666b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "templateId",
+      "value": "696940",
+      "excluded": false
+    },
+    {
+      "name": "programId",
+      "value": "\"3228\"",
+      "excluded": false
+    }
+  ],
+  "start": 1708000252032,
+  "stop": 1708000347924
+}

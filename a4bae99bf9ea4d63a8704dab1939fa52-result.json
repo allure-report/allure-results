@@ -1,0 +1,158 @@
+{
+  "uuid": "59e9d442-30c0-4026-ab07-88e9a74d1472",
+  "historyId": "af26c9048357f62d8bf558eac01a7dd8",
+  "testCaseId": "b0181dea8e819a198bae1c3f8e1a33d9",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortEditingTests.CheckEditCohortByFillingMaxNumberOfStudents()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "99ce980d63b2"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditCohortByFillingMaxNumberOfStudents"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование потока: успешное сохранение, с корректными значениями в поле ‘Максимальное количество студентов’",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Allure.Net.Commons.Steps.StepFailedException : Step failed: Проверка корректности изменения значения в поле ‘Максимальное количество студентов’\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Студентов')]\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.CohortInfoPage.CheckCohortSavedSuccessWithNumOfStudents(Int32 number, Boolean editing) in /azp/_work/1/s/Pages/CohortInfoPage.cs:line 538\n   at OdinUiTests.Tests.Cohort.CohortEditingTests.CheckEditCohortByFillingMaxNumberOfStudents() in /azp/_work/1/s/Tests/Cohort/CohortCreateEditTests.cs:line 484\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.<>c__DisplayClass58_0.<CheckCohortSavedSuccessWithNumOfStudents>b__0() in /azp/_work/1/s/Pages/CohortInfoPage.cs:line 541\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass31_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирование потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortId",
+          "value": "\"1940\"",
+          "excluded": false
+        }
+      ],
+      "start": 1708000336520,
+      "stop": 1708000336965
+    },
+    {
+      "name": "Отредактировать значение в поле ‘Максимальное количество студентов’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1708000336965,
+      "stop": 1708000338812
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1708000338812,
+      "stop": 1708000338959
+    },
+    {
+      "name": "Проверка корректности изменения значения в поле ‘Максимальное количество студентов’",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1708000338959,
+      "stop": 1708000369272
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditCohortByFillingMaxNumberOfStudents.jpg",
+      "source": "8c709eb6-7cd6-4df0-8519-ace7b0527934-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "abea51b0-e59a-41e7-89fc-d1f9a794c893-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1708000336520,
+  "stop": 1708000369536
+}
