@@ -1,0 +1,226 @@
+{
+  "uuid": "465ccf33-2441-4790-af78-abc4eac5ca48",
+  "historyId": "3bbc61c40116348ffea3e71be09f94a5",
+  "testCaseId": "c35375df774a10a89b186e55e6fb60b1",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupMiniChatTests.CheckEditLastMessageInGroupMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "5856f49ef28c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditLastMessageInGroupMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Мини-чат группового чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "можно редактировать сообщение в течение 4 часов после отправки",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div class=\"q-editor__content\" contenteditable=\"true\" placeholder=\"Введите сообщение\" style=\"min-height: 56px;\">...</div> is not clickable at point (1699, 1005). Other element would receive the click: <button class=\"q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable link-notifications\" tabindex=\"0\" type=\"button\">...</button>\n  (Session info: headless chrome=115.0.5790.110)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInTextInputFields(IWebDriver driver, By selector, Boolean valueFromAttribute) in /azp/_work/1/s/Services/CommonService.cs:line 318\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditMessage_100665716_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 411\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditMessage_100665716_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть главную страницу с открытием мини-чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "withRefresh",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1707980567833,
+      "stop": 1707980568922
+    },
+    {
+      "name": "Открыть чат в мини-чате по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1707980568923,
+          "stop": 1707980570017
+        },
+        {
+          "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1707980570315,
+          "stop": 1707980570986
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Новый чат\"",
+          "excluded": false
+        }
+      ],
+      "start": 1707980568922,
+      "stop": 1707980570986
+    },
+    {
+      "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1707980570986,
+      "stop": 1707980572053
+    },
+    {
+      "name": "Редактировать отправленное сообщение",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <div class=\"q-editor__content\" contenteditable=\"true\" placeholder=\"Введите сообщение\" style=\"min-height: 56px;\">...</div> is not clickable at point (1699, 1005). Other element would receive the click: <button class=\"q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable link-notifications\" tabindex=\"0\" type=\"button\">...</button>\n  (Session info: headless chrome=115.0.5790.110)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInTextInputFields(IWebDriver driver, By selector, Boolean valueFromAttribute) in /azp/_work/1/s/Services/CommonService.cs:line 318\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditMessage_100665716_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 411\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditMessage_100665716_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того что чат имеет какое-либо сообщения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1707980572053,
+          "stop": 1707980572119
+        },
+        {
+          "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1707980572415,
+          "stop": 1707980573476
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "message",
+          "value": "\"GD62C46EBC7D54A\"",
+          "excluded": false
+        }
+      ],
+      "start": 1707980572053,
+      "stop": 1707980575978
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditLastMessageInGroupMiniChat.jpg",
+      "source": "ba3f45b9-eac1-4910-9650-f95dfdcdd89d-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "5d3e6de6-cd7d-4bef-b4c1-fb54560c4ede-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1707980567833,
+  "stop": 1707980576494
+}
