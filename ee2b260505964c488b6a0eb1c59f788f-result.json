@@ -1,0 +1,187 @@
+{
+  "uuid": "32bf870e-5b4d-490b-8dc4-4fa7645b1bf4",
+  "historyId": "a856f1fbb3d365a74917d292ddc9dcd5",
+  "testCaseId": "502f9a7d9bdd96182cd3e2437425c919",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortCreationWarningModalTests.CheckCreateCohortWithoutMismatchWarningOfDuration()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "c54869f4ecca"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateCohortWithoutMismatchWarningOfDuration"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortCreationWarningModalTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание потока: нет предупреждения о несоответствии длительности потока для программ длительностью кроме 72, 144 и 256 часов",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".cohort-info .page-title\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.CohortSavedSuccessfully(String cohortTitle, String startDate, String endDate) in /azp/_work/2/s/Pages/CohortInfoPage.cs:line 414\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100665870_o(String cohortTitle, String startDate, String endDate) in /azp/_work/2/s/Pages/CohortInfoPage.cs:line 432\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100665870_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"4\"",
+          "excluded": false
+        }
+      ],
+      "start": 1709011813323,
+      "stop": 1709011813606
+    },
+    {
+      "name": "Вставить значение в поле 'Название'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1709011813606,
+      "stop": 1709011815519
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата окончания' (любой период обучения)",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1709011815520,
+      "stop": 1709011818459
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1709011818459,
+      "stop": 1709011818533
+    },
+    {
+      "name": "Проверка корректности создания потока с выбранными датами",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.CohortSavedSuccessfully(String cohortTitle, String startDate, String endDate) in /azp/_work/2/s/Pages/CohortInfoPage.cs:line 414\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100665870_o(String cohortTitle, String startDate, String endDate) in /azp/_work/2/s/Pages/CohortInfoPage.cs:line 432\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100665870_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortTitle",
+          "value": "\"74A0D7EE269G56G\"",
+          "excluded": false
+        },
+        {
+          "name": "startDate",
+          "value": "\"\"",
+          "excluded": false
+        },
+        {
+          "name": "endDate",
+          "value": "\"21.07.2024\"",
+          "excluded": false
+        }
+      ],
+      "start": 1709011818533,
+      "stop": 1709011848834
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateCohortWithoutMismatchWarningOfDuration.jpg",
+      "source": "067db59f-1a5a-4d53-ae19-e7446ae753b6-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "9525803b-5a51-438f-bf3f-419a13fd4958-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1709011813305,
+  "stop": 1709011849133
+}
