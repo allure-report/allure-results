@@ -1,0 +1,175 @@
+{
+  "uuid": "aaceb166-f4d9-4c5c-85ae-3e5514ff2330",
+  "historyId": "5b3eea6bbe2a484035ae958e1ae14927",
+  "testCaseId": "77637ed193d020ad77ec844cbb54ce75",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortEditingTests.CheckCreateCohortWithMismatchWarningOfDuration()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "9a6e6967e44d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateCohortWithMismatchWarningOfDuration"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование потока: появление модалки, если продолжительность потока меньше часов программы",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Модалка предупреждение о несоответствии длительности потока не появляется\nAssert.That(condition, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at NUnit.Framework.Legacy.ClassicAssert.True(Boolean condition, String message, Object[] args)\n   at OdinUiTests.Tests.Cohort.CohortEditingTests.CheckCreateCohortWithMismatchWarningOfDuration() in /azp/_work/5/s/Tests/Cohort/CohortCreateEditTests.cs:line 516\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирование потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortId",
+          "value": "\"3\"",
+          "excluded": false
+        }
+      ],
+      "start": 1709095604744,
+      "stop": 1709095605080
+    },
+    {
+      "name": "Выбрать значения в полях 'Дата начала' и 'Дата окончания'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "startDate",
+          "value": "\"23.02.2024\"",
+          "excluded": false
+        },
+        {
+          "name": "endDate",
+          "value": "\"03.04.2024\"",
+          "excluded": false
+        }
+      ],
+      "start": 1709095605080,
+      "stop": 1709095610311
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1709095610311,
+      "stop": 1709095610366
+    },
+    {
+      "name": "Проверка появления модалки предупреждения о несоответствии периода обучения потока длительности программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "duration",
+          "value": "144",
+          "excluded": false
+        }
+      ],
+      "start": 1709095610366,
+      "stop": 1709095610913
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateCohortWithMismatchWarningOfDuration.jpg",
+      "source": "b60ede2e-367a-4f95-8078-bfc12144ea33-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "d82a3429-ac2f-433f-9a18-96234c66661c-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1709095604581,
+  "stop": 1709095611144
+}
