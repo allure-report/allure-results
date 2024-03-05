@@ -1,0 +1,156 @@
+{
+  "uuid": "369e0996-52b5-46a5-a504-bffd5eae958d",
+  "historyId": "e2c319f20e4fb96cb73b926a406ecd34",
+  "testCaseId": "bf25a551564384d9f9cd00b0a271497c",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.ActivityEditingFormatTests.CheckRandomSetTypeActivityGetFormatIndependancyStudy()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "53e74c1831a8"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckRandomSetTypeActivityGetFormatIndependancyStudy"
+    },
+    {
+      "name": "testClass",
+      "value": "ActivityEditingFormatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обычная активность"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Автоматическое переключение на ‘Самостоятельное изучение’ при выборе конкретных типов",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Самостоятельное изучение')]\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckSelfStudyFlagIsDisplayed_100665633_o() in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1207\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckSelfStudyFlagIsDisplayed_100665633_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"447\"",
+          "excluded": false
+        }
+      ],
+      "start": 1709645682194,
+      "stop": 1709645682486
+    },
+    {
+      "name": "В поле 'Тип активности' выбрать значение 'Разработка'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1709645685055,
+      "stop": 1709645685783
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить' и подтвердить сохранение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1709645685783,
+      "stop": 1709645689054
+    },
+    {
+      "name": "Проверка флага ‘Самостоятельное изучение’ в заголовке активности",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckSelfStudyFlagIsDisplayed_100665633_o() in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1207\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckSelfStudyFlagIsDisplayed_100665633_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1709645689054,
+      "stop": 1709645719290
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckRandomSetTypeActivityGetFormatIndependancyStudy.jpg",
+      "source": "3482f72d-b7bd-4206-897a-2b9e2f3c4493-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "96b33651-a3e4-424f-848b-4601844528ba-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1709645682194,
+  "stop": 1709645719573
+}

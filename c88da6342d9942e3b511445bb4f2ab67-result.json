@@ -1,0 +1,143 @@
+{
+  "uuid": "92271548-2d02-4bf5-84ad-6c143e18746f",
+  "historyId": "522e32df222afce062be2b2a78b3297c",
+  "testCaseId": "06949df2c424d64240ec0b70c533bd8f",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.LibraryActionPanelTests.CheckSwitchToAnotherLibrary()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "53e74c1831a8"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSwitchToAnotherLibrary"
+    },
+    {
+      "name": "testClass",
+      "value": "LibraryActionPanelTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Библиотека, плиточный вид: можно переключаться на другую Библиотеку",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 256\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/1/s/Pages/LibraryPage.cs:line 338\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckLibraryIsSwitchedToAnother_100666280_o(String titleOfLibrary) in /azp/_work/1/s/Pages/LibraryPage.cs:line 838\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckLibraryIsSwitchedToAnother_100666280_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"24\"",
+          "excluded": false
+        }
+      ],
+      "start": 1709646031477,
+      "stop": 1709646031991
+    },
+    {
+      "name": "Переключиться на другую Библиотеку (рандомный выбор)",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1709646031991,
+      "stop": 1709646038375
+    },
+    {
+      "name": "Проверить корректное переключение на другую Библиотеку",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 256\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/1/s/Pages/LibraryPage.cs:line 338\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckLibraryIsSwitchedToAnother_100666280_o(String titleOfLibrary) in /azp/_work/1/s/Pages/LibraryPage.cs:line 838\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckLibraryIsSwitchedToAnother_100666280_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "titleOfLibrary",
+          "value": "\"Организации\"",
+          "excluded": false
+        }
+      ],
+      "start": 1709646038375,
+      "stop": 1709646069100
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSwitchToAnotherLibrary.jpg",
+      "source": "a2adec32-787c-4310-9e0e-e8a492518bfb-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "4e1378e2-08e4-4b72-8d32-d600116b5a4c-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1709646031477,
+  "stop": 1709646069372
+}
