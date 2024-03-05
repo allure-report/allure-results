@@ -1,0 +1,159 @@
+{
+  "uuid": "e4668c7a-ba5c-4da1-9907-8de3b649e00f",
+  "historyId": "8ab693b081bce345ea0f7bcf30c82e44",
+  "testCaseId": "3a658e4b22dbea2fa8098bc35b53f832",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.LibraryInListViewTests.CheckRemoveCatalogViaActionsButton()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "c593687fd20c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckRemoveCatalogViaActionsButton"
+    },
+    {
+      "name": "testClass",
+      "value": "LibraryInListViewTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Библиотека, списочный вид: можно удалить каталог через actions-кнопки",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : Удаленная сущность не исчезает из библиотеки",
+    "trace": "   at OdinUiTests.Pages.LibraryPage.CheckMaterialsOrCatalogIsRemoved(String name, Int32 count, Boolean isCatalog) in /azp/_work/2/s/Pages/LibraryPage.cs:line 475\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveCatalog_100666238_o(String catalogName, Boolean withRightClick) in /azp/_work/2/s/Pages/LibraryPage.cs:line 111\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveCatalog_100666238_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"20\"",
+          "excluded": false
+        }
+      ],
+      "start": 1709619611116,
+      "stop": 1709619611387
+    },
+    {
+      "name": "Переключить текущий вид Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "withRefresh",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "mode",
+          "value": "\"Список\"",
+          "excluded": false
+        }
+      ],
+      "start": 1709619611387,
+      "stop": 1709619613595
+    },
+    {
+      "name": "Удалить каталог из Библиотеки",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Удаленная сущность не исчезает из библиотеки",
+        "trace": "   at OdinUiTests.Pages.LibraryPage.CheckMaterialsOrCatalogIsRemoved(String name, Int32 count, Boolean isCatalog) in /azp/_work/2/s/Pages/LibraryPage.cs:line 475\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveCatalog_100666238_o(String catalogName, Boolean withRightClick) in /azp/_work/2/s/Pages/LibraryPage.cs:line 111\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveCatalog_100666238_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "catalogName",
+          "value": "\"Новый каталог\"",
+          "excluded": false
+        },
+        {
+          "name": "withRightClick",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1709619616949,
+      "stop": 1709619626697
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckRemoveCatalogViaActionsButton.jpg",
+      "source": "60e69f64-c097-4dec-9751-1e4bbe40248f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "27151538-6318-4fa9-9443-fc026329681d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1709619611110,
+  "stop": 1709619626966
+}
