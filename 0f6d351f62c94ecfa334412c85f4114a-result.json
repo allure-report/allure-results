@@ -1,0 +1,180 @@
+{
+  "uuid": "159dd34b-1b46-40ca-8e6e-5b7372fe9e6e",
+  "historyId": "5efdcb0eb49dd29d786179b3a30ca8a1",
+  "testCaseId": "e9a90f7580c7c11baac8435a3b38e001",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineMiniChatTests.CheckSendMessageByTappingEnterInDisciplineMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "dc79120e9df5"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendMessageByTappingEnterInDisciplineMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Мини-чат дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "можно отправить сообщения по нажатию на Enter",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div class=\"q-editor__content\" contenteditable=\"true\" placeholder=\"Введите сообщение\" style=\"min-height: 56px;\"></div> is not clickable at point (1699, 1005). Other element would receive the click: <button class=\"q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable link-notifications\" tabindex=\"0\" type=\"button\">...</button>\n  (Session info: headless chrome=115.0.5790.110)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInTextInputFields(IWebDriver driver, By selector, Boolean valueFromAttribute) in /azp/_work/1/s/Services/CommonService.cs:line 318\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_TapEnterToSendMessage_100665748_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 790\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_TapEnterToSendMessage_100665748_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть главную страницу с открытием мини-чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "withRefresh",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1710482325009,
+      "stop": 1710482325653
+    },
+    {
+      "name": "Открыть чат в мини-чате по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1710482325654,
+          "stop": 1710482326712
+        },
+        {
+          "name": "Ожидать пока спиннеры из мини-чата исчезнуть",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1710482326848,
+          "stop": 1710482327466
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Паттерны архитектуры\"",
+          "excluded": false
+        }
+      ],
+      "start": 1710482325654,
+      "stop": 1710482327466
+    },
+    {
+      "name": "Отправить сообщение нажатем на enter",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <div class=\"q-editor__content\" contenteditable=\"true\" placeholder=\"Введите сообщение\" style=\"min-height: 56px;\"></div> is not clickable at point (1699, 1005). Other element would receive the click: <button class=\"q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable link-notifications\" tabindex=\"0\" type=\"button\">...</button>\n  (Session info: headless chrome=115.0.5790.110)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInTextInputFields(IWebDriver driver, By selector, Boolean valueFromAttribute) in /azp/_work/1/s/Services/CommonService.cs:line 318\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_TapEnterToSendMessage_100665748_o(String message) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 790\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_TapEnterToSendMessage_100665748_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "message",
+          "value": "\"11FF373409C6D2B\"",
+          "excluded": false
+        }
+      ],
+      "start": 1710482327467,
+      "stop": 1710482329812
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendMessageByTappingEnterInDisciplineMiniChat.jpg",
+      "source": "bc32d135-67c9-4e82-a63e-7a5b21c8f42c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "dacb3acf-90f9-4f66-80c0-47d419be1bbc-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1710482325009,
+  "stop": 1710482330318
+}

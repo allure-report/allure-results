@@ -1,0 +1,233 @@
+{
+  "uuid": "ae4e4520-3916-4c0a-9472-6134936ff2d4",
+  "historyId": "6974afc98e704abea6353c03f6e01036",
+  "testCaseId": "e2370e05780d34562b7928b73a4f1c6e",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisContingentCreationTests.CheckAddTeacherByUserInfoInCreation(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "dc79120e9df5"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddTeacherByUserInfoInCreation"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentCreationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Добавление преподавателя из списка",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q-item.items-center\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100665984_o(String contingent, String userInfo) in /azp/_work/1/s/Pages/DisCommonEditPage.cs:line 345\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100665984_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isVO",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"1706\"",
+          "excluded": false
+        }
+      ],
+      "start": 1710482688202,
+      "stop": 1710482688563
+    },
+    {
+      "name": "Заполнение обязательных полей для создании дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Редактировать название дисциплины",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"8DCCGGDE4F696E3\"",
+              "excluded": false
+            }
+          ],
+          "start": 1710482688563,
+          "stop": 1710482691218
+        },
+        {
+          "name": "Редактировать краткое название дисциплины",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "shortName",
+              "value": "\"8DCCGGDE4F696E3\"",
+              "excluded": false
+            }
+          ],
+          "start": 1710482691218,
+          "stop": 1710482692856
+        },
+        {
+          "name": "Редактировать описание дисциплины",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "description",
+              "value": "\"8DCCGGDE4F696E3\"",
+              "excluded": false
+            }
+          ],
+          "start": 1710482692856,
+          "stop": 1710482694196
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "text",
+          "value": "\"8DCCGGDE4F696E3\"",
+          "excluded": false
+        }
+      ],
+      "start": 1710482688563,
+      "stop": 1710482694196
+    },
+    {
+      "name": "Добавить/выбрать преподавателя/группу из выпадающего списка",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100665984_o(String contingent, String userInfo) in /azp/_work/1/s/Pages/DisCommonEditPage.cs:line 345\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100665984_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "contingent",
+          "value": "\"Преподаватель\"",
+          "excluded": false
+        },
+        {
+          "name": "userInfo",
+          "value": "\"Тестовая Дарья\"",
+          "excluded": false
+        }
+      ],
+      "start": 1710482694196,
+      "stop": 1710482726780
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddTeacherByUserInfoInCreation.jpg",
+      "source": "60745a01-c19d-4149-b0fc-0b5e8fa18afc-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "19880177-299f-4e2b-9f9c-a9651adb170c-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "userInfo",
+      "value": "\"Тестовая Дарья\"",
+      "excluded": false
+    }
+  ],
+  "start": 1710482687833,
+  "stop": 1710482727074
+}
