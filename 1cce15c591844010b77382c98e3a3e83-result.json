@@ -1,0 +1,192 @@
+{
+  "uuid": "ad085438-e68d-455d-9719-91b4a5a0abd5",
+  "historyId": "02cff2cb6077911a5f5b9c9b632ca634",
+  "testCaseId": "9464dbfdcb41f45b04818f0fff82688e",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisciplineAnalyticsTests.CheckFilterByGroupName()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "140e976b6b62"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckFilterByGroupName"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineAnalyticsTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Проверка фильтра аналитики по названию группы",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : Имена студентов которые были получены с бека не совпадают с фронтом",
+    "trace": "   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckFilterByGroupIsWorking_100666275_o(String groupName) in /azp/_work/5/s/Pages/DisCommonInfoPage.cs:line 1776\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckFilterByGroupIsWorking_100666275_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"379\"",
+          "excluded": false
+        }
+      ],
+      "start": 1711951546316,
+      "stop": 1711951546708
+    },
+    {
+      "name": "Нажать на заголовок вкладки 'Аналитика'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1711951546708,
+      "stop": 1711951548984
+    },
+    {
+      "name": "Нажать на кнопку ‘Фильтры и поиск’ или 'Скрыть'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1711951548985,
+      "stop": 1711951550225
+    },
+    {
+      "name": "В поле ‘Группа’ в выпадающем списке выбрать рандомную группу",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1711951550225,
+      "stop": 1711951552146
+    },
+    {
+      "name": "Нажать на кнопку 'Применить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1711951552147,
+      "stop": 1711951552283
+    },
+    {
+      "name": "Проверка того, что фильтр по названию группы работает",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Имена студентов которые были получены с бека не совпадают с фронтом",
+        "trace": "   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckFilterByGroupIsWorking_100666275_o(String groupName) in /azp/_work/5/s/Pages/DisCommonInfoPage.cs:line 1776\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckFilterByGroupIsWorking_100666275_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "groupName",
+          "value": "\"TST-0002\"",
+          "excluded": false
+        }
+      ],
+      "start": 1711951552284,
+      "stop": 1711951553836
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckFilterByGroupName.jpg",
+      "source": "de32c7c2-3d57-44f3-ba55-cc3d7505e92c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "f5ed0db5-bc4f-4aff-9b4f-fc2a8fc70765-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1711951546316,
+  "stop": 1711951554094
+}
