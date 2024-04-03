@@ -1,0 +1,232 @@
+{
+  "uuid": "cbb2b0ed-a247-44fa-9910-0d7b10392f2b",
+  "historyId": "8392f081873215b7aa37d1f23dc6948e",
+  "testCaseId": "6338e3979bb92242c2fcd5ff1db040e0",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckAddRoomForGroupsAndStudents()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "43b9e8fd650c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddRoomForGroupsAndStudents"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно добавить комнату для групп и студентов",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Добавленные участники не совпадают с теми, которые были добавлены при создании чата\nAssert.That(condition, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckAddRoomForGroupsAndStudents() in /azp/_work/2/s/Tests/Chat/ChatTests.cs:line 367\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть список чатов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712144994862,
+      "stop": 1712144995315
+    },
+    {
+      "name": "Открыть раздел 'Дисциплины' и выбрать дисциплину",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineName",
+          "value": "\"Основы ООП\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712144995315,
+      "stop": 1712144998181
+    },
+    {
+      "name": "Нажать на тридот меню и выбрать 'Добавить комнату'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712144998181,
+      "stop": 1712144998615
+    },
+    {
+      "name": "Ввести значение в поле 'Название комнаты' в появившемся окне",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712144998615,
+      "stop": 1712144998909
+    },
+    {
+      "name": "В поле 'Доступ к комнате' выбрать значение – 'Отдельным студентам'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712144998909,
+      "stop": 1712145000276
+    },
+    {
+      "name": "Заполнить поля 'Группы' и 'Пользователи'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "groupName",
+          "value": "\"Группа 1\"",
+          "excluded": false
+        },
+        {
+          "name": "userName",
+          "value": "\"Anton Pucheglazov\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712145000276,
+      "stop": 1712145013221
+    },
+    {
+      "name": "Нажать на кнопку 'Создать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712145013221,
+      "stop": 1712145016001
+    },
+    {
+      "name": "Проверка того, что выбранные студенты были добавлены в комнату",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"6F13FG0G6F40FDF\"",
+          "excluded": false
+        },
+        {
+          "name": "disMembers",
+          "value": "[\"Рахмонов Саидахмад\",\"Тестовая Дарья\",\"Хамдамов Александр\",\"007 johnny\",\"0409 Александр\",\"044 Ne2da\",\"Doe John\",\"Smith John\",\"Пучеглазов Антон\",\"Тестовый Виктор\",\"Тестовый Иван\",\"Тестовый Петр\",\"Anton Pucheglazov\"]",
+          "excluded": false
+        }
+      ],
+      "start": 1712145016002,
+      "stop": 1712145019073
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddRoomForGroupsAndStudents.jpg",
+      "source": "3037f57c-9a2c-4581-92f0-cf66678cc9c4-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "da5e97f5-dda8-4679-a76a-75c163521c43-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1712144994146,
+  "stop": 1712145019476
+}
