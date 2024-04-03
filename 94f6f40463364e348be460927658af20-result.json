@@ -1,0 +1,199 @@
+{
+  "uuid": "b337292f-6faa-4d8b-b187-4e3d385f6905",
+  "historyId": "a41a33f50a409e0f962b817a73aa52d1",
+  "testCaseId": "7c822b9442c4a5f467dd98a481eecfb8",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.PersonalMiniChatTests.CheckFindSentMessageInPersonalMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "43b9e8fd650c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckFindSentMessageInPersonalMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "PersonalMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат личного чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно найти отправленное сообщение в миничате личного чата",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 50 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[text()='C6E1E0G18EAC1AG']\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsFound_100665948_o(Boolean isMinichat, String message) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1300\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsFound_100665948_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712145763313,
+      "stop": 1712145763716
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712145763716,
+      "stop": 1712145764689
+    },
+    {
+      "name": "В панели чатов найти чат по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Корзинкина Кира\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712145764689,
+      "stop": 1712145765496
+    },
+    {
+      "name": "Нажать на тридот меню и выбрать 'Поиск'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712145765499,
+      "stop": 1712145765709
+    },
+    {
+      "name": "В строке поиска ввести текст ранее отправленного сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "message",
+          "value": "\"C6E1E0G18EAC1AG\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712145765709,
+      "stop": 1712145765794
+    },
+    {
+      "name": "Проверка того, что отправленное сообщение было найдено",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 50 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsFound_100665948_o(Boolean isMinichat, String message) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1300\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsFound_100665948_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "message",
+          "value": "\"C6E1E0G18EAC1AG\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712145765794,
+      "stop": 1712145816480
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckFindSentMessageInPersonalMiniChat.jpg",
+      "source": "524b069c-1dbb-4d2c-a1b5-5193f5fb8bfb-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b7a838a4-bcc7-42ef-876b-7658a721d136-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1712145763313,
+  "stop": 1712145816878
+}
