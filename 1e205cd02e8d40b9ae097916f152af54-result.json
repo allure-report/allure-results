@@ -1,0 +1,182 @@
+{
+  "uuid": "5d377634-cc51-4c60-8737-ac0e3ececcf7",
+  "historyId": "69249feba5d16d5b3b5e544a0ceea7bf",
+  "testCaseId": "f21493a6bde948caffe02d6eb09b9ef8",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupMiniChatTests.CheckChangeGroupChatNameInMinichat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "2155c328716f"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckChangeGroupChatNameInMinichat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат группового чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно изменить название группового чата в миничате",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : Текст уведомления не совпадает с текстом 'Чат успешно изменен'",
+    "trace": "   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSaveButton_100665998_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 754\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSaveButton_100665998_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712320076200,
+      "stop": 1712320076510
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712320076510,
+      "stop": 1712320077394
+    },
+    {
+      "name": "В панели чатов найти чат по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"FG94FB52503902G\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712320077394,
+      "stop": 1712320084958
+    },
+    {
+      "name": "Нажать на тридот меню и выбрать 'Редактировать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712320084958,
+      "stop": 1712320085122
+    },
+    {
+      "name": "Отредактировать значение в поле 'Название чата' в появившемся окне",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712320085122,
+      "stop": 1712320087444
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Текст уведомления не совпадает с текстом 'Чат успешно изменен'",
+        "trace": "   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSaveButton_100665998_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 754\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSaveButton_100665998_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712320087444,
+      "stop": 1712320087627
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckChangeGroupChatNameInMinichat.jpg",
+      "source": "25e0e0e8-ff8e-44aa-8f7a-3b333aac63d8-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "57403e88-e3f2-400c-bd02-22c66edf1c2b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1712320076200,
+  "stop": 1712320088066
+}
