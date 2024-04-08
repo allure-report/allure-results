@@ -1,0 +1,128 @@
+{
+  "uuid": "70eabf89-0e11-42af-819d-177485f62956",
+  "historyId": "f57f974fab34d51e57675a775865fda4",
+  "testCaseId": "5a8a3add527a3085bf6130136d1e2002",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.UserProfile.UserInfoPageTests.CheckAddUserPhotoButtonIsClickable()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "069ee3b5cf7c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.UserProfile"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddUserPhotoButtonIsClickable"
+    },
+    {
+      "name": "testClass",
+      "value": "UserInfoPageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Профиль"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Профиль"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница профиля пользователя: можно загрузить фото",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.UploadPhoto(IWebDriver driver, String fileName) in /azp/_work/2/s/Services/CommonService.cs:line 402\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_AddUserPhoto_100666823_o(String name) in /azp/_work/2/s/Pages/UserProfilePage.cs:line 90\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_AddUserPhoto_100666823_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу профиля пользователя",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"36957\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712581126209,
+      "stop": 1712581126908
+    },
+    {
+      "name": "Загрузить фото пользователя",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.UploadPhoto(IWebDriver driver, String fileName) in /azp/_work/2/s/Services/CommonService.cs:line 402\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_AddUserPhoto_100666823_o(String name) in /azp/_work/2/s/Pages/UserProfilePage.cs:line 90\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_AddUserPhoto_100666823_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"download.jpg\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712581126908,
+      "stop": 1712581161149
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddUserPhotoButtonIsClickable.jpg",
+      "source": "64717d51-6044-430a-a676-91f974cdd21f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "38303ae1-5b6a-4b2d-b041-f234e9c6f45d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1712581126205,
+  "stop": 1712581161440
+}
