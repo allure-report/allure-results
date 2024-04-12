@@ -1,0 +1,118 @@
+{
+  "uuid": "a42614b9-5167-493a-824e-93b703beabc5",
+  "historyId": "ff218bd9a5731b99b23f622d8119c585",
+  "testCaseId": "91d4f439c5d8f1f468d129199a75a9c1",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.TestTrainSettingsValidationTests.ClearTagsFromTestTrain()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "555cf6fbbd1c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "ClearTagsFromTestTrain"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTrainSettingsValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Материал"
+    },
+    {
+      "name": "subSuite",
+      "value": "Конструктор тест-тренажера"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Материал"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Конструктор теста-тренажера: можно удалить теги знаний",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Allure.Net.Commons.Steps.StepFailedException : Step failed: Удалить тег знаний из теста-тренажера\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),'Сохранено')]\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.TestCommonEditPage.ClearTag(Boolean isTestTrain) in /azp/_work/3/s/Pages/TestCommonEditPage.cs:line 629\n   at OdinUiTests.Tests.Library.TestCreateEditCommon.ClearTag(IWebDriver driver, Boolean isTestTrain, String id) in /azp/_work/3/s/Tests/Library/TestCreateEditCommon.cs:line 68\n   at OdinUiTests.Tests.Library.TestTrainSettingsValidationTests.ClearTagsFromTestTrain() in /azp/_work/3/s/Tests/Library/TestTrainCreateEditTests.cs:line 110\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.TestCommonEditPage.WaitUntillSaveChangesSpinnerIsDisappear() in /azp/_work/3/s/Pages/TestCommonEditPage.cs:line 836\n   at OdinUiTests.Pages.TestCommonEditPage.<ClearTag>b__104_0() in /azp/_work/3/s/Pages/TestCommonEditPage.cs:line 631\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass31_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования теста-тренажера",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712898015074,
+      "stop": 1712898015347
+    },
+    {
+      "name": "Удалить тег знаний из теста-тренажера",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1712898015347,
+      "stop": 1712898046490
+    }
+  ],
+  "attachments": [
+    {
+      "name": "ClearTagsFromTestTrain.jpg",
+      "source": "01b5b7f4-63ac-4737-b48d-8905063c0e79-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "6ef15d5f-bb08-4a61-a1d6-da964c839bac-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1712898015020,
+  "stop": 1712898047083
+}
