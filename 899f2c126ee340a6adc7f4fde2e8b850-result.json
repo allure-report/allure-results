@@ -1,0 +1,317 @@
+{
+  "uuid": "4e3e9de8-859a-4075-9499-1acc3aaf6fc8",
+  "historyId": "4a93daaf21102a6c3c22a003fc1e9432",
+  "testCaseId": "938694a514a9922942e1b7a23dac5d76",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.RemovingTemplatesTests.CheckDeleteDisciplineTemplate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "5c40f9b9ced4"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteDisciplineTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "RemovingTemplatesTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница библиотеки: можно удалить шаблон дисциплины",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q-notification__message\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.ScreenDetectService.CheckContentNotFoundPageIsOpened(IWebDriver driver, String typeOfContent) in /azp/_work/4/s/Services/ScreenDetectService.cs:line 38\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckTemplateIsDeleted_100666653_o(String dirName, String templateId, String typeOfTemplate) in /azp/_work/4/s/Pages/LibraryPage.cs:line 1173\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckTemplateIsDeleted_100666653_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"345\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712905724274,
+      "stop": 1712905724608
+    },
+    {
+      "name": "Открыть каталог по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "dirName",
+          "value": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar, est vel iaculis fringilla, eros libero lobortis diam, et cursus arcu ex ut dui.\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712905724608,
+      "stop": 1712905726958
+    },
+    {
+      "name": "Удалить материал из Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "materialName",
+          "value": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar, est vel iaculis fringilla, eros libero lobortis diam, et cursus arcu ex ut dui.\"",
+          "excluded": false
+        },
+        {
+          "name": "withRightClick",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1712905726958,
+      "stop": 1712905732945
+    },
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"18927\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712905732945,
+      "stop": 1712905733275
+    },
+    {
+      "name": "Открыть каталог по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "dirName",
+          "value": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar, est vel iaculis fringilla, eros libero lobortis diam, et cursus arcu ex ut dui.\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712905733275,
+      "stop": 1712905734986
+    },
+    {
+      "name": "Удалить материал из Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "materialName",
+          "value": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar, est vel iaculis fringilla, eros libero lobortis diam, et cursus arcu ex ut dui.\"",
+          "excluded": false
+        },
+        {
+          "name": "withRightClick",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1712905734986,
+      "stop": 1712905740527
+    },
+    {
+      "name": "Проверка того, что шаблон был удален",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.ScreenDetectService.CheckContentNotFoundPageIsOpened(IWebDriver driver, String typeOfContent) in /azp/_work/4/s/Services/ScreenDetectService.cs:line 38\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckTemplateIsDeleted_100666653_o(String dirName, String templateId, String typeOfTemplate) in /azp/_work/4/s/Pages/LibraryPage.cs:line 1173\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckTemplateIsDeleted_100666653_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу Библиотеки",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "id",
+              "value": "\"18927\"",
+              "excluded": false
+            }
+          ],
+          "start": 1712905741626,
+          "stop": 1712905741985
+        },
+        {
+          "name": "Открыть каталог по названию",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "dirName",
+              "value": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar, est vel iaculis fringilla, eros libero lobortis diam, et cursus arcu ex ut dui.\"",
+              "excluded": false
+            }
+          ],
+          "start": 1712905743604,
+          "stop": 1712905744822
+        },
+        {
+          "name": "Открыть страницу шаблона дисциплины",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"1647076\"",
+              "excluded": false
+            }
+          ],
+          "start": 1712905745986,
+          "stop": 1712905746316
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "dirName",
+          "value": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar, est vel iaculis fringilla, eros libero lobortis diam, et cursus arcu ex ut dui.\"",
+          "excluded": false
+        },
+        {
+          "name": "templateId",
+          "value": "\"1647076\"",
+          "excluded": false
+        },
+        {
+          "name": "typeOfTemplate",
+          "value": "\"discipline\"",
+          "excluded": false
+        }
+      ],
+      "start": 1712905740527,
+      "stop": 1712905776497
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDeleteDisciplineTemplate.jpg",
+      "source": "2d50a59d-6ea9-4121-912f-6c4b9d2ce3df-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b3373e35-1561-4b3c-a6e3-b84e573c21e9-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1712905715384,
+  "stop": 1712905778602
+}
