@@ -1,0 +1,235 @@
+{
+  "uuid": "3f641d39-8c19-4bc7-b67b-c60bbf20dbe4",
+  "historyId": "75c4b98e6ec8a14720d7863199272419",
+  "testCaseId": "9580ffd8ab85a5f2849c499003c7b285",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomMiniChatMessageTests.CheckFindSentMessageInDisciplineRoomMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "906b79bbc89e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckFindSentMessageInDisciplineRoomMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomMiniChatMessageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно найти отправленное сообщение в миничате добавленной комнаты",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 50 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[text()='1B63FD5ECDADE6F']\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsFound_100666101_o(Boolean isMinichat, String message) in /azp/_work/5/s/Pages/ChatCommonPage.cs:line 1302\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsFound_100666101_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Object, IntPtr*)\n   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1713164244781,
+      "stop": 1713164245384
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1713164245384,
+      "stop": 1713164246711
+    },
+    {
+      "name": "В панели чатов найти дисциплину по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Паттерны архитектуры\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713164246711,
+      "stop": 1713164250064
+    },
+    {
+      "name": "Нажать на выпадающий список комнат",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1713164250065,
+      "stop": 1713164250212
+    },
+    {
+      "name": "Выбрать добавленную комнату чата дисциплины по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Другая комната2\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713164250212,
+      "stop": 1713164250885
+    },
+    {
+      "name": "Нажать на тридот меню и выбрать 'Поиск'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1713164250890,
+      "stop": 1713164251777
+    },
+    {
+      "name": "В строке поиска ввести текст ранее отправленного сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "message",
+          "value": "\"1B63FD5ECDADE6F\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713164251777,
+      "stop": 1713164251863
+    },
+    {
+      "name": "Проверка того, что отправленное сообщение было найдено",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 50 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsFound_100666101_o(Boolean isMinichat, String message) in /azp/_work/5/s/Pages/ChatCommonPage.cs:line 1302\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsFound_100666101_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "message",
+          "value": "\"1B63FD5ECDADE6F\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713164251864,
+      "stop": 1713164303129
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckFindSentMessageInDisciplineRoomMiniChat.jpg",
+      "source": "1919d05d-d615-4edd-bb5e-c9ce0f5b362e-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "8e582ed4-1697-41ad-b1f3-919bf6e58416-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1713164244780,
+  "stop": 1713164303665
+}
