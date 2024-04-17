@@ -1,0 +1,232 @@
+{
+  "uuid": "06608d40-d30c-47f0-a314-ac47b4f0a0a6",
+  "historyId": "7b5cc8aa062f0da496daa502fd69f121",
+  "testCaseId": "3a9fd4ad16e66689ca61accd2c0c4148",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupMiniChatMessageTests.CheckAddQuoteToLastMessageInGroupMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "5abe6e1215ba"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddQuoteToLastMessageInGroupMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupMiniChatMessageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат группового чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно цитировать сообщение в миничате группового чата",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Сообщение не был отвечен\nAssert.That(condition, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at OdinUiTests.Tests.Chat.GroupMiniChatMessageTests.CheckAddQuoteToLastMessageInGroupMiniChat() in /azp/_work/3/s/Tests/Chat/MiniChatTests.cs:line 507\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1713335609978,
+      "stop": 1713335610263
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1713335610263,
+      "stop": 1713335610904
+    },
+    {
+      "name": "В панели чатов найти чат по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Новый чат\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713335610905,
+      "stop": 1713335614219
+    },
+    {
+      "name": "Выбрать сообщение для цитирования",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1713335614220,
+      "stop": 1713335615397
+    },
+    {
+      "name": "В меню над сообщением выбрать 'Цитировать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1713335615397,
+      "stop": 1713335615539
+    },
+    {
+      "name": "В строке ввода ввести текст",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "randomText",
+          "value": "\"58EA6DG0GA5BE0C\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713335615539,
+      "stop": 1713335615718
+    },
+    {
+      "name": "Нажать на значок отправки сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1713335615719,
+      "stop": 1713335615856
+    },
+    {
+      "name": "Проверка того, что сообщение было процитировано",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"141570\"",
+          "excluded": false
+        },
+        {
+          "name": "randomText",
+          "value": "\"58EA6DG0GA5BE0C\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713335615856,
+      "stop": 1713335618241
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddQuoteToLastMessageInGroupMiniChat.jpg",
+      "source": "f5268d47-fc80-40ea-bee1-c23721ccfc6f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "7b02ae8e-7e49-446d-addb-0892b6827eba-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1713335609978,
+  "stop": 1713335618697
+}

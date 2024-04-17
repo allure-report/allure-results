@@ -1,0 +1,197 @@
+{
+  "uuid": "63415ce4-eb02-44c2-94b3-2007bd8456d8",
+  "historyId": "a9649e4525a6b37cb8b4af7ff20eefad",
+  "testCaseId": "5a5d0e7503827ca6bd38c1c05b9bc2b6",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisContingentEditingTests.CheckRemoveGroupAndStudentFromDiscipline()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "5abe6e1215ba"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckRemoveGroupAndStudentFromDiscipline"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Открепление от дисциплины групп и студентов",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Сущности не были откреплены из дисциплины\nAssert.That(condition, Is.False)\n  Expected: False\n  But was:  True\n",
+    "trace": "   at NUnit.Framework.Legacy.ClassicAssert.False(Boolean condition, String message, Object[] args)\n   at OdinUiTests.Tests.Discipline.DisContingentEditingTests.CheckRemoveGroupAndStudentFromDiscipline() in /azp/_work/3/s/Tests/Discipline/DisCreateEditTests.cs:line 979\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"585\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713335945676,
+      "stop": 1713335946100
+    },
+    {
+      "name": "Удалить преподавателя/группу/студента из поля Преподаватель/Группа/Студенты",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "contingent",
+          "value": "\"Группа\"",
+          "excluded": false
+        },
+        {
+          "name": "name",
+          "value": "\"группа 3\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713335946100,
+      "stop": 1713335950128
+    },
+    {
+      "name": "Удалить преподавателя/группу/студента из поля Преподаватель/Группа/Студенты",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "contingent",
+          "value": "\"Студент\"",
+          "excluded": false
+        },
+        {
+          "name": "name",
+          "value": "\"Данилина Диана Давидовна\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713335950128,
+      "stop": 1713335952670
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1713335952670,
+      "stop": 1713335952786
+    },
+    {
+      "name": "Проверка отображения на странице дисциплины преподавателя/группы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "members",
+          "value": "[\"группа 3\",\"Данилина Диана Давидовна\"]",
+          "excluded": false
+        }
+      ],
+      "start": 1713335952787,
+      "stop": 1713335955693
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckRemoveGroupAndStudentFromDiscipline.jpg",
+      "source": "2f53b4ba-361f-4d7c-b89a-012e9ae0eebf-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "cb8e84e7-ead0-468b-bdc9-75929d4678c0-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1713335941429,
+  "stop": 1713335956012
+}
