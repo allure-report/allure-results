@@ -1,0 +1,192 @@
+{
+  "uuid": "4605f5a8-f636-46dc-9893-57919f2c82b1",
+  "historyId": "42c7fc045d84a8f0c7daae0c0d124ebf",
+  "testCaseId": "e69d3ac6e39d3c3571cde65ca77aefdf",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskActivityTeacherTests.CheckSetIndividualDate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "37c78a74788d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSetIndividualDate"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskActivityTeacherTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница решения задания для преподавателя"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно установить индивидуальный срок сдачи",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".info\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_CheckIndividualDateIsSaved_100665965_o(String date) in /azp/_work/2/s/Pages/ActivitySolutionPage.cs:line 431\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_CheckIndividualDateIsSaved_100665965_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу решения задания",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"1491898\"",
+          "excluded": false
+        },
+        {
+          "name": "studentName",
+          "value": "\"Smith\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713764957972,
+      "stop": 1713764958413
+    },
+    {
+      "name": "Нажать на карандаш для установки даты сдачи",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1713764958414,
+      "stop": 1713764959652
+    },
+    {
+      "name": "Выбрать индивидуальный срок сдачи для решения студента",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "date",
+          "value": "\"27.04.2024\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713764959652,
+      "stop": 1713764963869
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить' в модалке выбора индивидуального срока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1713764963870,
+      "stop": 1713764964702
+    },
+    {
+      "name": "Проверка того, что индивидуальный срок сдачи был сохранен",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_CheckIndividualDateIsSaved_100665965_o(String date) in /azp/_work/2/s/Pages/ActivitySolutionPage.cs:line 431\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_CheckIndividualDateIsSaved_100665965_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "date",
+          "value": "\"27.04.2024\"",
+          "excluded": false
+        }
+      ],
+      "start": 1713764964703,
+      "stop": 1713764995210
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSetIndividualDate.jpg",
+      "source": "6882fe94-c9a5-4523-bb07-961b81201a20-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "474c3eaf-9158-4041-aaae-96c073ec54f3-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1713764957971,
+  "stop": 1713764995541
+}
