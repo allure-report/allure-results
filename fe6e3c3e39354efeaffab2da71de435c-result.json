@@ -1,0 +1,87 @@
+{
+  "uuid": "3fdb42b3-fb4b-4031-9d21-249cc9bf5052",
+  "historyId": "3e5b0bc9d682de5a5b5403aaa7fb797c",
+  "testCaseId": "682b9aeeb86b4d21a39d80bce2ba59cf",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.PersonalChatTests.CheckFindPersonalChatByNameInSearch()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "546ad3eeb88c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckFindPersonalChatByNameInSearch"
+    },
+    {
+      "name": "testClass",
+      "value": "PersonalChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Личный чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно найти личный чат в поиске по названию",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+    "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.get_Result()\n   at OdinUiTests.Services.ChatService.GetChatBaseInfo(String chatId, String userName) in /azp/_work/1/s/Services/ChatService.cs:line 258\n   at OdinUiTests.Services.ChatService.GetChatName(String chatId, String userName) in /azp/_work/1/s/Services/ChatService.cs:line 263\n   at OdinUiTests.Tests.Chat.ChatCommon.FindChatByNameInSearch(IWebDriver driver, String chatId) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 645\n   at OdinUiTests.Tests.Chat.PersonalChatTests.CheckFindPersonalChatByNameInSearch() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 933\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--HttpRequestException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "CheckFindPersonalChatByNameInSearch.jpg",
+      "source": "d3efde25-f2e8-410a-9824-e4a74e40d8c6-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "97a36d32-994c-485a-a394-7014e80c14d1-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1714811411741,
+  "stop": 1714811412323
+}
