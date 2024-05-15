@@ -1,0 +1,228 @@
+{
+  "uuid": "cd7043db-0a9c-4139-ad77-355e824aa2ce",
+  "historyId": "1f6f64720fc5fbdcd9657037bed27386",
+  "testCaseId": "57071a05f58a8c66d87ca6f1017d1653",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityAddingTests.CheckAddFileToControlTypeActivity()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "a3ab79e5a394"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddFileToControlTypeActivity"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityAddingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно загрузить материал типа Файл с компьютера в контрольную",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Allure.Net.Commons.Steps.StepFailedException : Step failed: Проверка того, что материал типа 'Файл' был загружен в активность\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(@href,'Content/Info')]\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonPage.CheckMaterialIsAdded(String type, Boolean isUploading, Boolean isTemplate, String name) in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 811\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddFileMaterial(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 62\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddFileMaterialToActivity(IWebDriver driver, String activityId) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 72\n   at OdinUiTests.Tests.Activity.TestActivityAddingTests.CheckAddFileToControlTypeActivity() in /azp/_work/3/s/Tests/Activity/TestActivityTests.cs:line 118\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.<>c__DisplayClass129_0.<CheckMaterialIsAdded>b__0() in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 814\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass31_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "activityId",
+              "value": "\"10085\"",
+              "excluded": false
+            }
+          ],
+          "start": 1715758163783,
+          "stop": 1715758165180
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"10085\"",
+          "excluded": false
+        }
+      ],
+      "start": 1715758163783,
+      "stop": 1715758165180
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить материалы'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1715758165180,
+      "stop": 1715758171963
+    },
+    {
+      "name": "Загрузить материал типа 'Файл' с компьютера",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"download.jpg\"",
+          "excluded": false
+        }
+      ],
+      "start": 1715758171963,
+      "stop": 1715758177339
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить' и подтвердить сохранение",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1715758177339,
+          "stop": 1715758179578
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1715758177339,
+      "stop": 1715758179578
+    },
+    {
+      "name": "Проверка того, что материал типа 'Файл' был загружен в активность",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1715758179578,
+      "stop": 1715758210057
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddFileToControlTypeActivity.jpg",
+      "source": "cb30cd5a-c088-41e1-b13a-c35069d2665c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "c9082ea0-590a-41ad-a6e9-639c6db504d1-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1715758162403,
+  "stop": 1715758210970
+}
