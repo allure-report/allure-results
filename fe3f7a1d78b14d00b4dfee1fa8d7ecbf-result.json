@@ -1,0 +1,202 @@
+{
+  "uuid": "44d58ffd-bcc6-4041-94b4-71d78f5d11a5",
+  "historyId": "366521d54a56898f8854dbf706367b12",
+  "testCaseId": "749790d7931b30295dc1b1c90528ab9d",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskActivityCreatingTests.CheckCreateTaskWithMutualVerification()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "c55d21247a68"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateTaskWithMutualVerification"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskActivityCreatingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание задания"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать активность типа Задание с взаимопроверкой",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div class=\"q-field__control-container col relative-position row no-wrap q-anchor--skip\">...</div> is not clickable at point (983, 994). Other element would receive the click: <div data-v-1c5e0458=\"\" class=\"bottom-button-panel flex items-center justify-end\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_SelectRandomValueInFinalGradeField_100665815_o() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 917\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_SelectRandomValueInFinalGradeField_100665815_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"379\"",
+          "excluded": false
+        }
+      ],
+      "start": 1715759415733,
+      "stop": 1715759416277
+    },
+    {
+      "name": "В поле 'Тип активности' выбрать значение 'Задание'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1715759416278,
+      "stop": 1715759420786
+    },
+    {
+      "name": "Ввести значение в поле 'Название активности'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"6903E32GBDDG9G0\"",
+          "excluded": false
+        }
+      ],
+      "start": 1715759420786,
+      "stop": 1715759420963
+    },
+    {
+      "name": "Ввести значение в поле 'Описание'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "description",
+          "value": "\"6903E32GBDDG9G0\"",
+          "excluded": false
+        }
+      ],
+      "start": 1715759420964,
+      "stop": 1715759422328
+    },
+    {
+      "name": "Выбрать радиобаттон 'Взаимопроверка'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1715759422329,
+      "stop": 1715759422582
+    },
+    {
+      "name": "Выбрать значение в поле 'Расчет итоговой оценки'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <div class=\"q-field__control-container col relative-position row no-wrap q-anchor--skip\">...</div> is not clickable at point (983, 994). Other element would receive the click: <div data-v-1c5e0458=\"\" class=\"bottom-button-panel flex items-center justify-end\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_SelectRandomValueInFinalGradeField_100665815_o() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 917\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_SelectRandomValueInFinalGradeField_100665815_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1715759422582,
+      "stop": 1715759423769
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateTaskWithMutualVerification.jpg",
+      "source": "21ec73ef-24ac-43e6-b71c-820294c3331e-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "fe32afdd-8506-42d5-927c-0f683e26af02-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1715759415716,
+  "stop": 1715759424038
+}
