@@ -1,0 +1,181 @@
+{
+  "uuid": "e112d053-70a6-4a82-82b3-19651a5415de",
+  "historyId": "098889dcc3d416cd709c48f25a58307b",
+  "testCaseId": "f1a5ed4ffbb034e1500244f7f294d153",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupMiniChatMessageTests.CheckSendTextMessageInGroupMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "71b0bb3eff73"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendTextMessageInGroupMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupMiniChatMessageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат группового чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно отправить текстовое сообщение в миничате группового чата",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <i data-v-6aa5b422=\"\" class=\"cursor-pointer\" role=\"button\" tabindex=\"0\" aria-label=\"Отправить сообщение\" style=\"display: inline-flex; align-items: center;\">...</i> is not clickable at point (1894, 1054). Other element would receive the click: <button class=\"q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable link-notifications\" tabindex=\"0\" type=\"button\">...</button>\n  (Session info: headless chrome=115.0.5790.110)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSendMessageButton_100666049_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 389\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSendMessageButton_100666049_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1715928399842,
+      "stop": 1715928400354
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1715928400355,
+      "stop": 1715928401306
+    },
+    {
+      "name": "В панели чатов найти чат по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Новый чат\"",
+          "excluded": false
+        }
+      ],
+      "start": 1715928401307,
+      "stop": 1715928404631
+    },
+    {
+      "name": "В строке ввода ввести текстовое сообщение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "randomText",
+          "value": "\"223B227579CD2E6\"",
+          "excluded": false
+        }
+      ],
+      "start": 1715928404631,
+      "stop": 1715928406108
+    },
+    {
+      "name": "Нажать на значок отправки сообщения",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <i data-v-6aa5b422=\"\" class=\"cursor-pointer\" role=\"button\" tabindex=\"0\" aria-label=\"Отправить сообщение\" style=\"display: inline-flex; align-items: center;\">...</i> is not clickable at point (1894, 1054). Other element would receive the click: <button class=\"q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable link-notifications\" tabindex=\"0\" type=\"button\">...</button>\n  (Session info: headless chrome=115.0.5790.110)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSendMessageButton_100666049_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 389\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSendMessageButton_100666049_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1715928406108,
+      "stop": 1715928407275
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendTextMessageInGroupMiniChat.jpg",
+      "source": "bd2c4cf6-43c3-4e29-9599-2124c4f6b2b6-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "10d177c5-abb3-4f87-9838-8fbf2b1fee5b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1715928399841,
+  "stop": 1715928407778
+}
