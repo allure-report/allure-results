@@ -1,0 +1,135 @@
+{
+  "uuid": "786e167f-b7e2-49fa-879f-923a31029d2c",
+  "historyId": "fd72df4fa98f1bd3d49223e92f455c5e",
+  "testCaseId": "38dffa9937cc426d85619232b9f182ac",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Program.ProgramCreationTests.CreateHighProgramOverviewFields(System.Boolean)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "d7a275951f42"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Program"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateHighProgramOverviewFields"
+    },
+    {
+      "name": "testClass",
+      "value": "ProgramCreationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Программа"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Программа"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Заполнить только обязательные поля у программы ВО",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@aria-label='Город*']\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_FillRequiredFields_100666787_o(String name) in /azp/_work/3/s/Pages/ProgramCreateEditPage.cs:line 84\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_FillRequiredFields_100666787_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isAdditionalEducationProgram",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "divisionId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716272387120,
+      "stop": 1716272387317
+    },
+    {
+      "name": "Заполнить обязательные поля на странице создания образовательной программы",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@aria-label='Город*']\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_FillRequiredFields_100666787_o(String name) in /azp/_work/3/s/Pages/ProgramCreateEditPage.cs:line 84\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_FillRequiredFields_100666787_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"EAA5780BE\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716272387317,
+      "stop": 1716272388167
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CreateHighProgramOverviewFields.jpg",
+      "source": "3c0cb62e-2c52-4a34-bb26-541ad67c38c0-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b1c81a90-b0ec-4923-b233-bafaf46ab474-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "isAddEduc",
+      "value": "false",
+      "excluded": false
+    }
+  ],
+  "start": 1716272387116,
+  "stop": 1716272388411
+}

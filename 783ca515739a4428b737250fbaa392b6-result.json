@@ -1,0 +1,159 @@
+{
+  "uuid": "27266341-8705-4339-9f9d-4bc4e2bf0027",
+  "historyId": "03709838d4259a74c3dfeb9b4ba22ba8",
+  "testCaseId": "06da3f16884c6dcbbf6b84ae1cb5380f",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamPageTests+ExamCreateEditTests.EditExamAddExaminer()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "d7a275951f42"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "EditExamAddExaminer"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamPageTests+ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание экзамена"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование экзамена добавление экзаменатора",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".text-tag\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_SetAdministrator_100666251_o(String name) in /azp/_work/3/s/Pages/CohortCreateEditPage.cs:line 278\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_SetAdministrator_100666251_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716272368872,
+      "stop": 1716272369335
+    },
+    {
+      "name": "Нажать на кнопку Редактировать экзамен",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716272369336,
+      "stop": 1716272371018
+    },
+    {
+      "name": "Выбрать администратора по имени в поле 'Администраторы потока'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".text-tag\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_SetAdministrator_100666251_o(String name) in /azp/_work/3/s/Pages/CohortCreateEditPage.cs:line 278\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_SetAdministrator_100666251_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"Тестовая Мария Сергеевна\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716272371019,
+      "stop": 1716272371049
+    }
+  ],
+  "attachments": [
+    {
+      "name": "EditExamAddExaminer.jpg",
+      "source": "743f8029-fd5c-4ec5-a5c3-1119ffe213a7-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "3a518081-e115-472e-81f2-5de3d5da268e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1716272368868,
+  "stop": 1716272371292
+}
