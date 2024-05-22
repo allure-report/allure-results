@@ -1,0 +1,177 @@
+{
+  "uuid": "f1d66ade-77c1-4b6f-b8c9-f00fd0839862",
+  "historyId": "ab6cd9a75d6c0607b73bcc6f6ea923b4",
+  "testCaseId": "242372d7d27ef6ea350085f8011134d5",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Program.ProgramEditingTests.CheckRemoveEducPaidProgramWithoutCohort()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "63eccf750054"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Program"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckRemoveEducPaidProgramWithoutCohort"
+    },
+    {
+      "name": "testClass",
+      "value": "ProgramEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Программа"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Программа"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно удалить платную программу без потоков программы ДО",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//p[contains(text(),'дополнительного')]\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckProgramIsDeleted_100666602_o(Int32 divisionId, Boolean isAdditional, Boolean isExam, String programName) in /azp/_work/2/s/Pages/DivisionInfoPage.cs:line 204\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckProgramIsDeleted_100666602_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17429\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716367408652,
+      "stop": 1716367408893
+    },
+    {
+      "name": "Нажать на кнопку Удалить",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716367408893,
+      "stop": 1716367409983
+    },
+    {
+      "name": "Нажать на кнопку Удалить в подтверждающей модалке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716367409983,
+      "stop": 1716367410639
+    },
+    {
+      "name": "Проверка, что программа была удалена",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckProgramIsDeleted_100666602_o(Int32 divisionId, Boolean isAdditional, Boolean isExam, String programName) in /azp/_work/2/s/Pages/DivisionInfoPage.cs:line 204\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckProgramIsDeleted_100666602_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "divisionId",
+          "value": "1",
+          "excluded": false
+        },
+        {
+          "name": "isAdditional",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "isExam",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "programName",
+          "value": "\"F4C727F7GG9988F\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716367410639,
+      "stop": 1716367441447
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckRemoveEducPaidProgramWithoutCohort.jpg",
+      "source": "7e49c711-b008-4f7c-a621-ba924e9bf471-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "24de1637-b235-4abc-af2f-3b6be9c8c58c-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1716367407680,
+  "stop": 1716367441695
+}

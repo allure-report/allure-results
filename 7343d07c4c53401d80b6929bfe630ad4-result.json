@@ -1,0 +1,221 @@
+{
+  "uuid": "82fe9d0a-4b6c-4ee5-94e4-c254c3a79b34",
+  "historyId": "2b6caf0936d180190b3f45aa30bd0c78",
+  "testCaseId": "3e7e47e5bc0be09e0bd6be39b9d7a4a5",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortCreationTests.CheckCreateCohortWhenAllRequiredFieldsAreFilled(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "63eccf750054"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateCohortWhenAllRequiredFieldsAreFilled"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortCreationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание потока ДО: можно создать поток, если все обязательные поля корректно заполнены",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  {\"entity\":0,\"isSuccess\":false,\"httpStatusCode\":404,\"errors\":[{\"key\":\"\",\"value\":\"Удаление потоков в рамках программ Нац. проекта Демография 2024 года запрещено\"}],\"successMessage\":\"\"}\nAssert.That(actual, Is.EqualTo(expected))\n  Expected: 200\n  But was:  404\n\nTearDown :   {\"entity\":0,\"isSuccess\":false,\"httpStatusCode\":404,\"errors\":[{\"key\":\"\",\"value\":\"Удаление потоков в рамках программ Нац. проекта Демография 2024 года запрещено\"}],\"successMessage\":\"\"}\nAssert.That(actual, Is.EqualTo(expected))\n  Expected: 200\n  But was:  404\n",
+    "trace": "   at OdinUiTests.Services.CohortService.RemoveCohortById(String cohortId) in /azp/_work/2/s/Services/CohortService.cs:line 150\n   at OdinUiTests.Services.CohortService.RemoveCreatedCohorts(String cohortId) in /azp/_work/2/s/Services/CohortService.cs:line 166\n   at OdinUiTests.Tests.Cohort.CohortCreationTests.ClassTearDown() in /azp/_work/2/s/Tests/Cohort/CohortCreateEditTests.cs:line 136\n   at InvokeStub_CohortCreationTests.ClassTearDown(Object, Object, IntPtr*)\n\n--TearDown\n   at OdinUiTests.Services.CohortService.RemoveCohortById(String cohortId) in /azp/_work/2/s/Services/CohortService.cs:line 150\n   at OdinUiTests.Services.CohortService.RemoveCreatedCohorts(String cohortId) in /azp/_work/2/s/Services/CohortService.cs:line 166\n   at OdinUiTests.Tests.Cohort.CohortCreationTests.ClassTearDown() in /azp/_work/2/s/Tests/Cohort/CohortCreateEditTests.cs:line 136\n   at InvokeStub_CohortCreationTests.ClassTearDown(Object, Object, IntPtr*)\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"3228\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716367005422,
+      "stop": 1716367005782
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить' для добавления потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716367005782,
+      "stop": 1716367008010
+    },
+    {
+      "name": "Вставить значение в поле 'Название'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716367008010,
+      "stop": 1716367009929
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата начала'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716367009929,
+      "stop": 1716367012645
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата окончания'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716367012645,
+      "stop": 1716367016010
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716367016010,
+      "stop": 1716367016110
+    },
+    {
+      "name": "Проверка корректности создания потока с выбранными датами",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortTitle",
+          "value": "\"56G5BEA188407FC\"",
+          "excluded": false
+        },
+        {
+          "name": "startDate",
+          "value": "\"08.05.2024\"",
+          "excluded": false
+        },
+        {
+          "name": "endDate",
+          "value": "\"26.08.2024\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716367016111,
+      "stop": 1716367018400
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateCohortWhenAllRequiredFieldsAreFilled.jpg",
+      "source": "1f1a3b76-9f03-4cbe-9f4b-018d66595320-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "8bcacb58-2d89-4bac-ae48-4194142e7c21-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "programId",
+      "value": "\"3228\"",
+      "excluded": false
+    }
+  ],
+  "start": 1716367005421,
+  "stop": 1716367019415
+}

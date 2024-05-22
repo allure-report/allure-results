@@ -1,0 +1,120 @@
+{
+  "uuid": "42225199-03ef-4e6a-966b-8da277e30734",
+  "historyId": "e636f44d85c5d77f65c666f0531e01ac",
+  "testCaseId": "2a98ba8dc840c8bcea721588cfe9bfc9",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.TestCenterTests.CheckExamineesAuthorization()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "63eccf750054"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckExamineesAuthorization"
+    },
+    {
+      "name": "testClass",
+      "value": "TestCenterTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Проверка авторизации экзаменуемого",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.InvalidOperationException : Sequence contains no elements",
+    "trace": "   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Services.CommonService.GetFullFileNameFromPart(String part) in /azp/_work/2/s/Services/CommonService.cs:line 449\n   at OdinUiTests.Services.CommonService.GetInfoAboutExaminee(IWebDriver driver) in /azp/_work/2/s/Services/CommonService.cs:line 629\n   at OdinUiTests.Pages.ProgramInfoPage.GetInfoAboutExaminee() in /azp/_work/2/s/Pages/ProgramInfoPage.cs:line 173\n   at OdinUiTests.Tests.Exams.TestCenterTests.CheckExamineesAuthorization() in /azp/_work/2/s/Tests/Exams/TestCenterTests.cs:line 23\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17321\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716367192463,
+      "stop": 1716367192880
+    },
+    {
+      "name": "Нажать на тридот экзамена и выбрать 'Скачать коды для входа'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716367192881,
+      "stop": 1716367194101
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckExamineesAuthorization.jpg",
+      "source": "c3d43988-9b6f-497d-986f-ed2524fbcb06-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "875d068f-f47e-412f-9e81-d4f446d0bad9-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1716367192463,
+  "stop": 1716367204793
+}
