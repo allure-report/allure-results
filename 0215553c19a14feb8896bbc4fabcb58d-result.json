@@ -1,0 +1,163 @@
+{
+  "uuid": "3ce64d1f-4814-497a-bdd9-47949b55b51d",
+  "historyId": "3b33d479e764c2c8ceb2e8dc54e246d1",
+  "testCaseId": "ae98097d762de8e4cf7e8a5504ee743e",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.PutExamArchive()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "926df6838da9"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "PutExamArchive"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание экзамена"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Отправка экзамена в архив",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.ArgumentOutOfRangeException : Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+    "trace": "   at System.Collections.Generic.List`1.get_Item(Int32 index)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnExamThreedotsAndSendToArchive_100666820_o(String examName) in /azp/_work/2/s/Pages/ProgramInfoPage.cs:line 140\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnExamThreedotsAndSendToArchive_100666820_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716392543352,
+      "stop": 1716392543874
+    },
+    {
+      "name": "Нажать на тридот экзамена и выбрать 'Отправить в архив'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+        "trace": "   at System.Collections.Generic.List`1.get_Item(Int32 index)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnExamThreedotsAndSendToArchive_100666820_o(String examName) in /azp/_work/2/s/Pages/ProgramInfoPage.cs:line 140\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnExamThreedotsAndSendToArchive_100666820_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку Редактировать экзамен",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1716392544960,
+          "stop": 1716392545852
+        },
+        {
+          "name": "Нажать на кнопку 'Сохранить'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1716392547279,
+          "stop": 1716392547359
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "examName",
+          "value": "\"0FCFA973G3DEEB1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716392543875,
+      "stop": 1716392547374
+    }
+  ],
+  "attachments": [
+    {
+      "name": "PutExamArchive.jpg",
+      "source": "819e6d9b-9a44-411e-be24-dd55f24256f0-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "19873b42-773c-4e2a-bf73-4479d879919b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1716392543349,
+  "stop": 1716392547644
+}
