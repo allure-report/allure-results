@@ -1,0 +1,168 @@
+{
+  "uuid": "dbafe71d-4193-4ded-8c08-69d6bbd0c14a",
+  "historyId": "ed1da46e24da940f8d2c9079e05231e2",
+  "testCaseId": "b73594e0bb86cfd9cba1df3dcf6e6798",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamPageTests.DeleteExaminationPlatform()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "926df6838da9"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "DeleteExaminationPlatform"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamPageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Удаление экзаменационной площадки",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h2[contains(text(),'площадки')]/parent::div/parent::div//a\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckProgramIsDeleted_100666617_o(Int32 divisionId, String titleOfBlockContains, String programName) in /azp/_work/2/s/Pages/DivisionInfoPage.cs:line 186\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckProgramIsDeleted_100666617_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17445\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716392050323,
+      "stop": 1716392050617
+    },
+    {
+      "name": "Нажать на кнопку Удалить",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716392050618,
+      "stop": 1716392051838
+    },
+    {
+      "name": "Нажать на кнопку Удалить в подтверждающей модалке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716392051838,
+      "stop": 1716392052466
+    },
+    {
+      "name": "Проверка, что программа была удалена",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckProgramIsDeleted_100666617_o(Int32 divisionId, String titleOfBlockContains, String programName) in /azp/_work/2/s/Pages/DivisionInfoPage.cs:line 186\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckProgramIsDeleted_100666617_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "divisionId",
+          "value": "2944",
+          "excluded": false
+        },
+        {
+          "name": "titleOfBlockContains",
+          "value": "\"площадки\"",
+          "excluded": false
+        },
+        {
+          "name": "programName",
+          "value": "\"A93G272E2250E3D\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716392052467,
+      "stop": 1716392083295
+    }
+  ],
+  "attachments": [
+    {
+      "name": "DeleteExaminationPlatform.jpg",
+      "source": "0145d4fb-6878-497b-a82d-144de588adcb-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "049c6e3c-fa9f-4cb9-9801-cad0eb6adc4b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1716392050084,
+  "stop": 1716392083527
+}
