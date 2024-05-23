@@ -1,0 +1,202 @@
+{
+  "uuid": "707482f5-e600-4eee-98fd-477b3fd5217f",
+  "historyId": "67164622a07cc44c35345030ef90b60d",
+  "testCaseId": "c709595fde79303438a0af9cd88a32df",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatMessageActionTests.CheckDeleteMessageInGroupChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "625e60ad848e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteMessageInGroupChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatMessageActionTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно удалить сообщение из группового чата",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q\\-editor__content\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(String needToCheck, Boolean needToSendMessage) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1079\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(Boolean needToSendMessage) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1105\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatPageOrRefreshPage(Boolean isMinichat, String chatId) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1122\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsDeleted(String messageId, Boolean isMinichat, String chatId) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1469\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsDeleted_100666203_o(Boolean isMinichat, String chatId, String messageId) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1477\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsDeleted_100666203_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"6330\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716453155029,
+      "stop": 1716453155288
+    },
+    {
+      "name": "Выбрать сообщение для удаления",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716453155289,
+      "stop": 1716453157263
+    },
+    {
+      "name": "В меню над сообщением нажать на троеточие",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716453157293,
+      "stop": 1716453157492
+    },
+    {
+      "name": "Выбрать пункт меню - 'Удалить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716453157493,
+      "stop": 1716453157638
+    },
+    {
+      "name": "Нажать на кнопку 'Удалить' в подтверждающей модалке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716453157638,
+      "stop": 1716453159355
+    },
+    {
+      "name": "Проверка того, что сообщение было удалено",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(String needToCheck, Boolean needToSendMessage) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1079\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(Boolean needToSendMessage) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1105\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatPageOrRefreshPage(Boolean isMinichat, String chatId) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1122\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsDeleted(String messageId, Boolean isMinichat, String chatId) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1469\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsDeleted_100666203_o(Boolean isMinichat, String chatId, String messageId) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1477\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsDeleted_100666203_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"6330\"",
+          "excluded": false
+        },
+        {
+          "name": "messageId",
+          "value": "\"7211127\"",
+          "excluded": false
+        }
+      ],
+      "start": 1716453159356,
+      "stop": 1716453192276
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDeleteMessageInGroupChat.jpg",
+      "source": "b4dbf738-15e6-4562-b95b-0842993b0c16-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "25b35f57-37ed-41e8-8b4b-b82bc9b6f6f3-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1716453155028,
+  "stop": 1716453192576
+}
