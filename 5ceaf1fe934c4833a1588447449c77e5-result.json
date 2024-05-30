@@ -1,0 +1,223 @@
+{
+  "uuid": "09ea986e-1fcb-49fd-a353-ef4a1830d6d3",
+  "historyId": "33e21b9be5de997de08fe513a0a2e800",
+  "testCaseId": "681976a96883855ce28393151363bbc3",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.ImportStudentsExamErrorFile()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "0860f9d3294a"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "ImportStudentsExamErrorFile"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание экзамена"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Проверка импорта студентов через некорректный файл",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Проверка импорта студентов через некорректный файл"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717044727436,
+      "stop": 1717044727865
+    },
+    {
+      "name": "Получить количество студентов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717044727865,
+      "stop": 1717044728075
+    },
+    {
+      "name": "Нажать на кнопку Редактировать или Импорт или Завершить обучение студентов для экзамена",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "buttonType",
+          "value": "\"import\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717044728075,
+      "stop": 1717044730448
+    },
+    {
+      "name": "В появившемся окне нажать на дропзону и загрузить файл",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "file",
+          "value": "\"import-exam-students-template -error.xlsx\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717044730448,
+      "stop": 1717044731056
+    },
+    {
+      "name": "Нажать на кнопку 'Импорт'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717044731057,
+      "stop": 1717044731121
+    },
+    {
+      "name": "Проверка появление уведомления и изменение количества студентов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717044731121,
+      "stop": 1717044761505
+    },
+    {
+      "name": "Получить количество студентов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717044761505,
+      "stop": 1717044761654
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "4c91eb5a-a9b2-4a55-8b2b-3b5e04e4432e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1717044727436,
+  "stop": 1717044761654
+}
