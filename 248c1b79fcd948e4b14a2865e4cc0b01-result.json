@@ -1,0 +1,132 @@
+{
+  "uuid": "59ddabf2-51a7-475b-abb4-1a24e69f2af2",
+  "historyId": "2a864c0eca7b7d1a80df2d798f0b7f9c",
+  "testCaseId": "4e423ef37e735d960ca0b6ecafa03493",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisciplineDurationTests.CheckIfEndDateEmptyInDiscipline()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "503cc8b6a418"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckIfEndDateEmptyInDiscipline"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineDurationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Ошибка валидации, если поле Дата окончания не заполнено",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 282\n   at OdinUiTests.Services.CommonService.AddDate(IWebDriver driver, Boolean isCohort, Boolean isStartDate, Boolean onlyOneDate, String date) in /azp/_work/1/s/Services/CommonService.cs:line 157\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddStartDate_100666454_o(String startDate) in /azp/_work/1/s/Pages/DisCommonEditPage.cs:line 266\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddStartDate_100666454_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"5944\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717480880138,
+      "stop": 1717480880418
+    },
+    {
+      "name": "Выбрать дату начала дисциплины",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 282\n   at OdinUiTests.Services.CommonService.AddDate(IWebDriver driver, Boolean isCohort, Boolean isStartDate, Boolean onlyOneDate, String date) in /azp/_work/1/s/Services/CommonService.cs:line 157\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddStartDate_100666454_o(String startDate) in /azp/_work/1/s/Pages/DisCommonEditPage.cs:line 266\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddStartDate_100666454_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "startDate",
+          "value": "\"30.05.2024\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717480880419,
+      "stop": 1717480911212
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckIfEndDateEmptyInDiscipline.jpg",
+      "source": "9a5cb632-e400-4c83-9c60-155e11650837-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "764586bd-bea1-4fe2-8c1d-89d15008924d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1717480880138,
+  "stop": 1717480911492
+}
