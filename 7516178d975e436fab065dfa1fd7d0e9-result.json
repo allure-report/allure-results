@@ -1,0 +1,162 @@
+{
+  "uuid": "b5677bb9-68a5-4603-94c6-fe347836d387",
+  "historyId": "39f0f4e634f7cc87ea9ccdda3afe8824",
+  "testCaseId": "91009728b66897a34d58e4563bfa9a11",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.CheckSendExamToArchive()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "c9c42dfa8af1"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendExamToArchive"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание экзамена"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Отправка экзамена в архив",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1095, 581). Other element would receive the click: <div data-v-07003803=\"\" class=\"q-card confirm-modal q-pa-lg\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnConfirmArchiveButton_100666859_o() in /azp/_work/1/s/Pages/ProgramInfoPage.cs:line 149\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnConfirmArchiveButton_100666859_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717604261045,
+      "stop": 1717604261397
+    },
+    {
+      "name": "Нажать на тридот экзамена по ее названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "examName",
+          "value": "\"D57CD7EB1A5G6EC\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717604261398,
+      "stop": 1717604262923
+    },
+    {
+      "name": "Нажать на тридот экзамена по ее названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717604262923,
+      "stop": 1717604263161
+    },
+    {
+      "name": "В подтверждающей модалке нажать на кнопку 'Да' для архивации потока",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1095, 581). Other element would receive the click: <div data-v-07003803=\"\" class=\"q-card confirm-modal q-pa-lg\">...</div>\n  (Session info: headless chrome=115.0.5790.110)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnConfirmArchiveButton_100666859_o() in /azp/_work/1/s/Pages/ProgramInfoPage.cs:line 149\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnConfirmArchiveButton_100666859_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717604263162,
+      "stop": 1717604264305
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendExamToArchive.jpg",
+      "source": "76ebfe8f-b57a-4b42-9ebb-d0bfea60e26c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "d6fcabef-892b-4869-adcf-3a641afab117-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1717604260717,
+  "stop": 1717604264551
+}

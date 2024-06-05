@@ -1,0 +1,118 @@
+{
+  "uuid": "05709737-af7d-4891-a98a-0a7c3d224d29",
+  "historyId": "bed498249ae8015fd3c79c1a88661eda",
+  "testCaseId": "5ee1c8f1a13a3f7a4b8049169fea2649",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.StoсkMarket.StockMarketLotTests.CheckTransitionToPageOfPurchasedMaterial()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "c9c42dfa8af1"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.StoсkMarket"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckTransitionToPageOfPurchasedMaterial"
+    },
+    {
+      "name": "testClass",
+      "value": "StockMarketLotTests"
+    },
+    {
+      "name": "suite",
+      "value": "Биржа"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Биржа"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница лота: кнопка Страница материала работает для приобретённого лота",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),'Страница материала')]\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.StockMarketPage.__a$_around_ClickOnMaterialPageButton_100666928_o() in /azp/_work/1/s/Pages/StockMarketPage.cs:line 136\n   at OdinUiTests.Pages.StockMarketPage.__a$_around_ClickOnMaterialPageButton_100666928_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу лота",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "lotId",
+          "value": "\"16\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717604497950,
+      "stop": 1717604498746
+    },
+    {
+      "name": "Нажать на кнопку 'Страница материала' на странице лота",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.StockMarketPage.__a$_around_ClickOnMaterialPageButton_100666928_o() in /azp/_work/1/s/Pages/StockMarketPage.cs:line 136\n   at OdinUiTests.Pages.StockMarketPage.__a$_around_ClickOnMaterialPageButton_100666928_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717604498746,
+      "stop": 1717604528787
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckTransitionToPageOfPurchasedMaterial.jpg",
+      "source": "c705806b-7aad-4e9f-8521-dfc8da4e328a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "07461dcd-7d7b-424a-9643-b1117f3b0489-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1717604497949,
+  "stop": 1717604529341
+}
