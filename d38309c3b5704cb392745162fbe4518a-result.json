@@ -1,0 +1,187 @@
+{
+  "uuid": "65a02f9b-1aaf-402e-b27b-5936abcf7bfa",
+  "historyId": "6578cda348eeb9dcb89c86cb723f0e02",
+  "testCaseId": "73eb4b631093e64ed9400999c7117355",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamPageTests.CreateExaminationPlatformWithError(System.Boolean)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "b2d7b116c85e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateExaminationPlatformWithError"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamPageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Cозданиe экзаменационной площадки если не заполнить обязательное поле",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),'Обязательное поле')]\"}\n  (Session info: headless chrome=115.0.5790.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_CheckCreateWithErrorEducationalProgram_100666849_o() in /azp/_work/7/s/Pages/ProgramCreateEditPage.cs:line 201\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_CheckCreateWithErrorEducationalProgram_100666849_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isAdditionalEducationProgram",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "divisionId",
+          "value": "\"2921\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717574619962,
+      "stop": 1717574620217
+    },
+    {
+      "name": "Не заполнить одно обязательное поле при создании образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"45E471DG7\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717574620217,
+      "stop": 1717574621787
+    },
+    {
+      "name": "Нажать на кнопку Сохранить",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717574621787,
+      "stop": 1717574622895
+    },
+    {
+      "name": "Проверка появления ошибки при не заполненном обязательном поле при создании программы ВО/ДПО",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_CheckCreateWithErrorEducationalProgram_100666849_w_0(Object[])\n   at OdinUiTests.Pages.ProgramCreateEditPage.CheckCreateWithErrorEducationalProgram()\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_CheckCreateWithErrorEducationalProgram_100666866_o() in /azp/_work/7/s/Pages/ProgramInfoPage.cs:line 233\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_CheckCreateWithErrorEducationalProgram_100666866_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка на появление ошибки при незаполненном обязательном поле в создании образовательной программы",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 30 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_CheckCreateWithErrorEducationalProgram_100666849_o() in /azp/_work/7/s/Pages/ProgramCreateEditPage.cs:line 201\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_CheckCreateWithErrorEducationalProgram_100666849_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1717574622895,
+          "stop": 1717574652932
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717574622895,
+      "stop": 1717574652933
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CreateExaminationPlatformWithError.jpg",
+      "source": "b743dfb2-bd15-46f5-be59-141969f9bd98-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "f516f34d-9690-4faa-b9b1-482f62509d6b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "isAddEduc",
+      "value": "true",
+      "excluded": false
+    }
+  ],
+  "start": 1717574619961,
+  "stop": 1717574653225
+}

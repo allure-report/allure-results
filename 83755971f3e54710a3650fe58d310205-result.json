@@ -1,0 +1,142 @@
+{
+  "uuid": "6d41d96b-ba92-48ec-96b1-db38859c31c6",
+  "historyId": "a095d26a316ddfb0a48550039a9bd537",
+  "testCaseId": "19c6ee7de0a5faf781357993bff13c86",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisContingentCreationValidationTests.CheckUnableAddStudentFromAnotherCohortInCreation()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "b2d7b116c85e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckUnableAddStudentFromAnotherCohortInCreation"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentCreationValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Невозможно добавить студента из стороннего потока",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_CheckAddNotCohortMembersByName_100666491_o(String contingent, String name) in /azp/_work/7/s/Pages/DisCommonEditPage.cs:line 704\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_CheckAddNotCohortMembersByName_100666491_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isVO",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"1706\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717574559233,
+      "stop": 1717574559866
+    },
+    {
+      "name": "Проверка невозможности добавления студента/группы из стороннего потока",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_CheckAddNotCohortMembersByName_100666491_o(String contingent, String name) in /azp/_work/7/s/Pages/DisCommonEditPage.cs:line 704\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_CheckAddNotCohortMembersByName_100666491_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "contingent",
+          "value": "\"Студент\"",
+          "excluded": false
+        },
+        {
+          "name": "name",
+          "value": "\"Костюшко Тадеуш\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717574559867,
+      "stop": 1717574593895
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckUnableAddStudentFromAnotherCohortInCreation.jpg",
+      "source": "df6c4f29-86a1-41ca-9cd3-64c5dbf1c919-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "95316e1c-899e-43b1-99b3-8f80697b3789-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1717574555670,
+  "stop": 1717574594126
+}
