@@ -1,0 +1,151 @@
+{
+  "uuid": "0a4078cf-2dc2-4355-8d63-e26ae7d56907",
+  "historyId": "3c64a79112034ab1e92d5e9386ef3b45",
+  "testCaseId": "e2c284768e5345db1afadee29233779c",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityStatusWithOneAttemptTests.CheckNoStatusWithOneIncompleteAttempt(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "fd72a6167803"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckNoStatusWithOneIncompleteAttempt"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityStatusWithOneAttemptTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Прохождение теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Отсутствует статус и иконка для одной незавершенной попытки в индивидуальной контрольной",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Приступить')]\"}\n  (Session info: chrome-headless-shell=125.0.6422.141); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_ClickOnStartButton_100666681_o() in /azp/_work/4/s/Pages/ExamOptionsPage.cs:line 57\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_ClickOnStartButton_100666681_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"90155\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717741956309,
+      "stop": 1717741957052
+    },
+    {
+      "name": "Нажать на кнопку 'Перейти к тесту' со страницы активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717741957052,
+      "stop": 1717741960042
+    },
+    {
+      "name": "Нажать на кнопку 'Приступить'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_ClickOnStartButton_100666681_o() in /azp/_work/4/s/Pages/ExamOptionsPage.cs:line 57\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_ClickOnStartButton_100666681_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717741960042,
+      "stop": 1717741990384
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckNoStatusWithOneIncompleteAttempt.jpg",
+      "source": "85084341-4e5d-4caf-92c8-13e0a8069e7d-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "d6e2e989-983c-4cb7-90ed-4ec765e15c49-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "actId",
+      "value": "\"90155\"",
+      "excluded": false
+    }
+  ],
+  "start": 1717741955763,
+  "stop": 1717741990550
+}
