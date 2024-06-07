@@ -1,0 +1,192 @@
+{
+  "uuid": "a00503a6-0d9f-4a62-8e1d-32d990f39eb2",
+  "historyId": "956b1e81eda743a2137e2c6412cd77ec",
+  "testCaseId": "a04c7166acd159d508f8531d6e47caa2",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisContingentEditingTests.CheckAddGroupAndStudentToDiscipline()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "fd72a6167803"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddGroupAndStudentToDiscipline"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Добавления к дисциплине групп и студентов",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Сущности не были добавлены в дисциплину\nAssert.That(condition, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at OdinUiTests.Tests.Discipline.DisContingentEditingTests.CheckAddGroupAndStudentToDiscipline() in /azp/_work/4/s/Tests/Discipline/DisCreateEditTests.cs:line 963\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"585\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717741409869,
+      "stop": 1717741410152
+    },
+    {
+      "name": "Добавить/выбрать преподавателя/группу из выпадающего списка",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "contingent",
+          "value": "\"Группа\"",
+          "excluded": false
+        },
+        {
+          "name": "userInfo",
+          "value": "\"группа 3\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717741410152,
+      "stop": 1717741418448
+    },
+    {
+      "name": "Выбрать студента из выпадающего списка по имени",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"Ветрова Вероника Викторовна\"",
+          "excluded": false
+        }
+      ],
+      "start": 1717741418449,
+      "stop": 1717741421323
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717741421323,
+      "stop": 1717741421441
+    },
+    {
+      "name": "Проверка отображения на странице дисциплины преподавателя/группы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "members",
+          "value": "[\"группа 3\",\"Ветрова Вероника Викторовна\"]",
+          "excluded": false
+        }
+      ],
+      "start": 1717741421442,
+      "stop": 1717741426749
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddGroupAndStudentToDiscipline.jpg",
+      "source": "4ab560f8-f1dd-4916-bdf9-46a54fce4bd1-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "9f131d1f-ccb2-4909-b5d7-b9c2cb0d9d26-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1717741404949,
+  "stop": 1717741427089
+}
