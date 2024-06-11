@@ -1,0 +1,198 @@
+{
+  "uuid": "405a039d-7710-4840-b8f9-e465595d36ad",
+  "historyId": "53968db86d505f15b14dffe0b31d79de",
+  "testCaseId": "ddda03422caadc4e5bd6adc775548231",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.TestBlocksAndVariantsValidationTests.CheckDuplicateTestVariant()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "d594b186d0c2"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDuplicateTestVariant"
+    },
+    {
+      "name": "testClass",
+      "value": "TestBlocksAndVariantsValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Материал"
+    },
+    {
+      "name": "subSuite",
+      "value": "Конструктор теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Материал"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Конструктор теста: можно дублировать вариант",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.StaleElementReferenceException : stale element reference: stale element not found in the current frame\n  (Session info: chrome-headless-shell=125.0.6422.141); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ContentInfoPage.__a$_around_CheckVariantIsDuplicated_100666407_o(List`1 varAndQuesCount) in /azp/_work/2/s/Pages/ContentInfoPage.cs:line 432\n   at OdinUiTests.Pages.ContentInfoPage.__a$_around_CheckVariantIsDuplicated_100666407_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирование теста",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"35\"",
+          "excluded": false
+        }
+      ],
+      "start": 1718083635981,
+      "stop": 1718083636219
+    },
+    {
+      "name": "Нажать на троеточие первого варианта",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1718083636219,
+      "stop": 1718083637563
+    },
+    {
+      "name": "Нажать на кнопку ‘Дублировать’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1718083637563,
+      "stop": 1718083637707
+    },
+    {
+      "name": "Подождать пока появится слово “Сохранено”",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1718083637707,
+      "stop": 1718083640448
+    },
+    {
+      "name": "Нажать на последнюю хлебную крошку для перехода на страницу материала",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "CheckDuplicateTestVariant-BeforeClickOnBreadCrumbs.jpg",
+          "source": "2bde3d1e-3c1c-4a89-bc9c-1403f8a3ec04-attachment.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "parameters": [],
+      "start": 1718083641196,
+      "stop": 1718083641499
+    },
+    {
+      "name": "Проверка того, что вариант был дублирован",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "stale element reference: stale element not found in the current frame\n  (Session info: chrome-headless-shell=125.0.6422.141); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ContentInfoPage.__a$_around_CheckVariantIsDuplicated_100666407_o(List`1 varAndQuesCount) in /azp/_work/2/s/Pages/ContentInfoPage.cs:line 432\n   at OdinUiTests.Pages.ContentInfoPage.__a$_around_CheckVariantIsDuplicated_100666407_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "varAndQuesCount",
+          "value": "[4,5]",
+          "excluded": false
+        }
+      ],
+      "start": 1718083641500,
+      "stop": 1718083641607
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDuplicateTestVariant.jpg",
+      "source": "77502902-ad75-46a6-a2b6-586eb37ab221-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "10b63f67-7972-475d-b872-2d472b00f314-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1718083635981,
+  "stop": 1718083641832
+}

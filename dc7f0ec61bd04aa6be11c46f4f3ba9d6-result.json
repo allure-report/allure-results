@@ -1,0 +1,152 @@
+{
+  "uuid": "d392aeb6-c987-4e7f-b88b-fed5f227e5d3",
+  "historyId": "3690565b203b9994258892728409c610",
+  "testCaseId": "2fb3426a6aacde29ec6aa20543691fa7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisTemplateTests.CheckAddActivityInDisTemplate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "d594b186d0c2"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddActivityInDisTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "DisTemplateTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Шаблон дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно добавить шаблон активности в шаблон дисциплины, выбрав его из библиотеки",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(@class,'content-item')]//span[contains(text(),'E303EBG04BE7DAG')]/parent::div/parent::div//div[@class='q-checkbox__bg absolute']\"}\n  (Session info: chrome-headless-shell=125.0.6422.141); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ChooseMaterialByName(IWebDriver driver, List`1 materialName, Boolean fromInfoPage) in /azp/_work/2/s/Services/CommonService.cs:line 136\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_ChooseTemplateByName_100666518_o(String templName, Boolean fromInfoPage) in /azp/_work/2/s/Pages/DisCommonInfoPage.cs:line 486\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_ChooseTemplateByName_100666518_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу шаблона дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "contentId",
+          "value": "\"1702016\"",
+          "excluded": false
+        }
+      ],
+      "start": 1718083537413,
+      "stop": 1718083537642
+    },
+    {
+      "name": "Нажать кнопки ‘Активность’ -> ‘Выбрать шаблон’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1718083537642,
+      "stop": 1718083540367
+    },
+    {
+      "name": "Выбрать шаблон из библиотеки по названию и подтвердить выбор",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ChooseMaterialByName(IWebDriver driver, List`1 materialName, Boolean fromInfoPage) in /azp/_work/2/s/Services/CommonService.cs:line 136\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_ChooseTemplateByName_100666518_o(String templName, Boolean fromInfoPage) in /azp/_work/2/s/Pages/DisCommonInfoPage.cs:line 486\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_ChooseTemplateByName_100666518_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "templName",
+          "value": "\"E303EBG04BE7DAG\"",
+          "excluded": false
+        },
+        {
+          "name": "fromInfoPage",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1718083540368,
+      "stop": 1718083573575
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddActivityInDisTemplate.jpg",
+      "source": "fe1f016e-6084-47ea-a848-6935025da51a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "a67aca8d-86a0-4aa8-b49d-02148c8fd844-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1718083537304,
+  "stop": 1718083573798
+}
