@@ -1,0 +1,122 @@
+{
+  "uuid": "1e57519a-8c50-4b6c-800e-ab1c273f58c2",
+  "historyId": "4154cfa732a395165c84487ead940a59",
+  "testCaseId": "b60ddd13b7d5cbf35feaf7cb0186412d",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.AccessToClosedRoom.CheckAccessToClosedRoom()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "75c83ae7f93f"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAccessToClosedRoom"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToClosedRoom"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Отсутствие доступа в закрытую комнату пользователю, не состоящему в ней",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q-notification__message\"}\n  (Session info: chrome-headless-shell=125.0.6422.141); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.ScreenDetectService.CheckAccessIssuesPageIsOpen(IWebDriver driver, String page) in /azp/_work/5/s/Services/ScreenDetectService.cs:line 20\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckAccessIssuesPageIsOpen_100666255_o() in /azp/_work/5/s/Pages/ChatCommonPage.cs:line 1839\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckAccessIssuesPageIsOpen_100666255_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"1775\"",
+          "excluded": false
+        }
+      ],
+      "start": 1718093352791,
+      "stop": 1718093353272
+    },
+    {
+      "name": "Проверка отображения заглушки 'Проблемы с доступом'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.ScreenDetectService.CheckAccessIssuesPageIsOpen(IWebDriver driver, String page) in /azp/_work/5/s/Services/ScreenDetectService.cs:line 20\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckAccessIssuesPageIsOpen_100666255_o() in /azp/_work/5/s/Pages/ChatCommonPage.cs:line 1839\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckAccessIssuesPageIsOpen_100666255_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1718093353272,
+      "stop": 1718093383416
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAccessToClosedRoom.jpg",
+      "source": "d99ee38c-8b40-4483-8cf7-98e6f991deca-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "a39f8e0d-7cd9-443e-b869-c426552b0142-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1718093349532,
+  "stop": 1718093383633
+}
