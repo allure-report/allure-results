@@ -1,0 +1,162 @@
+{
+  "uuid": "b37d5110-e03d-4cbe-a91a-d5db2bb26c03",
+  "historyId": "39f0f4e634f7cc87ea9ccdda3afe8824",
+  "testCaseId": "91009728b66897a34d58e4563bfa9a11",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.CheckSendExamToArchive()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "4243669c27bf"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendExamToArchive"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание экзамена"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Отправка экзамена в архив",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@class='block' and text()='Да']\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnConfirmArchiveButton_100666865_o() in /azp/_work/1/s/Pages/ProgramInfoPage.cs:line 149\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnConfirmArchiveButton_100666865_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1720574811325,
+      "stop": 1720574811564
+    },
+    {
+      "name": "Нажать на тридот экзамена по ее названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "examName",
+          "value": "\"B01FDBDBD23DGAF\"",
+          "excluded": false
+        }
+      ],
+      "start": 1720574811565,
+      "stop": 1720574812220
+    },
+    {
+      "name": "Нажать на тридот экзамена по ее названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720574812221,
+      "stop": 1720574812498
+    },
+    {
+      "name": "В подтверждающей модалке нажать на кнопку 'Да' для архивации потока",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnConfirmArchiveButton_100666865_o() in /azp/_work/1/s/Pages/ProgramInfoPage.cs:line 149\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnConfirmArchiveButton_100666865_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720574812498,
+      "stop": 1720574842897
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendExamToArchive.jpg",
+      "source": "39abd30d-4417-44e7-80ea-ec4c9d0038d5-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "c5105306-8aab-47e5-b14e-a9011a0e3034-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1720574810585,
+  "stop": 1720574843091
+}

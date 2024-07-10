@@ -1,0 +1,176 @@
+{
+  "uuid": "f193814e-4588-4e7a-ac74-37bd43de5c74",
+  "historyId": "b54224db8ffd5bad3393a429becd157b",
+  "testCaseId": "07cb757129127751eab97de91054b984",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskActivityTeacherTests.CheckGradeSolutionValueAboveAndBelowScore(System.Int32,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "4243669c27bf"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGradeSolutionValueAboveAndBelowScore"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskActivityTeacherTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница решения задания для преподавателя"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно оценить решение значением выше минимального порога баллов",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".solution-action-bar-component [class='cursor-pointer']\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnEstimateButton_100666064_o() in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 274\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnEstimateButton_100666064_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу решения задания",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"1615669\"",
+          "excluded": false
+        },
+        {
+          "name": "studentName",
+          "value": "\"Smith\"",
+          "excluded": false
+        }
+      ],
+      "start": 1720574164964,
+      "stop": 1720574165224
+    },
+    {
+      "name": "Нажать на кнопку карандаша для редактирования выставленного балла",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720574165224,
+      "stop": 1720574169269
+    },
+    {
+      "name": "Ввести значение выше минимального порога баллов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720574169269,
+      "stop": 1720574170538
+    },
+    {
+      "name": "Нажать на кнопку 'Оценить'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnEstimateButton_100666064_o() in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 274\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnEstimateButton_100666064_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720574170538,
+      "stop": 1720574201979
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckGradeSolutionValueAboveAndBelowScore.jpg",
+      "source": "43fbb159-fee1-429e-98e9-d097d8c7b158-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "15349e92-c842-4e12-9a77-2dfe7f81b3e2-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "value",
+      "value": "2",
+      "excluded": false
+    },
+    {
+      "name": "status",
+      "value": "\"Выполнено успешно\"",
+      "excluded": false
+    }
+  ],
+  "start": 1720574164963,
+  "stop": 1720574202262
+}
