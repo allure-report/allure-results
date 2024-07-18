@@ -1,0 +1,87 @@
+{
+  "uuid": "a669dbf0-5337-49fe-875a-4090662b0382",
+  "historyId": "fb9f9d1f5802463961188ef27f7d52a0",
+  "testCaseId": "fbc0ef3d57ba88d3b38970479a3a3433",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineChatTests.CheckFindSentMessageInDisciplineChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "0b799e5032d3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckFindSentMessageInDisciplineChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно найти отправленное сообщение в чате дисциплины",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Npgsql.NpgsqlException : Failed to connect to 172.16.0.57:6432\n  ----> System.TimeoutException : Timeout during connection attempt",
+    "trace": "   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)\n   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)\n   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)\n   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)\n   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)\n   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlConnection.Open()\n   at OdinUiTests.Services.ChatService.GetTextOfMessageFromChat(String chatId) in /azp/_work/1/s/Services/ChatService.cs:line 339\n   at OdinUiTests.Tests.Chat.ChatCommon.FindSentMessage(IWebDriver driver, Boolean isMinichat, String[] values) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 238\n   at OdinUiTests.Tests.Chat.ChatCommon.FindSentMessage(IWebDriver driver, String[] values) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 249\n   at OdinUiTests.Tests.Chat.DisciplineChatTests.CheckFindSentMessageInDisciplineChat() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 71\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--TimeoutException\n   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "CheckFindSentMessageInDisciplineChat.jpg",
+      "source": "8b892fc8-d651-40ea-be52-f273f15967ec-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "418324de-b047-40ec-90e3-3da0b328fd73-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1721291036412,
+  "stop": 1721291051903
+}

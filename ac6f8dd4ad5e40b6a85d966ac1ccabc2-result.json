@@ -1,0 +1,171 @@
+{
+  "uuid": "23fae245-e645-4e97-9cfd-d7b5c4d383d6",
+  "historyId": "7165703ae1632c118200384d22cb4c7c",
+  "testCaseId": "7bc972be66e446aeb8d0e773f706cef7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityResultTests.CheckStudentCanViewDetailedResultInfo(System.String,System.Boolean)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "0b799e5032d3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckStudentCanViewDetailedResultInfo"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityResultTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Результат прохождения теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Студент не может просматривать подробную информацию о результатах, если соответствующий чекбокс выключен",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class*='q-placeholder']\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.WebElement.FindElement(By by)\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_AnswerAllQuestions_100666694_o() in /azp/_work/1/s/Pages/ExamOptionsPage.cs:line 141\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_AnswerAllQuestions_100666694_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"617\"",
+          "excluded": false
+        }
+      ],
+      "start": 1721284053323,
+      "stop": 1721284053561
+    },
+    {
+      "name": "Нажать на кнопку 'Перейти к тесту' со страницы активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721284053561,
+      "stop": 1721284057652
+    },
+    {
+      "name": "Нажать на кнопку 'Приступить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721284057652,
+      "stop": 1721284060070
+    },
+    {
+      "name": "Ответить на все вопросы и ожидать появления фразы 'Сохранено успешно'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class*='q-placeholder']\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.WebElement.FindElement(By by)\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_AnswerAllQuestions_100666694_o() in /azp/_work/1/s/Pages/ExamOptionsPage.cs:line 141\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_AnswerAllQuestions_100666694_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721284060070,
+      "stop": 1721284061866
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckStudentCanViewDetailedResultInfo.jpg",
+      "source": "2d99a833-3506-4570-9c51-3cdce0f5f880-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "6fc05b0f-1c2d-425e-b91f-35b144661108-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "actId",
+      "value": "\"617\"",
+      "excluded": false
+    },
+    {
+      "name": "isShown",
+      "value": "false",
+      "excluded": false
+    }
+  ],
+  "start": 1721284052759,
+  "stop": 1721284062140
+}
