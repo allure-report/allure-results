@@ -1,0 +1,153 @@
+{
+  "uuid": "f9e9df0c-4ca0-4d99-b4fe-d1f5f2975865",
+  "historyId": "ac5612a429502c53f7ad7f1360bb1266",
+  "testCaseId": "5bb91ecaadb50b978a4cd96da1ab5b91",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TemplateEditingTests.CheckClearAddedTagsFromActivityTemplate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "bbfefa1cc1e1"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckClearAddedTagsFromActivityTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "TemplateEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обычный шаблон активности"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно очистить теги знаний из шаблона активности",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span class=\"q-btn__content text-center col items-center q-anchor--skip justify-center row\">...</span> is not clickable at point (1075, 590). Other element would receive the click: <div class=\"q-tree__node-header relative-position row no-wrap items-center q-tree__node--link q-hoverable q-focusable\" tabindex=\"0\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearTag(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 303\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClearTagFromActivityTemplate_100665851_o() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 382\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClearTagFromActivityTemplate_100665851_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"1340\"",
+              "excluded": false
+            }
+          ],
+          "start": 1721714099353,
+          "stop": 1721714099562
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"1340\"",
+          "excluded": false
+        }
+      ],
+      "start": 1721714099353,
+      "stop": 1721714099562
+    },
+    {
+      "name": "Очистить теги в шаблоне активности",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <span class=\"q-btn__content text-center col items-center q-anchor--skip justify-center row\">...</span> is not clickable at point (1075, 590). Other element would receive the click: <div class=\"q-tree__node-header relative-position row no-wrap items-center q-tree__node--link q-hoverable q-focusable\" tabindex=\"0\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearTag(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 303\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClearTagFromActivityTemplate_100665851_o() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 382\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClearTagFromActivityTemplate_100665851_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721714099562,
+      "stop": 1721714101848
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckClearAddedTagsFromActivityTemplate.jpg",
+      "source": "40065b15-7cb8-48e0-80ec-14dc3521a19e-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "e5d54dce-a79d-436d-b5f1-bbc809ff1615-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1721714099133,
+  "stop": 1721714102050
+}
