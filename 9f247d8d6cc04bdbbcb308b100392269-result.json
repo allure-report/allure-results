@@ -1,0 +1,166 @@
+{
+  "uuid": "9a28998f-c9e0-4d01-8cf1-0d14262685bc",
+  "historyId": "7c129f2c58e30bccb366561d73be574b",
+  "testCaseId": "5acb2df2272bfa3c0338b47aaa8372a2",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityStatusWithOneAttemptTests.CheckStatusIsPendingReviewForAttemptsNeedsReview(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "403d82ba064f"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckStatusIsPendingReviewForAttemptsNeedsReview"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityStatusWithOneAttemptTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Прохождение теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Статус Ожидает проверки, если в попытке есть хотя бы один вопрос, требующий проверки в командной контрольной",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class*='q-placeholder']\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.WebElement.FindElement(By by)\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_AnswerAllQuestions_100666695_o() in /azp/_work/2/s/Pages/ExamOptionsPage.cs:line 141\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_AnswerAllQuestions_100666695_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"17999\"",
+          "excluded": false
+        }
+      ],
+      "start": 1721706389795,
+      "stop": 1721706390016
+    },
+    {
+      "name": "Нажать на кнопку 'Перейти к тесту' со страницы активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721706390016,
+      "stop": 1721706391841
+    },
+    {
+      "name": "Нажать на кнопку 'Приступить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721706391841,
+      "stop": 1721706393616
+    },
+    {
+      "name": "Ответить на все вопросы и ожидать появления фразы 'Сохранено успешно'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class*='q-placeholder']\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.WebElement.FindElement(By by)\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_AnswerAllQuestions_100666695_o() in /azp/_work/2/s/Pages/ExamOptionsPage.cs:line 141\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_AnswerAllQuestions_100666695_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721706393616,
+      "stop": 1721706394235
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckStatusIsPendingReviewForAttemptsNeedsReview.jpg",
+      "source": "e93ff859-f515-409c-9fe1-ec778b49f776-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "82b1c5c4-1f23-4c14-8379-a18dfbbd02e2-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "actId",
+      "value": "\"17999\"",
+      "excluded": false
+    }
+  ],
+  "start": 1721706389293,
+  "stop": 1721706394457
+}
