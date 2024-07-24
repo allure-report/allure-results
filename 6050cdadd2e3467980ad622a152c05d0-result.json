@@ -1,0 +1,124 @@
+{
+  "uuid": "82f0c8ca-0365-4ff4-a039-7d1890718bfb",
+  "historyId": "7fd127ee8856a487c7a6e8d05590b6b0",
+  "testCaseId": "2c29f36c41d08e6653c1185c83ca2925",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatMessageActionTests.CheckStartDiscussionUnderLeftSideMessageInGroupChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "a1c35805452b"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckStartDiscussionUnderLeftSideMessageInGroupChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatMessageActionTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Начать обсуждение с другим участником в групповом чате",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Allure.Net.Commons.Steps.StepFailedException : Step failed: Убедиться, что в чате имеются сообщения от участников чата\n  ----> Npgsql.PostgresException : 42601: syntax error at or near \"{\"\n\nPOSITION: 191\nData:\n  Severity: ERROR\n  InvariantSeverity: ERROR\n  SqlState: 42601\n  MessageText: syntax error at or near \"{\"\n  Position: 191\n  File: scan.l\n  Line: 1192\n  Routine: scanner_yyerror",
+    "trace": "   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ChatCommonPage.ChooseLeftNotDiscussedMessage(Boolean isPersonalChat) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1005\n   at OdinUiTests.Tests.Chat.ChatCommon.StartDiscussionUnderLeftSideMessage(IWebDriver driver, String chatId, Boolean isPersonalChat) in /azp/_work/4/s/Tests/Chat/ChatCommon.cs:line 160\n   at OdinUiTests.Tests.Chat.ChatCommon.StartDiscussionUnderLeftSideMessage(IWebDriver driver, String chatId) in /azp/_work/4/s/Tests/Chat/ChatCommon.cs:line 170\n   at OdinUiTests.Tests.Chat.GroupChatMessageActionTests.CheckStartDiscussionUnderLeftSideMessageInGroupChat() in /azp/_work/4/s/Tests/Chat/ChatTests.cs:line 679\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--PostgresException\n   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)\n   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)\n   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlDataReader.NextResult()\n   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)\n   at OdinUiTests.Services.ChatService.SendMessageByOtherMember(String chatId, String userId) in /azp/_work/4/s/Services/ChatService.cs:line 391\n   at OdinUiTests.Pages.ChatCommonPage.ChooseLeftMessageToFurtherAction(Boolean needToCheckForDiscussed) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1182\n   at OdinUiTests.Pages.ChatCommonPage.<ChooseLeftNotDiscussedMessage>b__183_0() in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1007\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass31_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"6330\"",
+          "excluded": false
+        }
+      ],
+      "start": 1721804144149,
+      "stop": 1721804144708
+    },
+    {
+      "name": "Убедиться, что в чате имеются сообщения от участников чата",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721804144708,
+      "stop": 1721804146279
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckStartDiscussionUnderLeftSideMessageInGroupChat.jpg",
+      "source": "b118ec17-14cd-429e-a277-bf5d2d8db829-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b484f129-ec45-465a-83ff-9ea7f587a479-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1721804144148,
+  "stop": 1721804146568
+}
