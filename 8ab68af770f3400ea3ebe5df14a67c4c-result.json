@@ -1,0 +1,194 @@
+{
+  "uuid": "6c25e7b7-0d8f-4501-bba8-5eda9abf751c",
+  "historyId": "5beaee3403f5fa0c76b04188d4ae8475",
+  "testCaseId": "2db6ba930ce3dc22a45f2d3bf3f55a62",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.BulkActionsLibraryTests.CheckMoveMultipleSelectedItemsToAnotherDirectory()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "3f2b2f68a7fa"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckMoveMultipleSelectedItemsToAnotherDirectory"
+    },
+    {
+      "name": "testClass",
+      "value": "BulkActionsLibraryTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Библиотека: можно переместить несколько выбранных элементов в другой каталог",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : При перемещении элементов отображается другое сообщение",
+    "trace": "   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveItemsBySelectingCatalog_100666806_o(String nameOfCatalog) in /azp/_work/1/s/Pages/LibraryPage.cs:line 399\n   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveItemsBySelectingCatalog_100666806_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"18925\"",
+          "excluded": false
+        }
+      ],
+      "start": 1723178695077,
+      "stop": 1723178695367
+    },
+    {
+      "name": "Сделать правый клик на рандомного каталога или материала",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1723178695367,
+      "stop": 1723178699591
+    },
+    {
+      "name": "Нажать на пункт “Выбрать” из меню при правом клике на сущность",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1723178699591,
+      "stop": 1723178700411
+    },
+    {
+      "name": "Выбрать другие сущности поставив галку их чекбоксам",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "numOfItems",
+          "value": "3",
+          "excluded": false
+        }
+      ],
+      "start": 1723178700411,
+      "stop": 1723178705513
+    },
+    {
+      "name": "Нажать на кнопку переместить из action панели для перемещения выбранных элементов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1723178705514,
+      "stop": 1723178705726
+    },
+    {
+      "name": "Выбрать каталог по названию из окно Выбор расположение и сохранить",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "При перемещении элементов отображается другое сообщение",
+        "trace": "   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveItemsBySelectingCatalog_100666806_o(String nameOfCatalog) in /azp/_work/1/s/Pages/LibraryPage.cs:line 399\n   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveItemsBySelectingCatalog_100666806_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "nameOfCatalog",
+          "value": "\"Каталог для автотестов\"",
+          "excluded": false
+        }
+      ],
+      "start": 1723178705726,
+      "stop": 1723178707286
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckMoveMultipleSelectedItemsToAnotherDirectory.jpg",
+      "source": "bb7ab9ea-3e7e-43a1-86fd-6b4c40362c9c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "fce42d29-7df3-4f12-a529-f90d9b3b802a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1723178694320,
+  "stop": 1723178707537
+}
