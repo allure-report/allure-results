@@ -1,0 +1,182 @@
+{
+  "uuid": "c48c088a-1aa4-40f3-b331-0ae8adc18afd",
+  "historyId": "9e5e39f0e22116d2f2446da2a9f3d518",
+  "testCaseId": "54bf5fc00cd5ede64f50ac71cab81ddf",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisciplineMarksAndAttendanceTests.CheckGradingByTeacher()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "52fb0a51ba34"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGradingByTeacher"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineMarksAndAttendanceTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Выставление оценки преподавателем в дисциплине",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : Ошибка сохранения оценки.",
+    "trace": "   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_WaitUntilChagesSaved_100666569_o() in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 271\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_WaitUntilChagesSaved_100666569_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"171\"",
+          "excluded": false
+        }
+      ],
+      "start": 1723183897835,
+      "stop": 1723183898134
+    },
+    {
+      "name": "Нажать на заголовок вкладки 'Оценки'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1723183898134,
+      "stop": 1723183899710
+    },
+    {
+      "name": "Получить индекс доступной ячейки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1723183899714,
+      "stop": 1723183905523
+    },
+    {
+      "name": "Выставить оценку в первой доступной ячейке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "randomCell",
+          "value": "17",
+          "excluded": false
+        },
+        {
+          "name": "grade",
+          "value": "5",
+          "excluded": false
+        }
+      ],
+      "start": 1723183905523,
+      "stop": 1723183906778
+    },
+    {
+      "name": "Проверка того что выставленная оценка было сохранена",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Ошибка сохранения оценки.",
+        "trace": "   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_WaitUntilChagesSaved_100666569_o() in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 271\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_WaitUntilChagesSaved_100666569_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1723183906779,
+      "stop": 1723183910712
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckGradingByTeacher.jpg",
+      "source": "bf408593-add1-4ae1-9df4-83ccbcec65db-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b9542e04-cde6-4774-b885-65eadc533c85-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1723183897834,
+  "stop": 1723183910993
+}

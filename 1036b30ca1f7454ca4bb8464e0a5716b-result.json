@@ -1,0 +1,222 @@
+{
+  "uuid": "ef08aee0-b446-43a5-b054-04c487977e40",
+  "historyId": "bc4f47aa481c86be9ca81629edb16228",
+  "testCaseId": "89184c9ff7fcb0e355da1a70628ed050",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.RemovingTemplatesTests.CheckDeleteDisciplineTemplateFromWhichDisciplineIsCreated()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "52fb0a51ba34"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteDisciplineTemplateFromWhichDisciplineIsCreated"
+    },
+    {
+      "name": "testClass",
+      "value": "RemovingTemplatesTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница библиотеки: можно удалить шаблон дисциплины по которому была создана дисциплина",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(@class,'content-item')]//span[contains(text(),'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar, est vel iaculis fringilla, eros libero lobortis diam, et cursus arcu ex ut dui.')]\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.LibraryPage.ScrollUntilMaterialOrCatalogIsInView(Boolean isMaterial, String name) in /azp/_work/1/s/Pages/LibraryPage.cs:line 537\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveMaterial_100666790_o(String materialName, Boolean withRightClick) in /azp/_work/1/s/Pages/LibraryPage.cs:line 121\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveMaterial_100666790_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"345\"",
+          "excluded": false
+        }
+      ],
+      "start": 1723184075288,
+      "stop": 1723184075542
+    },
+    {
+      "name": "Открыть каталог по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "dirName",
+          "value": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar, est vel iaculis fringilla, eros libero lobortis diam, et cursus arcu ex ut dui.\"",
+          "excluded": false
+        }
+      ],
+      "start": 1723184075542,
+      "stop": 1723184077839
+    },
+    {
+      "name": "Удалить материал из Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "materialName",
+          "value": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar, est vel iaculis fringilla, eros libero lobortis diam, et cursus arcu ex ut dui.\"",
+          "excluded": false
+        },
+        {
+          "name": "withRightClick",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1723184077839,
+      "stop": 1723184083679
+    },
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"18927\"",
+          "excluded": false
+        }
+      ],
+      "start": 1723184083679,
+      "stop": 1723184083967
+    },
+    {
+      "name": "Открыть каталог по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "dirName",
+          "value": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar, est vel iaculis fringilla, eros libero lobortis diam, et cursus arcu ex ut dui.\"",
+          "excluded": false
+        }
+      ],
+      "start": 1723184083967,
+      "stop": 1723184086191
+    },
+    {
+      "name": "Удалить материал из Библиотеки",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.LibraryPage.ScrollUntilMaterialOrCatalogIsInView(Boolean isMaterial, String name) in /azp/_work/1/s/Pages/LibraryPage.cs:line 537\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveMaterial_100666790_o(String materialName, Boolean withRightClick) in /azp/_work/1/s/Pages/LibraryPage.cs:line 121\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveMaterial_100666790_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "materialName",
+          "value": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar, est vel iaculis fringilla, eros libero lobortis diam, et cursus arcu ex ut dui.\"",
+          "excluded": false
+        },
+        {
+          "name": "withRightClick",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1723184086191,
+      "stop": 1723184119366
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDeleteDisciplineTemplateFromWhichDisciplineIsCreated.jpg",
+      "source": "e131fcb9-6caf-4802-9293-adcaed1a22ce-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "81a736a8-b7f2-41d7-b79a-b10e7162810b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1723184069429,
+  "stop": 1723184119750
+}
