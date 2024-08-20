@@ -1,0 +1,188 @@
+{
+  "uuid": "5a0557bd-0ff6-4854-bb31-4950ad1ebf4b",
+  "historyId": "6e8bf03df5971c037fd4db8425490a5a",
+  "testCaseId": "603d5319feb7b5d7129e38d46c646bfd",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.UserProfile.GeneralUserInfoEditingTests.CheckUserNameFiledsInTransliteration()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "d490538147de"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.UserProfile"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckUserNameFiledsInTransliteration"
+    },
+    {
+      "name": "testClass",
+      "value": "GeneralUserInfoEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Профиль"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Профиль"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование профиля пользователя: можно изменить ФИО в транслитерации",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementNotInteractableException : element not interactable\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SwitchUserLanguageToEng_100667097_o() in /azp/_work/1/s/Pages/UserProfilePage.cs:line 180\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SwitchUserLanguageToEng_100667097_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу профиля пользователя",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"37065\"",
+          "excluded": false
+        }
+      ],
+      "start": 1724135787876,
+      "stop": 1724135788107
+    },
+    {
+      "name": "Нажать на кнопку 'Редактировать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1724135788107,
+      "stop": 1724135790012
+    },
+    {
+      "name": "Переключить свитч транслитерации",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1724135790013,
+      "stop": 1724135790628
+    },
+    {
+      "name": "Редактировать ФИО пользователя в транслитерации",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "fullName",
+          "value": "\"EFHHIH ADJCJIAJCG FJDBDAGJ\"",
+          "excluded": false
+        }
+      ],
+      "start": 1724135790629,
+      "stop": 1724135795106
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1724135795106,
+      "stop": 1724135795185
+    },
+    {
+      "name": "Переключить язык интерфейса на английский",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element not interactable\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SwitchUserLanguageToEng_100667097_o() in /azp/_work/1/s/Pages/UserProfilePage.cs:line 180\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SwitchUserLanguageToEng_100667097_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1724135795186,
+      "stop": 1724135796348
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckUserNameFiledsInTransliteration.jpg",
+      "source": "9f5f82b3-a0e0-4395-b8c9-056e344a872e-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "ac46d4a5-9196-463d-bb31-8f0b5224dd2a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724135787876,
+  "stop": 1724135796545
+}

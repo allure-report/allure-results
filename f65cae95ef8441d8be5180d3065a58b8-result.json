@@ -1,0 +1,171 @@
+{
+  "uuid": "75cc641f-7404-4cc6-8d1f-2e2763df8b8f",
+  "historyId": "5ce902a3657307b72181820526c6e193",
+  "testCaseId": "0b982aa1347db8ef390ad663734cb862",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatTests.CheckRestoreGroupChatFromArchive()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "d490538147de"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckRestoreGroupChatFromArchive"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно восстановить групповой чат из архива",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1010, 569). Other element would receive the click: <div data-v-5a9205df=\"\" class=\"q-card confirm-modal q-pa-lg\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnConfirmRestoreButton_100666232_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 832\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnConfirmRestoreButton_100666232_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть список чатов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1724135363566,
+      "stop": 1724135363969
+    },
+    {
+      "name": "Нажать на кнопку – 'Перейти в архив'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1724135363970,
+      "stop": 1724135364607
+    },
+    {
+      "name": "Открыть список групповых чатов и выбрать случайный чат",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"02415B763AE2EBB\"",
+          "excluded": false
+        }
+      ],
+      "start": 1724135364608,
+      "stop": 1724135365941
+    },
+    {
+      "name": "Кликнуть на значок восстановления чата из архива",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1724135365942,
+      "stop": 1724135366589
+    },
+    {
+      "name": "Нажать на кнопку 'Разархивировать чат' в подтверждающей модалке",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1010, 569). Other element would receive the click: <div data-v-5a9205df=\"\" class=\"q-card confirm-modal q-pa-lg\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnConfirmRestoreButton_100666232_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 832\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnConfirmRestoreButton_100666232_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1724135366590,
+      "stop": 1724135367708
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckRestoreGroupChatFromArchive.jpg",
+      "source": "aeaf2772-0105-4b26-a62d-733f3c277370-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "12e82d47-74e1-436c-ac4e-2fc7a720bed0-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724135347235,
+  "stop": 1724135368036
+}

@@ -1,0 +1,164 @@
+{
+  "uuid": "391dd32a-b1b9-4489-abc3-94f208d28377",
+  "historyId": "a581e28f423431f0348286317ed61667",
+  "testCaseId": "abae5c128adfa4a6ae28364a46e733e7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.CheckResultOfPassingDependOnSettings(System.String,System.Int32,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "d490538147de"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckResultOfPassingDependOnSettings"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityStatusWithTwoOrMoreAttemptsTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Прохождение теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Результат тестирования в попытках зависит от настройки За последнюю попытку в командной контрольной",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div data-v-9f70e002=\"\">...</div> is not clickable at point (1048, 416). Other element would receive the click: <div data-v-21fdefad=\"\" class=\"q-card__section q-card__section--vert text-center q-pa-none\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnGotoTestButton_100665997_o() in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 314\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnGotoTestButton_100665997_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"571\"",
+          "excluded": false
+        }
+      ],
+      "start": 1724135314351,
+      "stop": 1724135314722
+    },
+    {
+      "name": "Пройти одну попытку прохождения теста",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnGotoTestButton_100665997_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.ClickOnGotoTestButton()\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_PassOneTestAttempt_100665980_o() in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 149\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_PassOneTestAttempt_100665980_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Перейти к тесту' со страницы активности",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "element click intercepted: Element <div data-v-9f70e002=\"\">...</div> is not clickable at point (1048, 416). Other element would receive the click: <div data-v-21fdefad=\"\" class=\"q-card__section q-card__section--vert text-center q-pa-none\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnGotoTestButton_100665997_o() in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 314\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnGotoTestButton_100665997_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1724135314722,
+          "stop": 1724135318776
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1724135314722,
+      "stop": 1724135318777
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckResultOfPassingDependOnSettings.jpg",
+      "source": "2c6e3c81-6ee9-4d7d-a551-930c123b754b-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "a67cfc61-f9f1-4a10-a42d-cb73a0ba8d16-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "actId",
+      "value": "\"571\"",
+      "excluded": false
+    },
+    {
+      "name": "evaluation",
+      "value": "2",
+      "excluded": false
+    },
+    {
+      "name": "attemptSetting",
+      "value": "\"lastTry\"",
+      "excluded": false
+    }
+  ],
+  "start": 1724135309779,
+  "stop": 1724135319027
+}
