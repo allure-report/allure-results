@@ -1,0 +1,208 @@
+{
+  "uuid": "233150df-fff1-4e96-92af-7d7158ba9218",
+  "historyId": "d9feb5f08420b10a000822a9bfeeacef",
+  "testCaseId": "3b168225dcb52df378336b6456868d6d",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatMessageActionTests.CheckAddQuoteToLeftSideMessageInGroupChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "e0e814a86fab"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddQuoteToLeftSideMessageInGroupChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatMessageActionTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно цитировать сообщение другого участника в групповом чате",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q\\-editor__content\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(String needToCheck, Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1088\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1114\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatPageOrRefreshPage(Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1131\n   at OdinUiTests.Pages.ChatCommonPage.LastMessageIsQuoted(String message, Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1290\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckLastMessageIsQuoted_100666274_o(Boolean isMinichat, String chatId, String randomText) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1299\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckLastMessageIsQuoted_100666274_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"6330\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725342795321,
+      "stop": 1725342795585
+    },
+    {
+      "name": "Убедиться, что в чате имеются сообщения от участников чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725342795585,
+      "stop": 1725342801722
+    },
+    {
+      "name": "В меню над сообщением выбрать 'Цитировать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725342801722,
+      "stop": 1725342801963
+    },
+    {
+      "name": "В строке ввода ввести текст",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "randomText",
+          "value": "\"B1CG095G4FG043D\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725342801963,
+      "stop": 1725342802182
+    },
+    {
+      "name": "Нажать на значок отправки сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725342802183,
+      "stop": 1725342802342
+    },
+    {
+      "name": "Проверка того, что сообщение было процитировано",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q\\-editor__content\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(String needToCheck, Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1088\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1114\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatPageOrRefreshPage(Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1131\n   at OdinUiTests.Pages.ChatCommonPage.LastMessageIsQuoted(String message, Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1290\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckLastMessageIsQuoted_100666274_o(Boolean isMinichat, String chatId, String randomText) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1299\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckLastMessageIsQuoted_100666274_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"6330\"",
+          "excluded": false
+        },
+        {
+          "name": "randomText",
+          "value": "\"B1CG095G4FG043D\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725342802342,
+      "stop": 1725342835495
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddQuoteToLeftSideMessageInGroupChat.jpg",
+      "source": "36d25619-56f3-445d-aa06-38d5ed3e925c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b8cbad8e-55d0-40cc-8b82-b34def2d94d2-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1725342795320,
+  "stop": 1725342835845
+}
