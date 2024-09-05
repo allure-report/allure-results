@@ -1,0 +1,139 @@
+{
+  "uuid": "d1f04928-b84d-411d-bed8-9d6a7a72210d",
+  "historyId": "bed498249ae8015fd3c79c1a88661eda",
+  "testCaseId": "5ee1c8f1a13a3f7a4b8049169fea2649",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.StoсkMarket.StockMarketLotTests.CheckTransitionToPageOfPurchasedMaterial()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "ce90714d7429"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.StoсkMarket"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckTransitionToPageOfPurchasedMaterial"
+    },
+    {
+      "name": "testClass",
+      "value": "StockMarketLotTests"
+    },
+    {
+      "name": "suite",
+      "value": "Биржа"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Биржа"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница лота: кнопка Страница материала работает для приобретённого лота",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".page\\-title\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ContentInfoPage.MaterialPageIsOpen(String matId, String matName) in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 664\n   at OdinUiTests.Pages.ContentInfoPage.__a$_around_CheckMaterialPageIsOpenFromLotPage_100666490_o(String lotId) in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 674\n   at OdinUiTests.Pages.ContentInfoPage.__a$_around_CheckMaterialPageIsOpenFromLotPage_100666490_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу лота",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "lotId",
+          "value": "\"16\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725545066615,
+      "stop": 1725545067009
+    },
+    {
+      "name": "Нажать на кнопку 'Страница материала' на странице лота",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725545067010,
+      "stop": 1725545083660
+    },
+    {
+      "name": "Проверка перехода на страницу материала",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".page\\-title\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ContentInfoPage.MaterialPageIsOpen(String matId, String matName) in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 664\n   at OdinUiTests.Pages.ContentInfoPage.__a$_around_CheckMaterialPageIsOpenFromLotPage_100666490_o(String lotId) in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 674\n   at OdinUiTests.Pages.ContentInfoPage.__a$_around_CheckMaterialPageIsOpenFromLotPage_100666490_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "lotId",
+          "value": "\"16\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725545083661,
+      "stop": 1725545114522
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckTransitionToPageOfPurchasedMaterial.jpg",
+      "source": "232b51f5-0aa8-4f2a-8a98-12c267261671-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "3842560c-ba09-4e6e-81d4-4d4f477a9f96-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1725545066614,
+  "stop": 1725545114730
+}
