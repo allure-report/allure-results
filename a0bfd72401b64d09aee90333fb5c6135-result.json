@@ -1,0 +1,126 @@
+{
+  "uuid": "71b5ad7b-fa06-4853-95ad-972f194318d8",
+  "historyId": "0fc785bd54bea6e29ea99121bdfb9a4f",
+  "testCaseId": "047ce538af0be976f56d40970d3ca051",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Organization.MyPlanOrganizationPageTests.CheckOpenMyPlanPageFromOrganizationPage()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "23c2b15be75d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Organization"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckOpenMyPlanPageFromOrganizationPage"
+    },
+    {
+      "name": "testClass",
+      "value": "MyPlanOrganizationPageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Организация"
+    },
+    {
+      "name": "subSuite",
+      "value": "Мой тариф"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Организация"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница организации: переход на страницу Мой тариф",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),'Мой тариф')]\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_ClickOnMyPlanButton_100666859_o() in /azp/_work/5/s/Pages/OrganizationCommonPage.cs:line 80\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_ClickOnMyPlanButton_100666859_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу организации",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "organizationId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725600128182,
+      "stop": 1725600128710
+    },
+    {
+      "name": "Нажать на кнопку 'Мой тариф'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_ClickOnMyPlanButton_100666859_o() in /azp/_work/5/s/Pages/OrganizationCommonPage.cs:line 80\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_ClickOnMyPlanButton_100666859_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725600128711,
+      "stop": 1725600159027
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckOpenMyPlanPageFromOrganizationPage.jpg",
+      "source": "ac1149c6-b3aa-4659-93af-683b4f422f9c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "44e86e3e-9e08-4ee6-8914-303f55df74d0-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1725600128153,
+  "stop": 1725600159206
+}
