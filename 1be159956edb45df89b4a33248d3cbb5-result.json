@@ -1,0 +1,244 @@
+{
+  "uuid": "1d7e1fcc-7196-4b4a-8d77-fd8d447cb2d2",
+  "historyId": "d22250085e84efaaf5070bd8213be238",
+  "testCaseId": "e760292ff1486657dd8f27e3c7910afb",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortCreationTests.CheckCreateCohortFromTemplateWhenAllRequiredFieldsAreFilled(System.Int32,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "cf621f1a66bf"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateCohortFromTemplateWhenAllRequiredFieldsAreFilled"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortCreationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание потока ДО: можно создать поток из шаблона, если все обязательные поля корректно заполнены",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".cohort-info .page-title\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckSuccessOfCohortCreationFromTemplate_100666415_o(String cohortTitle, Object templateInfo) in /azp/_work/1/s/Pages/CohortInfoPage.cs:line 457\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckSuccessOfCohortCreationFromTemplate_100666415_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"3228\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725832536454,
+      "stop": 1725832536793
+    },
+    {
+      "name": "Нажать на кнопку 'Выбрать шаблон'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725832536793,
+      "stop": 1725832538631
+    },
+    {
+      "name": "Переключиться на Библиотеку 'Высшая IT школа'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725832538631,
+      "stop": 1725832542878
+    },
+    {
+      "name": "Найти и выбрать шаблон программы по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "templateName",
+          "value": "\"Программа ДО 2022 (Активности)\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725832544058,
+      "stop": 1725832548001
+    },
+    {
+      "name": "Вставить значение в поле 'Название'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725832548001,
+      "stop": 1725832549270
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата окончания'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725832549270,
+      "stop": 1725832551761
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725832551761,
+      "stop": 1725832551806
+    },
+    {
+      "name": "Проверка корректности создания потока из шаблона",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckSuccessOfCohortCreationFromTemplate_100666415_o(String cohortTitle, Object templateInfo) in /azp/_work/1/s/Pages/CohortInfoPage.cs:line 457\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckSuccessOfCohortCreationFromTemplate_100666415_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortTitle",
+          "value": "\"DGF8G12FD2CBE5G\"",
+          "excluded": false
+        },
+        {
+          "name": "templateInfo",
+          "value": "{\"entity\":{\"id\":1779,\"permissions\":{\"canEdit\":true,\"canCreateLot\":true,\"canRemoveLot\":false},\"contentInfo\":{\"id\":697185,\"name\":\"Программа ДО 2022 (Активности)\",\"description\":\"Используется для автотестирования, пожалуйста, не редактируйте!\",\"authors\":[{\"userInfo\":{\"id\":32,\"firstName\":\"Антон\",\"lastName\":\"Антонов\",\"photoUrl\":\"https://storage.yandexcloud.net/odin-storage-public/9e48adc0-0cb8-42b8-b741-fda50c16ddf1.JPG\"},\"isCreator\":false},{\"userInfo\":{\"id\":23,\"firstName\":\"Антон\",\"lastName\":\"Макаренко\",\"photoUrl\":\"https://storage.yandexcloud.net/odin-storage-public/5440c9d2-9392-46a3-87ba-ee794332bffd.JPG\"},\"isCreator\":true}],\"labels\":[],\"knowledgeTags\":[],\"rating\":{\"currentMark\":0,\"rating\":0.0,\"canRate\":true,\"marksCount\":0}},\"isAdditionalEducation\":true,\"createDateTime\":\"2022-07-13T13:14:35.904342\",\"modifyDateTime\":\"2022-10-05T15:02:35.704951\",\"disciplinePlan\":[{\"id\":14267,\"contentId\":434129,\"name\":\"1-й поток\",\"order\":2},{\"id\":14268,\"contentId\":434141,\"name\":\"Новые материалы библиотек\",\"order\":3},{\"id\":14269,\"contentId\":434143,\"name\":\"Шаблон дисциплины с ИОТ\",\"order\":4}],\"basedCohorts\":[{\"id\":44691,\"text\":\"6CBF34D08G526C5\",\"canView\":true},{\"id\":44707,\"text\":\"81B40G2A700BEDF\",\"canView\":true},{\"id\":44760,\"text\":\"D8A2FD4ECG4CE1B\",\"canView\":true},{\"id\":44725,\"text\":\"6E2G7528E954B26\",\"canView\":true},{\"id\":44645,\"text\":\"тлддллдт\",\"canView\":true},{\"id\":10381,\"text\":\"Поток август 2022\",\"canView\":true},{\"id\":44743,\"text\":\"9GFDD458BA872FD\",\"canView\":true},{\"id\":44783,\"text\":\"9473AD876DC148C\",\"canView\":true},{\"id\":44677,\"text\":\"06D2C8DC0348C32\",\"canView\":true},{\"id\":44792,\"text\":\"DGFC4GF4EGE0C91\",\"canView\":true}],\"breadcrumbs\":[{\"routePage\":49,\"entityId\":1,\"text\":\"ТестГУ\"},{\"routePage\":55,\"entityId\":1,\"text\":\"HITs\"},{\"routePage\":13,\"entityId\":342,\"text\":\"Библиотека подразделения \\\"HITs\\\"\"}],\"libraryDirectoriesUsedIn\":[{\"libraryId\":342,\"directoryId\":1013,\"name\":\"Высшая IT школа\"}]},\"isSuccess\":true,\"httpStatusCode\":200,\"errors\":[]}",
+          "excluded": false
+        }
+      ],
+      "start": 1725832551806,
+      "stop": 1725832581972
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateCohortFromTemplateWhenAllRequiredFieldsAreFilled.jpg",
+      "source": "4e13e9bd-b76f-4ca1-b897-2a7ef6352d0f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "16579173-b89c-4a74-96aa-079658a31432-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "templateId",
+      "value": "697185",
+      "excluded": false
+    },
+    {
+      "name": "programId",
+      "value": "\"3228\"",
+      "excluded": false
+    }
+  ],
+  "start": 1725832536306,
+  "stop": 1725832582137
+}
