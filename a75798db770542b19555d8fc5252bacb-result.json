@@ -1,0 +1,232 @@
+{
+  "uuid": "80a8d1de-c741-434a-aacb-72b5b0e7ba4b",
+  "historyId": "05f8fa072cc5a9cce26983bb14acdf89",
+  "testCaseId": "d19cbfca69ef863a1fd7b1c9694d2425",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortCreationWarningModalTests.CheckCreateCohortAfterChangeMismatchWarningOfDuration()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "cf621f1a66bf"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateCohortAfterChangeMismatchWarningOfDuration"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortCreationWarningModalTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание потока: можно создать поток после внесения правок в длительность потока",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".cohort-info .page-title\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.CohortSavedSuccessfully(String cohortTitle, String startDate, String endDate) in /azp/_work/1/s/Pages/CohortInfoPage.cs:line 423\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100666413_o(String cohortTitle, String startDate, String endDate) in /azp/_work/1/s/Pages/CohortInfoPage.cs:line 444\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100666413_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"4\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725832858016,
+      "stop": 1725832858256
+    },
+    {
+      "name": "Вставить значение в поле 'Название'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725832858256,
+      "stop": 1725832860066
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата окончания' (период обучения менее 21 дней)",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725832860067,
+      "stop": 1725832862620
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725832862621,
+      "stop": 1725832862667
+    },
+    {
+      "name": "Нажать на кнопку 'Исправить' в модалке предупреждении",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725832862667,
+      "stop": 1725832863238
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата окончания' (период обучения равен или больше 21 дней)",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725832863238,
+      "stop": 1725832865791
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725832865791,
+      "stop": 1725832865835
+    },
+    {
+      "name": "Проверка корректности создания потока с выбранными датами",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.CohortSavedSuccessfully(String cohortTitle, String startDate, String endDate) in /azp/_work/1/s/Pages/CohortInfoPage.cs:line 423\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100666413_o(String cohortTitle, String startDate, String endDate) in /azp/_work/1/s/Pages/CohortInfoPage.cs:line 444\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100666413_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortTitle",
+          "value": "\"AEG70509GG0926C\"",
+          "excluded": false
+        },
+        {
+          "name": "startDate",
+          "value": "\"\"",
+          "excluded": false
+        },
+        {
+          "name": "endDate",
+          "value": "\"30.09.2024\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725832865835,
+      "stop": 1725832895983
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateCohortAfterChangeMismatchWarningOfDuration.jpg",
+      "source": "2dfdae0b-d973-4922-a0e5-bcf25e5b4383-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "1bab20fb-ba78-454e-a67f-b6ae2bbf330b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1725832857997,
+  "stop": 1725832896160
+}
