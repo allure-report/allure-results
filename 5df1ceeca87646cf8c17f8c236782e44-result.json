@@ -1,0 +1,135 @@
+{
+  "uuid": "83ffade8-99f9-4796-b6bb-dc26614d46e5",
+  "historyId": "a5d9963656ef07aa14a11d99876dd1ac",
+  "testCaseId": "f01c0f0b673331f5d97f789a25f7c8ea",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Program.ProgramCreationTests.AddEducationProgaramWithError(System.Boolean)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "788a1065c041"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Program"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddEducationProgaramWithError"
+    },
+    {
+      "name": "testClass",
+      "value": "ProgramCreationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Программа"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Программа"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Если не заполнить одно обязательное поле у программы ВО",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@aria-label='Название*']\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_FillNotAllRequiredFields_100666905_o(String name) in /azp/_work/1/s/Pages/ProgramCreateEditPage.cs:line 95\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_FillNotAllRequiredFields_100666905_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isAdditionalEducationProgram",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "divisionId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725857882622,
+      "stop": 1725857882959
+    },
+    {
+      "name": "Не заполнить одно обязательное поле при создании образовательной программы",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_FillNotAllRequiredFields_100666905_o(String name) in /azp/_work/1/s/Pages/ProgramCreateEditPage.cs:line 95\n   at OdinUiTests.Pages.ProgramCreateEditPage.__a$_around_FillNotAllRequiredFields_100666905_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"775A7943C\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725857882959,
+      "stop": 1725857913219
+    }
+  ],
+  "attachments": [
+    {
+      "name": "AddEducationProgaramWithError.jpg",
+      "source": "856fea54-79ac-4777-a6e1-3cc33cfd5de7-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "bc73d1d6-d1bc-44e3-b541-8aa44a362d19-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "isAddEduc",
+      "value": "false",
+      "excluded": false
+    }
+  ],
+  "start": 1725857882617,
+  "stop": 1725857913390
+}
