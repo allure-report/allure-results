@@ -1,0 +1,155 @@
+{
+  "uuid": "44686520-37a3-4da9-924d-5f668cc0e3fa",
+  "historyId": "cbe2174410b3cfeaf51aaead4b603b37",
+  "testCaseId": "f785589bed4868aaae85cadc27c9692e",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityEditingTests.CheckErrorInMinThresholdFieldWithIncorrectValue()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "93703aa85d93"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorInMinThresholdFieldWithIncorrectValue"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityEditingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Ошибка валидации в поле Минимальный порог баллов, если введено отрицательное значение",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Allure.Net.Commons.Steps.StepFailedException : Step failed: В поле 'Минимальный порог баллов' ввести значение -130\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInMinThresholdField(String threshold) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 513\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditMinThresholdWithIncorrectValue(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 316\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditMinThresholdWithIncorrectValueInActivity(IWebDriver driver, String activityId) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 324\n   at OdinUiTests.Tests.Activity.TestActivityEditingTests.CheckErrorInMinThresholdFieldWithIncorrectValue() in /azp/_work/2/s/Tests/Activity/TestActivityTests.cs:line 229\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/2/s/Services/CommonService.cs:line 370\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass112_0.<EditValueInMinThresholdField>b__0() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 515\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass31_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "activityId",
+              "value": "\"94\"",
+              "excluded": false
+            }
+          ],
+          "start": 1725865081233,
+          "stop": 1725865081804
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"94\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725865081232,
+      "stop": 1725865081804
+    },
+    {
+      "name": "В поле 'Минимальный порог баллов' ввести значение -130",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725865081805,
+      "stop": 1725865115525
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckErrorInMinThresholdFieldWithIncorrectValue.jpg",
+      "source": "2f2b2bda-ebc0-479f-a18a-4940d1f1b47a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "ea411004-9582-406a-aabf-29d29bac4a74-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1725865081221,
+  "stop": 1725865115725
+}
