@@ -1,0 +1,196 @@
+{
+  "uuid": "8366903a-01d4-44ac-8a6d-40ba4cba5b3c",
+  "historyId": "1f0e52d45c49e9403992916717b55a42",
+  "testCaseId": "24a6a06b372eaf958c2e154d575873a7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.CheckEndStudySwitchStatusForAdminDepartment()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "c24b2f96f422"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEndStudySwitchStatusForAdminDepartment"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Проверка завершения обучения переключение статуса для админа подразделения",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Админ подразделения не смог изменить статус обучения студенту\nAssert.That(actual, Is.Not.EqualTo(expected))\n  Expected: not equal to \"Не сдал экзамен\"\n  But was:  \"Не сдал экзамен\"\n",
+    "trace": "   at NUnit.Framework.Legacy.ClassicAssert.AreNotEqual(Object expected, Object actual, String message, Object[] args)\n   at OdinUiTests.Tests.Exams.ExamCreateEditTests.CheckEndStudySwitchStatusForAdminDepartment() in /azp/_work/1/s/Tests/Exams/TestCenterTests.cs:line 332\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1725863705199,
+      "stop": 1725863705384
+    },
+    {
+      "name": "Нажать на кнопку Завершить обучение для студентов экзамена",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725863705384,
+      "stop": 1725863710221
+    },
+    {
+      "name": "Получить статус обучения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725863710222,
+      "stop": 1725863710259
+    },
+    {
+      "name": "Изменить статус обучения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Выбрать рандомно значение в дропдауне статуса обчения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1725863712535,
+          "stop": 1725863713686
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725863710260,
+      "stop": 1725863713702
+    },
+    {
+      "name": "Нажать на кнопку Сохранить",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725863713702,
+      "stop": 1725863744999
+    },
+    {
+      "name": "Получить статус обучения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1725863744999,
+      "stop": 1725863745022
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEndStudySwitchStatusForAdminDepartment.jpg",
+      "source": "f898de2e-cd9b-49f8-9a91-54ce771be455-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "45f71f6d-6716-47b2-858d-381709915581-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1725863702782,
+  "stop": 1725863745228
+}
