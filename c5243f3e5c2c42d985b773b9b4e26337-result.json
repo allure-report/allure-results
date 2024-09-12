@@ -1,0 +1,201 @@
+{
+  "uuid": "6db50a02-bf72-4308-a9ac-09083f86cfa6",
+  "historyId": "8ffaa6856d6a985ab350728118538b52",
+  "testCaseId": "21fc6553349bbbafe7dbb166378b4208",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.CreateExamVNG()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "406c1494fe01"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateExamVNG"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание экзамена ВНЖ",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.FormatException : The input string '' was not in a correct format.",
+    "trace": "   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)\n   at System.Int32.Parse(String s)\n   at OdinUiTests.Services.DisciplineService.RemoveDiscipline(String disId) in /azp/_work/1/s/Services/DisciplineService.cs:line 106\n   at OdinUiTests.Services.CohortService.RemoveExam(String cohortId) in /azp/_work/1/s/Services/CohortService.cs:line 180\n   at OdinUiTests.Tests.Exams.ExamCreateEditTests.CreateExamVNG() in /azp/_work/1/s/Tests/Exams/TestCenterTests.cs:line 161\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1726128620987,
+      "stop": 1726128621220
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить' для добавления потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726128621220,
+      "stop": 1726128623794
+    },
+    {
+      "name": "В поле 'Тип экзамена' выбрать значение 'ВНЖ'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726128623794,
+      "stop": 1726128627218
+    },
+    {
+      "name": "Выбрать сегодняшнюю дату для 'Дата начала'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726128627218,
+      "stop": 1726128630146
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726128630146,
+      "stop": 1726128630232
+    },
+    {
+      "name": "Проверка сохранения экзамена ",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortTitle",
+          "value": "\"ВНЖ\"",
+          "excluded": false
+        }
+      ],
+      "start": 1726128630232,
+      "stop": 1726128632894
+    },
+    {
+      "name": "Получить количество студентов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726128632894,
+      "stop": 1726128632918
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CreateExamVNG.jpg",
+      "source": "cd7b2227-5962-4970-a107-5201c9da914f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "4f766f0d-ad27-4fc9-83e6-0a93059fb243-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1726128620987,
+  "stop": 1726128633249
+}

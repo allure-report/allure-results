@@ -1,0 +1,201 @@
+{
+  "uuid": "8f5a5d81-c8b9-4834-b418-42a3723c719a",
+  "historyId": "d8c32529110ac84875c25e190da3c858",
+  "testCaseId": "ca5f14202156f643fe2585525c1d93b9",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.CreateExamRVP()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "406c1494fe01"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateExamRVP"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание экзамена РВП",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.FormatException : The input string '' was not in a correct format.",
+    "trace": "   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)\n   at System.Int32.Parse(String s)\n   at OdinUiTests.Services.DisciplineService.RemoveDiscipline(String disId) in /azp/_work/1/s/Services/DisciplineService.cs:line 106\n   at OdinUiTests.Services.CohortService.RemoveExam(String cohortId) in /azp/_work/1/s/Services/CohortService.cs:line 180\n   at OdinUiTests.Tests.Exams.ExamCreateEditTests.CreateExamRVP() in /azp/_work/1/s/Tests/Exams/TestCenterTests.cs:line 146\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1726128609793,
+      "stop": 1726128610054
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить' для добавления потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726128610054,
+      "stop": 1726128612300
+    },
+    {
+      "name": "В поле 'Тип экзамена' выбрать значение 'РВП'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726128612300,
+      "stop": 1726128615343
+    },
+    {
+      "name": "Выбрать сегодняшнюю дату для 'Дата начала'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726128615343,
+      "stop": 1726128618109
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726128618109,
+      "stop": 1726128618196
+    },
+    {
+      "name": "Проверка сохранения экзамена ",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortTitle",
+          "value": "\"РВП\"",
+          "excluded": false
+        }
+      ],
+      "start": 1726128618196,
+      "stop": 1726128620644
+    },
+    {
+      "name": "Получить количество студентов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726128620644,
+      "stop": 1726128620675
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CreateExamRVP.jpg",
+      "source": "0ea3cdac-7e3b-4625-9288-68187288f41d-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "05c9c185-c95e-4b4a-a07d-d7cc5dd28215-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1726128609792,
+  "stop": 1726128620986
+}

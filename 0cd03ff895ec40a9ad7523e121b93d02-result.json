@@ -1,0 +1,144 @@
+{
+  "uuid": "a3bd7dcc-b081-4bb6-8a7e-cb6645008d6a",
+  "historyId": "a23c942dba6600d416e5b33d54f43a3c",
+  "testCaseId": "01ef7c72ba6c07d9ab9cb6d26c89db62",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Division.DivisionEditingTests.CheckEditDivisionResponsiblePersons()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "406c1494fe01"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Division"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditDivisionResponsiblePersons"
+    },
+    {
+      "name": "testClass",
+      "value": "DivisionEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Подразделения"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование подразделения"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Подразделения"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно отредактировать ответственных лиц подразделения",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@aria-label='Администраторы']\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DivisionCreateEditPage.__a$_around_FillAdminsField_100666681_o() in /azp/_work/1/s/Pages/DivisionCreateEditPage.cs:line 101\n   at OdinUiTests.Pages.DivisionCreateEditPage.__a$_around_FillAdminsField_100666681_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования подразделения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "divisionId",
+          "value": "\"781\"",
+          "excluded": false
+        }
+      ],
+      "start": 1726128593212,
+      "stop": 1726128593416
+    },
+    {
+      "name": "Заполнить поля в блоке 'Ответственные лица'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DivisionCreateEditPage.__a$_around_FillAdminsField_100666681_w_0(Object[])\n   at OdinUiTests.Pages.DivisionCreateEditPage.FillAdminsField()\n   at OdinUiTests.Pages.DivisionCreateEditPage.__a$_around_FillResponsiblePersonsFields_100666683_o() in /azp/_work/1/s/Pages/DivisionCreateEditPage.cs:line 129\n   at OdinUiTests.Pages.DivisionCreateEditPage.__a$_around_FillResponsiblePersonsFields_100666683_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Выбрать значение в поле 'Администраторы'",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 30 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DivisionCreateEditPage.__a$_around_FillAdminsField_100666681_o() in /azp/_work/1/s/Pages/DivisionCreateEditPage.cs:line 101\n   at OdinUiTests.Pages.DivisionCreateEditPage.__a$_around_FillAdminsField_100666681_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1726128593416,
+          "stop": 1726128623919
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726128593416,
+      "stop": 1726128623924
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditDivisionResponsiblePersons.jpg",
+      "source": "2d839d12-e549-49ea-87bc-78c8749ad85f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "595e4b8e-a54a-4c2e-b9c5-de5c9735cb0f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1726128592669,
+  "stop": 1726128624354
+}
