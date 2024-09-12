@@ -1,0 +1,201 @@
+{
+  "uuid": "e7490d23-303c-47bd-b3ee-fb1135fa385c",
+  "historyId": "d8c32529110ac84875c25e190da3c858",
+  "testCaseId": "ca5f14202156f643fe2585525c1d93b9",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.CreateExamRVP()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "d0a0a3f94db4"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateExamRVP"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание экзамена РВП",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  {\"httpStatusCode\":400,\"errors\":[{\"key\":\"\",\"value\":\"The association between entity types 'Cohort' and 'MigrationExamWelcomeSpeech' has been severed, but the relationship is either marked as required or is implicitly required because the foreign key is not nullable. If the dependent/child entity should be deleted when a required relationship is severed, configure the relationship to use cascade deletes. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the key values.\"}],\"isSuccess\":false}\nAssert.That(actual, Is.EqualTo(expected))\n  Expected: 200\n  But was:  400\n",
+    "trace": "   at NUnit.Framework.Legacy.ClassicAssert.AreEqual(Object expected, Object actual, String message, Object[] args)\n   at OdinUiTests.Services.CohortService.RemoveCohortById(String cohortId) in /azp/_work/2/s/Services/CohortService.cs:line 159\n   at OdinUiTests.Services.CohortService.RemoveExam(String cohortId) in /azp/_work/2/s/Services/CohortService.cs:line 181\n   at OdinUiTests.Tests.Exams.ExamCreateEditTests.CreateExamRVP() in /azp/_work/2/s/Tests/Exams/TestCenterTests.cs:line 146\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1726129425612,
+      "stop": 1726129425852
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить' для добавления потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726129425852,
+      "stop": 1726129427796
+    },
+    {
+      "name": "В поле 'Тип экзамена' выбрать значение 'РВП'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726129427796,
+      "stop": 1726129430609
+    },
+    {
+      "name": "Выбрать сегодняшнюю дату для 'Дата начала'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726129430609,
+      "stop": 1726129433112
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726129433112,
+      "stop": 1726129433172
+    },
+    {
+      "name": "Проверка сохранения экзамена ",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortTitle",
+          "value": "\"РВП\"",
+          "excluded": false
+        }
+      ],
+      "start": 1726129433172,
+      "stop": 1726129435266
+    },
+    {
+      "name": "Получить количество студентов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1726129435266,
+      "stop": 1726129435279
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CreateExamRVP.jpg",
+      "source": "6e9bad11-c9df-4552-b80b-c0a783bfce01-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "c8c9d6b8-231a-4b8c-bf85-cd92cb114ca6-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1726129425612,
+  "stop": 1726129436420
+}
