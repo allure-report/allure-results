@@ -1,0 +1,187 @@
+{
+  "uuid": "b8530cfe-7e4d-433c-9529-5d3d232b1152",
+  "historyId": "33479be59b5a0bd4a9da9a34cc5f8f27",
+  "testCaseId": "aa6c0c34d30f0cec3dc462b75596be1a",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.TaskPageMiniChatTests.CheckAddReactionToLastMessageInTaskPageMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "6c5e57b3370e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddReactionToLastMessageInTaskPageMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskPageMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат страницы решений"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно добавить реакцию на сообщение в миничате страницы решений",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitUntilSpinnersDisappearFromChat() in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1074\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatPageOrRefreshPage(Boolean isMinichat, String chatId) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1131\n   at OdinUiTests.Pages.ChatCommonPage.ReactionIsAddedToLastMessage(Boolean isMinichat, String chatId) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1416\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckReactionIsAddedToLastMessage_100666286_o(Boolean isMinichat, String chatId) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1424\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckReactionIsAddedToLastMessage_100666286_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу решения задания",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"10157\"",
+          "excluded": false
+        },
+        {
+          "name": "studentName",
+          "value": "\"Doe\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727092098371,
+      "stop": 1727092098588
+    },
+    {
+      "name": "Выбрать сообщение для добавления реакции",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727092099825,
+      "stop": 1727092100945
+    },
+    {
+      "name": "В меню над сообщением выбрать 'Добавить реакцию'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727092100945,
+      "stop": 1727092101316
+    },
+    {
+      "name": "Кликнуть по выбранному смайлику",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727092101317,
+      "stop": 1727092102309
+    },
+    {
+      "name": "Проверка того, что реакция была добавлена к сообщению",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitUntilSpinnersDisappearFromChat() in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1074\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatPageOrRefreshPage(Boolean isMinichat, String chatId) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1131\n   at OdinUiTests.Pages.ChatCommonPage.ReactionIsAddedToLastMessage(Boolean isMinichat, String chatId) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1416\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckReactionIsAddedToLastMessage_100666286_o(Boolean isMinichat, String chatId) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1424\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckReactionIsAddedToLastMessage_100666286_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"56411\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727092102309,
+      "stop": 1727092134290
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddReactionToLastMessageInTaskPageMiniChat.jpg",
+      "source": "eeff698d-0797-434f-a591-9b59a4c2a86e-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "40c9787a-ff4f-4206-a296-abec75c5f35d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727092098370,
+  "stop": 1727092134530
+}
