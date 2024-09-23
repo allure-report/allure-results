@@ -1,0 +1,120 @@
+{
+  "uuid": "c69f1c98-3906-4b12-b8b7-b624703cf291",
+  "historyId": "e636f44d85c5d77f65c666f0531e01ac",
+  "testCaseId": "2a98ba8dc840c8bcea721588cfe9bfc9",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.TestCenterTests.CheckExamineesAuthorization()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "c5a9770dc219"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckExamineesAuthorization"
+    },
+    {
+      "name": "testClass",
+      "value": "TestCenterTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Проверка авторизации экзаменуемого",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.IO.FileNotFoundException : Could not find file '/azp/_work/4/s/bin/Debug/net8.0/download'.",
+    "trace": "   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)\n   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)\n   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)\n   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)\n   at OdinUiTests.Services.CommonService.GetFirstSheetFromWorkBook(String fileName) in /azp/_work/4/s/Services/CommonService.cs:line 683\n   at OdinUiTests.Services.CommonService.GetValueOfHeader(String fileName, String header, IRow row) in /azp/_work/4/s/Services/CommonService.cs:line 694\n   at OdinUiTests.Services.CommonService.GetInfoAboutExaminee(IWebDriver driver) in /azp/_work/4/s/Services/CommonService.cs:line 726\n   at OdinUiTests.Pages.ProgramInfoPage.GetInfoAboutExaminee() in /azp/_work/4/s/Pages/ProgramInfoPage.cs:line 246\n   at OdinUiTests.Tests.Exams.TestCenterTests.CheckExamineesAuthorization() in /azp/_work/4/s/Tests/Exams/TestCenterTests.cs:line 23\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17321\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727072995374,
+      "stop": 1727072996474
+    },
+    {
+      "name": "Нажать на тридот экзамена и выбрать 'Скачать коды для входа'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727072996475,
+      "stop": 1727072998304
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckExamineesAuthorization.jpg",
+      "source": "bace1f06-b484-48e9-a79b-ebbd9839d41f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "c3e1b3e2-00a7-449b-9e20-f3ebd02f0e88-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727072995373,
+  "stop": 1727073016143
+}

@@ -1,0 +1,173 @@
+{
+  "uuid": "4fcca86d-cfaa-4d8b-b028-e876f7cfec0d",
+  "historyId": "fb9f9d1f5802463961188ef27f7d52a0",
+  "testCaseId": "fbc0ef3d57ba88d3b38970479a3a3433",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineChatTests.CheckFindSentMessageInDisciplineChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "c5a9770dc219"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckFindSentMessageInDisciplineChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно найти отправленное сообщение в чате дисциплины",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 50 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class*='text-message ellipsis']\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsFound_100666275_o(Boolean isMinichat, String message) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1316\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsFound_100666275_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"1768\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727072534090,
+      "stop": 1727072534473
+    },
+    {
+      "name": "Нажать на тридот меню и выбрать 'Поиск'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727072534473,
+      "stop": 1727072536943
+    },
+    {
+      "name": "В строке поиска ввести текст ранее отправленного сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "message",
+          "value": "\"9E8C0AE70302D06\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727072536943,
+      "stop": 1727072537040
+    },
+    {
+      "name": "Проверка того, что отправленное сообщение было найдено",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 50 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsFound_100666275_o(Boolean isMinichat, String message) in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1316\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsFound_100666275_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "message",
+          "value": "\"9E8C0AE70302D06\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727072537040,
+      "stop": 1727072587410
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckFindSentMessageInDisciplineChat.jpg",
+      "source": "0ff9ba09-4a03-4ce5-9716-3cc5e8d4da57-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "0ff2b011-0c24-4802-96d5-a2b73f8afef4-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727072534083,
+  "stop": 1727072587699
+}

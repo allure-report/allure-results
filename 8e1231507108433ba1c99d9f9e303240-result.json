@@ -1,0 +1,146 @@
+{
+  "uuid": "3477d7bd-7e83-4ca0-bd50-c8a85e381f71",
+  "historyId": "08c3bb6c30de6cf8e7b7b3ab104494c6",
+  "testCaseId": "53faabdf96070a8089a64150dec54ef1",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortCreationValidationTests.CheckCreateCohortFromUnsuitableTemplate(System.Int32,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "c5a9770dc219"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateCohortFromUnsuitableTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortCreationValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание потока ВО: невозможно создать поток из шаблона программы ДО",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Allure.Net.Commons.Steps.StepFailedException : Step failed: Переключиться на Библиотеку 'Высшая IT школа'\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".library-select__item-section\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.LibraryPage.SwitchToAnotherLibrary(Boolean isRandom, String name) in /azp/_work/4/s/Pages/LibraryPage.cs:line 570\n   at OdinUiTests.Pages.CohortCreateEditPage.CheckTemplateIsNotAppear(String templateName) in /azp/_work/4/s/Pages/CohortCreateEditPage.cs:line 373\n   at OdinUiTests.Tests.Cohort.CohortCreationValidationTests.CheckCreateCohortFromUnsuitableTemplate(Int32 templateId, String programId) in /azp/_work/4/s/Tests/Cohort/CohortCreateEditTests.cs:line 239\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.LibraryPage.<>c__DisplayClass73_0.<SwitchToAnotherLibrary>b__0() in /azp/_work/4/s/Pages/LibraryPage.cs:line 580\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"5\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727072754671,
+      "stop": 1727072754924
+    },
+    {
+      "name": "Нажать на кнопку 'Выбрать шаблон'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727072754924,
+      "stop": 1727072756944
+    },
+    {
+      "name": "Переключиться на Библиотеку 'Высшая IT школа'",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727072756945,
+      "stop": 1727072790840
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateCohortFromUnsuitableTemplate.jpg",
+      "source": "c4523e59-66e1-496c-afb5-80d41a36bca3-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "562b65df-a10e-4b3a-8868-d706a6c0d313-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "templateId",
+      "value": "697185",
+      "excluded": false
+    },
+    {
+      "name": "programId",
+      "value": "\"5\"",
+      "excluded": false
+    }
+  ],
+  "start": 1727072753572,
+  "stop": 1727072791150
+}
