@@ -1,0 +1,208 @@
+{
+  "uuid": "0477d99e-a788-4726-93fe-f1136f6d20e4",
+  "historyId": "1a7e9001225da51703b41cc55c91e2a4",
+  "testCaseId": "7015a959cc702ba35795022ff8ae88cf",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskActivityCreatingTests.CheckCreateTaskActivity()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "e341fb5da14a"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateTaskActivity"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskActivityCreatingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание задания"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать активность типа Задание, если заполнены все обязательные поля",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class='right-content-block col']\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.TaskActivityIsCreated(String taskName) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 717\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTaskActivityIsCreated_100666038_o(String taskName) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 727\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTaskActivityIsCreated_100666038_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"379\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727080989294,
+      "stop": 1727080990497
+    },
+    {
+      "name": "В поле 'Тип активности' выбрать значение 'Задание'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727080990498,
+      "stop": 1727080999265
+    },
+    {
+      "name": "Ввести значение в поле 'Название активности'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"8F083DDG26315D1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727080999266,
+      "stop": 1727080999456
+    },
+    {
+      "name": "Ввести значение в поле 'Описание'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "description",
+          "value": "\"8F083DDG26315D1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727080999457,
+      "stop": 1727081001905
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить' и подтвердить сохранение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727081001906,
+      "stop": 1727081005168
+    },
+    {
+      "name": "Проверка того, что была создана активность типа 'Задание'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.TaskActivityIsCreated(String taskName) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 717\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTaskActivityIsCreated_100666038_o(String taskName) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 727\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTaskActivityIsCreated_100666038_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "taskName",
+          "value": "\"8F083DDG26315D1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727081005169,
+      "stop": 1727081035590
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateTaskActivity.jpg",
+      "source": "0301ae3f-9360-468f-a84e-b653172f6e38-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "871ce322-b3ec-43b4-9069-221d8b03cf40-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727080989269,
+  "stop": 1727081035966
+}
