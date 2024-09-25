@@ -1,0 +1,157 @@
+{
+  "uuid": "3ef2b14a-2b1c-4fc1-b33c-a4f20ea2a169",
+  "historyId": "3934132eb7eea45c144d91c1cf41e7fe",
+  "testCaseId": "fded874aeda4dc77ccbd842d4940e675",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityAddingTests.CheckAddTestTrainToControlTypeActivity()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "82c10bf81843"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddTestTrainToControlTypeActivity"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityAddingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно добавить материал типа Тест-тренажёр из Библиотеки в контрольную",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Добавить материалы')]\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClickOnAddMaterialButton_100665905_o() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 415\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClickOnAddMaterialButton_100665905_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "activityId",
+              "value": "\"10085\"",
+              "excluded": false
+            }
+          ],
+          "start": 1727243814437,
+          "stop": 1727243814896
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"10085\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727243814437,
+      "stop": 1727243814896
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить материалы'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClickOnAddMaterialButton_100665905_o() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 415\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClickOnAddMaterialButton_100665905_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727243814896,
+      "stop": 1727243845142
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddTestTrainToControlTypeActivity.jpg",
+      "source": "700abc62-f8db-422f-b0b8-06e5e1813c2c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "e19bda16-f4c8-4009-bdc0-bfaeb52da099-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727243806238,
+  "stop": 1727243845338
+}

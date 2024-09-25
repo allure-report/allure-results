@@ -1,0 +1,178 @@
+{
+  "uuid": "b0a25e28-bcde-464a-b6c0-b51ddaf20c2c",
+  "historyId": "0e58b70cdf6a5fb87a34e4e82dab88c7",
+  "testCaseId": "71eafd760b60fafee3087076ebe7fca7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.PersonalChatTests.CheckSendMessageByTappingEnterInPersonalChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "82c10bf81843"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendMessageByTappingEnterInPersonalChat"
+    },
+    {
+      "name": "testClass",
+      "value": "PersonalChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Личный чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно отправить сообщение по нажатию на Enter в личном чате",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitUntilSpinnersDisappearFromChat() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1074\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatPageOrRefreshPage(Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1131\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsSent(String message, Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1231\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsSent_100666268_o(Boolean isMinichat, String chatId, String randomText) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1241\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsSent_100666268_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"732060\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727244056407,
+      "stop": 1727244056750
+    },
+    {
+      "name": "В строке ввода ввести текстовое сообщение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "randomText",
+          "value": "\"64GFC4D231DB20D\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727244056750,
+      "stop": 1727244060953
+    },
+    {
+      "name": "Отправить сообщение нажатем на Enter",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727244060953,
+      "stop": 1727244061067
+    },
+    {
+      "name": "Проверка того, что текстовое сообщение было отправлено",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitUntilSpinnersDisappearFromChat() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1074\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatPageOrRefreshPage(Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1131\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsSent(String message, Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1231\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsSent_100666268_o(Boolean isMinichat, String chatId, String randomText) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1241\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsSent_100666268_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"732060\"",
+          "excluded": false
+        },
+        {
+          "name": "randomText",
+          "value": "\"64GFC4D231DB20D\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727244061067,
+      "stop": 1727244095170
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendMessageByTappingEnterInPersonalChat.jpg",
+      "source": "3bfe068d-838d-4959-9796-9db6d3f34066-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "9cb7da87-819f-4d08-9d6b-d96e33eb316c-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727244056407,
+  "stop": 1727244095441
+}

@@ -1,0 +1,126 @@
+{
+  "uuid": "8d9d2aa0-3059-41cf-af86-9b5670cae354",
+  "historyId": "8c99b3920c8f69f117e0819dc0711851",
+  "testCaseId": "a4c002b483c08de9a65555cd607a55dc",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatMessageActionTests.CheckOpenDiscussionPanelForLeftMessageInGroupChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "82c10bf81843"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckOpenDiscussionPanelForLeftMessageInGroupChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatMessageActionTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Раскрытие панели обсуждения в групповом чате",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(@class,'action-panel')]/ancestor::div[contains(@class,'message-block')]\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.ChooseLeftMessageToFurtherAction(Boolean needToCheckForDiscussed) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1177\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChooseLeftMessageToFurtherAction_100666247_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 998\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChooseLeftMessageToFurtherAction_100666247_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"6330\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727243945179,
+      "stop": 1727243945425
+    },
+    {
+      "name": "Убедиться, что в чате имеются сообщения от участников чата",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.ChooseLeftMessageToFurtherAction(Boolean needToCheckForDiscussed) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1177\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChooseLeftMessageToFurtherAction_100666247_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 998\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChooseLeftMessageToFurtherAction_100666247_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727243945425,
+      "stop": 1727243975832
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckOpenDiscussionPanelForLeftMessageInGroupChat.jpg",
+      "source": "01ff5680-d12b-4576-a157-40593bd8b9d0-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "95564d30-a713-4c37-8c46-f9090efabf29-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727243945179,
+  "stop": 1727243976035
+}
