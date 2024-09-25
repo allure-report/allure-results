@@ -1,0 +1,147 @@
+{
+  "uuid": "67f28d82-990c-4dff-8ada-339ef23aaacf",
+  "historyId": "fbe3e644887655f19339e0a9dfbe496a",
+  "testCaseId": "c29554931c886b846b2b951e391ed551",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Division.DivisionPageTests.CheckTransitionToDivisionLibraryPage()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "82205bd7dc53"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Division"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckTransitionToDivisionLibraryPage"
+    },
+    {
+      "name": "testClass",
+      "value": "DivisionPageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Подразделения"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница подразделения"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Подразделения"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Работает переход к библиотеке подразделения",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/2/s/Services/CommonService.cs:line 318\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/2/s/Pages/LibraryPage.cs:line 338\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckDivLibraryPageIsOpen_100666852_o(String divisionId) in /azp/_work/2/s/Pages/LibraryPage.cs:line 1199\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckDivLibraryPageIsOpen_100666852_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу подразделения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "divisionId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727241428934,
+      "stop": 1727241429156
+    },
+    {
+      "name": "Нажать на кнопку 'Библиотека'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727241429156,
+      "stop": 1727241430260
+    },
+    {
+      "name": "Проверка того, что произошел корректный переход на страницу библиотеки подразделения",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/2/s/Services/CommonService.cs:line 318\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/2/s/Pages/LibraryPage.cs:line 338\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckDivLibraryPageIsOpen_100666852_o(String divisionId) in /azp/_work/2/s/Pages/LibraryPage.cs:line 1199\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckDivLibraryPageIsOpen_100666852_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "divisionId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727241430260,
+      "stop": 1727241466230
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckTransitionToDivisionLibraryPage.jpg",
+      "source": "61abbe0d-3473-4412-924e-ff212a6c5daa-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "6ad628d4-2ce0-4611-a120-296f142292ee-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727241428930,
+  "stop": 1727241466462
+}
