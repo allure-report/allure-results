@@ -1,0 +1,181 @@
+{
+  "uuid": "2a06c511-ff1f-4a6c-8ab6-919644cdc74f",
+  "historyId": "9f70348833465ec9075236a1dac4b6b8",
+  "testCaseId": "0e54ef4620af3863f8ea6c147112a5fd",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatTests.CheckAddGroupChatWithUsers()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "2f1721c74d7f"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddGroupChatWithUsers"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно добавить новый групповой чат для групп и студентов",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class*='q-item__label']\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.FillContingentField(String contingent, String name) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 920\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_FillCohortAndGroupsAndUsersField_100666240_o(String cohortName, String groupName, String userName) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 931\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_FillCohortAndGroupsAndUsersField_100666240_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть список чатов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727314186710,
+      "stop": 1727314187029
+    },
+    {
+      "name": "Нажать на кнопку добавления чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727314187029,
+      "stop": 1727314187765
+    },
+    {
+      "name": "Выбрать групповой чат",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727314187765,
+      "stop": 1727314188172
+    },
+    {
+      "name": "Ввести значение в поле 'Название чата' в появившемся окне",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727314188172,
+      "stop": 1727314188341
+    },
+    {
+      "name": "Заполнить поля 'Поток', 'Группы', 'Пользователи'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.FillContingentField(String contingent, String name) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 920\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_FillCohortAndGroupsAndUsersField_100666240_o(String cohortName, String groupName, String userName) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 931\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_FillCohortAndGroupsAndUsersField_100666240_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortName",
+          "value": "\"23-09 Первый поток\"",
+          "excluded": false
+        },
+        {
+          "name": "groupName",
+          "value": "\"Группа для удаления\"",
+          "excluded": false
+        },
+        {
+          "name": "userName",
+          "value": "\"Valarea Test\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727314188341,
+      "stop": 1727314226870
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddGroupChatWithUsers.jpg",
+      "source": "2a384df7-50eb-430f-9505-95d4e96e3094-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "1f578125-9396-4ec9-a052-f833e9bb9be1-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727314167249,
+  "stop": 1727314227237
+}
