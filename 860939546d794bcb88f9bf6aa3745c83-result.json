@@ -1,0 +1,217 @@
+{
+  "uuid": "6adc4d4e-17ea-4a5b-8a58-09adb908cb32",
+  "historyId": "665d09fa230308deba1e0c32993fe263",
+  "testCaseId": "31f4dc21b78a985dce5e4c8e4bd6fbdc",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TemplateEditingTests.CheckEditActivityTemplateDescription()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "30f21446e452"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditActivityTemplateDescription"
+    },
+    {
+      "name": "testClass",
+      "value": "TemplateEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обычный шаблон активности"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно изменить описание шаблона активности",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".description-html p\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.ActivityDescriptionIsChanged(String description) in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 641\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateDescriptionIsChanged_100666026_o(String description) in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 654\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateDescriptionIsChanged_100666026_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"1340\"",
+              "excluded": false
+            }
+          ],
+          "start": 1727441700031,
+          "stop": 1727441700261
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"1340\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727441700031,
+      "stop": 1727441700261
+    },
+    {
+      "name": "Редактировать значение в поле 'Описание'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "description",
+          "value": "\"F835121DG979712\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727441700262,
+      "stop": 1727441703644
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1727441703644,
+          "stop": 1727441703707
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1727441703644,
+      "stop": 1727441703707
+    },
+    {
+      "name": "Проверка того, что описание шаблона активности изменилось",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.ActivityDescriptionIsChanged(String description) in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 641\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateDescriptionIsChanged_100666026_o(String description) in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 654\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateDescriptionIsChanged_100666026_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "description",
+          "value": "\"F835121DG979712\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727441703708,
+      "stop": 1727441733921
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditActivityTemplateDescription.jpg",
+      "source": "fb0eedb1-5bce-4cb7-911d-d1700abf26ab-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "3bf20ee6-2edf-422d-9958-88d5cc25f349-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727441700030,
+  "stop": 1727441734133
+}

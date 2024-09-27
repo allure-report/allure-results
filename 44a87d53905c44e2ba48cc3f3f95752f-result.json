@@ -1,0 +1,263 @@
+{
+  "uuid": "e9731291-d79e-4a8d-9b4d-a6d0b59de2ec",
+  "historyId": "1434ac9eb0c535c93d16293fa96e715e",
+  "testCaseId": "1e8b324d40b5ddee3b5ffb68560e95cc",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestTemplateCreatingTests.CheckExecModeTestActivityTemplate(System.Int32)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "30f21446e452"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckExecModeTestActivityTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateCreatingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание шаблона контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать шаблон контрольной с режимом выполнения Командный",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),'Редактировать')]\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnEditButton_100665991_o() in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 266\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnEditButton_100665991_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания шаблона активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "directoryId",
+          "value": "\"18595\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727441651215,
+      "stop": 1727441651444
+    },
+    {
+      "name": "В поле 'Тип активности' выбрать значение 'Контрольная работа'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727441651444,
+      "stop": 1727441654746
+    },
+    {
+      "name": "Ввести значение в поле 'Название'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"G7BE3155E7EC1E4\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727441654746,
+      "stop": 1727441654977
+    },
+    {
+      "name": "Ввести значение в поле 'Описание'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "description",
+          "value": "\"G7BE3155E7EC1E4\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727441654977,
+      "stop": 1727441657426
+    },
+    {
+      "name": "В поле 'Режим выполнения' выбрать значение 'Командный'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727441657426,
+      "stop": 1727441658727
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1727441658727,
+          "stop": 1727441658844
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1727441658727,
+      "stop": 1727441658844
+    },
+    {
+      "name": "Проверка того, что режим выполнения контрольной - 'Командный'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnEditButton_100665991_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.ClickOnEditButton()\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ControlActivityIsCreatedWithCommandMode_100666096_o() in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 1277\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ControlActivityIsCreatedWithCommandMode_100666096_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Редактировать'",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 30 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnEditButton_100665991_o() in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 266\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnEditButton_100665991_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1727441658845,
+          "stop": 1727441689302
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727441658845,
+      "stop": 1727441689303
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckExecModeTestActivityTemplate.jpg",
+      "source": "0b22620c-3384-46aa-a926-0847b7fff35c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "a393e202-6438-45d2-acb0-17cdd65c3927-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "mode",
+      "value": "0",
+      "excluded": false
+    }
+  ],
+  "start": 1727441651214,
+  "stop": 1727441689762
+}

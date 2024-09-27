@@ -1,0 +1,136 @@
+{
+  "uuid": "8ce07055-8806-4814-8dc4-cfb66112d026",
+  "historyId": "5f1fc8624a9a0dcdb59d6795feae5d74",
+  "testCaseId": "d077487f75da21e6bca5a82224d075bd",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TemplateAddingTests.CheckRemoveMaterialFromActivityTemplate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "30f21446e452"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckRemoveMaterialFromActivityTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "TemplateAddingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обычный шаблон активности"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно удалить материал из шаблона активности",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),'Редактировать')]\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.CheckMaterialExist(Boolean isTemplate) in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 116\n   at OdinUiTests.Tests.Activity.ActivityCommon.RemoveMaterial(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 492\n   at OdinUiTests.Tests.Activity.ActivityCommon.RemoveMaterialFromActivityPlan(IWebDriver driver, String contentId) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 507\n   at OdinUiTests.Tests.Activity.TemplateAddingTests.CheckRemoveMaterialFromActivityTemplate() in /azp/_work/3/s/Tests/Activity/TemplateTests.cs:line 148\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу активности/шаблона активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"861\"",
+              "excluded": false
+            }
+          ],
+          "start": 1727441642664,
+          "stop": 1727441643027
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"861\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727441642664,
+      "stop": 1727441643027
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckRemoveMaterialFromActivityTemplate.jpg",
+      "source": "f9d6ee7f-4719-4cf7-99d7-e14677bba429-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "03d6fea3-d735-42ac-9cb7-13b0798131fe-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727441642445,
+  "stop": 1727441673664
+}
