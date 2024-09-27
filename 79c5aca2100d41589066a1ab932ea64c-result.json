@@ -1,0 +1,211 @@
+{
+  "uuid": "c5529d34-e5e8-421e-9a2d-eeda96382a77",
+  "historyId": "2345dcc9bea7439f0154eb97afd97184",
+  "testCaseId": "618b33ecf628be2cb69802eb6ba40f24",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TemplateEditingTests.CheckEditActivityTemplateVolume()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "bb9ef84cbbbf"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditActivityTemplateVolume"
+    },
+    {
+      "name": "testClass",
+      "value": "TemplateEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обычный шаблон активности"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Успешное сохранение при корректных значениях в поле Объем в академических часах",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),'Объем')]/following-sibling::span\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.ActivityVolumeIsChanged(String volume, Boolean isTemplate) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 666\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateVolumeIsChanged_100666030_o(String volume) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 681\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateVolumeIsChanged_100666030_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"1340\"",
+              "excluded": false
+            }
+          ],
+          "start": 1727440756369,
+          "stop": 1727440756780
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"1340\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727440756369,
+      "stop": 1727440756780
+    },
+    {
+      "name": "В поле 'Объем в академических часах' ввести значение 84.6",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727440756780,
+      "stop": 1727440759041
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1727440759041,
+          "stop": 1727440759172
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1727440759041,
+      "stop": 1727440759172
+    },
+    {
+      "name": "Проверка того, что объем шаблона активности был изменен",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.ActivityVolumeIsChanged(String volume, Boolean isTemplate) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 666\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateVolumeIsChanged_100666030_o(String volume) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 681\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateVolumeIsChanged_100666030_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "volume",
+          "value": "\"84.6\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727440759172,
+      "stop": 1727440789402
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditActivityTemplateVolume.jpg",
+      "source": "f3270c70-07de-4f76-a996-fb0d7bbaa032-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "01d52370-ce3c-444a-afe9-6a9a31a6c1da-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727440756369,
+  "stop": 1727440790035
+}

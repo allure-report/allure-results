@@ -1,0 +1,155 @@
+{
+  "uuid": "87165075-c4f6-463f-a90d-ae6f63572e70",
+  "historyId": "5348ad188d9ccb4faba078ec40e93747",
+  "testCaseId": "3a153abe96c684dd3d45773bb9625285",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckSuccessEditingTimeLimitWithCorrectValue()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "bb9ef84cbbbf"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSuccessEditingTimeLimitWithCorrectValue"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateEditingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование шаблона контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Успешное сохранение при корректных значениях в поле Временной лимит",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Allure.Net.Commons.Steps.StepFailedException : Step failed: В поле 'Временной лимит' ввести значение 136\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInTimeLimitField(String value) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 503\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditTimeLimitWithCorrectValue(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 251\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditTimeLimitWithCorrectValueInActivityPlan(IWebDriver driver, String contentId) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 264\n   at OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckSuccessEditingTimeLimitWithCorrectValue() in /azp/_work/1/s/Tests/Activity/TestTemplateTests.cs:line 145\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 318\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/1/s/Services/CommonService.cs:line 368\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass111_0.<EditValueInTimeLimitField>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 505\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"58205\"",
+              "excluded": false
+            }
+          ],
+          "start": 1727440727912,
+          "stop": 1727440728266
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"58205\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727440727912,
+      "stop": 1727440728266
+    },
+    {
+      "name": "В поле 'Временной лимит' ввести значение 136",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727440728266,
+      "stop": 1727440759056
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSuccessEditingTimeLimitWithCorrectValue.jpg",
+      "source": "17f6a801-5e39-4ea0-aebf-e7168e5bed86-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "54f37081-51c3-427a-9209-bded84b7a3d7-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727440727911,
+  "stop": 1727440759312
+}

@@ -1,0 +1,215 @@
+{
+  "uuid": "ea6efd53-cebb-4123-a933-ba919cf43f52",
+  "historyId": "1c12d7468acca5a1d27bf9ff35bc8268",
+  "testCaseId": "97d7fd0a80690382e70b8d42373e0bea",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckEditScoreValueInControlActivityPlan()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "bb9ef84cbbbf"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditScoreValueInControlActivityPlan"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateEditingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование шаблона контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно переключать значения в поле Оценка в шаблон контрольной",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),'Итоговая оценка')]/following-sibling::span\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.ActivityScoreIsChanged(String score) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 849\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateScoreIsChanged_100666051_o(String score) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 862\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateScoreIsChanged_100666051_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"58205\"",
+              "excluded": false
+            }
+          ],
+          "start": 1727440693020,
+          "stop": 1727440693588
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"58205\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727440693020,
+      "stop": 1727440693588
+    },
+    {
+      "name": "Переключить значение в поле 'Оценка'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727440693588,
+      "stop": 1727440696950
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1727440696950,
+          "stop": 1727440697155
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1727440696950,
+      "stop": 1727440697155
+    },
+    {
+      "name": "Проверка того, что на странице шаблона активности в поле 'Итоговая оценка' поменялось значение",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.ActivityScoreIsChanged(String score) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 849\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateScoreIsChanged_100666051_o(String score) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 862\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateScoreIsChanged_100666051_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "score",
+          "value": "\"За последнюю попытку\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727440697155,
+      "stop": 1727440727610
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditScoreValueInControlActivityPlan.jpg",
+      "source": "287c0178-a4ee-4c04-bdf3-ca7ec050036a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "691ba90e-795c-4079-8f6b-52a65bb9388b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727440693020,
+  "stop": 1727440727896
+}
