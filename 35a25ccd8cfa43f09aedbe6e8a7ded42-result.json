@@ -1,0 +1,222 @@
+{
+  "uuid": "659bd509-a8da-4e6f-bf01-5799f9c93626",
+  "historyId": "d7a2695adf4c95cd7c426a1a696dbb6f",
+  "testCaseId": "8c2ebece0c90e2908c9501a1e1a8c556",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestTemplateAddingTests.CheckAddTextMaterialToControlActivityPlan()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "2fa7e5aa34f7"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddTextMaterialToControlActivityPlan"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateAddingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование шаблона контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно добавить материал типа Текст из Библиотеки в шаблон контрольной",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Allure.Net.Commons.Steps.StepFailedException : Step failed: Проверка того, что материал типа 'Текст' был добавлен в шаблон активности\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(@href,'Content/Info')]\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonPage.CheckMaterialIsAdded(String type, Boolean isUploading, Boolean isTemplate, String name) in /azp/_work/6/s/Pages/ActivityCommonPage.cs:line 804\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddMaterialFromLibrary(IWebDriver driver, Boolean isTemplate, String id, String type, String name) in /azp/_work/6/s/Tests/Activity/ActivityCommon.cs:line 84\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddTextMaterialToActivityPlan(IWebDriver driver, String contentId) in /azp/_work/6/s/Tests/Activity/ActivityCommon.cs:line 137\n   at OdinUiTests.Tests.Activity.TestTemplateAddingTests.CheckAddTextMaterialToControlActivityPlan() in /azp/_work/6/s/Tests/Activity/TestTemplateTests.cs:line 92\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.<>c__DisplayClass129_0.<CheckMaterialIsAdded>b__0() in /azp/_work/6/s/Pages/ActivityCommonPage.cs:line 807\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"914\"",
+              "excluded": false
+            }
+          ],
+          "start": 1727437970729,
+          "stop": 1727437970994
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"914\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727437970729,
+      "stop": 1727437970994
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить материалы'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727437970994,
+      "stop": 1727437973870
+    },
+    {
+      "name": "Выбрать материал типа 'Текст' из Библиотеки по названию и подтвердить выбор",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727437973870,
+      "stop": 1727437979731
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1727437979731,
+          "stop": 1727437979848
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1727437979731,
+      "stop": 1727437979848
+    },
+    {
+      "name": "Проверка того, что материал типа 'Текст' был добавлен в шаблон активности",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727437979848,
+      "stop": 1727438010072
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddTextMaterialToControlActivityPlan.jpg",
+      "source": "0a93675f-7dcb-44ea-b52f-dcf50d2719c5-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "f3837fa9-95f2-4c13-8c05-acbde4fd1ef5-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727437970123,
+  "stop": 1727438010293
+}
