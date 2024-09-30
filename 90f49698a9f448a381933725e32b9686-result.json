@@ -1,0 +1,226 @@
+{
+  "uuid": "84d188e5-d4db-4352-94b9-e01fb58b0bbd",
+  "historyId": "3b3ae6fd3f3f499193ef1537bd63936e",
+  "testCaseId": "f6990befacaaebe2327a48950cdeed7d",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupMiniChatMessageTests.CheckDeleteMessageInGroupMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "e41878f88584"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteMessageInGroupMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupMiniChatMessageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат группового чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно удалить сообщение в миничате группового чата",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Сообщения не был удален\nAssert.That(condition, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at OdinUiTests.Tests.Chat.GroupMiniChatMessageTests.CheckDeleteMessageInGroupMiniChat() in /azp/_work/1/s/Tests/Chat/MiniChatTests.cs:line 570\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727714613573,
+      "stop": 1727714613775
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727714613775,
+      "stop": 1727714614323
+    },
+    {
+      "name": "В панели чатов найти чат по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Новый чат\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727714614323,
+      "stop": 1727714618093
+    },
+    {
+      "name": "Выбрать сообщение для удаления",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727714618093,
+      "stop": 1727714619203
+    },
+    {
+      "name": "В меню над сообщением нажать на троеточие",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727714619224,
+      "stop": 1727714619331
+    },
+    {
+      "name": "Выбрать пункт меню - 'Удалить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727714619331,
+      "stop": 1727714619966
+    },
+    {
+      "name": "Нажать на кнопку 'Удалить' в подтверждающей модалке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727714619966,
+      "stop": 1727714621661
+    },
+    {
+      "name": "Проверка того, что сообщение было удалено",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"141570\"",
+          "excluded": false
+        },
+        {
+          "name": "messageId",
+          "value": "\"7224253\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727714621661,
+      "stop": 1727714627322
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDeleteMessageInGroupMiniChat.jpg",
+      "source": "b9bcc4b4-0690-4198-8799-241f55a4f1b8-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "87df1805-d31c-43d0-9058-a9b377350b9c-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727714613573,
+  "stop": 1727714627638
+}
