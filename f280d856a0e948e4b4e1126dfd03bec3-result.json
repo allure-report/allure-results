@@ -1,0 +1,231 @@
+{
+  "uuid": "686b9cf5-8e42-4c70-bb35-6be2a79ea4d4",
+  "historyId": "1abb559ffa102104677e3a964457dd05",
+  "testCaseId": "b1d625fd346a72fe6baa1f8f58ad3786",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskWithSolutionStudentTests.CheckEditSolution()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "44fe31f23882"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditSolution"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskWithSolutionStudentTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница решения задания для студента"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно изменить текст и файл решения",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Измененный текст и файл решении не отображаются\nAssert.That(condition, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at NUnit.Framework.Legacy.ClassicAssert.True(Boolean condition, String message, Object[] args)\n   at OdinUiTests.Tests.Activity.TaskWithSolutionStudentTests.CheckEditSolution() in /azp/_work/1/s/Tests/Activity/TaskActivityTests.cs:line 145\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу решения задания",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"1552184\"",
+          "excluded": false
+        },
+        {
+          "name": "studentName",
+          "value": "\"Smith\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727878604276,
+      "stop": 1727878605111
+    },
+    {
+      "name": "Нажать на кнопку 'Изменить решение' на странице решения задания",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727878605111,
+      "stop": 1727878627417
+    },
+    {
+      "name": "Редактировать текст решение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "text",
+          "value": "\"24G38E4F15\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727878627417,
+      "stop": 1727878630427
+    },
+    {
+      "name": "Удалить загруженные файлы решения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727878630428,
+      "stop": 1727878631865
+    },
+    {
+      "name": "Нажать на дропзону и загрузить файл в решение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"LaTeX-test.tex\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727878631865,
+      "stop": 1727878633193
+    },
+    {
+      "name": "Нажать на кнопку 'Отправить решение' на странице решения задания",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1727878633193,
+      "stop": 1727878633314
+    },
+    {
+      "name": "Проверка того, что текст ответа и файл решении были изменены",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "textAnswer",
+          "value": "\"24G38E4F15\"",
+          "excluded": false
+        },
+        {
+          "name": "fileName",
+          "value": "\"LaTeX-test.tex\"",
+          "excluded": false
+        }
+      ],
+      "start": 1727878633314,
+      "stop": 1727878637189
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditSolution.jpg",
+      "source": "f2421062-07ae-4a38-8a09-6cc4f0648544-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "0878f910-562f-41b7-8dd3-0d2c6e8b2850-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1727878599790,
+  "stop": 1727878637482
+}
