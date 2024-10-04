@@ -1,0 +1,195 @@
+{
+  "uuid": "e1b86e4a-85ca-44f9-aa0c-3c33991743e8",
+  "historyId": "f38f886a3c238acab64b26dcbad40cfe",
+  "testCaseId": "221daf8886351571b5b75b524977e1ba",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.TestQuestionAnswersValidationTests.CheckAddAnswerVariantInMultipleChoiceTestQuestion()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "841e7f68a06d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddAnswerVariantInMultipleChoiceTestQuestion"
+    },
+    {
+      "name": "testClass",
+      "value": "TestQuestionAnswersValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Материал"
+    },
+    {
+      "name": "subSuite",
+      "value": "Конструктор теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Материал"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Конструктор теста: можно добавить еще один вариант ответа в вопрос с типом ответа 'Выбор из вариантов'",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Allure.Net.Commons.Steps.StepFailedException : Step failed: Проверка того, что один вариант ответа в вопрос с типом ответа 'Выбор из вариантов' был добавлен\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".test-tabs__body .block-title\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ContentInfoPage.FirstQuestionHasAnswers(Int32 answers, Boolean isRemoving) in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 447\n   at OdinUiTests.Tests.Library.TestCreateEditCommon.AddCheckAnswerToQuestion(IWebDriver driver, Boolean isTestTrain, String id, Int32 numOfAnswer) in /azp/_work/1/s/Tests/Library/TestCreateEditCommon.cs:line 257\n   at OdinUiTests.Tests.Library.TestQuestionAnswersValidationTests.CheckAddAnswerVariantInMultipleChoiceTestQuestion() in /azp/_work/1/s/Tests/Library/TestCreateEditTests.cs:line 511\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ContentInfoPage.<>c__DisplayClass69_0.<FirstQuestionHasAnswers>b__0() in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 450\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования теста",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728046129956,
+      "stop": 1728046130344
+    },
+    {
+      "name": "Нажать на кнопку “карандаш” для редактирования первого вопроса",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728046130345,
+      "stop": 1728046132558
+    },
+    {
+      "name": "Добавить еще один вариант ответа",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "iframeField",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "text",
+          "value": "\"Текст второго варианта ответа\"",
+          "excluded": false
+        }
+      ],
+      "start": 1728046132559,
+      "stop": 1728046134348
+    },
+    {
+      "name": "Подождать пока появится слово “Сохранено”",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728046134348,
+      "stop": 1728046137580
+    },
+    {
+      "name": "Нажать на последнюю хлебную крошку для перехода на страницу материала",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "CheckAddAnswerVariantInMultipleChoiceTestQuestion-BeforeClickOnBreadCrumbs.jpg",
+          "source": "c8c07f5e-859d-4b49-aa95-e03404c2ac72-attachment.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "parameters": [],
+      "start": 1728046138957,
+      "stop": 1728046139248
+    },
+    {
+      "name": "Проверка того, что один вариант ответа в вопрос с типом ответа 'Выбор из вариантов' был добавлен",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728046139248,
+      "stop": 1728046169577
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddAnswerVariantInMultipleChoiceTestQuestion.jpg",
+      "source": "6b84c8c3-dd36-4c9f-97d9-ed7a21b8ff5a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "8fa3d27f-96bd-4c55-badd-e4ee8c921f2b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1728046127708,
+  "stop": 1728046169808
+}

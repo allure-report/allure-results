@@ -1,0 +1,171 @@
+{
+  "uuid": "f5aee4a8-1585-4adc-bf5f-400f10bb7844",
+  "historyId": "15bf9a300ae0b902898e3056ba4772de",
+  "testCaseId": "6a537374b967ff7d519d0ab0fe9544d8",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatMessageActionTests.CheckPinLastMessageInGroupChatByOtherUser()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "841e7f68a06d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckPinLastMessageInGroupChatByOtherUser"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatMessageActionTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Любой участник чата может закрепить сообщение в групповом чате",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : Текст уведомления не совпадает с текстом 'Сообщение закреплено'",
+    "trace": "   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnConfirmPinButton_100666197_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 511\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnConfirmPinButton_100666197_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"6330\"",
+          "excluded": false
+        }
+      ],
+      "start": 1728045716011,
+      "stop": 1728045716579
+    },
+    {
+      "name": "Выбрать сообщение для закрепления",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728045716579,
+      "stop": 1728045719546
+    },
+    {
+      "name": "В меню над сообщением нажать на троеточие",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728045719596,
+      "stop": 1728045719767
+    },
+    {
+      "name": "Выбрать пункт меню - 'Закрепить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728045719767,
+      "stop": 1728045719941
+    },
+    {
+      "name": "Нажать на кнопку 'Закрепить' в появившемся окне",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Текст уведомления не совпадает с текстом 'Сообщение закреплено'",
+        "trace": "   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnConfirmPinButton_100666197_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 511\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnConfirmPinButton_100666197_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728045719942,
+      "stop": 1728045721817
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckPinLastMessageInGroupChatByOtherUser.jpg",
+      "source": "432f5b7d-2f9f-4021-a198-fa26bcc525f9-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "42dbc20a-9c1c-46e3-9338-f9d694cd9529-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1728045711566,
+  "stop": 1728045722105
+}

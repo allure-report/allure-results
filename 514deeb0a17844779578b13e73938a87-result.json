@@ -1,0 +1,198 @@
+{
+  "uuid": "948f0ead-a6ac-480a-b0b7-b2a4b7a1c24f",
+  "historyId": "7fd127ee8856a487c7a6e8d05590b6b0",
+  "testCaseId": "2c29f36c41d08e6653c1185c83ca2925",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatMessageActionTests.CheckStartDiscussionUnderLeftSideMessageInGroupChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "841e7f68a06d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckStartDiscussionUnderLeftSideMessageInGroupChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatMessageActionTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Начать обсуждение с другим участником в групповом чате",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.InvalidOperationException : Sequence contains no elements",
+    "trace": "   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDiscussedMessageIsAppeared_100666272_o(String randomText) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1274\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDiscussedMessageIsAppeared_100666272_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"6330\"",
+          "excluded": false
+        }
+      ],
+      "start": 1728045689248,
+      "stop": 1728045689564
+    },
+    {
+      "name": "Убедиться, что в чате имеются сообщения от участников чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728045689564,
+      "stop": 1728045699519
+    },
+    {
+      "name": "В меню над сообщением выбрать 'Ответить в обсуждении'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728045699519,
+      "stop": 1728045699752
+    },
+    {
+      "name": "В строке ввода панели обсуждения ввести текст",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "randomText",
+          "value": "\"8FGB891CE92DA5A\"",
+          "excluded": false
+        }
+      ],
+      "start": 1728045699753,
+      "stop": 1728045701067
+    },
+    {
+      "name": "Нажать на значок отправки сообщения в панели обсуждения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728045701068,
+      "stop": 1728045701189
+    },
+    {
+      "name": "Проверка того, что появилось обсуждение",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Sequence contains no elements",
+        "trace": "   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDiscussedMessageIsAppeared_100666272_o(String randomText) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1274\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDiscussedMessageIsAppeared_100666272_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "randomText",
+          "value": "\"8FGB891CE92DA5A\"",
+          "excluded": false
+        }
+      ],
+      "start": 1728045701190,
+      "stop": 1728045704825
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckStartDiscussionUnderLeftSideMessageInGroupChat.jpg",
+      "source": "88f32e2f-5b77-4918-ac3b-a9438e5ef6d2-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "bbdbeb02-e502-436a-a2c8-b871f7b0165a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1728045689247,
+  "stop": 1728045705247
+}

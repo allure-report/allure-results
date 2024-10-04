@@ -1,0 +1,199 @@
+{
+  "uuid": "266c6fe4-50c5-4a1f-9f94-3eb2ed3b4123",
+  "historyId": "e0a22ff1262d6353b0c72e9806378602",
+  "testCaseId": "540ea2481f7e9e8a3a78508c3cf9eba1",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.TestQuestionsValidationTests.CheckAddCommentInTestQuestion()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "841e7f68a06d"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddCommentInTestQuestion"
+    },
+    {
+      "name": "testClass",
+      "value": "TestQuestionsValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Материал"
+    },
+    {
+      "name": "subSuite",
+      "value": "Конструктор теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Материал"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Конструктор теста: можно добавить комментария к вопросу",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Allure.Net.Commons.Steps.StepFailedException : Step failed: Проверка того, что комментарий к вопросу был добавлен\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".test-tabs__body .block-title\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ContentInfoPage.CheckCommentIsAddedToQuestion(String comment, Boolean editComment) in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 280\n   at OdinUiTests.Tests.Library.TestCreateEditCommon.AddCommentInQuestion(IWebDriver driver, Boolean isTestTrain, String testId, Boolean editComment, String comment) in /azp/_work/1/s/Tests/Library/TestCreateEditCommon.cs:line 118\n   at OdinUiTests.Tests.Library.TestQuestionsValidationTests.CheckAddCommentInTestQuestion() in /azp/_work/1/s/Tests/Library/TestCreateEditTests.cs:line 433\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ContentInfoPage.GetQuestionComment() in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 191\n   at OdinUiTests.Pages.ContentInfoPage.<>c__DisplayClass53_0.<CheckCommentIsAddedToQuestion>b__0() in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 282\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования теста",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728046141931,
+      "stop": 1728046142338
+    },
+    {
+      "name": "Нажать на кнопку “карандаш” для редактирования первого вопроса",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728046142338,
+      "stop": 1728046144601
+    },
+    {
+      "name": "Нажать на кнопку “Добавить комментарий” для открытия поля комментария",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728046144602,
+      "stop": 1728046144871
+    },
+    {
+      "name": "Ввести текст комментария в поле ввода комментария",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728046144871,
+      "stop": 1728046146313
+    },
+    {
+      "name": "Подождать пока появится слово “Сохранено”",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728046146313,
+      "stop": 1728046149524
+    },
+    {
+      "name": "Нажать на последнюю хлебную крошку для перехода на страницу материала",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "CheckAddCommentInTestQuestion-BeforeClickOnBreadCrumbs.jpg",
+          "source": "f4cc58b7-59e3-4606-99cf-2c2206c87755-attachment.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "parameters": [],
+      "start": 1728046149562,
+      "stop": 1728046149841
+    },
+    {
+      "name": "Проверка того, что комментарий к вопросу был добавлен",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728046149842,
+      "stop": 1728046180192
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddCommentInTestQuestion.jpg",
+      "source": "d22f94a1-3481-4fee-9d68-6345a625d004-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "cab39492-04a6-41fc-8253-0c8db8851c45-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1728046138427,
+  "stop": 1728046180371
+}
