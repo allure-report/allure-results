@@ -1,0 +1,171 @@
+{
+  "uuid": "78e96920-d8e0-408e-bd7a-2a9abdbd290c",
+  "historyId": "bab99bd2dd1574f616eaf8ab75ae460e",
+  "testCaseId": "fc0925d03655ed08ea3fcd2191d21668",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.ActivityEditingTests.CheckDeleteActivityWithoutGrades()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "b1b1208e1c66"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteActivityWithoutGrades"
+    },
+    {
+      "name": "testClass",
+      "value": "ActivityEditingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Обычная активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование активности"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно удалить активность без оценок",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckActivityIsDeleted_100666666_o(Int32 disciplineId, List`1 actAndDisNames) in /azp/_work/4/s/Pages/DisCommonInfoPage.cs:line 1830\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckActivityIsDeleted_100666666_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"1552225\"",
+          "excluded": false
+        }
+      ],
+      "start": 1728624493660,
+      "stop": 1728624494403
+    },
+    {
+      "name": "Нажать на кнопку 'Удалить активность'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728624499578,
+      "stop": 1728624499913
+    },
+    {
+      "name": "Нажать на кнопку 'Удалить' в подтверждающей модалке удаления",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1728624499913,
+      "stop": 1728624501255
+    },
+    {
+      "name": "Проверка того, что удаленная активность не отображается на странице дисциплины",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckActivityIsDeleted_100666666_o(Int32 disciplineId, List`1 actAndDisNames) in /azp/_work/4/s/Pages/DisCommonInfoPage.cs:line 1830\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_CheckActivityIsDeleted_100666666_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "9",
+          "excluded": false
+        },
+        {
+          "name": "actAndDisNames",
+          "value": "[\"E689G4F02B32G7G\",\"Основы ООП\"]",
+          "excluded": false
+        }
+      ],
+      "start": 1728624501255,
+      "stop": 1728624531493
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDeleteActivityWithoutGrades.jpg",
+      "source": "efc3fea7-82ce-4f8f-93c0-6d74915b88fd-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "26ffdc25-0b75-427e-977a-a260d6217c73-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1728624486642,
+  "stop": 1728624532190
+}
