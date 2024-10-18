@@ -1,0 +1,128 @@
+{
+  "uuid": "02e1692f-f9eb-4de0-8495-fb7fd62823fb",
+  "historyId": "d839c4208acb48c4715ac0852df5d363",
+  "testCaseId": "2be95e3c4de50bf408c4355828cc36c4",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestTemplateCreatingTests.CreateTestActivityTemplate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "cc044e4cde68"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateTestActivityTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateCreatingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание шаблона контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать шаблон контрольной, если заполнены обязательные поля",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Allure.Net.Commons.Steps.StepFailedException : Step failed: В поле 'Тип активности' выбрать значение 'Контрольная работа'\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.SetActivityType(String type) in /azp/_work/3/s/Pages/ActivityCommonEditPage.cs:line 345\n   at OdinUiTests.Tests.Activity.ActivityCommon.CreateActivityWithControlType(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 12\n   at OdinUiTests.Tests.Activity.ActivityCommon.CreateActivityPlanWithControlType(IWebDriver driver, String directoryId) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 27\n   at OdinUiTests.Tests.Activity.TestTemplateCreatingTests.CreateTestActivityTemplate() in /azp/_work/3/s/Tests/Activity/TestTemplateTests.cs:line 23\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.SelectValueFromDropdown(IWebDriver driver, String type) in /azp/_work/3/s/Services/CommonService.cs:line 758\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass93_0.<SetActivityType>b__0() in /azp/_work/3/s/Pages/ActivityCommonEditPage.cs:line 347\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action pass, Action fail)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания шаблона активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "directoryId",
+          "value": "\"18595\"",
+          "excluded": false
+        }
+      ],
+      "start": 1729228734298,
+      "stop": 1729228734849
+    },
+    {
+      "name": "В поле 'Тип активности' выбрать значение 'Контрольная работа'",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1729228734849,
+      "stop": 1729228767882
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CreateTestActivityTemplate.jpg",
+      "source": "a97749b1-032d-4fc1-9fde-e871ffabe433-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "469f02a9-5b92-4896-9057-92691ae1f051-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1729228734297,
+  "stop": 1729228768100
+}
