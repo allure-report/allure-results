@@ -1,0 +1,91 @@
+{
+  "uuid": "eace39a6-701c-42b9-a781-6a249af7c254",
+  "historyId": "f08cd28adfec06577f81cc0d327365b9",
+  "testCaseId": "abf63f6f9a372d971160d4287bdf1974",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskWithSolutionStudentTests.CheckDeleteFileAndLeaveOnlyTextOfSolution()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "07410f714a69"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteFileAndLeaveOnlyTextOfSolution"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskWithSolutionStudentTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница решения задания для студента"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно удалить файл и оставить только текст решения",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Npgsql.NpgsqlException : Exception while reading from stream\n  ----> System.TimeoutException : Timeout during reading attempt",
+    "trace": "   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)\n   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)\n   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlDataReader.NextResult()\n   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)\n   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)\n   at OdinUiTests.Services.ActivityService.GetIdAndSekretKeyOfExistingFile(String filePath) in /azp/_work/1/s/Services/ActivityService.cs:line 461\n   at OdinUiTests.Src.ActivityPayload.EditSolutionMethod(String activityId) in /azp/_work/1/s/Src/ActivityPayload.cs:line 280\n   at OdinUiTests.Services.ActivityService.CheckStudentSolutionHasOneFileAnswer(String activityId, String studentName) in /azp/_work/1/s/Services/ActivityService.cs:line 483\n   at OdinUiTests.Tests.Activity.TaskWithSolutionStudentTests.CheckDeleteFileAndLeaveOnlyTextOfSolution() in /azp/_work/1/s/Tests/Activity/TaskActivityTests.cs:line 164\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--TimeoutException\n"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "CheckDeleteFileAndLeaveOnlyTextOfSolution.jpg",
+      "source": "ba614eb2-6c2e-491a-ac63-05315c38259d-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "ba4395b0-28f2-43b7-841c-dbe463749ad5-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1729672080875,
+  "stop": 1729672112349
+}
