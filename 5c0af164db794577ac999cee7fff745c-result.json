@@ -1,0 +1,120 @@
+{
+  "uuid": "366eca05-ccab-4659-8471-661fe5fdd7a1",
+  "historyId": "e636f44d85c5d77f65c666f0531e01ac",
+  "testCaseId": "2a98ba8dc840c8bcea721588cfe9bfc9",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.TestCenterTests.CheckExamineesAuthorization()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "70b877cf55e5"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckExamineesAuthorization"
+    },
+    {
+      "name": "testClass",
+      "value": "TestCenterTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Проверка авторизации экзаменуемого",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.IO.FileNotFoundException : Could not find file '/azp/_work/4/s/bin/Debug/net8.0/download'.",
+    "trace": "   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)\n   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)\n   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)\n   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)\n   at OdinUiTests.Services.CommonService.GetFirstSheetFromWorkBook(String fileName) in /azp/_work/4/s/Services/CommonService.cs:line 699\n   at OdinUiTests.Services.CommonService.GetInfoAboutExaminee(IWebDriver driver) in /azp/_work/4/s/Services/CommonService.cs:line 738\n   at OdinUiTests.Pages.ProgramInfoPage.GetInfoAboutExaminee() in /azp/_work/4/s/Pages/ProgramInfoPage.cs:line 246\n   at OdinUiTests.Tests.Exams.TestCenterTests.CheckExamineesAuthorization() in /azp/_work/4/s/Tests/Exams/TestCenterTests.cs:line 23\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17321\"",
+          "excluded": false
+        }
+      ],
+      "start": 1729837237133,
+      "stop": 1729837237609
+    },
+    {
+      "name": "Нажать на тридот экзамена и выбрать 'Скачать коды для входа'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1729837237610,
+      "stop": 1729837239511
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckExamineesAuthorization.jpg",
+      "source": "7cd976a9-d181-4315-9814-d16decd86bbc-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "0bc7ff4a-c541-426a-9cd7-2abbee8f015d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1729837237132,
+  "stop": 1729837255673
+}
