@@ -1,0 +1,159 @@
+{
+  "uuid": "c0dd81fa-b8d9-45a2-b6de-60d35126b4ab",
+  "historyId": "ad4f57f6da0662e97fa9e31f99467dba",
+  "testCaseId": "f7c038cf6b435f3349cb4e5194c9a410",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TemplateEditingValidationTests.CheckEditActivityTemplateVolumeWithIncorrectValue(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "3a039d3d3f8c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditActivityTemplateVolumeWithIncorrectValue"
+    },
+    {
+      "name": "testClass",
+      "value": "TemplateEditingValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обычный шаблон активности"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Ошибка валидации в поле Объем в академических часах, если введено отрицательное значение",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 334\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/1/s/Services/CommonService.cs:line 384\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass108_0.<EditValueInVolumeField>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 476\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInVolumeField(String volume) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 474\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolumeWithIncorrectValue(IWebDriver driver, Boolean isTemplate, String id, String volume) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 588\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolumeWithIncorrectValueInActivityPlan(IWebDriver driver, String contentId, String volume) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 600\n   at OdinUiTests.Tests.Activity.TemplateEditingValidationTests.CheckEditActivityTemplateVolumeWithIncorrectValue(String volume) in /azp/_work/1/s/Tests/Activity/TemplateTests.cs:line 91\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"1340\"",
+              "excluded": false
+            }
+          ],
+          "start": 1730132370509,
+          "stop": 1730132371000
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"1340\"",
+          "excluded": false
+        }
+      ],
+      "start": 1730132370509,
+      "stop": 1730132371000
+    },
+    {
+      "name": "В поле 'Объем в академических часах' ввести значение -138",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 334\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/1/s/Services/CommonService.cs:line 384\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass108_0.<EditValueInVolumeField>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 476\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInVolumeField(String volume) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 474\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolumeWithIncorrectValue(IWebDriver driver, Boolean isTemplate, String id, String volume) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 588\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolumeWithIncorrectValueInActivityPlan(IWebDriver driver, String contentId, String volume) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 600\n   at OdinUiTests.Tests.Activity.TemplateEditingValidationTests.CheckEditActivityTemplateVolumeWithIncorrectValue(String volume) in /azp/_work/1/s/Tests/Activity/TemplateTests.cs:line 91\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1730132371000,
+      "stop": 1730132402098
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditActivityTemplateVolumeWithIncorrectValue.jpg",
+      "source": "fb2e6b34-fa7f-46d8-82f2-90fb000d3b01-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "ad886b9a-5ef6-4000-bc55-5d7320bb884d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "volume",
+      "value": "\"<0\"",
+      "excluded": false
+    }
+  ],
+  "start": 1730132370508,
+  "stop": 1730132402312
+}
