@@ -1,0 +1,229 @@
+{
+  "uuid": "a9aa8ec0-0ead-47ba-abac-e0057e30c33e",
+  "historyId": "7094f84477a8572bd60ca101146d651a",
+  "testCaseId": "b081d979aed020b744471386111a98fc",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineChatCallTests.CheckAddQuoteToLastMessageInDisciplineCallChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "d26cc8cd3445"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddQuoteToLastMessageInDisciplineCallChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineChatCallTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат звонка дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно цитировать сообщение в миничате звонка дисциплины",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.InvalidOperationException : Sequence contains no elements",
+    "trace": "   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.LastMessageIsQuoted(String message, Boolean isMinichat, String chatId) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1294\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckLastMessageIsQuoted_100666337_o(Boolean isMinichat, String chatId, String randomText) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1302\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckLastMessageIsQuoted_100666337_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу звонка по id чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"1714\"",
+          "excluded": false
+        }
+      ],
+      "start": 1732025378699,
+      "stop": 1732025378973
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732025378973,
+      "stop": 1732025383107
+    },
+    {
+      "name": "Нажать на кнопку чата в звонке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732025383107,
+      "stop": 1732025390294
+    },
+    {
+      "name": "Выбрать сообщение для цитирования",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732025397175,
+      "stop": 1732025398382
+    },
+    {
+      "name": "В меню над сообщением выбрать 'Цитировать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732025398382,
+      "stop": 1732025398558
+    },
+    {
+      "name": "В строке ввода ввести текст",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "randomText",
+          "value": "\"1171B36A2F9722C\"",
+          "excluded": false
+        }
+      ],
+      "start": 1732025398558,
+      "stop": 1732025398771
+    },
+    {
+      "name": "Нажать на значок отправки сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732025398771,
+      "stop": 1732025398923
+    },
+    {
+      "name": "Проверка того, что сообщение было процитировано",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Sequence contains no elements",
+        "trace": "System.InvalidOperationException: Sequence contains no elements\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.LastMessageIsQuoted(String message, Boolean isMinichat, String chatId) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1294\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckLastMessageIsQuoted_100666337_o(Boolean isMinichat, String chatId, String randomText) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1302\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckLastMessageIsQuoted_100666337_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"1714\"",
+          "excluded": false
+        },
+        {
+          "name": "randomText",
+          "value": "\"1171B36A2F9722C\"",
+          "excluded": false
+        }
+      ],
+      "start": 1732025398923,
+      "stop": 1732025413586
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddQuoteToLastMessageInDisciplineCallChat.jpg",
+      "source": "85b93313-a6fd-4f0d-87e9-f89fc94e08bf-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "0852c728-b15f-4f64-a7c7-fd0cdbe18786-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1732025378699,
+  "stop": 1732025413934
+}

@@ -1,0 +1,213 @@
+{
+  "uuid": "478d0694-05c3-450c-be9a-694d0c45c1e6",
+  "historyId": "e9761f765d4da1141c40fdad3bdf1077",
+  "testCaseId": "31a03edd90f96f26b811c6240d3bbb6c",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomChatCallTests.CheckSendEmojiInDisciplineRoomCallChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "d26cc8cd3445"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendEmojiInDisciplineRoomCallChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomChatCallTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат звонка комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно отправить смайлики в миничате звонка комнаты дисциплины",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.InvalidOperationException : Sequence contains no elements",
+    "trace": "   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsSent(String message, Boolean isMinichat, String chatId) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1232\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmojiIsSent_100666339_o(Boolean isMinichat, String chatId, String message) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1340\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmojiIsSent_100666339_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу звонка по id чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"776804\"",
+          "excluded": false
+        }
+      ],
+      "start": 1732025456601,
+      "stop": 1732025457096
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732025457096,
+      "stop": 1732025461800
+    },
+    {
+      "name": "Нажать на кнопку чата в звонке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732025461800,
+      "stop": 1732025466746
+    },
+    {
+      "name": "В строке ввода нажать на значок смайлика",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732025473133,
+      "stop": 1732025473721
+    },
+    {
+      "name": "Кликнуть по выбранному смайлику",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732025473721,
+      "stop": 1732025475121
+    },
+    {
+      "name": "Нажать на значок отправки сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732025475121,
+      "stop": 1732025475345
+    },
+    {
+      "name": "Проверка того, что смайлик был отправлен",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Sequence contains no elements",
+        "trace": "System.InvalidOperationException: Sequence contains no elements\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsSent(String message, Boolean isMinichat, String chatId) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1232\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmojiIsSent_100666339_o(Boolean isMinichat, String chatId, String message) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1340\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmojiIsSent_100666339_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"776804\"",
+          "excluded": false
+        },
+        {
+          "name": "message",
+          "value": "\"😅\"",
+          "excluded": false
+        }
+      ],
+      "start": 1732025475345,
+      "stop": 1732025486718
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendEmojiInDisciplineRoomCallChat.jpg",
+      "source": "b72d759b-731a-44b2-9547-107dff90f6ff-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "896f844f-5ac0-4a49-9f7e-0f8ea8913657-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1732025456601,
+  "stop": 1732025487162
+}

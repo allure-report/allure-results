@@ -1,0 +1,91 @@
+{
+  "uuid": "493d011f-edad-43e3-9609-491eba7821de",
+  "historyId": "47fdef5d48663cf5aa25dad49ae2e658",
+  "testCaseId": "a6a67a41b2e3ff66dff7090f5f3649ed",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityAddingTests.CheckErrorIfAddSeveralTestToControlTypeActivity()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "d26cc8cd3445"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorIfAddSeveralTestToControlTypeActivity"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityAddingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Невозможно добавить несколько материалов типа Тест из Библиотеки в контрольную",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.AggregateException : One or more errors occurred. (Request failed with status code ServiceUnavailable)\n  ----> System.Net.Http.HttpRequestException : Request failed with status code ServiceUnavailable",
+    "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.get_Result()\n   at OdinUiTests.Services.ActivityService.GetActivityInfo(String actId, Boolean forEdit) in /azp/_work/2/s/Services/ActivityService.cs:line 25\n   at OdinUiTests.Services.ActivityService.GetActivityInfoForEdit(String actId) in /azp/_work/2/s/Services/ActivityService.cs:line 34\n   at OdinUiTests.Src.ActivityPayload.EditActivityMethod(Int32 activityId, Boolean withTag, Boolean withMaterial, Boolean canSendSolutionAfterDeadline, String activityFormat) in /azp/_work/2/s/Src/ActivityPayload.cs:line 133\n   at OdinUiTests.Services.ActivityService.NewActivityEditingMethod(Int32 activityId, Boolean withTag, Boolean withMaterial, Boolean canSendSolutionAfterDeadline, String activityFormat) in /azp/_work/2/s/Services/ActivityService.cs:line 502\n   at OdinUiTests.Services.ActivityService.NewActivityEditingMethod(Int32 activityId, Boolean withTag, Boolean withMaterial, Boolean canSendSolutionAfterDeadline) in /azp/_work/2/s/Services/ActivityService.cs:line 511\n   at OdinUiTests.Services.ActivityService.RemoveMaterialsFromActivity(Int32 activityId) in /azp/_work/2/s/Services/ActivityService.cs:line 524\n   at OdinUiTests.Tests.Activity.TestActivityAddingTests.SetUp() in /azp/_work/2/s/Tests/Activity/TestActivityTests.cs:line 112\n   at InvokeStub_TestActivityAddingTests.SetUp(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--HttpRequestException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "CheckErrorIfAddSeveralTestToControlTypeActivity.jpg",
+      "source": "465eb330-6f62-412d-8f4b-61660fb46091-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "3dc96877-cc10-45ce-9121-3d895cb380e7-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1732025249925,
+  "stop": 1732025250167
+}
