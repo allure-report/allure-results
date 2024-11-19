@@ -1,0 +1,197 @@
+{
+  "uuid": "bdb3f14a-fe33-4a66-b27e-667a5c934200",
+  "historyId": "099b95de8a76758e25a4ea15c77c3760",
+  "testCaseId": "aefec649c264a2de5097e94b2b7aa45b",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupMiniChatTests.CheckRestoreGroupChatFromArchiveInMinichat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "379bd436f97a"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckRestoreGroupChatFromArchiveInMinichat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат группового чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно восстановить групповой чат из архива в миничате",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1004, 564). Other element would receive the click: <div data-v-7137cd57=\"\" class=\"q-card confirm-modal q-pa-lg\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnConfirmRestoreButton_100666295_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 832\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnConfirmRestoreButton_100666295_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732034554952,
+      "stop": 1732034555301
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732034555301,
+      "stop": 1732034555958
+    },
+    {
+      "name": "В панели чатов найти чат по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"C7D0D54DCF69AFB\"",
+          "excluded": false
+        }
+      ],
+      "start": 1732034555959,
+      "stop": 1732034564049
+    },
+    {
+      "name": "Нажать на тридот меню и выбрать 'Перенести в архив'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732034564049,
+      "stop": 1732034564700
+    },
+    {
+      "name": "Нажать на кнопку 'Перенести в архив' в подтверждающей модалке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732034564701,
+      "stop": 1732034566886
+    },
+    {
+      "name": "Не переключая чат, нажать на тридот меню и выбрать 'Разархивировать чат'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732034566887,
+      "stop": 1732034566954
+    },
+    {
+      "name": "Нажать на кнопку 'Разархивировать чат' в подтверждающей модалке",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1004, 564). Other element would receive the click: <div data-v-7137cd57=\"\" class=\"q-card confirm-modal q-pa-lg\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1004, 564). Other element would receive the click: <div data-v-7137cd57=\"\" class=\"q-card confirm-modal q-pa-lg\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnConfirmRestoreButton_100666295_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 832\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnConfirmRestoreButton_100666295_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732034566954,
+      "stop": 1732034568053
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckRestoreGroupChatFromArchiveInMinichat.jpg",
+      "source": "008ebaeb-aed2-4d96-9ae3-f1dcbb19a6e2-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "7ed69471-3bc0-4196-a4c4-3d4bcb7ebf06-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1732034554952,
+  "stop": 1732034568311
+}
