@@ -1,0 +1,167 @@
+{
+  "uuid": "e681b641-0579-4178-b26b-e1a2811c5e08",
+  "historyId": "ac3ff2b9915626d8d0319feb2bae1cbf",
+  "testCaseId": "6edf0f9ea0ecb4159a585ff63fb2c42e",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityStatusWithOneAttemptTests.CheckStatusChangesIfMinThresholdChanged(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "8a5d9c6cd255"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckStatusChangesIfMinThresholdChanged"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityStatusWithOneAttemptTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Прохождение теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Статус меняется, если преподаватель меняет минимальный порог баллов в командной контрольной",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : Цвет у балла который выше минимального парога баллов не зеленый",
+    "trace": "   at OdinUiTests.Pages.ActivityCommonPage.CheckScoreColorForAttempts(List`1 scores, Int32 minThreshold) in /azp/_work/2/s/Pages/ActivityCommonPage.cs:line 368\n   at OdinUiTests.Pages.ActivityCommonPage.TestResultDependOnSettings(Int32 attempts, String attemptSettings, Int32 minThresold) in /azp/_work/2/s/Pages/ActivityCommonPage.cs:line 1104\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckStatusMeetsMinThreshold_100666133_o(String minThreshold) in /azp/_work/2/s/Pages/ActivityCommonPage.cs:line 1048\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckStatusMeetsMinThreshold_100666133_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"17999\"",
+          "excluded": false
+        }
+      ],
+      "start": 1732893977797,
+      "stop": 1732893977938
+    },
+    {
+      "name": "В поле 'Минимальный порог баллов' ввести значение 3",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732893977938,
+      "stop": 1732893979451
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить' и подтвердить сохранение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732893979452,
+      "stop": 1732893980647
+    },
+    {
+      "name": "Проверка того, что статус и цвет полученного балла соответствуют заданному порогу",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Цвет у балла который выше минимального парога баллов не зеленый",
+        "trace": "System.Exception: Цвет у балла который выше минимального парога баллов не зеленый\n   at OdinUiTests.Pages.ActivityCommonPage.CheckScoreColorForAttempts(List`1 scores, Int32 minThreshold) in /azp/_work/2/s/Pages/ActivityCommonPage.cs:line 368\n   at OdinUiTests.Pages.ActivityCommonPage.TestResultDependOnSettings(Int32 attempts, String attemptSettings, Int32 minThresold) in /azp/_work/2/s/Pages/ActivityCommonPage.cs:line 1104\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckStatusMeetsMinThreshold_100666133_o(String minThreshold) in /azp/_work/2/s/Pages/ActivityCommonPage.cs:line 1048\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckStatusMeetsMinThreshold_100666133_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "minThreshold",
+          "value": "\"3\"",
+          "excluded": false
+        }
+      ],
+      "start": 1732893980647,
+      "stop": 1732893985413
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckStatusChangesIfMinThresholdChanged.jpg",
+      "source": "ed7d2673-7364-4ef9-acd2-03914440bcb8-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "5aee4082-5fb0-4fe9-bab9-a200fce7b117-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "actId",
+      "value": "\"17999\"",
+      "excluded": false
+    }
+  ],
+  "start": 1732893976830,
+  "stop": 1732893985588
+}
