@@ -1,0 +1,210 @@
+{
+  "uuid": "b4054aba-0f19-449f-867b-2c9573b33b5d",
+  "historyId": "7338fc927861d896091b2a99394c856d",
+  "testCaseId": "7d32d263c840e10a5827624a13a31d95",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityEditingTests.CheckSuccessSaveWithCorrectValueInTimeLimitField()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "8a5d9c6cd255"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSuccessSaveWithCorrectValueInTimeLimitField"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityEditingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Успешное сохранение при корректных значениях в поле Временной лимит",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),'Временной лимит')]/following-sibling::span\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OdinUiTests.Pages.ActivityCommonPage.ActivityTimeLimitIsChanged(String timeLimit) in /azp/_work/2/s/Pages/ActivityCommonPage.cs:line 883\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityTimeLimitIsChanged_100666117_o(String timeLimit) in /azp/_work/2/s/Pages/ActivityCommonPage.cs:line 892\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityTimeLimitIsChanged_100666117_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "activityId",
+              "value": "\"94\"",
+              "excluded": false
+            }
+          ],
+          "start": 1732893620786,
+          "stop": 1732893620993
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"94\"",
+          "excluded": false
+        }
+      ],
+      "start": 1732893620786,
+      "stop": 1732893620993
+    },
+    {
+      "name": "В поле 'Временной лимит' ввести значение 345",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1732893620993,
+      "stop": 1732893623465
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить' и подтвердить сохранение",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1732893623466,
+          "stop": 1732893624866
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1732893623465,
+      "stop": 1732893624866
+    },
+    {
+      "name": "Проверка того, что на странице активности сохранено значение временного лимита",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),'Временной лимит')]/following-sibling::span\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+        "trace": "OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),'Временной лимит')]/following-sibling::span\"}\n  (Session info: chrome-headless-shell=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OdinUiTests.Pages.ActivityCommonPage.ActivityTimeLimitIsChanged(String timeLimit) in /azp/_work/2/s/Pages/ActivityCommonPage.cs:line 883\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityTimeLimitIsChanged_100666117_o(String timeLimit) in /azp/_work/2/s/Pages/ActivityCommonPage.cs:line 892\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityTimeLimitIsChanged_100666117_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "timeLimit",
+          "value": "\"345\"",
+          "excluded": false
+        }
+      ],
+      "start": 1732893624867,
+      "stop": 1732893634148
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSuccessSaveWithCorrectValueInTimeLimitField.jpg",
+      "source": "e8ab3311-30dd-49d6-a1cc-d6f03cd45c8a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "948e94e0-de32-4535-a5e0-1bde3622f1f7-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1732893620786,
+  "stop": 1732893634370
+}
