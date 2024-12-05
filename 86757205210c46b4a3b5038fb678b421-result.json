@@ -1,0 +1,128 @@
+{
+  "uuid": "2719c797-069f-456f-8db3-a0683dae53fb",
+  "historyId": "66cc119cb9106b1ee782227d55b96f9e",
+  "testCaseId": "0c935e24490f646d7084ccd1215eb07f",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.TapOnCancelButtinImportStudentsFileExam()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "f3f74a66ccdb"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "TapOnCancelButtinImportStudentsFileExam"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Проверка кнопки Отмена при импорте студентов",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.ArgumentOutOfRangeException : Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+    "trace": "   at Newtonsoft.Json.Linq.JContainer.GetItem(Int32 index)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667021_o(String programId) in /azp/_work/1/s/Pages/ProgramInfoPage.cs:line 426\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667021_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1733424726688,
+      "stop": 1733424726966
+    },
+    {
+      "name": "Получить количество студентов",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+        "trace": "System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')\n   at Newtonsoft.Json.Linq.JContainer.GetItem(Int32 index)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667021_o(String programId) in /azp/_work/1/s/Pages/ProgramInfoPage.cs:line 426\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667021_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1733424726966,
+      "stop": 1733424727037
+    }
+  ],
+  "attachments": [
+    {
+      "name": "TapOnCancelButtinImportStudentsFileExam.jpg",
+      "source": "53a8eb03-9bbe-44d6-b843-4fb7faebd75b-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "c2a0d9e9-f44c-4abd-b626-83023b0a83b8-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1733424726687,
+  "stop": 1733424727313
+}

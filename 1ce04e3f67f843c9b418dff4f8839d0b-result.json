@@ -1,0 +1,130 @@
+{
+  "uuid": "b498aa0e-9b7f-40d8-821e-8d2b0589bd40",
+  "historyId": "1baf14363d5c5d56ad22f6d92ec459be",
+  "testCaseId": "cf85e4cf1a4a4d5679f3955505bcedb3",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortCreationValidationTests.CheckCreateCohortIfNameNotFilled()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "f3f74a66ccdb"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateCohortIfNameNotFilled"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortCreationValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание потока: ошибка валидации, если название не указано",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 334\n   at OdinUiTests.Services.CommonService.AddDate(IWebDriver driver, Boolean isCohort, Boolean isStartDate, Boolean onlyOneDate, String date) in /azp/_work/1/s/Services/CommonService.cs:line 209\n   at OdinUiTests.Pages.CohortCreateEditPage.<>c__DisplayClass57_0.<SetDate>b__0() in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 207\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.CohortCreateEditPage.SetDate(Boolean isStartDate, String date) in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 205\n   at OdinUiTests.Tests.Cohort.CohortCreationValidationTests.CheckCreateCohortIfNameNotFilled() in /azp/_work/1/s/Tests/Cohort/CohortCreateEditTests.cs:line 173\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"3228\"",
+          "excluded": false
+        }
+      ],
+      "start": 1733424528649,
+      "stop": 1733424529076
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата начала'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 334\n   at OdinUiTests.Services.CommonService.AddDate(IWebDriver driver, Boolean isCohort, Boolean isStartDate, Boolean onlyOneDate, String date) in /azp/_work/1/s/Services/CommonService.cs:line 209\n   at OdinUiTests.Pages.CohortCreateEditPage.<>c__DisplayClass57_0.<SetDate>b__0() in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 207\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.CohortCreateEditPage.SetDate(Boolean isStartDate, String date) in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 205\n   at OdinUiTests.Tests.Cohort.CohortCreationValidationTests.CheckCreateCohortIfNameNotFilled() in /azp/_work/1/s/Tests/Cohort/CohortCreateEditTests.cs:line 173\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1733424529077,
+      "stop": 1733424559969
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateCohortIfNameNotFilled.jpg",
+      "source": "9d865d9b-e1ba-4c0e-8ddb-d6d4b6197883-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "ed1ad134-4565-4ed8-8ac4-654f771620e0-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1733424528648,
+  "stop": 1733424560178
+}
