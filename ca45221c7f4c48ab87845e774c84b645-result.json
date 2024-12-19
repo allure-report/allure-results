@@ -1,0 +1,150 @@
+{
+  "uuid": "1b4029e2-1c35-460c-94d8-eca3acf15b51",
+  "historyId": "c50d1b9913003243e0798ed73c6ad7a3",
+  "testCaseId": "3073c8b2adc506c3576aec60f372378d",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisContingentEditingValidationTests.CheckOnlyCohortGroupsAreShownInListOfGroups()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "a7ecdd31d7e2"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckOnlyCohortGroupsAreShownInListOfGroups"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentEditingValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "В выпадающем списке поля Группы отображаются только группы потока при редактировании дисциплины",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Отображаются группы вне указанного потока\nAssert.That(condition, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at OdinUiTests.Tests.Discipline.DisContingentEditingValidationTests.CheckOnlyCohortGroupsAreShownInListOfGroups() in /azp/_work/1/s/Tests/Discipline/DisCreateEditTests.cs:line 1106\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"585\"",
+          "excluded": false
+        }
+      ],
+      "start": 1734579806873,
+      "stop": 1734579807226
+    },
+    {
+      "name": "Снять галку с чекбокса Все студенты потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1734579807226,
+      "stop": 1734579808724
+    },
+    {
+      "name": "Проверка, что в поле Группы/Студенты отображаются только студенты/группы текущего потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "groupsOrStudents",
+          "value": "\"groups\"",
+          "excluded": false
+        },
+        {
+          "name": "cohortId",
+          "value": "\"363\"",
+          "excluded": false
+        }
+      ],
+      "start": 1734579808724,
+      "stop": 1734579811106
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckOnlyCohortGroupsAreShownInListOfGroups.jpg",
+      "source": "490f4ccd-4336-4a79-8f8e-78c7bb9b4ff3-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b57445fa-9fad-483e-8a2e-7ebb5828983b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1734579787849,
+  "stop": 1734579811307
+}
