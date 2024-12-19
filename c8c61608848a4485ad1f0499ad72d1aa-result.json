@@ -1,0 +1,128 @@
+{
+  "uuid": "882bab06-d8dc-4751-a49a-e76de7adf3b7",
+  "historyId": "33e21b9be5de997de08fe513a0a2e800",
+  "testCaseId": "681976a96883855ce28393151363bbc3",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.ImportStudentsExamErrorFile()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "a7ecdd31d7e2"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "ImportStudentsExamErrorFile"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Проверка импорта студентов через некорректный файл",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.ArgumentOutOfRangeException : Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+    "trace": "   at Newtonsoft.Json.Linq.JContainer.GetItem(Int32 index)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667021_o(String programId) in /azp/_work/1/s/Pages/ProgramInfoPage.cs:line 426\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667021_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1734576240812,
+      "stop": 1734576240972
+    },
+    {
+      "name": "Получить количество студентов",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+        "trace": "System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')\n   at Newtonsoft.Json.Linq.JContainer.GetItem(Int32 index)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667021_o(String programId) in /azp/_work/1/s/Pages/ProgramInfoPage.cs:line 426\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667021_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1734576240972,
+      "stop": 1734576242605
+    }
+  ],
+  "attachments": [
+    {
+      "name": "ImportStudentsExamErrorFile.jpg",
+      "source": "40656492-1598-4b24-bdb8-0ef5710ef48f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "f668445c-ebfb-4834-b1c2-11cfc1151207-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1734576240811,
+  "stop": 1734576242800
+}

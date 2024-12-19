@@ -1,0 +1,134 @@
+{
+  "uuid": "874ed5d7-0589-4afa-ae3f-6e5eac8bf347",
+  "historyId": "2045361b1dad2fe0e711e17737b0db88",
+  "testCaseId": "fe24a02a274f512d05ccb60c869ec5a0",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.TestTrainSettingsValidationTests.RemoveAuthorInTestTrain()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "a7ecdd31d7e2"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "RemoveAuthorInTestTrain"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTrainSettingsValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Материал"
+    },
+    {
+      "name": "subSuite",
+      "value": "Конструктор тест-тренажера"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Материал"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Конструктор теста-тренажера: можно удалить автора",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.TestCommonEditPage.CheckAuthorIsRemoved(String name) in /azp/_work/1/s/Pages/TestCommonEditPage.cs:line 701\n   at OdinUiTests.Tests.Library.TestCreateEditCommon.RemoveAuthor(IWebDriver driver, Boolean isTestTrain, String id, String name) in /azp/_work/1/s/Tests/Library/TestCreateEditCommon.cs:line 39\n   at OdinUiTests.Tests.Library.TestTrainSettingsValidationTests.RemoveAuthorInTestTrain() in /azp/_work/1/s/Tests/Library/TestTrainCreateEditTests.cs:line 85\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования теста-тренажера",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1734576501494,
+      "stop": 1734576502103
+    },
+    {
+      "name": "В поле “Авторы материала” удалить автора",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"Смирнов Семен\"",
+          "excluded": false
+        }
+      ],
+      "start": 1734576502103,
+      "stop": 1734576504763
+    },
+    {
+      "name": "Подождать пока появится слово “Сохранено”",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1734576504763,
+      "stop": 1734576508227
+    }
+  ],
+  "attachments": [
+    {
+      "name": "RemoveAuthorInTestTrain.jpg",
+      "source": "322e936c-7ba5-477b-b4ba-5eb62e8d5cc9-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "144a3202-94c6-4cf1-855b-853836440aae-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1734576501392,
+  "stop": 1734576538828
+}
