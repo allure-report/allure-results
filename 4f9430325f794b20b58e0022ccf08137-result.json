@@ -1,0 +1,173 @@
+{
+  "uuid": "858c8f6e-8ef4-4592-95ed-d37c2b1b3074",
+  "historyId": "65b229762b52cf45d82e1d1a6dc32fa2",
+  "testCaseId": "fd0a319215c2bdb8fa6bf136ad248da5",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.TaskChatTests.CheckDisciplineRoomIsOpened()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "4ed2e5159942"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDisciplineRoomIsOpened"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обсуждение решения"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно открыть чат обсуждения решения студента",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/2/s/Services/CommonService.cs:line 334\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisciplineTaskRoomIsOpen_100666385_o(String taskName, String studentName) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1908\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisciplineTaskRoomIsOpen_100666385_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть список чатов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1736951094647,
+      "stop": 1736951096556
+    },
+    {
+      "name": "Открыть раздел 'Дисциплины' и выбрать дисциплину",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineName",
+          "value": "\"Алгоритмы и структуры данных\"",
+          "excluded": false
+        }
+      ],
+      "start": 1736951096556,
+      "stop": 1736951105960
+    },
+    {
+      "name": "В списке чатов дисциплины выбрать случайный чат обсуждения решения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "taskName",
+          "value": "\"Алгоритм №1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1736951105961,
+      "stop": 1736951107648
+    },
+    {
+      "name": "Проверить, что открылся чат обсуждения решения первого студента",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/2/s/Services/CommonService.cs:line 334\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisciplineTaskRoomIsOpen_100666385_o(String taskName, String studentName) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1908\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisciplineTaskRoomIsOpen_100666385_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "taskName",
+          "value": "\"Алгоритм №1\"",
+          "excluded": false
+        },
+        {
+          "name": "studentName",
+          "value": "\"Бадин Антон Викторович\"",
+          "excluded": false
+        }
+      ],
+      "start": 1736951107648,
+      "stop": 1736951138749
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDisciplineRoomIsOpened.jpg",
+      "source": "d39b8cf8-f37d-4aa3-a3a2-7aaef9f2a958-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "8117c6b3-c97e-47fb-849f-61922027bcb8-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1736951093244,
+  "stop": 1736951140263
+}

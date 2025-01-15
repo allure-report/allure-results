@@ -1,0 +1,146 @@
+{
+  "uuid": "961906ac-daeb-41ae-a92c-f4b2a9b8b0a6",
+  "historyId": "65d568df2674e867ed6d65e0318f0cc9",
+  "testCaseId": "6264ec7d87de42354b5be1fa8bd15bca",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortEditingValidationTests.CheckEditCohortIfStartAndEndDateNotFilled()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "4ed2e5159942"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditCohortIfStartAndEndDateNotFilled"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortEditingValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование потока: ошибка валидации, если даты начала и окончания не заполнены",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1198, 1037). Other element would receive the click: <div data-v-e38e08ee=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnSaveButton_100666418_o() in /azp/_work/2/s/Pages/CohortCreateEditPage.cs:line 312\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnSaveButton_100666418_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирование потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortId",
+          "value": "\"4307\"",
+          "excluded": false
+        }
+      ],
+      "start": 1736951387453,
+      "stop": 1736951388549
+    },
+    {
+      "name": "Очистить значение в поле 'Дата начала'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1736951388550,
+      "stop": 1736951392348
+    },
+    {
+      "name": "Очистить значение в поле 'Дата окончания'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1736951392348,
+      "stop": 1736951394946
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1198, 1037). Other element would receive the click: <div data-v-e38e08ee=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1198, 1037). Other element would receive the click: <div data-v-e38e08ee=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnSaveButton_100666418_o() in /azp/_work/2/s/Pages/CohortCreateEditPage.cs:line 312\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnSaveButton_100666418_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1736951394946,
+      "stop": 1736951396346
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditCohortIfStartAndEndDateNotFilled.jpg",
+      "source": "c3064927-9376-499e-9b2a-e79913c570fb-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "0b9ef611-210b-47c6-895d-fcb58a6c3c39-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1736951387453,
+  "stop": 1736951397051
+}

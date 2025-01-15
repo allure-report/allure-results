@@ -1,0 +1,130 @@
+{
+  "uuid": "ba5bf98a-711a-4950-8816-4ed3c9f9a661",
+  "historyId": "af26c9048357f62d8bf558eac01a7dd8",
+  "testCaseId": "b0181dea8e819a198bae1c3f8e1a33d9",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortEditingTests.CheckEditCohortByFillingMaxNumberOfStudents()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "4ed2e5159942"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditCohortByFillingMaxNumberOfStudents"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование потока: успешное сохранение, с корректными значениями в поле ‘Максимальное количество студентов’",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Максимальное количество студентов\" title=\"\" id=\"f_9075be83-f9db-4100-a4c4-a24729bbbed0\" type=\"number\"> is not clickable at point (983, 293). Other element would receive the click: <div data-v-e38e08ee=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/2/s/Services/CommonService.cs:line 387\n   at OdinUiTests.Pages.CohortCreateEditPage.<>c__DisplayClass61_0.<SetMaxNumberOfStudents>b__0() in /azp/_work/2/s/Pages/CohortCreateEditPage.cs:line 247\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.CohortCreateEditPage.SetMaxNumberOfStudents(Int32 number, Boolean editing) in /azp/_work/2/s/Pages/CohortCreateEditPage.cs:line 243\n   at OdinUiTests.Tests.Cohort.CohortEditingTests.CheckEditCohortByFillingMaxNumberOfStudents() in /azp/_work/2/s/Tests/Cohort/CohortCreateEditTests.cs:line 474\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирование потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortId",
+          "value": "\"3\"",
+          "excluded": false
+        }
+      ],
+      "start": 1736951309377,
+      "stop": 1736951310247
+    },
+    {
+      "name": "Отредактировать значение в поле ‘Максимальное количество студентов’",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Максимальное количество студентов\" title=\"\" id=\"f_9075be83-f9db-4100-a4c4-a24729bbbed0\" type=\"number\"> is not clickable at point (983, 293). Other element would receive the click: <div data-v-e38e08ee=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Максимальное количество студентов\" title=\"\" id=\"f_9075be83-f9db-4100-a4c4-a24729bbbed0\" type=\"number\"> is not clickable at point (983, 293). Other element would receive the click: <div data-v-e38e08ee=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/2/s/Services/CommonService.cs:line 387\n   at OdinUiTests.Pages.CohortCreateEditPage.<>c__DisplayClass61_0.<SetMaxNumberOfStudents>b__0() in /azp/_work/2/s/Pages/CohortCreateEditPage.cs:line 247\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.CohortCreateEditPage.SetMaxNumberOfStudents(Int32 number, Boolean editing) in /azp/_work/2/s/Pages/CohortCreateEditPage.cs:line 243\n   at OdinUiTests.Tests.Cohort.CohortEditingTests.CheckEditCohortByFillingMaxNumberOfStudents() in /azp/_work/2/s/Tests/Cohort/CohortCreateEditTests.cs:line 474\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1736951310247,
+      "stop": 1736951315347
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditCohortByFillingMaxNumberOfStudents.jpg",
+      "source": "9a2a79c9-1e14-4f3e-b585-7ff3963cc35e-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "afdd35df-c206-4f4b-a0e1-315ba0b5f31f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1736951309377,
+  "stop": 1736951315779
+}

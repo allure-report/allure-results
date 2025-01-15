@@ -1,0 +1,152 @@
+{
+  "uuid": "8bb2929a-4a1d-410e-ae66-221e583ce1df",
+  "historyId": "d84727183d9288db8b0e1af275ce98fd",
+  "testCaseId": "3a953dcd85788daf96cbef5dee40fa18",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineChatCallTests.CheckDeleteMessageInDisciplineCallChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "4ed2e5159942"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteMessageInDisciplineCallChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineChatCallTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат звонка дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно удалить сообщение в миничате звонка дисциплины",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(String needToCheck, Boolean needToSendMessage) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1090\n   at OdinUiTests.Pages.ChatCommonPage.<>c__DisplayClass136_0.<ChooseMessageForFurtherAction>b__0() in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 548\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ChatCommonPage.ChooseMessageForFurtherAction(String action) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 545\n   at OdinUiTests.Pages.ChatCommonPage.ChooseMessageToDelete() in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1171\n   at OdinUiTests.Tests.Chat.ChatCommon.DeleteLastMessage(IWebDriver driver, String chatId, Boolean isMinichat) in /azp/_work/2/s/Tests/Chat/ChatCommon.cs:line 431\n   at OdinUiTests.Tests.Chat.ChatCommon.DeleteLastMessageInMinichat(IWebDriver driver, String chatId) in /azp/_work/2/s/Tests/Chat/ChatCommon.cs:line 449\n   at OdinUiTests.Tests.Chat.DisciplineChatCallTests.CheckDeleteMessageInDisciplineCallChat() in /azp/_work/2/s/Tests/Chat/CallChatTests.cs:line 107\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу звонка по id чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"1714\"",
+          "excluded": false
+        }
+      ],
+      "start": 1736950966757,
+      "stop": 1736950967662
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1736950967662,
+      "stop": 1736950977449
+    },
+    {
+      "name": "Нажать на кнопку чата в звонке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1736950977449,
+      "stop": 1736950983248
+    },
+    {
+      "name": "Выбрать сообщение для удаления",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(String needToCheck, Boolean needToSendMessage) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1090\n   at OdinUiTests.Pages.ChatCommonPage.<>c__DisplayClass136_0.<ChooseMessageForFurtherAction>b__0() in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 548\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ChatCommonPage.ChooseMessageForFurtherAction(String action) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 545\n   at OdinUiTests.Pages.ChatCommonPage.ChooseMessageToDelete() in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1171\n   at OdinUiTests.Tests.Chat.ChatCommon.DeleteLastMessage(IWebDriver driver, String chatId, Boolean isMinichat) in /azp/_work/2/s/Tests/Chat/ChatCommon.cs:line 431\n   at OdinUiTests.Tests.Chat.ChatCommon.DeleteLastMessageInMinichat(IWebDriver driver, String chatId) in /azp/_work/2/s/Tests/Chat/ChatCommon.cs:line 449\n   at OdinUiTests.Tests.Chat.DisciplineChatCallTests.CheckDeleteMessageInDisciplineCallChat() in /azp/_work/2/s/Tests/Chat/CallChatTests.cs:line 107\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1736950986858,
+      "stop": 1736951018561
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDeleteMessageInDisciplineCallChat.jpg",
+      "source": "6344988c-75a6-4f8b-9a04-28be83faf49b-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "81215273-77fc-44b2-8446-1ffa81607fc7-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1736950966757,
+  "stop": 1736951019758
+}

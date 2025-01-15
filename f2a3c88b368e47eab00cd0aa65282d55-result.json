@@ -1,0 +1,126 @@
+{
+  "uuid": "9edcfda0-6fba-4e64-94f1-a7a79ecc6773",
+  "historyId": "0184c88c044660b1143303f75395dbf8",
+  "testCaseId": "fa25abead29b41da47657d28239ba6ef",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortEditingValidationTests.CheckEditCohortIfNameNotFilled()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "4ed2e5159942"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditCohortIfNameNotFilled"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortEditingValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование потока: ошибка валидации, если название не заполнено",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Название*\" id=\"f_acc39526-ae79-4fb3-947a-ab7673f5f370\" type=\"text\"> is not clickable at point (1000, 153). Other element would receive the click: <div data-v-e38e08ee=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInTextInputFields(IWebDriver driver, By selector, Boolean valueFromAttribute) in /azp/_work/2/s/Services/CommonService.cs:line 402\n   at OdinUiTests.Pages.CohortCreateEditPage.EditNameField(String name) in /azp/_work/2/s/Pages/CohortCreateEditPage.cs:line 100\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClearValueInNameField_100666399_o() in /azp/_work/2/s/Pages/CohortCreateEditPage.cs:line 108\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClearValueInNameField_100666399_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирование потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortId",
+          "value": "\"4307\"",
+          "excluded": false
+        }
+      ],
+      "start": 1736951294457,
+      "stop": 1736951295760
+    },
+    {
+      "name": "Очистить значение в поле 'Название'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Название*\" id=\"f_acc39526-ae79-4fb3-947a-ab7673f5f370\" type=\"text\"> is not clickable at point (1000, 153). Other element would receive the click: <div data-v-e38e08ee=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Название*\" id=\"f_acc39526-ae79-4fb3-947a-ab7673f5f370\" type=\"text\"> is not clickable at point (1000, 153). Other element would receive the click: <div data-v-e38e08ee=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInTextInputFields(IWebDriver driver, By selector, Boolean valueFromAttribute) in /azp/_work/2/s/Services/CommonService.cs:line 402\n   at OdinUiTests.Pages.CohortCreateEditPage.EditNameField(String name) in /azp/_work/2/s/Pages/CohortCreateEditPage.cs:line 100\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClearValueInNameField_100666399_o() in /azp/_work/2/s/Pages/CohortCreateEditPage.cs:line 108\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClearValueInNameField_100666399_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1736951295760,
+      "stop": 1736951301246
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditCohortIfNameNotFilled.jpg",
+      "source": "1c7c58ad-7341-4b1c-a484-a6b2eb954ad9-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b4b7f389-3f91-470e-9282-13ae9833093d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1736951294457,
+  "stop": 1736951301879
+}
