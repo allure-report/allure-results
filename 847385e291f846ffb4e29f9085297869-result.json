@@ -1,0 +1,126 @@
+{
+  "uuid": "faef501c-f1a6-4455-915a-d2c2af8eb9f9",
+  "historyId": "7090d7afaf78b6c8af6202a4d2cd1bb8",
+  "testCaseId": "a113ae95ca0f3b20fb3618f503f6bb07",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortEditingValidationTests.CheckIsNotPossibleRemoveCohortWithSemestersOrDisciplines()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "39c180e94da3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckIsNotPossibleRemoveCohortWithSemestersOrDisciplines"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortEditingValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование потока: нет возможности удалить поток, если есть хотя бы одна дисциплина или семестр",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span data-v-3bb8780d=\"\" class=\"\">...</span> is not clickable at point (1000, 409). Other element would receive the click: <div data-v-a1a3d8ec=\"\" data-v-e38e08ee=\"\" class=\"custom-avatar\" aria-hidden=\"true\" style=\"background-color: rgb(0, 200, 83); font-size: 50px;\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnRemoveButton_100666412_o() in /azp/_work/3/s/Pages/CohortCreateEditPage.cs:line 259\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnRemoveButton_100666412_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирование потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortId",
+          "value": "\"10\"",
+          "excluded": false
+        }
+      ],
+      "start": 1737098569960,
+      "stop": 1737098571259
+    },
+    {
+      "name": "Нажать на кнопку 'Удалить поток'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <span data-v-3bb8780d=\"\" class=\"\">...</span> is not clickable at point (1000, 409). Other element would receive the click: <div data-v-a1a3d8ec=\"\" data-v-e38e08ee=\"\" class=\"custom-avatar\" aria-hidden=\"true\" style=\"background-color: rgb(0, 200, 83); font-size: 50px;\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <span data-v-3bb8780d=\"\" class=\"\">...</span> is not clickable at point (1000, 409). Other element would receive the click: <div data-v-a1a3d8ec=\"\" data-v-e38e08ee=\"\" class=\"custom-avatar\" aria-hidden=\"true\" style=\"background-color: rgb(0, 200, 83); font-size: 50px;\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnRemoveButton_100666412_o() in /azp/_work/3/s/Pages/CohortCreateEditPage.cs:line 259\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnRemoveButton_100666412_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1737098571259,
+      "stop": 1737098578143
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckIsNotPossibleRemoveCohortWithSemestersOrDisciplines.jpg",
+      "source": "93400c95-ad5c-46a0-9e0c-6931039475c7-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "4a495625-20e4-4385-91fe-bd762200bd90-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1737098569959,
+  "stop": 1737098578865
+}
