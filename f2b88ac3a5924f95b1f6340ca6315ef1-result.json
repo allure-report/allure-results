@@ -1,0 +1,136 @@
+{
+  "uuid": "ea67a479-0d9a-4c4e-a56f-8462d82ea621",
+  "historyId": "66940f0e75ad398aaeda5af63881840c",
+  "testCaseId": "933b0aecbab2f47dcdba47048d7e79a3",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskWithSolutionStudentTests.CheckAbilityToEditAssessmentOfAnotherStudentsSolution()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "34b9536a434e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAbilityToEditAssessmentOfAnotherStudentsSolution"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskWithSolutionStudentTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница решения задания для студента"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно редактировать поставленную оценку в решении другого студента, если включена опция Взаимопроверка",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div data-v-4a0395c8=\"\" class=\"q-mr-xs\">...</div> is not clickable at point (452, 159). Other element would receive the click: <div data-v-e38e08ee=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivitySolutionPage.SelectStudent(String name) in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 92\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_SelectStudentFromList_100666167_o(String name) in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 100\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_SelectStudentFromList_100666167_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу решения задания",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"91\"",
+          "excluded": false
+        }
+      ],
+      "start": 1737096566888,
+      "stop": 1737096569085
+    },
+    {
+      "name": "Выбрать студента из списка всех решений",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <div data-v-4a0395c8=\"\" class=\"q-mr-xs\">...</div> is not clickable at point (452, 159). Other element would receive the click: <div data-v-e38e08ee=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <div data-v-4a0395c8=\"\" class=\"q-mr-xs\">...</div> is not clickable at point (452, 159). Other element would receive the click: <div data-v-e38e08ee=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome-headless-shell=126.0.6478.126)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivitySolutionPage.SelectStudent(String name) in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 92\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_SelectStudentFromList_100666167_o(String name) in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 100\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_SelectStudentFromList_100666167_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"Doe John\"",
+          "excluded": false
+        }
+      ],
+      "start": 1737096569086,
+      "stop": 1737096579474
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAbilityToEditAssessmentOfAnotherStudentsSolution.jpg",
+      "source": "76570e24-ebc8-4481-86f4-910d569a6393-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "189002df-49b6-4c80-961d-948e18a12651-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1737096566887,
+  "stop": 1737096580794
+}

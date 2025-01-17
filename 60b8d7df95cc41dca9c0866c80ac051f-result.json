@@ -1,0 +1,130 @@
+{
+  "uuid": "bdd57db1-dd40-4994-9e4b-c4c8ca428e7a",
+  "historyId": "f8e22577e1a75b95184e6628014d61a7",
+  "testCaseId": "5210495e567511f9f90b75ab6ec45f6a",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskActivityMulticriteriaTests.CheckCreateTaskWithoutPointOfCriteria()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "34b9536a434e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateTaskWithoutPointOfCriteria"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskActivityMulticriteriaTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание задания"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Нельзя создать активность типа Задание с критериями, если не заполнен балл критерия",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div class=\"q-field__control-container col relative-position row no-wrap q-anchor--skip\">...</div> is not clickable at point (971, 433). Other element would receive the click: <img data-v-e38e08ee=\"\" src=\"https://storage.yandexcloud.net/odin-storage-public/af46e94a-ef96-4883-95d4-0f84a079e08e.JPG\" alt=\"\">\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.SelectValueFromDropdown(IWebDriver driver, By selector, String value) in /azp/_work/1/s/Services/CommonService.cs:line 766\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass93_0.<SetActivityType>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 347\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.SetActivityType(String type) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 345\n   at OdinUiTests.Tests.Activity.TaskActivityMulticriteriaTests.Setup() in /azp/_work/1/s/Tests/Activity/TaskActivityTests.cs:line 490\n   at InvokeStub_TaskActivityMulticriteriaTests.Setup(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"203\"",
+          "excluded": false
+        }
+      ],
+      "start": 1737096394087,
+      "stop": 1737096396189
+    },
+    {
+      "name": "В поле 'Тип активности' выбрать значение 'Задание'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <div class=\"q-field__control-container col relative-position row no-wrap q-anchor--skip\">...</div> is not clickable at point (971, 433). Other element would receive the click: <img data-v-e38e08ee=\"\" src=\"https://storage.yandexcloud.net/odin-storage-public/af46e94a-ef96-4883-95d4-0f84a079e08e.JPG\" alt=\"\">\n  (Session info: chrome-headless-shell=126.0.6478.126)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <div class=\"q-field__control-container col relative-position row no-wrap q-anchor--skip\">...</div> is not clickable at point (971, 433). Other element would receive the click: <img data-v-e38e08ee=\"\" src=\"https://storage.yandexcloud.net/odin-storage-public/af46e94a-ef96-4883-95d4-0f84a079e08e.JPG\" alt=\"\">\n  (Session info: chrome-headless-shell=126.0.6478.126)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.SelectValueFromDropdown(IWebDriver driver, By selector, String value) in /azp/_work/1/s/Services/CommonService.cs:line 766\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass93_0.<SetActivityType>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 347\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.SetActivityType(String type) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 345\n   at OdinUiTests.Tests.Activity.TaskActivityMulticriteriaTests.Setup() in /azp/_work/1/s/Tests/Activity/TaskActivityTests.cs:line 490\n   at InvokeStub_TaskActivityMulticriteriaTests.Setup(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1737096396189,
+      "stop": 1737096410383
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateTaskWithoutPointOfCriteria.jpg",
+      "source": "4cb29185-d667-4459-a5bc-fd97df775e35-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "bdcf88ca-f69d-40ef-a6db-bca716196465-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1737096394087,
+  "stop": 1737096411871
+}
