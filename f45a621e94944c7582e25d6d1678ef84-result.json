@@ -1,0 +1,192 @@
+{
+  "uuid": "1d9b6218-96fc-49dd-8798-f5c6c0d666a2",
+  "historyId": "956b1e81eda743a2137e2c6412cd77ec",
+  "testCaseId": "a04c7166acd159d508f8531d6e47caa2",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisContingentEditingTests.CheckAddGroupAndStudentToDiscipline()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "9efc9f45b0bc"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddGroupAndStudentToDiscipline"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Добавления к дисциплине групп и студентов",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Сущности не были добавлены в дисциплину\nAssert.That(condition, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at OdinUiTests.Tests.Discipline.DisContingentEditingTests.CheckAddGroupAndStudentToDiscipline() in /azp/_work/2/s/Tests/Discipline/DisCreateEditTests.cs:line 961\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"585\"",
+          "excluded": false
+        }
+      ],
+      "start": 1737525153309,
+      "stop": 1737525155110
+    },
+    {
+      "name": "Добавить/выбрать преподавателя/группу из выпадающего списка",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "contingent",
+          "value": "\"Группа\"",
+          "excluded": false
+        },
+        {
+          "name": "userInfo",
+          "value": "\"Группа 11 - бухгалтеры\"",
+          "excluded": false
+        }
+      ],
+      "start": 1737525155110,
+      "stop": 1737525169908
+    },
+    {
+      "name": "Выбрать студента из выпадающего списка по имени",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"Елизарова Елена Евгеньевна\"",
+          "excluded": false
+        }
+      ],
+      "start": 1737525169909,
+      "stop": 1737525174531
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1737525174531,
+      "stop": 1737525175119
+    },
+    {
+      "name": "Проверка отображения на странице дисциплины преподавателя/группы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "members",
+          "value": "[\"Группа 11 - бухгалтеры\",\"Елизарова Елена Евгеньевна\"]",
+          "excluded": false
+        }
+      ],
+      "start": 1737525175120,
+      "stop": 1737525180324
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddGroupAndStudentToDiscipline.jpg",
+      "source": "34b66ea8-b0d0-4f83-9f40-a6c01080d657-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "c5a9f363-fb84-40e3-a905-b98584e62075-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1737525149126,
+  "stop": 1737525182809
+}
