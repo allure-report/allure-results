@@ -1,0 +1,173 @@
+{
+  "uuid": "ec752618-ae9d-48ea-b5d8-1a320f206ed2",
+  "historyId": "65b229762b52cf45d82e1d1a6dc32fa2",
+  "testCaseId": "fd0a319215c2bdb8fa6bf136ad248da5",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.TaskChatTests.CheckDisciplineRoomIsOpened()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "829ee3609255"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDisciplineRoomIsOpened"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обсуждение решения"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно открыть чат обсуждения решения студента",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisciplineTaskRoomIsOpen_100666385_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.CheckDisciplineTaskRoomIsOpen(String taskName, String studentName)\n   at OdinUiTests.Tests.Chat.TaskChatTests.CheckDisciplineRoomIsOpened() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 443\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 334\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisciplineTaskRoomIsOpen_100666385_o(String taskName, String studentName) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1908\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisciplineTaskRoomIsOpen_100666385_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть список чатов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1739341632622,
+      "stop": 1739341636531
+    },
+    {
+      "name": "Открыть раздел 'Дисциплины' и выбрать дисциплину",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineName",
+          "value": "\"Алгоритмы и структуры данных\"",
+          "excluded": false
+        }
+      ],
+      "start": 1739341636531,
+      "stop": 1739341653042
+    },
+    {
+      "name": "В списке чатов дисциплины выбрать случайный чат обсуждения решения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "taskName",
+          "value": "\"Алгоритм №1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1739341653042,
+      "stop": 1739341657023
+    },
+    {
+      "name": "Проверить, что открылся чат обсуждения решения первого студента",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 334\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisciplineTaskRoomIsOpen_100666385_o(String taskName, String studentName) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1908\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisciplineTaskRoomIsOpen_100666385_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "taskName",
+          "value": "\"Алгоритм №1\"",
+          "excluded": false
+        },
+        {
+          "name": "studentName",
+          "value": "\"Бадин Антон Викторович\"",
+          "excluded": false
+        }
+      ],
+      "start": 1739341657023,
+      "stop": 1739341690823
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDisciplineRoomIsOpened.jpg",
+      "source": "75513908-72fa-4267-a3b9-c03a8f850084-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b515b3c9-f77e-4c6e-b3ee-02d42699e2c3-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1739341631011,
+  "stop": 1739341696518
+}
