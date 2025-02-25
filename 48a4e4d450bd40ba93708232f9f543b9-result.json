@@ -1,0 +1,382 @@
+{
+  "uuid": "a848ca31-d8c6-40c7-a7dd-b1840289fb1d",
+  "historyId": "54377deb0a94417969ed57f4c4773036",
+  "testCaseId": "83cd9ebb42b40f75c6d7007d63a45a2b",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.IOTThemesAndModulesTests.CheckCreateTopicOrActivityInsideModule()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "f5a5c0f045e2"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateTopicOrActivityInsideModule"
+    },
+    {
+      "name": "testClass",
+      "value": "IOTThemesAndModulesTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина с ИОТ"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница дисциплины с ИОТ: внутри модуля можно создать темы или активности",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.InvalidOperationException : Sequence contains no elements",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666641_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonInfoPage.AddRandomPickedBlock(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter)\n   at OdinUiTests.Tests.Discipline.IOTThemesAndModulesTests.CheckCreateTopicOrActivityInsideModule() in /azp/_work/1/s/Tests/Discipline/DisCreateEditTests.cs:line 279\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--TargetInvocationException\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665945_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonEditPage.FillDescriptionField(String description)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666641_o(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 452\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666641_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--InvalidOperationException\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Services.CommonService.SetTextInTinymceEditorField(IWebDriver driver, String text) in /azp/_work/1/s/Services/CommonService.cs:line 373\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665945_o(String description) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 188\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665945_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"132626\"",
+          "excluded": false
+        }
+      ],
+      "start": 1740462974398,
+      "stop": 1740462975411
+    },
+    {
+      "name": "Добавить нужный блок в дисциплину с ИОТ если она отсутствует",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку добавления блока указав нужную кнопку",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "location",
+              "value": "\"main\"",
+              "excluded": false
+            }
+          ],
+          "start": 1740462983135,
+          "stop": 1740462986422
+        },
+        {
+          "name": "Добавления блока в указанное место в дисциплину с ИОТ",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Проверка того что блок был добавлен в дисциплину с ИОТ",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "kindOfBlock",
+                  "value": "\"Модуль\"",
+                  "excluded": false
+                },
+                {
+                  "name": "randomText",
+                  "value": "\"97D1584CEA18192\"",
+                  "excluded": false
+                },
+                {
+                  "name": "withRefresh",
+                  "value": "false",
+                  "excluded": false
+                },
+                {
+                  "name": "nameOfBlock",
+                  "value": "\"\"",
+                  "excluded": false
+                },
+                {
+                  "name": "parameter",
+                  "value": "\"\"",
+                  "excluded": false
+                }
+              ],
+              "start": 1740462988722,
+              "stop": 1740462990886
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "location",
+              "value": "\"main\"",
+              "excluded": false
+            },
+            {
+              "name": "insideBlock",
+              "value": "false",
+              "excluded": false
+            },
+            {
+              "name": "kindOfBlock",
+              "value": "\"Модуль\"",
+              "excluded": false
+            },
+            {
+              "name": "randomText",
+              "value": "\"97D1584CEA18192\"",
+              "excluded": false
+            },
+            {
+              "name": "parameter",
+              "value": "\"\"",
+              "excluded": false
+            }
+          ],
+          "start": 1740462986422,
+          "stop": 1740462990886
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "kindOfBlock",
+          "value": "\"Модуль\"",
+          "excluded": false
+        }
+      ],
+      "start": 1740462975411,
+      "stop": 1740462990886
+    },
+    {
+      "name": "Открыть нужный блок",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "kindOfBlock",
+          "value": "\"Модуль\"",
+          "excluded": false
+        }
+      ],
+      "start": 1740462990886,
+      "stop": 1740462995598
+    },
+    {
+      "name": "Рандомна получить вид блока для добавления",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "countOfBlock",
+          "value": "2",
+          "excluded": false
+        }
+      ],
+      "start": 1740462995598,
+      "stop": 1740462995598
+    },
+    {
+      "name": "Нажать на кнопку добавления блока указав нужную кнопку",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "location",
+          "value": "\"main\"",
+          "excluded": false
+        }
+      ],
+      "start": 1740462995598,
+      "stop": 1740462998388
+    },
+    {
+      "name": "Добавления блока в указанное место в дисциплину с ИОТ",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.\n ---> System.InvalidOperationException: Sequence contains no elements\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Services.CommonService.SetTextInTinymceEditorField(IWebDriver driver, String text) in /azp/_work/1/s/Services/CommonService.cs:line 373\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665945_o(String description) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 188\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665945_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   --- End of inner exception stack trace ---\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665945_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonEditPage.FillDescriptionField(String description)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666641_o(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 452\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666641_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Ввести значение в поле 'Название активности'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"0671DE689AA2C5C\"",
+              "excluded": false
+            }
+          ],
+          "start": 1740463000198,
+          "stop": 1740463003117
+        },
+        {
+          "name": "Ввести значение в поле 'Описание'",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Sequence contains no elements",
+            "trace": "System.InvalidOperationException: Sequence contains no elements\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Services.CommonService.SetTextInTinymceEditorField(IWebDriver driver, String text) in /azp/_work/1/s/Services/CommonService.cs:line 373\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665945_o(String description) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 188\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665945_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "description",
+              "value": "\"0671DE689AA2C5C\"",
+              "excluded": false
+            }
+          ],
+          "start": 1740463003117,
+          "stop": 1740463005491
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "location",
+          "value": "\"main\"",
+          "excluded": false
+        },
+        {
+          "name": "insideBlock",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "kindOfBlock",
+          "value": "\"Активность\"",
+          "excluded": false
+        },
+        {
+          "name": "randomText",
+          "value": "\"0671DE689AA2C5C\"",
+          "excluded": false
+        },
+        {
+          "name": "parameter",
+          "value": "\"\"",
+          "excluded": false
+        }
+      ],
+      "start": 1740462998388,
+      "stop": 1740463005492
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateTopicOrActivityInsideModule.jpg",
+      "source": "61c8cc17-e452-4264-b715-d4013a38f918-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "bad49941-0d70-4ec1-a8a0-c7a0548e52cd-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1740462974393,
+  "stop": 1740463006503
+}
