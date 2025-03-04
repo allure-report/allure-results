@@ -1,0 +1,183 @@
+{
+  "uuid": "0efccee4-aa47-492d-b49d-ba05a5669a2e",
+  "historyId": "1f0e52d45c49e9403992916717b55a42",
+  "testCaseId": "24a6a06b372eaf958c2e154d575873a7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.CheckEndStudySwitchStatusForAdminDepartment()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "6f5dbdb1a2a3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEndStudySwitchStatusForAdminDepartment"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Проверка завершения обучения переключение статуса для админа подразделения",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (3738, 1986). Other element would receive the click: <div data-v-63d789fa=\"\" class=\"notify\"></div>\n  (Session info: chrome=132.0.6834.83)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.EducationCompletionPage.__a$_around_ClickOnSaveButton_100666800_w_0(Object[])\n   at OdinUiTests.Pages.EducationCompletionPage.ClickOnSaveButton()\n   at OdinUiTests.Tests.Exams.ExamCreateEditTests.CheckEndStudySwitchStatusForAdminDepartment() in /azp/_work/1/s/Tests/Exams/TestCenterTests.cs:line 338\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.EducationCompletionPage.__a$_around_ClickOnSaveButton_100666800_o() in /azp/_work/1/s/Pages/EducationCompletionPage.cs:line 121\n   at OdinUiTests.Pages.EducationCompletionPage.__a$_around_ClickOnSaveButton_100666800_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741113266785,
+      "stop": 1741113267134
+    },
+    {
+      "name": "Нажать на кнопку Завершить обучение для студентов экзамена",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741113267134,
+      "stop": 1741113270329
+    },
+    {
+      "name": "Получить статус обучения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741113270330,
+      "stop": 1741113270912
+    },
+    {
+      "name": "Изменить статус обучения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Выбрать рандомно значение в дропдауне статуса обчения",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1741113272173,
+          "stop": 1741113273336
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741113270912,
+      "stop": 1741113273347
+    },
+    {
+      "name": "Нажать на кнопку Сохранить",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (3738, 1986). Other element would receive the click: <div data-v-63d789fa=\"\" class=\"notify\"></div>\n  (Session info: chrome=132.0.6834.83)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (3738, 1986). Other element would receive the click: <div data-v-63d789fa=\"\" class=\"notify\"></div>\n  (Session info: chrome=132.0.6834.83)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.EducationCompletionPage.__a$_around_ClickOnSaveButton_100666800_o() in /azp/_work/1/s/Pages/EducationCompletionPage.cs:line 121\n   at OdinUiTests.Pages.EducationCompletionPage.__a$_around_ClickOnSaveButton_100666800_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741113273348,
+      "stop": 1741113274415
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEndStudySwitchStatusForAdminDepartment.jpg",
+      "source": "c50706b2-8064-48fa-b807-d7b4dfaef004-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "bca6bb2c-81ca-4871-adc1-626dc372be3f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1741113264184,
+  "stop": 1741113274991
+}
