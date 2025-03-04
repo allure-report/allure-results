@@ -1,0 +1,225 @@
+{
+  "uuid": "f3573228-2826-4459-8ef2-3a1518bf7b98",
+  "historyId": "79aa08746fa4075ad42932ea58937e51",
+  "testCaseId": "15b1de055903e0623293cf3991cc7505",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Call.CallTests.CheckGreenFrameIsDisplayedOnAnotherUsersCard()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "91b8a3dc2c53"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Call"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGreenFrameIsDisplayedOnAnotherUsersCard"
+    },
+    {
+      "name": "testClass",
+      "value": "CallTests"
+    },
+    {
+      "name": "suite",
+      "value": "Звонок"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Звонок"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница звонка: отображается зеленая рамка у карточки собеседника при разговоре",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 60 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='descp' and contains(text(),'Doe John')]/following-sibling::div[@class='talking-highlight']\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CallPage.__a$_around_CheckGreenFrameIsDisplayed_100666229_w_0(Object[])\n   at OdinUiTests.Pages.CallPage.CheckGreenFrameIsDisplayed(String nameOfUser)\n   at OdinUiTests.Tests.Call.CallTests.CheckGreenFrameIsDisplayedOnAnotherUsersCard() in /azp/_work/4/s/Tests/Call/CallTests.cs:line 50\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.__a$_around_CheckGreenFrameIsDisplayed_100666229_o(String nameOfUser) in /azp/_work/4/s/Pages/CallPage.cs:line 210\n   at OdinUiTests.Pages.CallPage.__a$_around_CheckGreenFrameIsDisplayed_100666229_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу звонка по id чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"751030\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741066067692,
+      "stop": 1741066068168
+    },
+    {
+      "name": "Переключить состояние микрофона в предбаннике и на странице звонка",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "callPage",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "state",
+          "value": "\"off\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741066068169,
+      "stop": 1741066071032
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741066071032,
+      "stop": 1741066074294
+    },
+    {
+      "name": "Проверка того что звонок был начать",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741066074294,
+      "stop": 1741066075566
+    },
+    {
+      "name": "Открыть страницу звонка по id чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"751030\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741066079548,
+      "stop": 1741066080234
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741066080234,
+      "stop": 1741066084576
+    },
+    {
+      "name": "Проверка того что собеседника слышно",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 60 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 60 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='descp' and contains(text(),'Doe John')]/following-sibling::div[@class='talking-highlight']\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.__a$_around_CheckGreenFrameIsDisplayed_100666229_o(String nameOfUser) in /azp/_work/4/s/Pages/CallPage.cs:line 210\n   at OdinUiTests.Pages.CallPage.__a$_around_CheckGreenFrameIsDisplayed_100666229_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "nameOfUser",
+          "value": "\"Doe John\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741066084577,
+      "stop": 1741066144741
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckGreenFrameIsDisplayedOnAnotherUsersCard-FailsBeforeEndOfCall.jpg",
+      "source": "e347b4f8-6349-4087-ba0e-c9172f8abb91-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "CheckGreenFrameIsDisplayedOnAnotherUsersCard.jpg",
+      "source": "6efcced9-c24d-4324-a2d1-774c737cf63d-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "69cdd320-69d5-4b6e-9959-457daf9f9dbf-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1741066067692,
+  "stop": 1741066146886
+}
