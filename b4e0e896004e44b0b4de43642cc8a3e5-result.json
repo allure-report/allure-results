@@ -1,0 +1,137 @@
+{
+  "uuid": "0421c25b-8f0f-4c0d-95b1-684643a4967f",
+  "historyId": "099b95de8a76758e25a4ea15c77c3760",
+  "testCaseId": "aefec649c264a2de5097e94b2b7aa45b",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupMiniChatTests.CheckRestoreGroupChatFromArchiveInMinichat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "b10431f9d27e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckRestoreGroupChatFromArchiveInMinichat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат группового чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно восстановить групповой чат из архива в миничате",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenOtherChatWithName_100666233_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.OpenOtherChatWithName(String chatName)\n   at OdinUiTests.Tests.Chat.GroupMiniChatTests.CheckRestoreGroupChatFromArchiveInMinichat() in /azp/_work/2/s/Tests/Chat/MiniChatTests.cs:line 606\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitUntilSpinnersDisappearFromChat() in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1076\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatWithName(String chatName) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 165\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenOtherChatWithName_100666233_o(String chatName) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 200\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenOtherChatWithName_100666233_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741094177421,
+      "stop": 1741094181121
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741094181122,
+      "stop": 1741094187313
+    },
+    {
+      "name": "В панели чатов найти чат по названию и открыть его",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitUntilSpinnersDisappearFromChat() in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1076\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatWithName(String chatName) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 165\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenOtherChatWithName_100666233_o(String chatName) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 200\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenOtherChatWithName_100666233_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"чат6\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741094187314,
+      "stop": 1741094223112
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckRestoreGroupChatFromArchiveInMinichat.jpg",
+      "source": "958a5bca-e989-4e99-9008-19e849469ca3-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "69b681e1-0284-43fb-94f0-95e4859f1589-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1741094177421,
+  "stop": 1741094226426
+}

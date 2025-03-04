@@ -1,0 +1,137 @@
+{
+  "uuid": "b31c52de-50a2-4606-9d25-2fe25e370f39",
+  "historyId": "3a0b742de0d8998911ce7a522108c7c4",
+  "testCaseId": "12eea04a208795daad032bc110b89398",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomMiniChatMessageTests.CheckAddQuoteToLastMessageInDisciplineRoomMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "b10431f9d27e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddQuoteToLastMessageInDisciplineRoomMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomMiniChatMessageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно цитировать сообщение в миничате добавленной комнаты",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.StaleElementReferenceException : stale element reference: stale element not found in the current frame\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenDisChatWithName_100666234_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.OpenDisChatWithName(String chatName)\n   at OdinUiTests.Tests.Chat.DisciplineRoomMiniChatMessageTests.SetUp() in /azp/_work/2/s/Tests/Chat/MiniChatTests.cs:line 156\n   at InvokeStub_DisciplineRoomMiniChatMessageTests.SetUp(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--StaleElementReferenceException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.get_Text()\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatWithName(String chatName) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 151\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenDisChatWithName_100666234_o(String chatName) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 206\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenDisChatWithName_100666234_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741093924720,
+      "stop": 1741093926719
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741093926719,
+      "stop": 1741093929615
+    },
+    {
+      "name": "В панели чатов найти дисциплину по названию и открыть его",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "stale element reference: stale element not found in the current frame\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+        "trace": "OpenQA.Selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.get_Text()\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatWithName(String chatName) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 151\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenDisChatWithName_100666234_o(String chatName) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 206\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenDisChatWithName_100666234_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Паттерны архитектуры\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741093929616,
+      "stop": 1741093934106
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddQuoteToLastMessageInDisciplineRoomMiniChat.jpg",
+      "source": "98fecb56-20c2-4bcd-aa16-a9babf492e13-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "9b1fe390-037d-4d7d-8869-88d37436fdef-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1741093924719,
+  "stop": 1741093938106
+}

@@ -1,0 +1,193 @@
+{
+  "uuid": "53752029-b6ad-4f4f-a2e9-1b7338ee931f",
+  "historyId": "7dbe9170fe9d53259a57d52b3758994a",
+  "testCaseId": "8890fa853722d3384dbea80573ca0ded",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupMiniChatMessageTests.CheckSendEmptyMessageInGroupMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "b10431f9d27e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendEmptyMessageInGroupMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupMiniChatMessageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат группового чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Невозможно отправить пустое сообщение в миничате группового чата",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.InvalidOperationException : Sequence contains no elements",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmptyMessageIsNotSent_100666336_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.CheckEmptyMessageIsNotSent(Boolean isMinichat, String chatId)\n   at OdinUiTests.Tests.Chat.ChatCommon.SendEmptyMessage(IWebDriver driver, String chatId, Boolean isMinichat) in /azp/_work/2/s/Tests/Chat/ChatCommon.cs:line 46\n   at OdinUiTests.Tests.Chat.ChatCommon.SendEmptyMessageInMinichat(IWebDriver driver, String chatId) in /azp/_work/2/s/Tests/Chat/ChatCommon.cs:line 61\n   at OdinUiTests.Tests.Chat.GroupMiniChatMessageTests.CheckSendEmptyMessageInGroupMiniChat() in /azp/_work/2/s/Tests/Chat/MiniChatTests.cs:line 492\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--InvalidOperationException\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsSent(String message, Boolean isMinichat, String chatId) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1232\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmptyMessageIsNotSent_100666336_o(Boolean isMinichat, String chatId) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1249\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmptyMessageIsNotSent_100666336_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741094175810,
+      "stop": 1741094178311
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741094178311,
+      "stop": 1741094185417
+    },
+    {
+      "name": "В панели чатов найти чат по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Новый чат\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741094185418,
+      "stop": 1741094195499
+    },
+    {
+      "name": "Оставить пустой строку ввода сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741094195500,
+      "stop": 1741094196226
+    },
+    {
+      "name": "Нажать на значок отправки сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741094196226,
+      "stop": 1741094196924
+    },
+    {
+      "name": "Проверка того, что пустое сообщение не было отправлено",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Sequence contains no elements",
+        "trace": "System.InvalidOperationException: Sequence contains no elements\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsSent(String message, Boolean isMinichat, String chatId) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1232\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmptyMessageIsNotSent_100666336_o(Boolean isMinichat, String chatId) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1249\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmptyMessageIsNotSent_100666336_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"141570\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741094196924,
+      "stop": 1741094200421
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendEmptyMessageInGroupMiniChat.jpg",
+      "source": "5999dbb0-230b-4e07-a867-2e6ea5831df4-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "195b3d14-1dd6-4986-b34c-9b9b6616f7f9-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1741094175810,
+  "stop": 1741094204715
+}
