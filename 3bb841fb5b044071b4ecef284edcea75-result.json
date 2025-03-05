@@ -1,0 +1,321 @@
+{
+  "uuid": "eff651ec-769c-48b9-b8cf-9aa13527c725",
+  "historyId": "952a1ba273b7a6a1a6683e7376bf6397",
+  "testCaseId": "39ec86ec3966572687d440bcb804414a",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.IOTGraphTests.CheckAddBlockBetweenBlocks()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "6306f9e1682f"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddBlockBetweenBlocks"
+    },
+    {
+      "name": "testClass",
+      "value": "IOTGraphTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина с ИОТ"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница дисциплины с ИОТ: между блоками можно добавить ещё один блок",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//iframe)[1]\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666645_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonInfoPage.AddRandomPickedBlock(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter)\n   at OdinUiTests.Tests.Discipline.IOTGraphTests.CheckAddBlockBetweenBlocks() in /azp/_work/2/s/Tests/Discipline/DisCreateEditTests.cs:line 403\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--TargetInvocationException\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665949_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonEditPage.FillDescriptionField(String description)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666645_o(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter) in /azp/_work/2/s/Pages/DisCommonInfoPage.cs:line 452\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666645_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.SetTextInTinymceEditorField(IWebDriver driver, String text) in /azp/_work/2/s/Services/CommonService.cs:line 370\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665949_o(String description) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 188\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665949_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass16_0.<FrameToBeAvailableAndSwitchToIt>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Рандомна получить вид блока для добавления",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "countOfBlock",
+          "value": "3",
+          "excluded": false
+        }
+      ],
+      "start": 1741140954953,
+      "stop": 1741140954953
+    },
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"111655\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741140954953,
+      "stop": 1741140957157
+    },
+    {
+      "name": "Добавить второй блок в дисциплину с ИОТ если она отсутствует",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Добавить блок в дисциплину с ИОТ если она отсутствует",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Рандомна получить вид блока для добавления",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "countOfBlock",
+                  "value": "3",
+                  "excluded": false
+                }
+              ],
+              "start": 1741140957158,
+              "stop": 1741140957158
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "disId",
+              "value": "\"111655\"",
+              "excluded": false
+            }
+          ],
+          "start": 1741140957158,
+          "stop": 1741140960266
+        },
+        {
+          "name": "Рандомна получить вид блока для добавления",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "countOfBlock",
+              "value": "3",
+              "excluded": false
+            }
+          ],
+          "start": 1741140961950,
+          "stop": 1741140961950
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disId",
+          "value": "\"111655\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741140957157,
+      "stop": 1741140961960
+    },
+    {
+      "name": "Нажать на кнопку добавления блока указав нужную кнопку",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "location",
+          "value": "\"between\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741140961960,
+      "stop": 1741140969249
+    },
+    {
+      "name": "Добавления блока в указанное место в дисциплину с ИОТ",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.\n ---> OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//iframe)[1]\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass16_0.<FrameToBeAvailableAndSwitchToIt>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.SetTextInTinymceEditorField(IWebDriver driver, String text) in /azp/_work/2/s/Services/CommonService.cs:line 370\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665949_o(String description) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 188\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665949_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   --- End of inner exception stack trace ---\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665949_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonEditPage.FillDescriptionField(String description)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666645_o(String location, Boolean insideBlock, String kindOfBlock, String randomText, String parameter) in /azp/_work/2/s/Pages/DisCommonInfoPage.cs:line 452\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddRandomPickedBlock_100666645_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Ввести значение в поле 'Название активности'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"548G06143CB4AGD\"",
+              "excluded": false
+            }
+          ],
+          "start": 1741140970549,
+          "stop": 1741140975455
+        },
+        {
+          "name": "Ввести значение в поле 'Описание'",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 30 seconds",
+            "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//iframe)[1]\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass16_0.<FrameToBeAvailableAndSwitchToIt>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.SetTextInTinymceEditorField(IWebDriver driver, String text) in /azp/_work/2/s/Services/CommonService.cs:line 370\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665949_o(String description) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 188\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665949_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "description",
+              "value": "\"548G06143CB4AGD\"",
+              "excluded": false
+            }
+          ],
+          "start": 1741140975455,
+          "stop": 1741141008749
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "location",
+          "value": "\"bottom\"",
+          "excluded": false
+        },
+        {
+          "name": "insideBlock",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "kindOfBlock",
+          "value": "\"Активность\"",
+          "excluded": false
+        },
+        {
+          "name": "randomText",
+          "value": "\"548G06143CB4AGD\"",
+          "excluded": false
+        },
+        {
+          "name": "parameter",
+          "value": "\"\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741140969249,
+      "stop": 1741141008750
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddBlockBetweenBlocks.jpg",
+      "source": "f1a3ae8d-8d8e-44a4-bf9e-8ad7de24463b-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "3de3422b-fb3e-44c7-881a-e67721f25f62-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1741140954862,
+  "stop": 1741141011956
+}
