@@ -1,0 +1,122 @@
+{
+  "uuid": "fb443fc8-4e68-4382-b51c-9060d84e2344",
+  "historyId": "4154cfa732a395165c84487ead940a59",
+  "testCaseId": "b60ddd13b7d5cbf35feaf7cb0186412d",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.AccessToClosedRoom.CheckAccessToClosedRoom()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "6846a53285e2"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAccessToClosedRoom"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToClosedRoom"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Отсутствие доступа в закрытую комнату пользователю, не состоящему в ней",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChatIsNoLongerAvailable_100666384_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.ChatIsNoLongerAvailable()\n   at OdinUiTests.Tests.Chat.AccessToClosedRoom.CheckAccessToClosedRoom() in /azp/_work/4/s/Tests/Chat/ChatTests.cs:line 414\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitUntilSpinnersDisappearFromChat() in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1076\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChatIsNoLongerAvailable_100666384_o() in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1846\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChatIsNoLongerAvailable_100666384_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"1775\"",
+          "excluded": false
+        }
+      ],
+      "start": 1741154821357,
+      "stop": 1741154825245
+    },
+    {
+      "name": "Проверка отображения заглушки 'Чат более недоступен'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitUntilSpinnersDisappearFromChat() in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1076\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChatIsNoLongerAvailable_100666384_o() in /azp/_work/4/s/Pages/ChatCommonPage.cs:line 1846\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChatIsNoLongerAvailable_100666384_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741154825246,
+      "stop": 1741154865326
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAccessToClosedRoom.jpg",
+      "source": "c9da6167-ca32-4a6d-84e3-de6a9993772c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "c58e41d0-603d-48dc-b9ba-c0b71b780633-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1741154801625,
+  "stop": 1741154869329
+}
