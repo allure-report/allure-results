@@ -1,0 +1,124 @@
+{
+  "uuid": "870ee1b6-fafd-433d-a5e9-105449446599",
+  "historyId": "098889dcc3d416cd709c48f25a58307b",
+  "testCaseId": "f1a5ed4ffbb034e1500244f7f294d153",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupMiniChatMessageTests.CheckSendTextMessageInGroupMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "6ac7d3c31fa8"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendTextMessageInGroupMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupMiniChatMessageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат группового чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно отправить текстовое сообщение в миничате группового чата",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div data-v-5af7891a=\"\" role=\"button\" tabindex=\"0\" aria-label=\"Открыть блок с чатами\" class=\"chat-button cursor-pointer flex justify-evenly items-center q-ml-sm\">...</div> is not clickable at point (3787, 2005). Other element would receive the click: <button class=\"q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable link-notifications\" tabindex=\"0\" type=\"button\">...</button>\n  (Session info: chrome=132.0.6834.83)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DashboardPage.__a$_around_ClickOnChatButton_100666561_w_0(Object[])\n   at OdinUiTests.Pages.DashboardPage.ClickOnChatButton()\n   at OdinUiTests.Tests.Chat.GroupMiniChatMessageTests.SetUp() in /azp/_work/1/s/Tests/Chat/MiniChatTests.cs:line 476\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.DashboardPage.__a$_around_ClickOnChatButton_100666561_o() in /azp/_work/1/s/Pages/DashboardPage.cs:line 38\n   at OdinUiTests.Pages.DashboardPage.__a$_around_ClickOnChatButton_100666561_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741866823057,
+      "stop": 1741866826965
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <div data-v-5af7891a=\"\" role=\"button\" tabindex=\"0\" aria-label=\"Открыть блок с чатами\" class=\"chat-button cursor-pointer flex justify-evenly items-center q-ml-sm\">...</div> is not clickable at point (3787, 2005). Other element would receive the click: <button class=\"q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable link-notifications\" tabindex=\"0\" type=\"button\">...</button>\n  (Session info: chrome=132.0.6834.83)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <div data-v-5af7891a=\"\" role=\"button\" tabindex=\"0\" aria-label=\"Открыть блок с чатами\" class=\"chat-button cursor-pointer flex justify-evenly items-center q-ml-sm\">...</div> is not clickable at point (3787, 2005). Other element would receive the click: <button class=\"q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable link-notifications\" tabindex=\"0\" type=\"button\">...</button>\n  (Session info: chrome=132.0.6834.83)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.DashboardPage.__a$_around_ClickOnChatButton_100666561_o() in /azp/_work/1/s/Pages/DashboardPage.cs:line 38\n   at OdinUiTests.Pages.DashboardPage.__a$_around_ClickOnChatButton_100666561_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1741866826965,
+      "stop": 1741866839969
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendTextMessageInGroupMiniChat.jpg",
+      "source": "931a1a74-ddbb-4868-b653-cb2796cdd057-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "36320ecb-ac6d-4ab0-9eaf-6affcacd0d6a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1741866823056,
+  "stop": 1741866843678
+}
