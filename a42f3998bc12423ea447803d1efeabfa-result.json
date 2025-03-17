@@ -1,0 +1,137 @@
+{
+  "uuid": "8baee577-c717-465c-9474-8cd2313d6330",
+  "historyId": "886222381594d37b1c894d97d802887e",
+  "testCaseId": "519185003fc0b81f99c88e21fbea87d5",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.UserProfile.UserInfoPageTests.CheckStudentCannotViewPassedActivitiesOfAnotherStudent()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "991b0a886e37"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.UserProfile"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckStudentCannotViewPassedActivitiesOfAnotherStudent"
+    },
+    {
+      "name": "testClass",
+      "value": "UserInfoPageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Профиль"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Профиль"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница профиля пользователя: студент не может посмотреть пройденные активности другого студента",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_CheckStudentsFieldIsDisabled_100667202_w_0(Object[])\n   at OdinUiTests.Pages.UserProfilePage.CheckStudentsFieldIsDisabled()\n   at OdinUiTests.Tests.UserProfile.UserInfoPageTests.CheckStudentCannotViewPassedActivitiesOfAnotherStudent() in /azp/_work/3/s/Tests/UserProfile/UserProfileTests.cs:line 91\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NullReferenceException\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_CheckStudentsFieldIsDisabled_100667202_o() in /azp/_work/3/s/Pages/UserProfilePage.cs:line 359\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_CheckStudentsFieldIsDisabled_100667202_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу профиля пользователя",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"36957\"",
+          "excluded": false
+        }
+      ],
+      "start": 1742190309739,
+      "stop": 1742190310130
+    },
+    {
+      "name": "Нажать на кнопку 'Все активности' в блоке пройденных активностей",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1742190310130,
+      "stop": 1742190317211
+    },
+    {
+      "name": "Проверка того, что на странице пройденных активностей поле 'Студенты' задизаблено",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Object reference not set to an instance of an object.",
+        "trace": "System.NullReferenceException: Object reference not set to an instance of an object.\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_CheckStudentsFieldIsDisabled_100667202_o() in /azp/_work/3/s/Pages/UserProfilePage.cs:line 359\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_CheckStudentsFieldIsDisabled_100667202_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1742190317212,
+      "stop": 1742190317840
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckStudentCannotViewPassedActivitiesOfAnotherStudent.jpg",
+      "source": "58420008-7ece-46b2-9106-0c33fdd1652f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "a6886b90-a07f-4b38-93a6-c5c742076653-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1742190309734,
+  "stop": 1742190318442
+}
