@@ -1,0 +1,159 @@
+{
+  "uuid": "b1060a41-e6aa-4867-9105-8aafb01cf342",
+  "historyId": "17aa006935ec8a9473d76344aadb117c",
+  "testCaseId": "6cfc16a1f1abe9506c9a98568cd8ebe2",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisciplineCreationTests.CreatDisciplineFromDisciplineTemplate(System.String,System.Boolean)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "20167aff1a21"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreatDisciplineFromDisciplineTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineCreationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать дисциплину ВО из шаблона дисциплины без активностей",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".rename-input .ellipsis\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FindAndPickTemplateByName_100666578_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonEditPage.FindAndPickTemplateByName(String name)\n   at OdinUiTests.Tests.Discipline.DisciplineCreationTests.CreatDisciplineFromDisciplineTemplate(String cohort, Boolean isVO) in /azp/_work/12/s/Tests/Discipline/DisCreateEditTests.cs:line 67\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ChooseMaterialByName(IWebDriver driver, List`1 materialName, Boolean fromInfoPage) in /azp/_work/12/s/Services/CommonService.cs:line 182\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FindAndPickTemplateByName_100666578_o(String name) in /azp/_work/12/s/Pages/DisCommonEditPage.cs:line 123\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FindAndPickTemplateByName_100666578_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isVO",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"39\"",
+          "excluded": false
+        }
+      ],
+      "start": 1745246118781,
+      "stop": 1745246126879
+    },
+    {
+      "name": "Нажать на кнопку 'Выбрать шаблон'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745246126881,
+      "stop": 1745246147977
+    },
+    {
+      "name": "Выбрать шаблон дисциплины из библиотеки по названию",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".rename-input .ellipsis\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ChooseMaterialByName(IWebDriver driver, List`1 materialName, Boolean fromInfoPage) in /azp/_work/12/s/Services/CommonService.cs:line 182\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FindAndPickTemplateByName_100666578_o(String name) in /azp/_work/12/s/Pages/DisCommonEditPage.cs:line 123\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FindAndPickTemplateByName_100666578_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"Раскрытие изображения\"",
+          "excluded": false
+        }
+      ],
+      "start": 1745246147978,
+      "stop": 1745246178093
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CreatDisciplineFromDisciplineTemplate.jpg",
+      "source": "ee55816f-e392-422d-86b6-56369d49c04c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "d319e3a0-0d05-48cb-8a56-fb2a03e328ac-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "cohort",
+      "value": "\"39\"",
+      "excluded": false
+    },
+    {
+      "name": "isVO",
+      "value": "true",
+      "excluded": false
+    }
+  ],
+  "start": 1745246118375,
+  "stop": 1745246185879
+}

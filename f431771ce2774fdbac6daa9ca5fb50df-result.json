@@ -1,0 +1,228 @@
+{
+  "uuid": "b162179e-1aca-4709-9e00-d137a03dfb4c",
+  "historyId": "6974afc98e704abea6353c03f6e01036",
+  "testCaseId": "e2370e05780d34562b7928b73a4f1c6e",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisContingentCreationTests.CheckAddTeacherByUserInfoInCreation(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "20167aff1a21"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddTeacherByUserInfoInCreation"
+    },
+    {
+      "name": "testClass",
+      "value": "DisContingentCreationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Добавление преподавателя из списка",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q-item.items-center\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nTearDown : System.Exception : Ошибка: WebDriver уже был закрыт из-за превышения таймаута более 15 минут.",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100666599_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonEditPage.AddMembersByName(String contingent, String userInfo)\n   at OdinUiTests.Tests.Discipline.DisContingentCreationTests.CheckAddTeacherByUserInfoInCreation(String userInfo) in /azp/_work/12/s/Tests/Discipline/DisCreateEditTests.cs:line 761\n   at InvokeStub_DisContingentCreationTests.CheckAddTeacherByUserInfoInCreation(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100666599_o(String contingent, String userInfo) in /azp/_work/12/s/Pages/DisCommonEditPage.cs:line 345\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100666599_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n--TearDown\n   at OdinUiTests.Tests.BaseTest.TearDown() in /azp/_work/12/s/Tests/BaseTest.cs:line 164\n   at InvokeStub_BaseTest.TearDown(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isVO",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"1706\"",
+          "excluded": false
+        }
+      ],
+      "start": 1745246560275,
+      "stop": 1745246577975
+    },
+    {
+      "name": "Заполнение обязательных полей для создании дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Редактировать название дисциплины",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"902G4D6G67DB7A5\"",
+              "excluded": false
+            }
+          ],
+          "start": 1745246577975,
+          "stop": 1745246617486
+        },
+        {
+          "name": "Редактировать краткое название дисциплины",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "shortName",
+              "value": "\"902G4D6G67DB7A5\"",
+              "excluded": false
+            }
+          ],
+          "start": 1745246617486,
+          "stop": 1745246635591
+        },
+        {
+          "name": "Редактировать описание дисциплины",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "description",
+              "value": "\"902G4D6G67DB7A5\"",
+              "excluded": false
+            }
+          ],
+          "start": 1745246635591,
+          "stop": 1745246646275
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "text",
+          "value": "\"902G4D6G67DB7A5\"",
+          "excluded": false
+        }
+      ],
+      "start": 1745246577975,
+      "stop": 1745246646275
+    },
+    {
+      "name": "Добавить/выбрать преподавателя/группу из выпадающего списка",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q-item.items-center\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100666599_o(String contingent, String userInfo) in /azp/_work/12/s/Pages/DisCommonEditPage.cs:line 345\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_AddMembersByName_100666599_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "contingent",
+          "value": "\"Преподаватель\"",
+          "excluded": false
+        },
+        {
+          "name": "userInfo",
+          "value": "\"Тестовая Дарья\"",
+          "excluded": false
+        }
+      ],
+      "start": 1745246646277,
+      "stop": 1745246685884
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "3edeeddf-3e07-4d98-b558-a94a0ce41b18-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "userInfo",
+      "value": "\"Тестовая Дарья\"",
+      "excluded": false
+    }
+  ],
+  "start": 1745246559989,
+  "stop": 1745246746088
+}

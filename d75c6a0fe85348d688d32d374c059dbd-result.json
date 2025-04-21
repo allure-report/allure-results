@@ -1,0 +1,238 @@
+{
+  "uuid": "840bffdf-7b46-4060-b2bb-9aefe9aecce2",
+  "historyId": "ccb5c3f8996a327457a6f503309655e5",
+  "testCaseId": "c4e82cba7ff50dd89e22c673217f9b4d",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisciplineCreationValidationTests.CheckIfCreditValuesNotAllowed(System.String,System.Boolean,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "20167aff1a21"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckIfCreditValuesNotAllowed"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineCreationValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Отображение ошибки валидации для поля 'Кредиты' с отрицательным значением в ВО",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:36095/session/e779af7ec00b9b774dbc2df3ae776bdd/element timed out after 60 seconds.\n  ----> System.Threading.Tasks.TaskCanceledException : The operation was canceled.\n  ----> System.IO.IOException : Unable to read data from the transport connection: Operation canceled.\n  ----> System.Net.Sockets.SocketException : Operation canceled\nTearDown : System.Exception : Ошибка: WebDriver уже был закрыт из-за превышения таймаута более 15 минут.",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_ClickOnSaveButton_100666612_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonEditPage.ClickOnSaveButton()\n   at OdinUiTests.Tests.Discipline.DisciplineCreationValidationTests.CheckIfCreditValuesNotAllowed(String cohort, Boolean isVO, String value) in /azp/_work/12/s/Tests/Discipline/DisCreateEditTests.cs:line 169\n   at InvokeStub_DisciplineCreationValidationTests.CheckIfCreditValuesNotAllowed(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--WebDriverException\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_ClickOnSaveButton_100666612_o() in /azp/_work/12/s/Pages/DisCommonEditPage.cs:line 510\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_ClickOnSaveButton_100666612_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--TaskCanceledException\n   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n--IOException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)\n   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n--SocketException\n\n--TearDown\n   at OdinUiTests.Tests.BaseTest.TearDown() in /azp/_work/12/s/Tests/BaseTest.cs:line 164\n   at InvokeStub_BaseTest.TearDown(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isVO",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"39\"",
+          "excluded": false
+        }
+      ],
+      "start": 1745246659586,
+      "stop": 1745246668178
+    },
+    {
+      "name": "Заполнение обязательных полей для создании дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Редактировать название дисциплины",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"AD6AFEGA3C4E0F8\"",
+              "excluded": false
+            }
+          ],
+          "start": 1745246668178,
+          "stop": 1745246703288
+        },
+        {
+          "name": "Редактировать краткое название дисциплины",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "shortName",
+              "value": "\"AD6AFEGA3C4E0F8\"",
+              "excluded": false
+            }
+          ],
+          "start": 1745246703289,
+          "stop": 1745246720877
+        },
+        {
+          "name": "Редактировать описание дисциплины",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "description",
+              "value": "\"AD6AFEGA3C4E0F8\"",
+              "excluded": false
+            }
+          ],
+          "start": 1745246720877,
+          "stop": 1745246731072
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "text",
+          "value": "\"AD6AFEGA3C4E0F8\"",
+          "excluded": false
+        }
+      ],
+      "start": 1745246668178,
+      "stop": 1745246731072
+    },
+    {
+      "name": "Ввести в поле Кредиты значение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "credit",
+          "value": "\"-1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1745246731072,
+      "stop": 1745246738376
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "The HTTP request to the remote WebDriver server for URL http://localhost:36095/session/e779af7ec00b9b774dbc2df3ae776bdd/element timed out after 60 seconds.",
+        "trace": "OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:36095/session/e779af7ec00b9b774dbc2df3ae776bdd/element timed out after 60 seconds.\n ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.\n ---> System.IO.IOException: Unable to read data from the transport connection: Operation canceled.\n ---> System.Net.Sockets.SocketException (125): Operation canceled\n   --- End of inner exception stack trace ---\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)\n   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   --- End of inner exception stack trace ---\n   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_ClickOnSaveButton_100666612_o() in /azp/_work/12/s/Pages/DisCommonEditPage.cs:line 510\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_ClickOnSaveButton_100666612_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745246738376,
+      "stop": 1745246738882
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "cohort",
+      "value": "\"39\"",
+      "excluded": false
+    },
+    {
+      "name": "isVO",
+      "value": "true",
+      "excluded": false
+    },
+    {
+      "name": "value",
+      "value": "\"-1\"",
+      "excluded": false
+    }
+  ],
+  "start": 1745246659585,
+  "stop": 1745246738982
+}
