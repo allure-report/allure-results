@@ -1,0 +1,130 @@
+{
+  "uuid": "46932a4d-1ba4-4a5a-88bd-a57d54c287e6",
+  "historyId": "ae4d28529a5a635d506d37a413020566",
+  "testCaseId": "38cbe263a00682f0e3ac04a2cabb3ab7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskActivityMulticriteriaTests.CheckCreateTaskWithValuesInCriteria()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "9710115e10c6"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateTaskWithValuesInCriteria"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskActivityMulticriteriaTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание задания"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно задать значения критериям (заполнены поля Значения критерия и Баллов)",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),'Тип активности')]/parent::div\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.SelectValueFromDropdown(IWebDriver driver, By selector, String value) in /azp/_work/1/s/Services/CommonService.cs:line 763\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass93_0.<SetActivityType>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 347\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.SetActivityType(String type) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 345\n   at OdinUiTests.Tests.Activity.TaskActivityMulticriteriaTests.Setup() in /azp/_work/1/s/Tests/Activity/TaskActivityTests.cs:line 490\n   at InvokeStub_TaskActivityMulticriteriaTests.Setup(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"203\"",
+          "excluded": false
+        }
+      ],
+      "start": 1745368123328,
+      "stop": 1745368125316
+    },
+    {
+      "name": "В поле 'Тип активности' выбрать значение 'Задание'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),'Тип активности')]/parent::div\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.SelectValueFromDropdown(IWebDriver driver, By selector, String value) in /azp/_work/1/s/Services/CommonService.cs:line 763\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass93_0.<SetActivityType>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 347\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.SetActivityType(String type) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 345\n   at OdinUiTests.Tests.Activity.TaskActivityMulticriteriaTests.Setup() in /azp/_work/1/s/Tests/Activity/TaskActivityTests.cs:line 490\n   at InvokeStub_TaskActivityMulticriteriaTests.Setup(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745368125316,
+      "stop": 1745368155317
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateTaskWithValuesInCriteria.jpg",
+      "source": "86a472da-4018-42b4-a7b7-a1be67107fbc-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "9485589f-32ff-4f77-91f2-badcc25b2e6f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1745368123327,
+  "stop": 1745368158529
+}
