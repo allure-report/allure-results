@@ -1,0 +1,172 @@
+{
+  "uuid": "797baf9b-bafe-499e-a753-829b40dafa75",
+  "historyId": "3113d42e9640c9ac3f31d3b7be84c474",
+  "testCaseId": "e4a0eeafa6bf5a8726f81346ad5835e8",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.ActivityAddingTests.CheckAddTestNotInControlTypeActivity()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "794c3458397b"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddTestNotInControlTypeActivity"
+    },
+    {
+      "name": "testClass",
+      "value": "ActivityAddingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Обычная активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование активности"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Наличия ошибки при добавлении теста из Библиотеки не в Контрольную",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".rename-input\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ChooseMaterialByName(IWebDriver driver, List`1 materialNames, Boolean fromInfoPage) in /azp/_work/1/s/Services/CommonService.cs:line 189\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass99_0.<AddMaterialByName>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 395\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.AddMaterialByName(String type, String name) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 393\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddTestNotToControlType(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 516\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddTestNotToControlActivity(IWebDriver driver, String activityId) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 525\n   at OdinUiTests.Tests.Activity.ActivityAddingTests.CheckAddTestNotInControlTypeActivity() in /azp/_work/1/s/Tests/Activity/ActivityTests.cs:line 368\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "activityId",
+              "value": "\"57\"",
+              "excluded": false
+            }
+          ],
+          "start": 1747207065098,
+          "stop": 1747207067903
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"57\"",
+          "excluded": false
+        }
+      ],
+      "start": 1747207065098,
+      "stop": 1747207067903
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить материалы'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1747207067903,
+      "stop": 1747207083313
+    },
+    {
+      "name": "Выбрать материал типа 'Тест' из Библиотеки по названию и подтвердить выбор",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".rename-input\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ChooseMaterialByName(IWebDriver driver, List`1 materialNames, Boolean fromInfoPage) in /azp/_work/1/s/Services/CommonService.cs:line 189\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass99_0.<AddMaterialByName>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 395\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.AddMaterialByName(String type, String name) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 393\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddTestNotToControlType(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 516\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddTestNotToControlActivity(IWebDriver driver, String activityId) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 525\n   at OdinUiTests.Tests.Activity.ActivityAddingTests.CheckAddTestNotInControlTypeActivity() in /azp/_work/1/s/Tests/Activity/ActivityTests.cs:line 368\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1747207083313,
+      "stop": 1747207113620
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddTestNotInControlTypeActivity.jpg",
+      "source": "a9676766-bafd-4154-9f13-3372eab9e907-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "165f90a4-9108-43c1-9f28-bc4eba0dc4d3-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1747207062844,
+  "stop": 1747207116407
+}
