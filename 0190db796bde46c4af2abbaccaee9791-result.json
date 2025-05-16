@@ -1,0 +1,171 @@
+{
+  "uuid": "143a20ab-59f6-4761-af10-af0aeb4b6886",
+  "historyId": "42c7fc045d84a8f0c7daae0c0d124ebf",
+  "testCaseId": "e69d3ac6e39d3c3571cde65ca77aefdf",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskActivityTeacherTests.CheckSetIndividualDate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "fc63fb75dbad"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSetIndividualDate"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskActivityTeacherTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница решения задания для преподавателя"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно установить индивидуальный срок сдачи",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div data-v-3a14d5a0=\"\" class=\"confirm-modal__title q-mb-md\">...</div> is not clickable at point (1920, 944). Other element would receive the click: <td class=\"cell not-current-month\" title=\"2025-06-08\" data-index=\"5,6\">...</td>\n  (Session info: chrome=132.0.6834.83)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnSaveButton_100666186_w_0(Object[])\n   at OdinUiTests.Pages.ActivitySolutionPage.ClickOnSaveButton()\n   at OdinUiTests.Tests.Activity.TaskActivityTeacherTests.CheckSetIndividualDate() in /azp/_work/2/s/Tests/Activity/TaskActivityTests.cs:line 322\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnSaveButton_100666186_o() in /azp/_work/2/s/Pages/ActivitySolutionPage.cs:line 128\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnSaveButton_100666186_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу решения задания",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"1861286\"",
+          "excluded": false
+        },
+        {
+          "name": "studentName",
+          "value": "\"Smith\"",
+          "excluded": false
+        }
+      ],
+      "start": 1747374070940,
+      "stop": 1747374072734
+    },
+    {
+      "name": "Нажать на карандаш для установки даты сдачи",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1747374072734,
+      "stop": 1747374076131
+    },
+    {
+      "name": "Выбрать индивидуальный срок сдачи для решения студента",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "date",
+          "value": "\"21.05.2025\"",
+          "excluded": false
+        }
+      ],
+      "start": 1747374076131,
+      "stop": 1747374083136
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить' в модалке выбора индивидуального срока",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <div data-v-3a14d5a0=\"\" class=\"confirm-modal__title q-mb-md\">...</div> is not clickable at point (1920, 944). Other element would receive the click: <td class=\"cell not-current-month\" title=\"2025-06-08\" data-index=\"5,6\">...</td>\n  (Session info: chrome=132.0.6834.83)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <div data-v-3a14d5a0=\"\" class=\"confirm-modal__title q-mb-md\">...</div> is not clickable at point (1920, 944). Other element would receive the click: <td class=\"cell not-current-month\" title=\"2025-06-08\" data-index=\"5,6\">...</td>\n  (Session info: chrome=132.0.6834.83)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnSaveButton_100666186_o() in /azp/_work/2/s/Pages/ActivitySolutionPage.cs:line 128\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnSaveButton_100666186_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1747374083136,
+      "stop": 1747374084823
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSetIndividualDate.jpg",
+      "source": "cd014240-9f69-4036-9a11-c71f3c09c799-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "28d91afa-9c7e-4654-bdfb-dae81bf56927-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1747374070939,
+  "stop": 1747374089321
+}
