@@ -1,0 +1,136 @@
+{
+  "uuid": "e3776071-e16e-456a-92df-1be804475d7e",
+  "historyId": "57e3be71e1948cab7c405086ad124cf6",
+  "testCaseId": "a9ddc0b6752762c36b48f3c393deedee",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.ActivityContentVisibilityTests.CheckVisibilityMaterialOutsideTimeActivity()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "9c64c34fae1f"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckVisibilityMaterialOutsideTimeActivity"
+    },
+    {
+      "name": "testClass",
+      "value": "ActivityContentVisibilityTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Обычная активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование активности"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Видимость материала вне времени проведения активности",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <h2 data-v-f8b207c4=\"\" class=\"block-title content-block\">...</h2> is not clickable at point (1960, 1111). Other element would receive the click: <div class=\"mx-datepicker-footer\">...</div>\n  (Session info: chrome=132.0.6834.83)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_AddStartDate_100665986_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonEditPage.AddStartDate(String startDate)\n   at OdinUiTests.Tests.Activity.ActivityContentVisibilityTests.SetUp() in /azp/_work/1/s/Tests/Activity/ActivityTests.cs:line 434\n   at InvokeStub_ActivityContentVisibilityTests.SetUp(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.AddDate(IWebDriver driver, Boolean isCohort, Boolean isStartDate, Boolean onlyOneDate, String date) in /azp/_work/1/s/Services/CommonService.cs:line 320\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_AddStartDate_100665986_o(String startDate) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 448\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_AddStartDate_100665986_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"378\"",
+          "excluded": false
+        }
+      ],
+      "start": 1747370903704,
+      "stop": 1747370904138
+    },
+    {
+      "name": "Редактировать дату начала активности",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <h2 data-v-f8b207c4=\"\" class=\"block-title content-block\">...</h2> is not clickable at point (1960, 1111). Other element would receive the click: <div class=\"mx-datepicker-footer\">...</div>\n  (Session info: chrome=132.0.6834.83)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <h2 data-v-f8b207c4=\"\" class=\"block-title content-block\">...</h2> is not clickable at point (1960, 1111). Other element would receive the click: <div class=\"mx-datepicker-footer\">...</div>\n  (Session info: chrome=132.0.6834.83)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.AddDate(IWebDriver driver, Boolean isCohort, Boolean isStartDate, Boolean onlyOneDate, String date) in /azp/_work/1/s/Services/CommonService.cs:line 320\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_AddStartDate_100665986_o(String startDate) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 448\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_AddStartDate_100665986_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "startDate",
+          "value": "\"13.05.2025\"",
+          "excluded": false
+        }
+      ],
+      "start": 1747370904138,
+      "stop": 1747370908459
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckVisibilityMaterialOutsideTimeActivity.jpg",
+      "source": "5893a746-0fdb-49d3-b5fb-83c8db214704-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "c5e5cfd6-82e9-44dd-9771-0e4836ed7119-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1747370903686,
+  "stop": 1747370909066
+}
