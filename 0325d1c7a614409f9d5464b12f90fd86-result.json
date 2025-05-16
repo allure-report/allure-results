@@ -1,0 +1,178 @@
+{
+  "uuid": "e029a419-f947-4d07-bd73-5f081ec9ca70",
+  "historyId": "861f60080d9de56beb355dd5d59e26b6",
+  "testCaseId": "18b8d591cc1d3e423046732634c73c4c",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.ActivityCreatingTests.CreateActivityInModule()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "fc63fb75dbad"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateActivityInModule"
+    },
+    {
+      "name": "testClass",
+      "value": "ActivityCreatingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Обычная активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание активности"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать активность в дисциплине (в модуле)",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665960_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonEditPage.FillDescriptionField(String description)\n   at OdinUiTests.Tests.Activity.ActivityCreatingTests.CreateActivityInModule() in /azp/_work/2/s/Tests/Activity/ActivityTests.cs:line 49\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/2/s/Services/CommonService.cs:line 363\n   at OdinUiTests.Services.CommonService.SetTextInTinymceEditorField(IWebDriver driver, String text) in /azp/_work/2/s/Services/CommonService.cs:line 391\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665960_o(String description) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 188\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665960_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"379\"",
+          "excluded": false
+        }
+      ],
+      "start": 1747375801924,
+      "stop": 1747375803639
+    },
+    {
+      "name": "Добавить активность в модуль или в тему",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"E3AFD3BA6495C11\"",
+          "excluded": false
+        }
+      ],
+      "start": 1747375803640,
+      "stop": 1747375812735
+    },
+    {
+      "name": "Ввести значение в поле 'Название активности'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"E3AFD3BA6495C11\"",
+          "excluded": false
+        }
+      ],
+      "start": 1747375812735,
+      "stop": 1747375817437
+    },
+    {
+      "name": "Ввести значение в поле 'Описание'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/2/s/Services/CommonService.cs:line 363\n   at OdinUiTests.Services.CommonService.SetTextInTinymceEditorField(IWebDriver driver, String text) in /azp/_work/2/s/Services/CommonService.cs:line 391\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665960_o(String description) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 188\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_FillDescriptionField_100665960_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "description",
+          "value": "\"E3AFD3BA6495C11\"",
+          "excluded": false
+        }
+      ],
+      "start": 1747375817437,
+      "stop": 1747375848728
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CreateActivityInModule.jpg",
+      "source": "b52d5aad-c8d1-467a-9f5c-f79c007d48b7-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "d29e1c56-cd92-4839-a33d-ab19d6171874-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1747375801641,
+  "stop": 1747375851728
+}

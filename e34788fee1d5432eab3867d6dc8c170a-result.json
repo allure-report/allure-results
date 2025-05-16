@@ -1,0 +1,167 @@
+{
+  "uuid": "b02e4a45-0929-4234-b820-3113d16dccb9",
+  "historyId": "9e5e39f0e22116d2f2446da2a9f3d518",
+  "testCaseId": "54bf5fc00cd5ede64f50ac71cab81ddf",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisciplineMarksAndAttendanceTests.CheckGradingByTeacher()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "fc63fb75dbad"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGradingByTeacher"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineMarksAndAttendanceTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Выставление оценки преподавателем в дисциплине",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_PutGradeInCell_100666646_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonInfoPage.PutGradeInCell(Int32 randomCell, Int32 grade)\n   at OdinUiTests.Tests.Discipline.DisciplineMarksAndAttendanceTests.CheckGradingByTeacher() in /azp/_work/2/s/Tests/Discipline/DisInfoTests.cs:line 203\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ClearValuesInTextInputFields(IWebDriver driver, By selector, Boolean valueFromAttribute) in /azp/_work/2/s/Services/CommonService.cs:line 429\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_PutGradeInCell_100666646_o(Int32 randomCell, Int32 grade) in /azp/_work/2/s/Pages/DisCommonInfoPage.cs:line 258\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_PutGradeInCell_100666646_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"171\"",
+          "excluded": false
+        }
+      ],
+      "start": 1747376326831,
+      "stop": 1747376328823
+    },
+    {
+      "name": "Нажать на заголовок вкладки 'Оценки'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1747376328823,
+      "stop": 1747376341033
+    },
+    {
+      "name": "Получить индекс доступной ячейки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1747376341034,
+      "stop": 1747376351438
+    },
+    {
+      "name": "Выставить оценку в первой доступной ячейке",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ClearValuesInTextInputFields(IWebDriver driver, By selector, Boolean valueFromAttribute) in /azp/_work/2/s/Services/CommonService.cs:line 429\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_PutGradeInCell_100666646_o(Int32 randomCell, Int32 grade) in /azp/_work/2/s/Pages/DisCommonInfoPage.cs:line 258\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_PutGradeInCell_100666646_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "randomCell",
+          "value": "18",
+          "excluded": false
+        },
+        {
+          "name": "grade",
+          "value": "8",
+          "excluded": false
+        }
+      ],
+      "start": 1747376351439,
+      "stop": 1747376382122
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckGradingByTeacher.jpg",
+      "source": "568c6a03-2bc1-440b-b0e1-238d045849ca-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "888cf732-1d54-4011-9b2c-4c0e4bedaf27-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1747376326830,
+  "stop": 1747376384635
+}
