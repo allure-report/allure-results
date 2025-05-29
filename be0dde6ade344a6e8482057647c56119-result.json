@@ -1,0 +1,155 @@
+{
+  "uuid": "bcebd127-464d-48e6-aeb3-104b0f6ff6e7",
+  "historyId": "80772ad342a509a8984e9231b9d54957",
+  "testCaseId": "47f6ebb168043b38f171e2688af5bcae",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityResultTests.CheckMarkCorrectTextOrFileAnswer()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "9921870a57f0"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckMarkCorrectTextOrFileAnswer"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityResultTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Результат прохождения теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно отметить Верно в ответе на  вопрос с типом ответа Свободный ответ или Файл",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException : Cannot perform runtime binding on a null reference",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_CheckCorrectButtonHasBeenPicked_100666858_w_0(Object[])\n   at OdinUiTests.Pages.ExamOptionsPage.CheckCorrectButtonHasBeenPicked()\n   at OdinUiTests.Tests.Activity.TestActivityResultTests.CheckMarkCorrectTextOrFileAnswer() in /azp/_work/5/s/Tests/Activity/TestActivityTests.cs:line 515\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--RuntimeBinderException\n   at CallSite.Target(Closure, CallSite, Object)\n   at OdinUiTests.Services.ExamineeService.SetAnswerCorrectness(Boolean isCorrect, Int32 examineeAnswerId) in /azp/_work/5/s/Services/ExamineeService.cs:line 182\n   at OdinUiTests.Services.ExamineeService.SetNotRatedAnswerCorrectness(Boolean isCorrect, String passResultId) in /azp/_work/5/s/Services/ExamineeService.cs:line 195\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_CheckCorrectButtonHasBeenPicked_100666858_o() in /azp/_work/5/s/Pages/ExamOptionsPage.cs:line 461\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_CheckCorrectButtonHasBeenPicked_100666858_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"617\"",
+          "excluded": false
+        }
+      ],
+      "start": 1748507988567,
+      "stop": 1748507989268
+    },
+    {
+      "name": "Нажать на попытку прохождения теста",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1748507989268,
+      "stop": 1748507992947
+    },
+    {
+      "name": "Нажать на кнопку 'Верно' в ответе вопроса",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1748507992948,
+      "stop": 1748507994548
+    },
+    {
+      "name": "Проверка того, что кнопка 'Верно' была выбрана",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Cannot perform runtime binding on a null reference",
+        "trace": "Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot perform runtime binding on a null reference\n   at CallSite.Target(Closure, CallSite, Object)\n   at OdinUiTests.Services.ExamineeService.SetAnswerCorrectness(Boolean isCorrect, Int32 examineeAnswerId) in /azp/_work/5/s/Services/ExamineeService.cs:line 182\n   at OdinUiTests.Services.ExamineeService.SetNotRatedAnswerCorrectness(Boolean isCorrect, String passResultId) in /azp/_work/5/s/Services/ExamineeService.cs:line 195\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_CheckCorrectButtonHasBeenPicked_100666858_o() in /azp/_work/5/s/Pages/ExamOptionsPage.cs:line 461\n   at OdinUiTests.Pages.ExamOptionsPage.__a$_around_CheckCorrectButtonHasBeenPicked_100666858_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1748507994549,
+      "stop": 1748507996558
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckMarkCorrectTextOrFileAnswer.jpg",
+      "source": "31909b93-751e-4e60-bf7a-451d0db04a52-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "36424b1b-4c13-4dda-9441-6fb82c6f665c-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1748507988550,
+  "stop": 1748507997594
+}
