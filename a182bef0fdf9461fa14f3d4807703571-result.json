@@ -1,0 +1,136 @@
+{
+  "uuid": "29495e55-57d7-498f-8ba1-c7c52ac20a6b",
+  "historyId": "39cdd11f2b33ebece354358aa56f7aeb",
+  "testCaseId": "1e8b324d40b5ddee3b5ffb68560e95cc",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestTemplateCreatingTests.CheckExecModeTestActivityTemplate(System.Int32)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "481b2fff0477"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckExecModeTestActivityTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateCreatingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание шаблона контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать шаблон контрольной с режимом выполнения Индивидуальный",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.SelectValueFromDropdown(IWebDriver driver, By selector, String value) in /azp/_work/1/s/Services/CommonService.cs:line 813\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass92_0.<SetActivityType>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 345\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.SetActivityType(String type) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 343\n   at OdinUiTests.Tests.Activity.ActivityCommon.CreateActivityWithControlType(IWebDriver driver, Boolean isTemplate, String id, Int32 mode) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 37\n   at OdinUiTests.Tests.Activity.ActivityCommon.CreateActivityPlanWithControlType(IWebDriver driver, String directoryId, Int32 mode) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 53\n   at OdinUiTests.Tests.Activity.TestTemplateCreatingTests.CheckExecModeTestActivityTemplate(Int32 mode) in /azp/_work/1/s/Tests/Activity/TestTemplateTests.cs:line 32\n   at InvokeStub_TestTemplateCreatingTests.CheckExecModeTestActivityTemplate(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания шаблона активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "directoryId",
+          "value": "\"18595\"",
+          "excluded": false
+        }
+      ],
+      "start": 1751605980863,
+      "stop": 1751605981254
+    },
+    {
+      "name": "В поле 'Тип активности' выбрать значение 'Контрольная работа'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.SelectValueFromDropdown(IWebDriver driver, By selector, String value) in /azp/_work/1/s/Services/CommonService.cs:line 813\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass92_0.<SetActivityType>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 345\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.SetActivityType(String type) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 343\n   at OdinUiTests.Tests.Activity.ActivityCommon.CreateActivityWithControlType(IWebDriver driver, Boolean isTemplate, String id, Int32 mode) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 37\n   at OdinUiTests.Tests.Activity.ActivityCommon.CreateActivityPlanWithControlType(IWebDriver driver, String directoryId, Int32 mode) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 53\n   at OdinUiTests.Tests.Activity.TestTemplateCreatingTests.CheckExecModeTestActivityTemplate(Int32 mode) in /azp/_work/1/s/Tests/Activity/TestTemplateTests.cs:line 32\n   at InvokeStub_TestTemplateCreatingTests.CheckExecModeTestActivityTemplate(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1751605981254,
+      "stop": 1751606013913
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckExecModeTestActivityTemplate.jpg",
+      "source": "55252d99-3fc9-4ea9-8e8f-7b1a891d7bbe-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "11c94cd9-eb99-4e1a-abad-674280d157bf-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "mode",
+      "value": "1",
+      "excluded": false
+    }
+  ],
+  "start": 1751605980863,
+  "stop": 1751606014502
+}
