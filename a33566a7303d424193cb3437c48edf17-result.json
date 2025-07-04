@@ -1,0 +1,159 @@
+{
+  "uuid": "e174a2f1-be38-4c26-946d-0e95e8328fc7",
+  "historyId": "1a7908cc8c907a75f3958b29006cd126",
+  "testCaseId": "36a51425a1135516b46c9266df2f5535",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisciplineCreationTests.CreatDisciplineFromDisciplineTemplateWithActivities(System.String,System.Boolean)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "584c4a0874a5"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreatDisciplineFromDisciplineTemplateWithActivities"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineCreationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать дисциплину ВО из шаблона дисциплины с активностями",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FindAndPickTemplateByName_100666584_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonEditPage.FindAndPickTemplateByName(String name)\n   at OdinUiTests.Tests.Discipline.DisciplineCreationTests.CreatDisciplineFromDisciplineTemplateWithActivities(String cohort, Boolean isVO) in /azp/_work/10/s/Tests/Discipline/DisCreateEditTests.cs:line 82\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ChooseMaterialByName(IWebDriver driver, List`1 materialNames, Boolean fromInfoPage) in /azp/_work/10/s/Services/CommonService.cs:line 218\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FindAndPickTemplateByName_100666584_o(String name) in /azp/_work/10/s/Pages/DisCommonEditPage.cs:line 123\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FindAndPickTemplateByName_100666584_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isVO",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"39\"",
+          "excluded": false
+        }
+      ],
+      "start": 1751643930560,
+      "stop": 1751643933568
+    },
+    {
+      "name": "Нажать на кнопку 'Выбрать шаблон'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1751643933568,
+      "stop": 1751643939669
+    },
+    {
+      "name": "Выбрать шаблон дисциплины из библиотеки по названию",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ChooseMaterialByName(IWebDriver driver, List`1 materialNames, Boolean fromInfoPage) in /azp/_work/10/s/Services/CommonService.cs:line 218\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FindAndPickTemplateByName_100666584_o(String name) in /azp/_work/10/s/Pages/DisCommonEditPage.cs:line 123\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FindAndPickTemplateByName_100666584_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"МЭО\"",
+          "excluded": false
+        }
+      ],
+      "start": 1751643939669,
+      "stop": 1751643976766
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CreatDisciplineFromDisciplineTemplateWithActivities.jpg",
+      "source": "a47b91d5-96a8-499f-969c-3baf6d4d4f30-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "9dc6dfb2-38e9-4a96-8275-be3f30830aee-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "cohort",
+      "value": "\"39\"",
+      "excluded": false
+    },
+    {
+      "name": "isVO",
+      "value": "true",
+      "excluded": false
+    }
+  ],
+  "start": 1751643930356,
+  "stop": 1751643978257
+}
