@@ -1,0 +1,147 @@
+{
+  "uuid": "d0e12df6-25ef-44d5-9d75-743d0e7828c2",
+  "historyId": "fafd1e141c59a5b5ecdae5fef52f71e6",
+  "testCaseId": "d79a2de298a7f007edcdde9719c34622",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Organization.OrganizationPageTests.CheckTransitionToOrgLibraryPage()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "8414191e6b05"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Organization"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckTransitionToOrgLibraryPage"
+    },
+    {
+      "name": "testClass",
+      "value": "OrganizationPageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Организация"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница организации"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Организация"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Работает переход к библиотеке организации",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckOrgLibraryPageIsOpen_100666939_w_0(Object[])\n   at OdinUiTests.Pages.LibraryPage.CheckOrgLibraryPageIsOpen(String organizationId)\n   at OdinUiTests.Tests.Organization.OrganizationPageTests.CheckTransitionToOrgLibraryPage() in /azp/_work/1/s/Tests/Organization/OrganizationTests.cs:line 232\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 373\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/1/s/Pages/LibraryPage.cs:line 335\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckOrgLibraryPageIsOpen_100666939_o(String organizationId) in /azp/_work/1/s/Pages/LibraryPage.cs:line 1188\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckOrgLibraryPageIsOpen_100666939_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу организации",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "organizationId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1751870135112,
+      "stop": 1751870135737
+    },
+    {
+      "name": "Нажать на кнопку 'Библиотека'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1751870135738,
+      "stop": 1751870137256
+    },
+    {
+      "name": "Проверка того, что произошел корректный переход на страницу библиотеки организации",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 373\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/1/s/Pages/LibraryPage.cs:line 335\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckOrgLibraryPageIsOpen_100666939_o(String organizationId) in /azp/_work/1/s/Pages/LibraryPage.cs:line 1188\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckOrgLibraryPageIsOpen_100666939_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "organizationId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1751870137256,
+      "stop": 1751870168793
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckTransitionToOrgLibraryPage.jpg",
+      "source": "b8b9b6f1-5f4f-4e66-9f99-3f57518bbf7f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "a337b580-30cf-4a2b-a64d-2109521e689f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1751870135112,
+  "stop": 1751870169497
+}
