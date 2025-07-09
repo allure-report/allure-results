@@ -1,0 +1,254 @@
+{
+  "uuid": "98283559-d339-45fa-9dbc-576615749b60",
+  "historyId": "fbfd0abe5b7270dd204eb14bcaeb0d35",
+  "testCaseId": "3937c140d1976fb5c53e150cafe53a28",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.TaskMiniChatTests.CheckSendEmojiInTaskMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "cb28570ecba1"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendEmojiInTaskMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат обсуждение решения"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно отправить смайлики в миничате обсуждении решения",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.InvalidOperationException : Sequence contains no elements",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmojiIsSent_100666360_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.CheckEmojiIsSent(Boolean isMinichat, String chatId, String message)\n   at OdinUiTests.Tests.Chat.ChatCommon.SendEmoji(IWebDriver driver, String chatId, Boolean isMinichat) in /azp/_work/2/s/Tests/Chat/ChatCommon.cs:line 277\n   at OdinUiTests.Tests.Chat.ChatCommon.SendEmojiInMinichat(IWebDriver driver, String chatId) in /azp/_work/2/s/Tests/Chat/ChatCommon.cs:line 291\n   at OdinUiTests.Tests.Chat.TaskMiniChatTests.CheckSendEmojiInTaskMiniChat() in /azp/_work/2/s/Tests/Chat/MiniChatTests.cs:line 414\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--InvalidOperationException\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsSent(String message, Boolean isMinichat, String chatId) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1234\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmojiIsSent_100666360_o(Boolean isMinichat, String chatId, String message) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1342\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmojiIsSent_100666360_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1752046453859,
+      "stop": 1752046457234
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1752046457234,
+      "stop": 1752046461661
+    },
+    {
+      "name": "В панели чатов найти дисциплину по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Основы ООП\"",
+          "excluded": false
+        }
+      ],
+      "start": 1752046461661,
+      "stop": 1752046466953
+    },
+    {
+      "name": "Нажать на выпадающий список комнат",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1752046466953,
+      "stop": 1752046467934
+    },
+    {
+      "name": "Открыть решения и выбрать чат студента по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Test задание\"",
+          "excluded": false
+        },
+        {
+          "name": "studentName",
+          "value": "\"Пучеглазов Антон\"",
+          "excluded": false
+        }
+      ],
+      "start": 1752046467934,
+      "stop": 1752046470948
+    },
+    {
+      "name": "В строке ввода нажать на значок смайлика",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1752046470949,
+      "stop": 1752046473662
+    },
+    {
+      "name": "Кликнуть по выбранному смайлику",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1752046473662,
+      "stop": 1752046478835
+    },
+    {
+      "name": "Нажать на значок отправки сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1752046478835,
+      "stop": 1752046479756
+    },
+    {
+      "name": "Проверка того, что смайлик был отправлен",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Sequence contains no elements",
+        "trace": "System.InvalidOperationException: Sequence contains no elements\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsSent(String message, Boolean isMinichat, String chatId) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1234\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmojiIsSent_100666360_o(Boolean isMinichat, String chatId, String message) in /azp/_work/2/s/Pages/ChatCommonPage.cs:line 1342\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckEmojiIsSent_100666360_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"7052\"",
+          "excluded": false
+        },
+        {
+          "name": "message",
+          "value": "\"😩\"",
+          "excluded": false
+        }
+      ],
+      "start": 1752046479756,
+      "stop": 1752046491852
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendEmojiInTaskMiniChat.jpg",
+      "source": "c0cfcd18-0516-4a82-bdf8-9c3f0b4ac4e8-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "d2b95300-ae54-4312-a9c2-529315abfec6-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1752046453859,
+  "stop": 1752046495616
+}
