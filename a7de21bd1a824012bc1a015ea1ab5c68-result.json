@@ -1,0 +1,161 @@
+{
+  "uuid": "d8759365-91e2-43b7-b069-fc55a71cae1a",
+  "historyId": "b54224db8ffd5bad3393a429becd157b",
+  "testCaseId": "07cb757129127751eab97de91054b984",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskActivityTeacherTests.CheckGradeSolutionValueAboveAndBelowScore(System.Int32,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "20a3c718e33f"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGradeSolutionValueAboveAndBelowScore"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskActivityTeacherTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница решения задания для преподавателя"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно оценить решение значением выше минимального порога баллов",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Баллы\" id=\"f_f79d1d49-4dcc-4d73-9c36-86136e1c1992\" type=\"text\"> is not clickable at point (2095, 1980). Other element would receive the click: <div class=\"q-notification__message col\">...</div>\n  (Session info: chrome=132.0.6834.83)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/1/s/Services/CommonService.cs:line 426\n   at OdinUiTests.Pages.ActivitySolutionPage.<>c__DisplayClass55_0.<EditValueScoreField>b__0() in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 262\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivitySolutionPage.EditValueScoreField(String score, Int32 minThreshold) in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 260\n   at OdinUiTests.Tests.Activity.TaskActivityTeacherTests.CheckGradeSolutionValueAboveAndBelowScore(Int32 value, String status) in /azp/_work/1/s/Tests/Activity/TaskActivityTests.cs:line 348\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу решения задания",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"1968294\"",
+          "excluded": false
+        },
+        {
+          "name": "studentName",
+          "value": "\"Smith\"",
+          "excluded": false
+        }
+      ],
+      "start": 1753063633698,
+      "stop": 1753063635491
+    },
+    {
+      "name": "Нажать на кнопку карандаша для редактирования выставленного балла",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1753063635492,
+      "stop": 1753063640599
+    },
+    {
+      "name": "Ввести значение выше минимального порога баллов",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Баллы\" id=\"f_f79d1d49-4dcc-4d73-9c36-86136e1c1992\" type=\"text\"> is not clickable at point (2095, 1980). Other element would receive the click: <div class=\"q-notification__message col\">...</div>\n  (Session info: chrome=132.0.6834.83)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Баллы\" id=\"f_f79d1d49-4dcc-4d73-9c36-86136e1c1992\" type=\"text\"> is not clickable at point (2095, 1980). Other element would receive the click: <div class=\"q-notification__message col\">...</div>\n  (Session info: chrome=132.0.6834.83)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/1/s/Services/CommonService.cs:line 426\n   at OdinUiTests.Pages.ActivitySolutionPage.<>c__DisplayClass55_0.<EditValueScoreField>b__0() in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 262\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivitySolutionPage.EditValueScoreField(String score, Int32 minThreshold) in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 260\n   at OdinUiTests.Tests.Activity.TaskActivityTeacherTests.CheckGradeSolutionValueAboveAndBelowScore(Int32 value, String status) in /azp/_work/1/s/Tests/Activity/TaskActivityTests.cs:line 348\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1753063640600,
+      "stop": 1753063643274
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckGradeSolutionValueAboveAndBelowScore.jpg",
+      "source": "9b683a7a-faa8-4a4a-857c-c534b1714bfa-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "86390380-2fc3-4328-8997-0569398a1ae1-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "value",
+      "value": "2",
+      "excluded": false
+    },
+    {
+      "name": "status",
+      "value": "\"Выполнено успешно\"",
+      "excluded": false
+    }
+  ],
+  "start": 1753063633698,
+  "stop": 1753063646975
+}
