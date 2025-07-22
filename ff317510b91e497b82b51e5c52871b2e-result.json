@@ -1,0 +1,122 @@
+{
+  "uuid": "e1bbeb6c-8a40-4c7d-adeb-017bd3e20625",
+  "historyId": "d84727183d9288db8b0e1af275ce98fd",
+  "testCaseId": "3a953dcd85788daf96cbef5dee40fa18",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineChatCallTests.CheckDeleteMessageInDisciplineCallChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "729fdeebefa1"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteMessageInDisciplineCallChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineChatCallTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат звонка дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно удалить сообщение в миничате звонка дисциплины",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnConnectButton_100666245_w_0(Object[])\n   at OdinUiTests.Pages.CallPage.ClickOnConnectButton()\n   at OdinUiTests.Tests.Chat.DisciplineChatCallTests.SetUp() in /azp/_work/1/s/Tests/Chat/CallChatTests.cs:line 20\n   at InvokeStub_DisciplineChatCallTests.SetUp(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.WaitUntilSpinnersIsDisappear() in /azp/_work/1/s/Pages/CallPage.cs:line 151\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnConnectButton_100666245_o() in /azp/_work/1/s/Pages/CallPage.cs:line 82\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnConnectButton_100666245_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу звонка по id чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"1714\"",
+          "excluded": false
+        }
+      ],
+      "start": 1753146719167,
+      "stop": 1753146721460
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.WaitUntilSpinnersIsDisappear() in /azp/_work/1/s/Pages/CallPage.cs:line 151\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnConnectButton_100666245_o() in /azp/_work/1/s/Pages/CallPage.cs:line 82\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnConnectButton_100666245_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1753146721460,
+      "stop": 1753146752250
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDeleteMessageInDisciplineCallChat.jpg",
+      "source": "28cf15a1-2e81-4941-93be-b62fa915c29d-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "ae46b69f-02fb-4551-86c3-81394b57ea26-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1753146719167,
+  "stop": 1753146754949
+}

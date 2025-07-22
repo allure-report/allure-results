@@ -1,0 +1,107 @@
+{
+  "uuid": "f88321f6-a1c8-443c-a8bf-2fc8d8fea2bd",
+  "historyId": "cb2198b3dea6ffcd4d87f3f867372ade",
+  "testCaseId": "2da02d9d6e51219e3f4581f56b30615d",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.LibraryActionPanelTests.CheckChangeViewOfLibraryInTileView(System.String,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "729fdeebefa1"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckChangeViewOfLibraryInTileView"
+    },
+    {
+      "name": "testClass",
+      "value": "LibraryActionPanelTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Библиотека: можно переключать текущий вид Библиотеки с “Плитка” на “Список”",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.ObjectDisposedException : Cannot access a disposed object.\nObject name: 'System.Net.Http.HttpClient'.\nTearDown : System.Exception : Ошибка: WebDriver уже был закрыт, так как количество упавших тестов превысило 60.",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenLibraryPage_100666883_w_0(Object[])\n   at OdinUiTests.Pages.LibraryPage.OpenLibraryPage(String id)\n   at OdinUiTests.Tests.Library.LibraryActionPanelTests.CheckChangeViewOfLibraryInTileView(String before, String after) in /azp/_work/1/s/Tests/Library/UserLibraryTests.cs:line 104\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)\n--ObjectDisposedException\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Navigator.GoToUrlAsync(String url)\n   at OpenQA.Selenium.Navigator.<>c__DisplayClass6_0.<<GoToUrl>b__0>d.MoveNext()\n--- End of stack trace from previous location ---\n   at OpenQA.Selenium.Navigator.GoToUrl(String url)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenLibraryPage_100666883_o(String id) in /azp/_work/1/s/Pages/LibraryPage.cs:line 61\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenLibraryPage_100666883_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--TearDown\n   at OdinUiTests.Tests.BaseTest.TearDown() in /azp/_work/1/s/Tests/BaseTest.cs:line 164\n   at InvokeStub_BaseTest.TearDown(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Cannot access a disposed object.\nObject name: 'System.Net.Http.HttpClient'.",
+        "trace": "System.ObjectDisposedException: Cannot access a disposed object.\nObject name: 'System.Net.Http.HttpClient'.\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Navigator.GoToUrlAsync(String url)\n   at OpenQA.Selenium.Navigator.<>c__DisplayClass6_0.<<GoToUrl>b__0>d.MoveNext()\n--- End of stack trace from previous location ---\n   at OpenQA.Selenium.Navigator.GoToUrl(String url)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenLibraryPage_100666883_o(String id) in /azp/_work/1/s/Pages/LibraryPage.cs:line 61\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenLibraryPage_100666883_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"24\"",
+          "excluded": false
+        }
+      ],
+      "start": 1753147814248,
+      "stop": 1753147814249
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "before",
+      "value": "\"Плитка\"",
+      "excluded": false
+    },
+    {
+      "name": "after",
+      "value": "\"Список\"",
+      "excluded": false
+    }
+  ],
+  "start": 1753147814248,
+  "stop": 1753147814250
+}

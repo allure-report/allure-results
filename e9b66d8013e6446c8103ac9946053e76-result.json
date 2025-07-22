@@ -1,0 +1,219 @@
+{
+  "uuid": "39f9c79b-1f2e-43bc-a87e-30b1c7fe0b36",
+  "historyId": "37475c45a935108b4b15e04885eaaa66",
+  "testCaseId": "02d14f8c00f92829e199eb25a90d1a12",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.RemovingTemplatesTests.CheckDeleteProgramTemplate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "729fdeebefa1"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteProgramTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "RemovingTemplatesTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница библиотеки: можно удалить шаблон программы",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.ObjectDisposedException : Cannot access a disposed object.\nObject name: 'System.Net.Http.HttpClient'.\nTearDown : System.Exception : Ошибка: WebDriver уже был закрыт, так как количество упавших тестов превысило 60.",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckTemplateIsDeleted_100666947_w_0(Object[])\n   at OdinUiTests.Pages.LibraryPage.CheckTemplateIsDeleted(String dirName, String templateId, String typeOfTemplate)\n   at OdinUiTests.Tests.Library.RemovingTemplatesTests.CheckDeleteProgramTemplate() in /azp/_work/1/s/Tests/Library/UserLibraryTests.cs:line 528\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--TargetInvocationException\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenDirectoryByName_100666884_w_0(Object[])\n   at OdinUiTests.Pages.LibraryPage.OpenDirectoryByName(String dirName)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckTemplateIsDeleted_100666947_o(String dirName, String templateId, String typeOfTemplate) in /azp/_work/1/s/Pages/LibraryPage.cs:line 1169\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckTemplateIsDeleted_100666947_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--ObjectDisposedException\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass17_0.<InvisibilityOfElementLocated>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 373\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/1/s/Pages/LibraryPage.cs:line 335\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenDirectoryByName_100666884_o(String dirName) in /azp/_work/1/s/Pages/LibraryPage.cs:line 67\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenDirectoryByName_100666884_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--TearDown\n   at OdinUiTests.Tests.BaseTest.TearDown() in /azp/_work/1/s/Tests/BaseTest.cs:line 164\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"345\"",
+          "excluded": false
+        }
+      ],
+      "start": 1753147787646,
+      "stop": 1753147790153
+    },
+    {
+      "name": "Открыть каталог по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "dirName",
+          "value": "\"Подготовка проектных менеджеров в сфере IT (Поток 2020 IT)\"",
+          "excluded": false
+        }
+      ],
+      "start": 1753147790154,
+      "stop": 1753147797067
+    },
+    {
+      "name": "Удалить материал из Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "materialName",
+          "value": "\"Подготовка проектных менеджеров в сфере IT (Поток 2020 IT)\"",
+          "excluded": false
+        },
+        {
+          "name": "withRightClick",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1753147797068,
+      "stop": 1753147806344
+    },
+    {
+      "name": "Проверка того, что шаблон был удален",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.\n ---> System.ObjectDisposedException: Cannot access a disposed object.\nObject name: 'System.Net.Http.HttpClient'.\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass17_0.<InvisibilityOfElementLocated>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 373\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/1/s/Pages/LibraryPage.cs:line 335\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenDirectoryByName_100666884_o(String dirName) in /azp/_work/1/s/Pages/LibraryPage.cs:line 67\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenDirectoryByName_100666884_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   --- End of inner exception stack trace ---\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenDirectoryByName_100666884_w_0(Object[])\n   at OdinUiTests.Pages.LibraryPage.OpenDirectoryByName(String dirName)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckTemplateIsDeleted_100666947_o(String dirName, String templateId, String typeOfTemplate) in /azp/_work/1/s/Pages/LibraryPage.cs:line 1169\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckTemplateIsDeleted_100666947_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу Библиотеки",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "id",
+              "value": "\"345\"",
+              "excluded": false
+            }
+          ],
+          "start": 1753147807747,
+          "stop": 1753147809553
+        },
+        {
+          "name": "Открыть каталог по названию",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Cannot access a disposed object.\nObject name: 'System.Net.Http.HttpClient'.",
+            "trace": "System.ObjectDisposedException: Cannot access a disposed object.\nObject name: 'System.Net.Http.HttpClient'.\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass17_0.<InvisibilityOfElementLocated>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 373\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/1/s/Pages/LibraryPage.cs:line 335\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenDirectoryByName_100666884_o(String dirName) in /azp/_work/1/s/Pages/LibraryPage.cs:line 67\n   at OdinUiTests.Pages.LibraryPage.__a$_around_OpenDirectoryByName_100666884_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "dirName",
+              "value": "\"Подготовка проектных менеджеров в сфере IT (Поток 2020 IT)\"",
+              "excluded": false
+            }
+          ],
+          "start": 1753147813464,
+          "stop": 1753147814576
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "dirName",
+          "value": "\"Подготовка проектных менеджеров в сфере IT (Поток 2020 IT)\"",
+          "excluded": false
+        },
+        {
+          "name": "templateId",
+          "value": "\"2214159\"",
+          "excluded": false
+        },
+        {
+          "name": "typeOfTemplate",
+          "value": "\"program\"",
+          "excluded": false
+        }
+      ],
+      "start": 1753147806345,
+      "stop": 1753147814576
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1753147785059,
+  "stop": 1753147814577
+}

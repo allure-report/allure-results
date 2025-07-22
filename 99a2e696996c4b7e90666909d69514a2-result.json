@@ -1,0 +1,223 @@
+{
+  "uuid": "91ae1237-9931-40af-be0b-8546385174be",
+  "historyId": "7080adcd1a4e8fcaf05d2a05becc98ae",
+  "testCaseId": "e5072739be20d632be4db322fb19d2f1",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.NotesMiniChatTests.CheckSendFileMessageInNotesMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "729fdeebefa1"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendFileMessageInNotesMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "NotesMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат для заметок"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно прикрепить и отправить файл с компьютера в миничате для заметок",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q\\-editor__content\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CkeckFileMessageIsSent_100666371_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.CkeckFileMessageIsSent(Boolean isMinichat, String chatId)\n   at OdinUiTests.Tests.Chat.ChatCommon.SendFileMessage(IWebDriver driver, String chatId, Boolean isMinichat) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 307\n   at OdinUiTests.Tests.Chat.ChatCommon.SendFileMessageInMinichat(IWebDriver driver) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 328\n   at OdinUiTests.Tests.Chat.NotesMiniChatTests.CheckSendFileMessageInNotesMiniChat() in /azp/_work/1/s/Tests/Chat/MiniChatTests.cs:line 815\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(String needToCheck, Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1090\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1116\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatPageOrRefreshPage(Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1133\n   at OdinUiTests.Pages.ChatCommonPage.FileMessageIsSent(Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1352\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CkeckFileMessageIsSent_100666371_o(Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1360\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CkeckFileMessageIsSent_100666371_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1753146907364,
+      "stop": 1753146909064
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1753146909064,
+      "stop": 1753146914460
+    },
+    {
+      "name": "Убедиться, что по умолчанию выбран 'Личный чат для заметок'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1753146914461,
+      "stop": 1753146916455
+    },
+    {
+      "name": "В строке ввода нажать на значок скрепки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1753146916455,
+      "stop": 1753146917455
+    },
+    {
+      "name": "В появившемся окне нажать на дропзону и загрузить файл",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "file",
+          "value": "\"download.jpg\"",
+          "excluded": false
+        }
+      ],
+      "start": 1753146917455,
+      "stop": 1753146919651
+    },
+    {
+      "name": "Нажать на кнопку 'Готово'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1753146919651,
+      "stop": 1753146921345
+    },
+    {
+      "name": "Нажать на значок отправки сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1753146921345,
+      "stop": 1753146922062
+    },
+    {
+      "name": "Проверка того, что прикрепленный файл был отправлен",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q\\-editor__content\"}\n  (Session info: chrome=132.0.6834.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(String needToCheck, Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1090\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1116\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatPageOrRefreshPage(Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1133\n   at OdinUiTests.Pages.ChatCommonPage.FileMessageIsSent(Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1352\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CkeckFileMessageIsSent_100666371_o(Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1360\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CkeckFileMessageIsSent_100666371_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"\"",
+          "excluded": false
+        }
+      ],
+      "start": 1753146922062,
+      "stop": 1753146958245
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendFileMessageInNotesMiniChat.jpg",
+      "source": "7fc4580a-8ed6-4079-9058-14cf2477ed54-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "e4a5e963-f7c9-4113-af15-380a1d21475f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1753146907364,
+  "stop": 1753146961756
+}
