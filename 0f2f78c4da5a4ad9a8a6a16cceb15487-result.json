@@ -1,0 +1,97 @@
+{
+  "uuid": "abeaf41d-d287-4efe-af7a-84f61e9fd45f",
+  "historyId": "c7dcade81eefb378baf71fdc54d04a4c",
+  "testCaseId": "9bdb4b8a02ce12bae88fbdfbaa044586",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.CheckStatusExistIfAtLeastOneCompletedAttempt(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "4ef3079770e0"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckStatusExistIfAtLeastOneCompletedAttempt"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityStatusWithTwoOrMoreAttemptsTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Прохождение теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Статус отображается, если есть хотя бы одна завершенная попытка в командной контрольной",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.AggregateException : One or more errors occurred. (Request failed with status code GatewayTimeout)\n  ----> System.Net.Http.HttpRequestException : Request failed with status code GatewayTimeout",
+    "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.ActivityService.GetActivityTestInfo(String actId) in /azp/_work/2/s/Services/ActivityService.cs:line 166\n   at OdinUiTests.Services.ExamineeService.GetActivityExamineesId(String actId) in /azp/_work/2/s/Services/ExamineeService.cs:line 10\n   at OdinUiTests.Services.ExamineeService.CheckTestHasOneAttempt(String activityId, UsersEnum user) in /azp/_work/2/s/Services/ExamineeService.cs:line 67\n   at OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.CheckStatusExistIfAtLeastOneCompletedAttempt(String actId) in /azp/_work/2/s/Tests/Activity/TestActivityTests.cs:line 676\n   at InvokeStub_TestActivityStatusWithTwoOrMoreAttemptsTests.CheckStatusExistIfAtLeastOneCompletedAttempt(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--HttpRequestException\n   at RestSharp.ResponseThrowExtension.ThrowIfError(RestResponse response)\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "CheckStatusExistIfAtLeastOneCompletedAttempt.jpg",
+      "source": "d3dde2c3-4e05-49b4-b0c9-2bf21c3d066c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "1898e656-596e-45a0-bc2c-dd895066daca-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "actId",
+      "value": "\"571\"",
+      "excluded": false
+    }
+  ],
+  "start": 1753153101057,
+  "stop": 1753153116686
+}
