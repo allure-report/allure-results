@@ -1,0 +1,235 @@
+{
+  "uuid": "08487aa6-2d3c-44ba-9917-4c8511fc2bce",
+  "historyId": "b1379a4a3e78b9b3e48da839adf8e25a",
+  "testCaseId": "d51eceed077bdc90df7b1709b4f0ca66",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.ActivityCreatingTests.CheckCreateActivityFromTemplate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "c10ee3501d1f"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateActivityFromTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "ActivityCreatingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Обычная активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание активности"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать активность из шаблона",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityContentMatches_100666172_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.CheckActivityContentMatches(List`1 tempList)\n   at OdinUiTests.Tests.Activity.ActivityCommon.CreateActivityFromTemplate(IWebDriver driver, Boolean isTemplate, String disId, String tempName, List`1 tempList) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 624\n   at OdinUiTests.Tests.Activity.ActivityCreatingTests.CheckCreateActivityFromTemplate() in /azp/_work/1/s/Tests/Activity/ActivityTests.cs:line 81\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--TargetInvocationException\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_GetTypeActivity_100666111_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.GetTypeActivity()\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityContentMatches_100666172_o(List`1 tempList) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1002\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityContentMatches_100666172_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_GetTypeActivity_100666111_o() in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 432\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_GetTypeActivity_100666111_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"379\"",
+          "excluded": false
+        }
+      ],
+      "start": 1757482544707,
+      "stop": 1757482545736
+    },
+    {
+      "name": "Нажать на кнопку 'Выбрать шаблон'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1757482545736,
+      "stop": 1757482551331
+    },
+    {
+      "name": "Выбрать шаблон из Библиотеки по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"Алфавит\"",
+          "excluded": false
+        }
+      ],
+      "start": 1757482551332,
+      "stop": 1757482560630
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить' и подтвердить сохранение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1757482560630,
+      "stop": 1757482562322
+    },
+    {
+      "name": "Переход на страницу активности. Убедиться в том,  что активность была создана",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.\n ---> OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_GetTypeActivity_100666111_o() in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 432\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_GetTypeActivity_100666111_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   --- End of inner exception stack trace ---\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_GetTypeActivity_100666111_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.GetTypeActivity()\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityContentMatches_100666172_o(List`1 tempList) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1002\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityContentMatches_100666172_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Переход на страницу активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1757482563459,
+          "stop": 1757482563606
+        },
+        {
+          "name": "Получить описания активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1757482563606,
+          "stop": 1757482563714
+        },
+        {
+          "name": "Получить тип активности",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 30 seconds",
+            "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_GetTypeActivity_100666111_o() in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 432\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_GetTypeActivity_100666111_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1757482563715,
+          "stop": 1757482593719
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "tempList",
+          "value": "[\"Алфавит\",\"Описание\",\"Контрольная\"]",
+          "excluded": false
+        }
+      ],
+      "start": 1757482562323,
+      "stop": 1757482593722
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateActivityFromTemplate.jpg",
+      "source": "35d773cf-cfae-4348-af7b-fe1ea027bbe2-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "3a40831f-78d9-4d61-855f-c4499dfb3a74-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1757482542522,
+  "stop": 1757482594426
+}
