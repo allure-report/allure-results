@@ -1,0 +1,197 @@
+{
+  "uuid": "3374532a-0096-47df-b614-6eed8fd27a05",
+  "historyId": "eb3e74206a471e00d9b5e957ee9407eb",
+  "testCaseId": "f5b76a47662f81c9b640bb9e35f68759",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.ActivityEditingFormatTests.CheckSwitchToHybridActivityFormat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "5c978a1cd7b2"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSwitchToHybridActivityFormat"
+    },
+    {
+      "name": "testClass",
+      "value": "ActivityEditingFormatTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Обычная активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование активности"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно переключится на формат активности Гибридная",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".info-block .item\"}\n  (Session info: chrome=139.0.7258.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityFormatIsHybrid_100666195_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.CheckActivityFormatIsHybrid(String building, String room)\n   at OdinUiTests.Tests.Activity.ActivityEditingFormatTests.CheckSwitchToHybridActivityFormat() in /azp/_work/1/s/Tests/Activity/ActivityTests.cs:line 294\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityFormatIsHybrid_100666195_o(String building, String room) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1235\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityFormatIsHybrid_100666195_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"10157\"",
+          "excluded": false
+        }
+      ],
+      "start": 1757600207549,
+      "stop": 1757600209256
+    },
+    {
+      "name": "Нажать на радиобаттон формата активности 'Гибридная'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1757600216661,
+      "stop": 1757600219750
+    },
+    {
+      "name": "Заполнить поля Корпус и Помещение для гибридной формате активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "building",
+          "value": "\"Гибрид\"",
+          "excluded": false
+        },
+        {
+          "name": "room",
+          "value": "\"тест гибрида\"",
+          "excluded": false
+        }
+      ],
+      "start": 1757600219751,
+      "stop": 1757600224786
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить' и подтвердить сохранение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1757600224786,
+      "stop": 1757600228764
+    },
+    {
+      "name": "Проверка того, что формат активности был переключен на 'Гибридная'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".info-block .item\"}\n  (Session info: chrome=139.0.7258.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityFormatIsHybrid_100666195_o(String building, String room) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1235\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckActivityFormatIsHybrid_100666195_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "building",
+          "value": "\"Гибрид\"",
+          "excluded": false
+        },
+        {
+          "name": "room",
+          "value": "\"тест гибрида\"",
+          "excluded": false
+        }
+      ],
+      "start": 1757600228764,
+      "stop": 1757600258768
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSwitchToHybridActivityFormat.jpg",
+      "source": "ebeaea13-79e2-4a15-8706-ab9899dead6f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "2891db28-36ca-46a1-88ed-f992c0856ec2-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1757600207549,
+  "stop": 1757600259164
+}
