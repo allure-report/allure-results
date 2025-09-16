@@ -1,0 +1,128 @@
+{
+  "uuid": "b86a414b-5ff3-4a56-94df-0f3cfce8d4ef",
+  "historyId": "3c6946543ae3617570130e92e9f6db6b",
+  "testCaseId": "99574e20fc66eb8b5a4247c6e9219470",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.CheckImportStudentViaAddStudentButton()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "5dce79c892b3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckImportStudentViaAddStudentButton"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Проверка импорта студентов через кнопку Добавить студента",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.ArgumentOutOfRangeException : Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667085_w_0(Object[])\n   at OdinUiTests.Pages.ProgramInfoPage.GetNumberOfStudents(String programId)\n   at OdinUiTests.Tests.Exams.ExamCreateEditTests.CheckImportStudentViaAddStudentButton() in /azp/_work/1/s/Tests/Exams/TestCenterTests.cs:line 293\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ArgumentOutOfRangeException\n   at Newtonsoft.Json.Linq.JContainer.GetItem(Int32 index)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667085_o(String programId) in /azp/_work/1/s/Pages/ProgramInfoPage.cs:line 419\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667085_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1757995007439,
+      "stop": 1757995008641
+    },
+    {
+      "name": "Получить количество студентов",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')",
+        "trace": "System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')\n   at Newtonsoft.Json.Linq.JContainer.GetItem(Int32 index)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667085_o(String programId) in /azp/_work/1/s/Pages/ProgramInfoPage.cs:line 419\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_GetNumberOfStudents_100667085_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1757995008641,
+      "stop": 1757995008942
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckImportStudentViaAddStudentButton.jpg",
+      "source": "588ca7bf-5365-4a5d-a18b-8bca1738db39-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "163fb2fc-81dd-4202-bbe6-a87bec5b427a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1757995007438,
+  "stop": 1757995011541
+}

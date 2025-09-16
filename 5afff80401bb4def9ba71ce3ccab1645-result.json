@@ -1,0 +1,199 @@
+{
+  "uuid": "90bf7599-128c-4362-b8ea-77f6a7faa80a",
+  "historyId": "d50f35d593d84a4731489afb52db12dd",
+  "testCaseId": "e7294511299ad8503e2fea2207b70be7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.LibraryInListViewTests.CheckCopyMaterialToCatalogInListView()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "5dce79c892b3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCopyMaterialToCatalogInListView"
+    },
+    {
+      "name": "testClass",
+      "value": "LibraryInListViewTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Библиотека, списочный вид: можно скопировать материал в другой каталог",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TearDown : System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+    "trace": "--TearDown\n   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.LibraryService.RemoveContentById(String itemId, Int32 directoryId) in /azp/_work/1/s/Services/LibraryService.cs:line 144\n   at OdinUiTests.Services.LibraryService.RemoveMaterialByName(Int32 directoryId, String materialName) in /azp/_work/1/s/Services/LibraryService.cs:line 247\n   at OdinUiTests.Tests.Library.LibraryInListViewTests.ClassTearDown() in /azp/_work/1/s/Tests/Library/UserLibraryTests.cs:line 450\n   at InvokeStub_LibraryInListViewTests.ClassTearDown(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--HttpRequestException\n   at RestSharp.RestClientExtensions.PostAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"20\"",
+          "excluded": false
+        }
+      ],
+      "start": 1757994986253,
+      "stop": 1757994988735
+    },
+    {
+      "name": "Переключить текущий вид Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "withRefresh",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "mode",
+          "value": "\"Список\"",
+          "excluded": false
+        }
+      ],
+      "start": 1757994988735,
+      "stop": 1757994996242
+    },
+    {
+      "name": "Скопировать материал в другой каталог",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "materialName",
+          "value": "\"2CB736E\"",
+          "excluded": false
+        },
+        {
+          "name": "isRightClick",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1757995010556,
+      "stop": 1757995024633
+    },
+    {
+      "name": "Проверка  того, что материал был корректно скопирован",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка того, что материал имеется в Библиотеке",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1757995032353,
+          "stop": 1757995035562
+        },
+        {
+          "name": "Проверка того, что материал имеется в подкаталоге",
+          "status": "passed",
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1757995036669,
+          "stop": 1757995039449
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "newMaterialName",
+          "value": "\"2CB736E\"",
+          "excluded": false
+        }
+      ],
+      "start": 1757995024634,
+      "stop": 1757995039449
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCopyMaterialToCatalogInListView.jpg",
+      "source": "aeda5fcd-43a2-48a1-8e3b-dd8375fc66ee-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "999ada42-8ded-44d1-b40f-edc5135ac7e5-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1757994986245,
+  "stop": 1757995040135
+}
