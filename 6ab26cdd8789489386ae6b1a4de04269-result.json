@@ -1,0 +1,213 @@
+{
+  "uuid": "166d266e-42c5-4325-aff9-31e12acce1f8",
+  "historyId": "9950c53377d6c9d8aac127b8eb7258f3",
+  "testCaseId": "8ca7329c0d69cfa781235c3a9219559a",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.IOTGraphTests.CheckAddBlockAboveFirstBlock()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "02c3efc19d11"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddBlockAboveFirstBlock"
+    },
+    {
+      "name": "testClass",
+      "value": "IOTGraphTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина с ИОТ"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница дисциплины с ИОТ: над первым блоком можно добавить ещё один блок",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <svg data-v-8da93859=\"\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"graph-node-button top\" xmlns=\"http://www.w3.org/2000/svg\">...</svg> is not clickable at point (850, 274). Other element would receive the click: <rect data-v-8da93859=\"\" x=\"6\" y=\"8\" width=\"12\" height=\"8\" rx=\"1\" fill=\"white\"></rect>\n  (Session info: chrome=140.0.7339.127)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_ClickAddButtonByLocation_100666693_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonInfoPage.ClickAddButtonByLocation(String location)\n   at OdinUiTests.Tests.Discipline.IOTGraphTests.CheckAddBlockAboveFirstBlock() in /azp/_work/2/s/Tests/Discipline/DisCreateEditTests.cs:line 377\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_ClickAddButtonByLocation_100666693_o(String location) in /azp/_work/2/s/Pages/DisCommonInfoPage.cs:line 430\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_ClickAddButtonByLocation_100666693_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Рандомна получить вид блока для добавления",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "countOfBlock",
+          "value": "3",
+          "excluded": false
+        }
+      ],
+      "start": 1758205810167,
+      "stop": 1758205810167
+    },
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"146996\"",
+          "excluded": false
+        }
+      ],
+      "start": 1758205810167,
+      "stop": 1758205810621
+    },
+    {
+      "name": "Добавить блок в дисциплину с ИОТ если она отсутствует",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Рандомна получить вид блока для добавления",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "countOfBlock",
+              "value": "3",
+              "excluded": false
+            }
+          ],
+          "start": 1758205810622,
+          "stop": 1758205810622
+        },
+        {
+          "name": "Рандомна получить вид блока для добавления",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "countOfBlock",
+              "value": "3",
+              "excluded": false
+            }
+          ],
+          "start": 1758205821541,
+          "stop": 1758205821541
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disId",
+          "value": "\"146996\"",
+          "excluded": false
+        }
+      ],
+      "start": 1758205810622,
+      "stop": 1758205824771
+    },
+    {
+      "name": "Нажать на кнопку добавления блока указав нужную кнопку",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <svg data-v-8da93859=\"\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"graph-node-button top\" xmlns=\"http://www.w3.org/2000/svg\">...</svg> is not clickable at point (850, 274). Other element would receive the click: <rect data-v-8da93859=\"\" x=\"6\" y=\"8\" width=\"12\" height=\"8\" rx=\"1\" fill=\"white\"></rect>\n  (Session info: chrome=140.0.7339.127)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <svg data-v-8da93859=\"\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"graph-node-button top\" xmlns=\"http://www.w3.org/2000/svg\">...</svg> is not clickable at point (850, 274). Other element would receive the click: <rect data-v-8da93859=\"\" x=\"6\" y=\"8\" width=\"12\" height=\"8\" rx=\"1\" fill=\"white\"></rect>\n  (Session info: chrome=140.0.7339.127)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_ClickAddButtonByLocation_100666693_o(String location) in /azp/_work/2/s/Pages/DisCommonInfoPage.cs:line 430\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_ClickAddButtonByLocation_100666693_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "location",
+          "value": "\"top\"",
+          "excluded": false
+        }
+      ],
+      "start": 1758205824771,
+      "stop": 1758205844400
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddBlockAboveFirstBlock.jpg",
+      "source": "8e1de69b-fe5c-4c9f-a532-c6bba8e82528-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "a7682ef2-1665-47fd-b885-6c89e7f07711-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1758205810163,
+  "stop": 1758205844535
+}
