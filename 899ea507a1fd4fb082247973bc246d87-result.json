@@ -1,0 +1,178 @@
+{
+  "uuid": "770d9cb1-11d6-4d1b-a09d-5669594dd1b3",
+  "historyId": "6f2d46923c323853cebc9c2f2583f77b",
+  "testCaseId": "567bd0f04aa49dfec81db9d91967d55c",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.CreateExamPatent()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "717721d7eac0"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateExamPatent"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание экзамена Патент",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Exception : Тест прерван: появилась плашка-уведомление.",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_CheckSavedSuccessfullyExam_100667084_w_0(Object[])\n   at OdinUiTests.Pages.ProgramInfoPage.CheckSavedSuccessfullyExam(String cohortTitle)\n   at OdinUiTests.Tests.Exams.ExamCreateEditTests.CreateExamPatent() in /azp/_work/4/s/Tests/Exams/TestCenterTests.cs:line 133\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--Exception\n   at OdinUiTests.Services.CommonService.<>c__DisplayClass57_0.<WaitForElementOrFailOnNotification>b__0(IWebDriver drv) in /azp/_work/4/s/Services/CommonService.cs:line 827\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitForElementOrFailOnNotification(IWebDriver driver, By elementLocator, Int32 timeoutSeconds) in /azp/_work/4/s/Services/CommonService.cs:line 821\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_CheckSavedSuccessfullyExam_100667084_o(String cohortTitle) in /azp/_work/4/s/Pages/ProgramInfoPage.cs:line 410\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_CheckSavedSuccessfullyExam_100667084_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17251\"",
+          "excluded": false
+        }
+      ],
+      "start": 1758264398489,
+      "stop": 1758264399889
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить' для добавления потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1758264399890,
+      "stop": 1758264403658
+    },
+    {
+      "name": "В поле 'Тип экзамена' выбрать значение 'Патент'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1758264403659,
+      "stop": 1758264406516
+    },
+    {
+      "name": "Выбрать сегодняшнюю дату для 'Дата начала'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1758264406518,
+      "stop": 1758264409313
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1758264409313,
+      "stop": 1758264409395
+    },
+    {
+      "name": "Проверка сохранения экзамена ",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Тест прерван: появилась плашка-уведомление.",
+        "trace": "System.Exception: Тест прерван: появилась плашка-уведомление.\n   at OdinUiTests.Services.CommonService.<>c__DisplayClass57_0.<WaitForElementOrFailOnNotification>b__0(IWebDriver drv) in /azp/_work/4/s/Services/CommonService.cs:line 827\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitForElementOrFailOnNotification(IWebDriver driver, By elementLocator, Int32 timeoutSeconds) in /azp/_work/4/s/Services/CommonService.cs:line 821\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_CheckSavedSuccessfullyExam_100667084_o(String cohortTitle) in /azp/_work/4/s/Pages/ProgramInfoPage.cs:line 410\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_CheckSavedSuccessfullyExam_100667084_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortTitle",
+          "value": "\"Патент\"",
+          "excluded": false
+        }
+      ],
+      "start": 1758264409396,
+      "stop": 1758264409942
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CreateExamPatent.jpg",
+      "source": "9431accd-3096-47d1-808f-d4b346b430b5-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "55a1d64b-6036-4fd7-b89d-88c2fd6070b4-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1758264398488,
+  "stop": 1758264410099
+}
