@@ -1,0 +1,126 @@
+{
+  "uuid": "908c99a1-3ab7-4abe-81a5-cf530f793ed2",
+  "historyId": "6648da08df778c55aee81c853a22c0dd",
+  "testCaseId": "7952d38eb78b1b56dc1332639310dbe2",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Division.DivisionPageTests.CheckUploadOrDeleteAvatarForDivision()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "9bc4520a81da"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Division"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckUploadOrDeleteAvatarForDivision"
+    },
+    {
+      "name": "testClass",
+      "value": "DivisionPageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Подразделения"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница подразделения"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Подразделения"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно загрузить/удалить аватар для подразделения",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[type='button'] svg\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_ClickOnDeleteButton_100666812_w_0(Object[])\n   at OdinUiTests.Pages.DivisionInfoPage.ClickOnDeleteButton()\n   at OdinUiTests.Pages.DivisionInfoPage.UploadOrDeleteAvatar(Boolean photoExist) in /azp/_work/2/s/Pages/DivisionInfoPage.cs:line 79\n   at OdinUiTests.Tests.Division.DivisionPageTests.CheckUploadOrDeleteAvatarForDivision() in /azp/_work/2/s/Tests/Division/DivisionCommonTests.cs:line 205\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_ClickOnDeleteButton_100666812_o() in /azp/_work/2/s/Pages/DivisionInfoPage.cs:line 63\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_ClickOnDeleteButton_100666812_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу подразделения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "divisionId",
+          "value": "\"781\"",
+          "excluded": false
+        }
+      ],
+      "start": 1758261326497,
+      "stop": 1758261327679
+    },
+    {
+      "name": "Нажать на значок удаления аватара",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[type='button'] svg\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+        "trace": "OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[type='button'] svg\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_ClickOnDeleteButton_100666812_o() in /azp/_work/2/s/Pages/DivisionInfoPage.cs:line 63\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_ClickOnDeleteButton_100666812_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1758261327680,
+      "stop": 1758261330400
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckUploadOrDeleteAvatarForDivision.jpg",
+      "source": "7b030d7b-bef7-47ab-b1b4-c29aa32ed40f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "89312c21-09e5-4388-a294-f12eb759a7d0-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1758261325977,
+  "stop": 1758261330530
+}
