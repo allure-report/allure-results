@@ -1,0 +1,192 @@
+{
+  "uuid": "7985512c-0a17-4b70-85c4-a8b7f3c65865",
+  "historyId": "f38f886a3c238acab64b26dcbad40cfe",
+  "testCaseId": "221daf8886351571b5b75b524977e1ba",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.TestQuestionAnswersValidationTests.CheckAddAnswerVariantInMultipleChoiceTestQuestion()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "1c5023cb9f3b"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddAnswerVariantInMultipleChoiceTestQuestion"
+    },
+    {
+      "name": "testClass",
+      "value": "TestQuestionAnswersValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Материал"
+    },
+    {
+      "name": "subSuite",
+      "value": "Конструктор теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Материал"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Конструктор теста: можно добавить еще один вариант ответа в вопрос с типом ответа 'Выбор из вариантов'",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".test-tabs__body .block-title\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ContentInfoPage.<>c__DisplayClass69_0.<FirstQuestionHasAnswers>b__0() in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 452\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ContentInfoPage.FirstQuestionHasAnswers(Int32 answers, Boolean isRemoving) in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 449\n   at OdinUiTests.Tests.Library.TestCreateEditCommon.AddCheckAnswerToQuestion(IWebDriver driver, Boolean isTestTrain, String id, Int32 numOfAnswer) in /azp/_work/1/s/Tests/Library/TestCreateEditCommon.cs:line 257\n   at OdinUiTests.Tests.Library.TestQuestionAnswersValidationTests.CheckAddAnswerVariantInMultipleChoiceTestQuestion() in /azp/_work/1/s/Tests/Library/TestCreateEditTests.cs:line 515\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования теста",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759215752554,
+      "stop": 1759215753127
+    },
+    {
+      "name": "Нажать на кнопку “карандаш” для редактирования первого вопроса",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759215753128,
+      "stop": 1759215766915
+    },
+    {
+      "name": "Добавить еще один вариант ответа",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "iframeField",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "text",
+          "value": "\"Текст второго варианта ответа\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759215766916,
+      "stop": 1759215772399
+    },
+    {
+      "name": "Подождать пока появится слово “Сохранено”",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759215772399,
+      "stop": 1759215778607
+    },
+    {
+      "name": "Нажать на последнюю хлебную крошку для перехода на страницу материала",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "CheckAddAnswerVariantInMultipleChoiceTestQuestion-BeforeClickOnBreadCrumbs.jpg",
+          "source": "2df24fec-7531-40f3-8dca-d83e3fd1e011-attachment.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "parameters": [],
+      "start": 1759215780712,
+      "stop": 1759215781124
+    },
+    {
+      "name": "Проверка того, что один вариант ответа в вопрос с типом ответа 'Выбор из вариантов' был добавлен",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".test-tabs__body .block-title\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ContentInfoPage.<>c__DisplayClass69_0.<FirstQuestionHasAnswers>b__0() in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 452\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ContentInfoPage.FirstQuestionHasAnswers(Int32 answers, Boolean isRemoving) in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 449\n   at OdinUiTests.Tests.Library.TestCreateEditCommon.AddCheckAnswerToQuestion(IWebDriver driver, Boolean isTestTrain, String id, Int32 numOfAnswer) in /azp/_work/1/s/Tests/Library/TestCreateEditCommon.cs:line 257\n   at OdinUiTests.Tests.Library.TestQuestionAnswersValidationTests.CheckAddAnswerVariantInMultipleChoiceTestQuestion() in /azp/_work/1/s/Tests/Library/TestCreateEditTests.cs:line 515\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759215781125,
+      "stop": 1759215811306
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddAnswerVariantInMultipleChoiceTestQuestion.jpg",
+      "source": "67cef60f-94b6-4324-92c5-7b3e7bff9eaf-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "355addaa-0d2c-4846-84d7-c0a9ea5e39ef-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1759215730513,
+  "stop": 1759215811729
+}

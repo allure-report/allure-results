@@ -1,0 +1,191 @@
+{
+  "uuid": "3a25f52e-1041-4fdc-816d-199d77893cde",
+  "historyId": "2c33e22cbd32da4295017b85fc3ea389",
+  "testCaseId": "d57911a1371eeabc9eaa8f87333a642f",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.TestQuestionsValidationTests.CheckEditCommentInTestQuestion()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "1c5023cb9f3b"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditCommentInTestQuestion"
+    },
+    {
+      "name": "testClass",
+      "value": "TestQuestionsValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Материал"
+    },
+    {
+      "name": "subSuite",
+      "value": "Конструктор теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Материал"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Конструктор теста: можно изменить комментарий к вопросу",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".test-tabs__body .block-title\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ContentInfoPage.GetQuestionComment() in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 193\n   at OdinUiTests.Pages.ContentInfoPage.<>c__DisplayClass53_0.<CheckCommentIsAddedToQuestion>b__0() in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 284\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ContentInfoPage.CheckCommentIsAddedToQuestion(String comment, Boolean editComment) in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 282\n   at OdinUiTests.Tests.Library.TestCreateEditCommon.AddCommentInQuestion(IWebDriver driver, Boolean isTestTrain, String testId, Boolean editComment, String comment) in /azp/_work/1/s/Tests/Library/TestCreateEditCommon.cs:line 118\n   at OdinUiTests.Tests.Library.TestQuestionsValidationTests.CheckEditCommentInTestQuestion() in /azp/_work/1/s/Tests/Library/TestCreateEditTests.cs:line 445\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования теста",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759215834098,
+      "stop": 1759215834838
+    },
+    {
+      "name": "Нажать на кнопку “карандаш” для редактирования первого вопроса",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759215834838,
+      "stop": 1759215847900
+    },
+    {
+      "name": "Нажать на кнопку “Добавить комментарий” для открытия поля комментария",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759215847900,
+      "stop": 1759215849013
+    },
+    {
+      "name": "Изменить текст комментария в поле ввода комментария",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759215849013,
+      "stop": 1759215854040
+    },
+    {
+      "name": "Подождать пока появится слово “Сохранено”",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759215854040,
+      "stop": 1759215856520
+    },
+    {
+      "name": "Нажать на последнюю хлебную крошку для перехода на страницу материала",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "CheckEditCommentInTestQuestion-BeforeClickOnBreadCrumbs.jpg",
+          "source": "eee7b95f-e81a-43fd-ac8f-6833ad12eceb-attachment.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "parameters": [],
+      "start": 1759215856615,
+      "stop": 1759215857066
+    },
+    {
+      "name": "Проверка того, что комментарий к вопросу был изменен",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".test-tabs__body .block-title\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ContentInfoPage.GetQuestionComment() in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 193\n   at OdinUiTests.Pages.ContentInfoPage.<>c__DisplayClass53_0.<CheckCommentIsAddedToQuestion>b__0() in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 284\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ContentInfoPage.CheckCommentIsAddedToQuestion(String comment, Boolean editComment) in /azp/_work/1/s/Pages/ContentInfoPage.cs:line 282\n   at OdinUiTests.Tests.Library.TestCreateEditCommon.AddCommentInQuestion(IWebDriver driver, Boolean isTestTrain, String testId, Boolean editComment, String comment) in /azp/_work/1/s/Tests/Library/TestCreateEditCommon.cs:line 118\n   at OdinUiTests.Tests.Library.TestQuestionsValidationTests.CheckEditCommentInTestQuestion() in /azp/_work/1/s/Tests/Library/TestCreateEditTests.cs:line 445\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759215857066,
+      "stop": 1759215887404
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditCommentInTestQuestion.jpg",
+      "source": "daabb6ec-7bc9-4458-bf4d-45ae947fb877-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "3f8cd873-00bd-4d07-885a-40276bc83ac4-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1759215817547,
+  "stop": 1759215887569
+}
