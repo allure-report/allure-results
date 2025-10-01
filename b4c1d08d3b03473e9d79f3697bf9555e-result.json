@@ -1,0 +1,170 @@
+{
+  "uuid": "3832b61d-321e-4952-9cd4-52eb481339d2",
+  "historyId": "67e858ec8933cb3d6e007a792b785cd4",
+  "testCaseId": "3eeea3f8a6ae080fbf0609d85a8bb5c4",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.IOTGraphTests.CheckGetOutOfBlock()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "1d7dcfde372c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetOutOfBlock"
+    },
+    {
+      "name": "testClass",
+      "value": "IOTGraphTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина с ИОТ"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница дисциплины с ИОТ: можно выйти из графа",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div data-v-8da93859=\"\" class=\"type no-padding\">...</div> is not clickable at point (795, 314). Other element would receive the click: <div data-v-8da93859=\"\" class=\"type\" style=\"background-color: rgb(192, 255, 174);\">...</div>\n  (Session info: chrome=140.0.7339.127)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_OpenDesiredBlock_100666729_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonInfoPage.OpenDesiredBlock(String kindOfBlock)\n   at OdinUiTests.Tests.Discipline.IOTGraphTests.CheckGetOutOfBlock() in /azp/_work/1/s/Tests/Discipline/DisCreateEditTests.cs:line 468\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_OpenDesiredBlock_100666729_o(String kindOfBlock) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 916\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_OpenDesiredBlock_100666729_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Рандомна получить вид блока для добавления",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "countOfBlock",
+          "value": "1",
+          "excluded": false
+        }
+      ],
+      "start": 1759284349780,
+      "stop": 1759284349780
+    },
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"146980\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759284349780,
+      "stop": 1759284349930
+    },
+    {
+      "name": "Добавить нужный блок в дисциплину с ИОТ если она отсутствует",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "kindOfBlock",
+          "value": "\"Модуль\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759284349930,
+      "stop": 1759284353152
+    },
+    {
+      "name": "Открыть нужный блок",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <div data-v-8da93859=\"\" class=\"type no-padding\">...</div> is not clickable at point (795, 314). Other element would receive the click: <div data-v-8da93859=\"\" class=\"type\" style=\"background-color: rgb(192, 255, 174);\">...</div>\n  (Session info: chrome=140.0.7339.127)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <div data-v-8da93859=\"\" class=\"type no-padding\">...</div> is not clickable at point (795, 314). Other element would receive the click: <div data-v-8da93859=\"\" class=\"type\" style=\"background-color: rgb(192, 255, 174);\">...</div>\n  (Session info: chrome=140.0.7339.127)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_OpenDesiredBlock_100666729_o(String kindOfBlock) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 916\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_OpenDesiredBlock_100666729_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "kindOfBlock",
+          "value": "\"Модуль\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759284353152,
+      "stop": 1759284357682
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckGetOutOfBlock.jpg",
+      "source": "30290ecc-3954-434c-b216-a1dba804fbb5-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "a636e800-8bc8-4d1c-8c3b-619346986d28-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1759284349777,
+  "stop": 1759284357812
+}
