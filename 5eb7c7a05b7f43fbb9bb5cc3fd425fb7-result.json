@@ -1,0 +1,143 @@
+{
+  "uuid": "760604d3-52fe-4008-84f2-6739c2beab39",
+  "historyId": "b11130e356d75b6b61723ebce496666b",
+  "testCaseId": "c77f3d1a4f75241d54a66bd72485f800",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.UserProfile.AddressAndContactsEditingTests.CheckCountryField()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "4c9adf7142f6"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.UserProfile"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCountryField"
+    },
+    {
+      "name": "testClass",
+      "value": "AddressAndContactsEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Профиль"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Профиль"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование профиля пользователя: можно изменить страну",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <i data-v-0bf07908=\"\" class=\"q-icon notranslate material-icons cursor-pointer\" aria-hidden=\"true\">...</i> is not clickable at point (1225, 392). Other element would receive the click: <div data-v-119b0025=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=140.0.7339.127)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SetUserCountry_100667266_w_0(Object[])\n   at OdinUiTests.Pages.UserProfilePage.SetUserCountry(String country)\n   at OdinUiTests.Tests.UserProfile.AddressAndContactsEditingTests.CheckCountryField() in /azp/_work/2/s/Tests/UserProfile/UserProfileTests.cs:line 221\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.FillInTheCountryField(IWebDriver driver, By blockTitle, String country) in /azp/_work/2/s/Services/CommonService.cs:line 488\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SetUserCountry_100667266_o(String country) in /azp/_work/2/s/Pages/UserProfilePage.cs:line 240\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SetUserCountry_100667266_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу профиля пользователя",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"36855\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759474893805,
+      "stop": 1759474896497
+    },
+    {
+      "name": "Нажать на кнопку 'Редактировать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759474896497,
+      "stop": 1759474906491
+    },
+    {
+      "name": "Редактировать страну пользователя",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <i data-v-0bf07908=\"\" class=\"q-icon notranslate material-icons cursor-pointer\" aria-hidden=\"true\">...</i> is not clickable at point (1225, 392). Other element would receive the click: <div data-v-119b0025=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=140.0.7339.127)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <i data-v-0bf07908=\"\" class=\"q-icon notranslate material-icons cursor-pointer\" aria-hidden=\"true\">...</i> is not clickable at point (1225, 392). Other element would receive the click: <div data-v-119b0025=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=140.0.7339.127)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.FillInTheCountryField(IWebDriver driver, By blockTitle, String country) in /azp/_work/2/s/Services/CommonService.cs:line 488\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SetUserCountry_100667266_o(String country) in /azp/_work/2/s/Pages/UserProfilePage.cs:line 240\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SetUserCountry_100667266_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "country",
+          "value": "\"Австралия\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759474906492,
+      "stop": 1759474911793
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCountryField.jpg",
+      "source": "14367bcf-3467-4b85-8726-1da1f7f0f4d0-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "79d05c2c-56f3-438e-9191-075771a255e5-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1759474893590,
+  "stop": 1759474912204
+}
