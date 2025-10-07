@@ -1,0 +1,225 @@
+{
+  "uuid": "ed4a975e-dbc9-4c21-9123-9bec877b0be2",
+  "historyId": "d839c4208acb48c4715ac0852df5d363",
+  "testCaseId": "2be95e3c4de50bf408c4355828cc36c4",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestTemplateCreatingTests.CreateTestActivityTemplate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "4eda8f0237bd"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateTestActivityTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateCreatingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание шаблона контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать шаблон контрольной, если заполнены обязательные поля",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 15 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".activity-info__header .page-title\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckControlTemplateIsCreated_100666204_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.CheckControlTemplateIsCreated(String name)\n   at OdinUiTests.Pages.ActivityCommonPage.CheckControlActivityIsCreated(String name, Boolean isTemplate) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1240\n   at OdinUiTests.Tests.Activity.ActivityCommon.CreateActivityWithControlType(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 12\n   at OdinUiTests.Tests.Activity.ActivityCommon.CreateActivityPlanWithControlType(IWebDriver driver, String directoryId) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 27\n   at OdinUiTests.Tests.Activity.TestTemplateCreatingTests.CreateTestActivityTemplate() in /azp/_work/1/s/Tests/Activity/TestTemplateTests.cs:line 23\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitAndFind(IWebDriver driver, By selector, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 840\n   at OdinUiTests.Pages.ActivityCommonPage.ControlActivityIsCreated(String name) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1221\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckControlTemplateIsCreated_100666204_o(String name) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1235\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckControlTemplateIsCreated_100666204_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания шаблона активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "directoryId",
+          "value": "\"18595\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759803012079,
+      "stop": 1759803014463
+    },
+    {
+      "name": "В поле 'Тип активности' выбрать значение 'Контрольная'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759803014463,
+      "stop": 1759803030475
+    },
+    {
+      "name": "Ввести значение в поле 'Название'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"A02DB46A333A931\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759803030476,
+      "stop": 1759803031873
+    },
+    {
+      "name": "Ввести значение в поле 'Описание'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "description",
+          "value": "\"A02DB46A333A931\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759803031873,
+      "stop": 1759803036677
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1759803036677,
+          "stop": 1759803037470
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1759803036677,
+      "stop": 1759803037470
+    },
+    {
+      "name": "Проверка того, что шаблон контрольной успешно создана",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 15 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 15 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".activity-info__header .page-title\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitAndFind(IWebDriver driver, By selector, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 840\n   at OdinUiTests.Pages.ActivityCommonPage.ControlActivityIsCreated(String name) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1221\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckControlTemplateIsCreated_100666204_o(String name) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1235\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckControlTemplateIsCreated_100666204_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"A02DB46A333A931\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759803037471,
+      "stop": 1759803052683
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CreateTestActivityTemplate.jpg",
+      "source": "411942a2-b87d-4e17-b024-8b95f208b963-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "14b2070f-4a79-429c-8734-648fd75d6bdf-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1759803012078,
+  "stop": 1759803053575
+}
