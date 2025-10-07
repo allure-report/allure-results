@@ -1,0 +1,225 @@
+{
+  "uuid": "95106b74-3a9c-435c-be72-6425c2578923",
+  "historyId": "7613022d6e0e338125d4a8a1dc7942d4",
+  "testCaseId": "e760292ff1486657dd8f27e3c7910afb",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortCreationTests.CheckCreateCohortFromTemplateWhenAllRequiredFieldsAreFilled(System.Int32,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "45bb34ff945a"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateCohortFromTemplateWhenAllRequiredFieldsAreFilled"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortCreationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание потока ВО: можно создать поток из шаблона, если все обязательные поля корректно заполнены",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".cohort-info .page-title\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckSuccessOfCohortCreationFromTemplate_100666526_w_0(Object[])\n   at OdinUiTests.Pages.CohortInfoPage.CheckSuccessOfCohortCreationFromTemplate(String cohortTitle, Object templateInfo)\n   at CallSite.Target(Closure, CallSite, CohortInfoPage, String, Object)\n   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)\n   at OdinUiTests.Tests.Cohort.CohortCreationTests.CheckCreateCohortFromTemplateWhenAllRequiredFieldsAreFilled(Int32 templateId, String programId) in /azp/_work/3/s/Tests/Cohort/CohortCreateEditTests.cs:line 86\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckSuccessOfCohortCreationFromTemplate_100666526_o(String cohortTitle, Object templateInfo) in /azp/_work/3/s/Pages/CohortInfoPage.cs:line 450\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckSuccessOfCohortCreationFromTemplate_100666526_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"5\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759818933310,
+      "stop": 1759818935517
+    },
+    {
+      "name": "Нажать на кнопку 'Выбрать шаблон'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759818935517,
+      "stop": 1759818940017
+    },
+    {
+      "name": "Найти и выбрать шаблон программы по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "templateName",
+          "value": "\"Шифрование\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759818942224,
+      "stop": 1759818949428
+    },
+    {
+      "name": "Вставить значение в поле 'Название'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759818949428,
+      "stop": 1759818952421
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата начала'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759818952421,
+      "stop": 1759818959815
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата окончания'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759818959815,
+      "stop": 1759818966707
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759818966707,
+      "stop": 1759818967414
+    },
+    {
+      "name": "Проверка корректности создания потока из шаблона",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".cohort-info .page-title\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckSuccessOfCohortCreationFromTemplate_100666526_o(String cohortTitle, Object templateInfo) in /azp/_work/3/s/Pages/CohortInfoPage.cs:line 450\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckSuccessOfCohortCreationFromTemplate_100666526_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortTitle",
+          "value": "\"GGABBAB25BB06G3\"",
+          "excluded": false
+        },
+        {
+          "name": "templateInfo",
+          "value": "{\"entity\":{\"id\":11,\"permissions\":{\"canEdit\":true,\"canCreateLot\":true,\"canRemoveLot\":false},\"contentInfo\":{\"id\":696940,\"name\":\"Шифрование\",\"description\":\"Используется для автотестирования, пожалуйста, не редактируйте!\",\"authors\":[{\"userInfo\":{\"id\":32,\"firstName\":\"Антон\",\"lastName\":\"Антонов\",\"photoUrl\":\"https://storage.yandexcloud.net/odin-storage-public/9e48adc0-0cb8-42b8-b741-fda50c16ddf1.JPG\"},\"isCreator\":false},{\"userInfo\":{\"id\":23,\"firstName\":\"Антон\",\"lastName\":\"Макаренко\",\"photoUrl\":\"https://storage.yandexcloud.net/odin-storage-public/5440c9d2-9392-46a3-87ba-ee794332bffd.JPG\"},\"isCreator\":true}],\"labels\":[],\"knowledgeTags\":[],\"rating\":{\"currentMark\":0,\"rating\":0.0,\"canRate\":true,\"marksCount\":0}},\"isAdditionalEducation\":false,\"createDateTime\":\"2020-07-28T19:24:13.481638\",\"modifyDateTime\":\"2022-10-05T15:02:35.70469\",\"semesters\":[{\"id\":9,\"number\":1,\"canEdit\":true,\"disciplinePlans\":[{\"id\":13,\"contentId\":821,\"name\":\"Основы криптографии\",\"order\":0}]},{\"id\":50,\"number\":2,\"canEdit\":true,\"disciplinePlans\":[{\"id\":1,\"contentId\":792,\"name\":\"Программная инженерия\",\"order\":0},{\"id\":2,\"contentId\":811,\"name\":\"Паттерны архитектуры\",\"order\":0},{\"id\":3,\"contentId\":812,\"name\":\"Базы данных\",\"order\":0},{\"id\":4,\"contentId\":813,\"name\":\"Основы ООП\",\"order\":0}]}],\"basedCohorts\":[{\"id\":9475,\"text\":\"Шифрование\",\"canView\":true},{\"id\":29,\"text\":\"12131\",\"canView\":true}],\"breadcrumbs\":[{\"routePage\":49,\"entityId\":1,\"text\":\"ТестГУ\"},{\"routePage\":55,\"entityId\":1,\"text\":\"HITs\"},{\"routePage\":13,\"entityId\":342,\"text\":\"Библиотека подразделения \\\"HITs\\\"\"}],\"libraryDirectoriesUsedIn\":[{\"libraryId\":342,\"directoryId\":1013,\"name\":\"Высшая IT школа\"},{\"libraryId\":18927,\"directoryId\":18597,\"name\":\"Тестовая Мария Сергеевна\"}]},\"isSuccess\":true,\"httpStatusCode\":200,\"errors\":[]}",
+          "excluded": false
+        }
+      ],
+      "start": 1759818967419,
+      "stop": 1759818997611
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateCohortFromTemplateWhenAllRequiredFieldsAreFilled.jpg",
+      "source": "30c2a2d3-b427-47bf-866a-67d1fccf4fdd-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "d1f2ddee-f52b-4457-9098-6c7fc513205b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "templateId",
+      "value": "696940",
+      "excluded": false
+    },
+    {
+      "name": "programId",
+      "value": "\"5\"",
+      "excluded": false
+    }
+  ],
+  "start": 1759818932618,
+  "stop": 1759818999421
+}
