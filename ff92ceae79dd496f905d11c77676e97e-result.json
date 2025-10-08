@@ -1,0 +1,137 @@
+{
+  "uuid": "64d1c7dc-34fa-4ddd-a422-de4ff59dbe93",
+  "historyId": "44299b696c84ed71cd6217e17325b626",
+  "testCaseId": "f606681146728c73431e3c4eabb3742b",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.PersonalChatCallTests.CheckFindSentMessageInPersonalCallChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "c20e3afcb74e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckFindSentMessageInPersonalCallChat"
+    },
+    {
+      "name": "testClass",
+      "value": "PersonalChatCallTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат личного звонка"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно найти отправленное сообщение в миничате личного звонка",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Exception : Тест прерван: появилась плашка-уведомление.",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666274_w_0(Object[])\n   at OdinUiTests.Pages.CallPage.ClickOnChatButton()\n   at OdinUiTests.Tests.Chat.PersonalChatCallTests.SetUp() in /azp/_work/1/s/Tests/Chat/CallChatTests.cs:line 355\n   at InvokeStub_PersonalChatCallTests.SetUp(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--Exception\n   at OdinUiTests.Services.CommonService.<>c__DisplayClass57_0.<WaitForElementOrFailOnNotification>b__0(IWebDriver drv) in /azp/_work/1/s/Services/CommonService.cs:line 827\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitForElementOrFailOnNotification(IWebDriver driver, By elementLocator, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 821\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666274_o() in /azp/_work/1/s/Pages/CallPage.cs:line 113\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666274_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу звонка по id чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"963\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759904054070,
+      "stop": 1759904056054
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759904056054,
+      "stop": 1759904065268
+    },
+    {
+      "name": "Нажать на кнопку чата в звонке",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Тест прерван: появилась плашка-уведомление.",
+        "trace": "System.Exception: Тест прерван: появилась плашка-уведомление.\n   at OdinUiTests.Services.CommonService.<>c__DisplayClass57_0.<WaitForElementOrFailOnNotification>b__0(IWebDriver drv) in /azp/_work/1/s/Services/CommonService.cs:line 827\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitForElementOrFailOnNotification(IWebDriver driver, By elementLocator, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 821\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666274_o() in /azp/_work/1/s/Pages/CallPage.cs:line 113\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666274_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759904065268,
+      "stop": 1759904066751
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckFindSentMessageInPersonalCallChat.jpg",
+      "source": "b5bbab26-9df6-4550-a672-fd03f0b8bd3a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "78e0e1ea-456f-4459-97a8-20b8c8df0e65-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1759904054070,
+  "stop": 1759904067851
+}

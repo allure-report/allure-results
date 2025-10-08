@@ -1,0 +1,216 @@
+{
+  "uuid": "2895f3b2-caa4-405c-96ca-1d3b041ab7ca",
+  "historyId": "3d8bb72c3b291865a11d99c3e76c1201",
+  "testCaseId": "8e5e621386da38fa34b3bc7a895240c7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Organization.OrganizationCreationTests.CheckCreateOrganization()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "c20e3afcb74e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Organization"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateOrganization"
+    },
+    {
+      "name": "testClass",
+      "value": "OrganizationCreationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Организация"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание организации"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Организация"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать организацию, если заполнены только обязательные поля",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.StaleElementReferenceException : stale element reference: stale element not found in the current frame\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillAllRequiredFields_100667033_w_0(Object[])\n   at OdinUiTests.Pages.OrganizationCommonPage.FillAllRequiredFields(String randomText)\n   at OdinUiTests.Tests.Organization.OrganizationCreationTests.CheckCreateOrganization() in /azp/_work/1/s/Tests/Organization/OrganizationTests.cs:line 32\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--TargetInvocationException\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillCityField_100667032_w_0(Object[])\n   at OdinUiTests.Pages.OrganizationCommonPage.FillCityField()\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillAllRequiredFields_100667033_o(String randomText) in /azp/_work/1/s/Pages/OrganizationCommonPage.cs:line 420\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillAllRequiredFields_100667033_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--StaleElementReferenceException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.FillInTheCityField(IWebDriver driver, By blockTitle) in /azp/_work/1/s/Services/CommonService.cs:line 509\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillCityField_100667032_o() in /azp/_work/1/s/Pages/OrganizationCommonPage.cs:line 414\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillCityField_100667032_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу список организаций",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759905026074,
+      "stop": 1759905027774
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759905027775,
+      "stop": 1759905035251
+    },
+    {
+      "name": "Заполнить обязательные поля на странице создания новой организации",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Exception has been thrown by the target of an invocation.",
+        "trace": "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.\n ---> OpenQA.Selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.FillInTheCityField(IWebDriver driver, By blockTitle) in /azp/_work/1/s/Services/CommonService.cs:line 509\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillCityField_100667032_o() in /azp/_work/1/s/Pages/OrganizationCommonPage.cs:line 414\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillCityField_100667032_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   --- End of inner exception stack trace ---\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillCityField_100667032_w_0(Object[])\n   at OdinUiTests.Pages.OrganizationCommonPage.FillCityField()\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillAllRequiredFields_100667033_o(String randomText) in /azp/_work/1/s/Pages/OrganizationCommonPage.cs:line 420\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillAllRequiredFields_100667033_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Заполнить поле 'Название'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"7048AAC327E7168\"",
+              "excluded": false
+            }
+          ],
+          "start": 1759905035252,
+          "stop": 1759905038260
+        },
+        {
+          "name": "Заполнить поле 'Краткое название'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "shortName",
+              "value": "\"7048AAC327E7168\"",
+              "excluded": false
+            }
+          ],
+          "start": 1759905038260,
+          "stop": 1759905038959
+        },
+        {
+          "name": "В выпадающем списке 'Страна' выбрать страну",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1759905038959,
+          "stop": 1759905047960
+        },
+        {
+          "name": "В выпадающем списке 'Город' выбрать город",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "stale element reference: stale element not found in the current frame\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+            "trace": "OpenQA.Selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.FillInTheCityField(IWebDriver driver, By blockTitle) in /azp/_work/1/s/Services/CommonService.cs:line 509\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillCityField_100667032_o() in /azp/_work/1/s/Pages/OrganizationCommonPage.cs:line 414\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_FillCityField_100667032_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1759905047961,
+          "stop": 1759905052156
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "randomText",
+          "value": "\"7048AAC327E7168\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759905035252,
+      "stop": 1759905052157
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateOrganization.jpg",
+      "source": "04a61179-a109-4257-95bc-e182f7aaf943-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "0655efeb-b45a-4641-aa1e-5231deada235-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1759905026074,
+  "stop": 1759905053462
+}

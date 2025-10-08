@@ -1,0 +1,188 @@
+{
+  "uuid": "9f4e98f8-7805-4a42-bb0c-91848d97404f",
+  "historyId": "38de58043381fb8d47655b66e8428617",
+  "testCaseId": "5fe25bf5fdf6fa278812ec8759a27ef7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.PersonalMiniChatTests.CheckCallInPersonalMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "c20e3afcb74e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCallInPersonalMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "PersonalMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат личного чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно сделать звонок в миничате личного чата",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//i[contains(text(),'call_end')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CallPage.__a$_around_CallIsStartedFromChat_100666278_w_0(Object[])\n   at OdinUiTests.Pages.CallPage.CallIsStartedFromChat(Boolean isAdminStartCall)\n   at OdinUiTests.Pages.CallPage.СheckCallIsStartedFromChat(Boolean isAdminStartCall) in /azp/_work/1/s/Pages/CallPage.cs:line 189\n   at OdinUiTests.Tests.Chat.ChatCommon.CallInChat(IWebDriver driver, String chatId, Boolean isMinichat, Boolean isAdminStartCall) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 211\n   at OdinUiTests.Tests.Chat.ChatCommon.CallInMinichat(IWebDriver driver, Boolean isAdminStartCall) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 229\n   at OdinUiTests.Tests.Chat.PersonalMiniChatTests.CheckCallInPersonalMiniChat() in /azp/_work/1/s/Tests/Chat/MiniChatTests.cs:line 698\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.__a$_around_CallIsStartedFromChat_100666278_o(Boolean isAdminStartCall) in /azp/_work/1/s/Pages/CallPage.cs:line 175\n   at OdinUiTests.Pages.CallPage.__a$_around_CallIsStartedFromChat_100666278_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759904041261,
+      "stop": 1759904042953
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759904042953,
+      "stop": 1759904048151
+    },
+    {
+      "name": "В панели чатов найти чат по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Корзинкина Кира\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759904048151,
+      "stop": 1759904053175
+    },
+    {
+      "name": "Нажать на кнопку звонка в чате",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759904053175,
+      "stop": 1759904054459
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759904056859,
+      "stop": 1759904065255
+    },
+    {
+      "name": "Проверка того, что звонок был начат",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//i[contains(text(),'call_end')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.__a$_around_CallIsStartedFromChat_100666278_o(Boolean isAdminStartCall) in /azp/_work/1/s/Pages/CallPage.cs:line 175\n   at OdinUiTests.Pages.CallPage.__a$_around_CallIsStartedFromChat_100666278_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isAdminStartCall",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1759904065255,
+      "stop": 1759904095753
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCallInPersonalMiniChat.jpg",
+      "source": "8bfcd02c-a65f-4ba8-babf-97480b936050-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "ce0e4828-0f16-4228-93b6-5d4c8cbf1b45-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1759904041261,
+  "stop": 1759904096375
+}

@@ -1,0 +1,154 @@
+{
+  "uuid": "c00d50d6-554b-4523-baed-ceb91f21b490",
+  "historyId": "73e9b0ecc0b7f96d2d5d395228585e53",
+  "testCaseId": "918ef49e0361f3eb9ba3313ca50e4bb4",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Call.CallTests.CheckTurnOnOffEquipmentInCall(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "c20e3afcb74e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Call"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckTurnOnOffEquipmentInCall"
+    },
+    {
+      "name": "testClass",
+      "value": "CallTests"
+    },
+    {
+      "name": "suite",
+      "value": "Звонок"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Звонок"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница звонка: можно включить/отключить камеру в звонке",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Exception : Тест прерван: появилась плашка-уведомление.\nTearDown : OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//i[contains(text(),'call_end')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CallPage.__a$_around_CheckEquipmentIsTurnedInCall_100666281_w_0(Object[])\n   at OdinUiTests.Pages.CallPage.CheckEquipmentIsTurnedInCall(String equipment)\n   at OdinUiTests.Tests.Call.CallTests.CheckTurnOnOffEquipmentInCall(String equipment) in /azp/_work/1/s/Tests/Call/CallTests.cs:line 27\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)\n--Exception\n   at OdinUiTests.Services.CommonService.<>c__DisplayClass57_0.<WaitForElementOrFailOnNotification>b__0(IWebDriver drv) in /azp/_work/1/s/Services/CommonService.cs:line 827\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitForElementOrFailOnNotification(IWebDriver driver, By elementLocator, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 821\n   at OdinUiTests.Pages.CallPage.__a$_around_CheckEquipmentIsTurnedInCall_100666281_o(String equipment) in /azp/_work/1/s/Pages/CallPage.cs:line 207\n   at OdinUiTests.Pages.CallPage.__a$_around_CheckEquipmentIsTurnedInCall_100666281_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--TearDown\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.ClickOnEndCallButton() in /azp/_work/1/s/Pages/CallPage.cs:line 141\n   at OdinUiTests.Tests.Call.CallTests.ClassTearDown() in /azp/_work/1/s/Tests/Call/CallTests.cs:line 60\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу звонка по id чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"751030\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759903254058,
+      "stop": 1759903255957
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759903255958,
+      "stop": 1759903266665
+    },
+    {
+      "name": "Проверить что кнопка включения/отключения камеры доступно",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Тест прерван: появилась плашка-уведомление.",
+        "trace": "System.Exception: Тест прерван: появилась плашка-уведомление.\n   at OdinUiTests.Services.CommonService.<>c__DisplayClass57_0.<WaitForElementOrFailOnNotification>b__0(IWebDriver drv) in /azp/_work/1/s/Services/CommonService.cs:line 827\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitForElementOrFailOnNotification(IWebDriver driver, By elementLocator, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 821\n   at OdinUiTests.Pages.CallPage.__a$_around_CheckEquipmentIsTurnedInCall_100666281_o(String equipment) in /azp/_work/1/s/Pages/CallPage.cs:line 207\n   at OdinUiTests.Pages.CallPage.__a$_around_CheckEquipmentIsTurnedInCall_100666281_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "equipment",
+          "value": "\"камеры\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759903266665,
+      "stop": 1759903267958
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckTurnOnOffEquipmentInCall-FailsBeforeEndOfCall.jpg",
+      "source": "07abfafa-b698-4790-9fcd-3c654163c56c-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "CheckTurnOnOffEquipmentInCall.jpg",
+      "source": "1ec230fd-2bf6-4048-9755-b4222b4a4290-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "0c91c5d9-4d0c-497a-872f-b1cef7e67e73-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "equipment",
+      "value": "\"камеры\"",
+      "excluded": false
+    }
+  ],
+  "start": 1759903254057,
+  "stop": 1759903300372
+}
