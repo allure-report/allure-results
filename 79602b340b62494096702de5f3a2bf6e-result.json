@@ -1,0 +1,224 @@
+{
+  "uuid": "14ef9526-1386-4370-a01e-4a654436540e",
+  "historyId": "8392f081873215b7aa37d1f23dc6948e",
+  "testCaseId": "6338e3979bb92242c2fcd5ff1db040e0",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckAddRoomForGroupsAndStudents()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "04b85e0a3bde"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddRoomForGroupsAndStudents"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно добавить комнату для групп и студентов",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.StaleElementReferenceException : stale element reference: stale element not found in the current frame\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisRoomIsAddedWithGroupAndUsers_100666426_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.CheckDisRoomIsAddedWithGroupAndUsers(String chatName, HashSet`1 disMembers)\n   at OdinUiTests.Tests.Chat.ChatCommon.AddDisciplineRoomForGroupsAndStudents(IWebDriver driver) in /azp/_work/3/s/Tests/Chat/ChatCommon.cs:line 731\n   at OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckAddRoomForGroupsAndStudents() in /azp/_work/3/s/Tests/Chat/ChatTests.cs:line 366\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--StaleElementReferenceException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.get_Displayed()\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.ChatIsAddedWithAllUsers(String chatName, HashSet`1 uniqueMembers) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 1682\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisRoomIsAddedWithGroupAndUsers_100666426_o(String chatName, HashSet`1 disMembers) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 1714\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisRoomIsAddedWithGroupAndUsers_100666426_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть список чатов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759987645488,
+      "stop": 1759987648379
+    },
+    {
+      "name": "Открыть раздел 'Дисциплины' и выбрать дисциплину",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineName",
+          "value": "\"Основы ООП\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759987648379,
+      "stop": 1759987659596
+    },
+    {
+      "name": "Нажать на тридот меню и выбрать 'Добавить комнату'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759987659596,
+      "stop": 1759987662383
+    },
+    {
+      "name": "Ввести значение в поле 'Название комнаты' в появившемся окне",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759987662383,
+      "stop": 1759987663588
+    },
+    {
+      "name": "В поле 'Доступ к комнате' выбрать значение – 'Отдельным студентам'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759987663588,
+      "stop": 1759987667278
+    },
+    {
+      "name": "Заполнить поля 'Группы' и 'Пользователи'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "groupName",
+          "value": "\"Группа 1\"",
+          "excluded": false
+        },
+        {
+          "name": "userName",
+          "value": "\"11 Адdmin-User\"",
+          "excluded": false
+        }
+      ],
+      "start": 1759987667279,
+      "stop": 1759987678897
+    },
+    {
+      "name": "Нажать на кнопку 'Создать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1759987678897,
+      "stop": 1759987681474
+    },
+    {
+      "name": "Проверка того, что выбранные студенты были добавлены в комнату",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "stale element reference: stale element not found in the current frame\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+        "trace": "OpenQA.Selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.get_Displayed()\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.ChatIsAddedWithAllUsers(String chatName, HashSet`1 uniqueMembers) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 1682\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisRoomIsAddedWithGroupAndUsers_100666426_o(String chatName, HashSet`1 disMembers) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 1714\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckDisRoomIsAddedWithGroupAndUsers_100666426_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"33FED4057B5414E\"",
+          "excluded": false
+        },
+        {
+          "name": "disMembers",
+          "value": "[\"Рахмонов Саидахмад\",\"Тестовая Дарья\",\"Хамдамов Александр\",\"0409 Александр\",\"044 Ne2da\",\"фывфыв johnny\",\"Doe John\",\"Smith John\",\"Тестовый Виктор\",\"Тестовый Иван\",\"Тестовый Петр\",\"11 Адdmin-User\"]",
+          "excluded": false
+        }
+      ],
+      "start": 1759987681483,
+      "stop": 1759987686306
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddRoomForGroupsAndStudents.jpg",
+      "source": "6ea55758-edeb-4804-a09d-d975f0eda81b-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "f9523b5b-6eb8-4e26-8aef-96ad9a851f6b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1759987641792,
+  "stop": 1759987687390
+}
