@@ -1,0 +1,217 @@
+{
+  "uuid": "087a6e46-a43c-4be4-99ac-ff69a7857b12",
+  "historyId": "05f8fa072cc5a9cce26983bb14acdf89",
+  "testCaseId": "d19cbfca69ef863a1fd7b1c9694d2425",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortCreationWarningModalTests.CheckCreateCohortAfterChangeMismatchWarningOfDuration()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "266f11a42b30"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateCohortAfterChangeMismatchWarningOfDuration"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortCreationWarningModalTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание потока: можно создать поток после внесения правок в длительность потока",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".cohort-info .page-title\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100666536_w_0(Object[])\n   at OdinUiTests.Pages.CohortInfoPage.CheckCohortSavedSuccessfully(String cohortTitle, String startDate, String endDate)\n   at OdinUiTests.Tests.Cohort.CohortCreationWarningModalTests.CheckCreateCohortAfterChangeMismatchWarningOfDuration() in /azp/_work/1/s/Tests/Cohort/CohortCreateEditTests.cs:line 329\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.CohortSavedSuccessfully(String cohortTitle, String startDate, String endDate) in /azp/_work/1/s/Pages/CohortInfoPage.cs:line 423\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100666536_o(String cohortTitle, String startDate, String endDate) in /azp/_work/1/s/Pages/CohortInfoPage.cs:line 437\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100666536_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"4\"",
+          "excluded": false
+        }
+      ],
+      "start": 1760751505717,
+      "stop": 1760751507247
+    },
+    {
+      "name": "Вставить значение в поле 'Название'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1760751507247,
+      "stop": 1760751511460
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата окончания' (период обучения менее 42 дней)",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1760751511460,
+      "stop": 1760751516338
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1760751516339,
+      "stop": 1760751516651
+    },
+    {
+      "name": "Нажать на кнопку 'Исправить' в модалке предупреждении",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1760751516652,
+      "stop": 1760751517817
+    },
+    {
+      "name": "Выбрать значение в поле 'Дата окончания' (период обучения равен или больше 42 дней)",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1760751517817,
+      "stop": 1760751523424
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1760751523424,
+      "stop": 1760751523720
+    },
+    {
+      "name": "Проверка корректности создания потока с выбранными датами",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".cohort-info .page-title\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CohortInfoPage.CohortSavedSuccessfully(String cohortTitle, String startDate, String endDate) in /azp/_work/1/s/Pages/CohortInfoPage.cs:line 423\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100666536_o(String cohortTitle, String startDate, String endDate) in /azp/_work/1/s/Pages/CohortInfoPage.cs:line 437\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckCohortSavedSuccessfully_100666536_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortTitle",
+          "value": "\"BB3GA434C655FF4\"",
+          "excluded": false
+        },
+        {
+          "name": "startDate",
+          "value": "\"\"",
+          "excluded": false
+        },
+        {
+          "name": "endDate",
+          "value": "\"28.11.2025\"",
+          "excluded": false
+        }
+      ],
+      "start": 1760751523720,
+      "stop": 1760751553751
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateCohortAfterChangeMismatchWarningOfDuration.jpg",
+      "source": "3df14e8f-10f3-4ee9-a13f-1b21b9ab07a8-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "164cc78b-2451-48c8-aec0-fefd682d72d5-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1760751505625,
+  "stop": 1760751554230
+}

@@ -1,0 +1,136 @@
+{
+  "uuid": "f25de67e-7f51-464a-9b24-65a5886f6e4f",
+  "historyId": "15bf9a300ae0b902898e3056ba4772de",
+  "testCaseId": "6a537374b967ff7d519d0ab0fe9544d8",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatMessageActionTests.CheckPinLastMessageInGroupChatByOtherUser()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "266f11a42b30"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckPinLastMessageInGroupChatByOtherUser"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatMessageActionTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Любой участник чата может закрепить сообщение в групповом чате",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <i data-v-89e4f98f=\"\" class=\"q-icon notranslate material-icons q-ml-xs\" aria-hidden=\"true\" role=\"menu\" tabindex=\"0\" style=\"font-size: 16px;\">...</i> is not clickable at point (645, 685). Other element would receive the click: <div data-v-119b0025=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=140.0.7339.127)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnThreedotsInNotPinnedMessageMenu_100666315_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.ClickOnThreedotsInNotPinnedMessageMenu()\n   at OdinUiTests.Tests.Chat.ChatCommon.PinMessageInChat(IWebDriver driver, String chatId, Boolean isMinichat) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 594\n   at OdinUiTests.Tests.Chat.ChatCommon.PinMessageInChat(IWebDriver driver, String chatId) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 602\n   at OdinUiTests.Tests.Chat.GroupChatMessageActionTests.CheckPinLastMessageInGroupChatByOtherUser() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 694\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.ClickOnThreedotsInMenu(Boolean needToCheckForPinned) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 450\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnThreedotsInNotPinnedMessageMenu_100666315_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 463\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnThreedotsInNotPinnedMessageMenu_100666315_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"6330\"",
+          "excluded": false
+        }
+      ],
+      "start": 1760751356856,
+      "stop": 1760751358318
+    },
+    {
+      "name": "Выбрать сообщение для закрепления",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1760751358318,
+      "stop": 1760751364556
+    },
+    {
+      "name": "В меню над сообщением нажать на троеточие",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <i data-v-89e4f98f=\"\" class=\"q-icon notranslate material-icons q-ml-xs\" aria-hidden=\"true\" role=\"menu\" tabindex=\"0\" style=\"font-size: 16px;\">...</i> is not clickable at point (645, 685). Other element would receive the click: <div data-v-119b0025=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=140.0.7339.127)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <i data-v-89e4f98f=\"\" class=\"q-icon notranslate material-icons q-ml-xs\" aria-hidden=\"true\" role=\"menu\" tabindex=\"0\" style=\"font-size: 16px;\">...</i> is not clickable at point (645, 685). Other element would receive the click: <div data-v-119b0025=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=140.0.7339.127)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.ClickOnThreedotsInMenu(Boolean needToCheckForPinned) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 450\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnThreedotsInNotPinnedMessageMenu_100666315_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 463\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnThreedotsInNotPinnedMessageMenu_100666315_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1760751364735,
+      "stop": 1760751366922
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckPinLastMessageInGroupChatByOtherUser.jpg",
+      "source": "03a75d8c-cb9e-40f3-b714-1c6822e4052a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "966c45cb-6e0c-4822-99f9-3bd90e8ef493-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1760751340652,
+  "stop": 1760751367652
+}

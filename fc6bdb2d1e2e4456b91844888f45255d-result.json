@@ -1,0 +1,126 @@
+{
+  "uuid": "cc99a5c8-0eb5-4fee-ac0e-cbe2b2839296",
+  "historyId": "4465fdc2319070dcf7bedf2c8e5a5915",
+  "testCaseId": "eaaff11c83caab04ef651126c61ceebc",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineChatTests.CheckMembersOfDisciplineChatIsDisplayed()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "266f11a42b30"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckMembersOfDisciplineChatIsDisplayed"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Отображаются участники чата дисциплины при клике на блок с аватарками",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".avatars-block.cursor-pointer\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.<ClickOnUserAvatarsInChat>b__178_0() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 962\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ChatCommonPage.ClickOnUserAvatarsInChat(String kindOfChat) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 959\n   at OdinUiTests.Tests.Chat.ChatCommon.MembersOfChatIsDisplayed(IWebDriver driver, String chatId, String kindOfChat) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 622\n   at OdinUiTests.Tests.Chat.ChatCommon.MembersOfDisChatIsDisplayed(IWebDriver driver, String chatId) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 633\n   at OdinUiTests.Tests.Chat.DisciplineChatTests.CheckMembersOfDisciplineChatIsDisplayed() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 146\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"1768\"",
+          "excluded": false
+        }
+      ],
+      "start": 1760751743736,
+      "stop": 1760751745325
+    },
+    {
+      "name": "Кликнуть на блок аватарок участников чата дисциплины",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".avatars-block.cursor-pointer\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.<ClickOnUserAvatarsInChat>b__178_0() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 962\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ChatCommonPage.ClickOnUserAvatarsInChat(String kindOfChat) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 959\n   at OdinUiTests.Tests.Chat.ChatCommon.MembersOfChatIsDisplayed(IWebDriver driver, String chatId, String kindOfChat) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 622\n   at OdinUiTests.Tests.Chat.ChatCommon.MembersOfDisChatIsDisplayed(IWebDriver driver, String chatId) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 633\n   at OdinUiTests.Tests.Chat.DisciplineChatTests.CheckMembersOfDisciplineChatIsDisplayed() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 146\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1760751745325,
+      "stop": 1760751775336
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckMembersOfDisciplineChatIsDisplayed.jpg",
+      "source": "867c1723-938c-4a27-8f8e-21fad5cab6ef-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "85abd46c-916f-466d-9dcb-b29b9ea92616-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1760751743735,
+  "stop": 1760751777028
+}

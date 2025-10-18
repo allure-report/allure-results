@@ -1,0 +1,130 @@
+{
+  "uuid": "fa2ebbe8-6b34-46f8-962a-283d5d591734",
+  "historyId": "1e6ff64f5665e1ed7fc2fb2ad6813aa7",
+  "testCaseId": "f564fab42b530d9a7be2291791beac4a",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatTests.CheckCallInGroupChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "266f11a42b30"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCallInGroupChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно сделать звонок в групповом чате",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:36351/session/f0ae399a92d095f022b12bfb3831f9a3/element/f.F3D718783AD10605A7969190FE582DB2.d.F635AC19AED277DA80FEF36C761D509C.e.224/enabled timed out after 60 seconds.\n  ----> System.Threading.Tasks.TaskCanceledException : The request was canceled due to the configured HttpClient.Timeout of 60 seconds elapsing.\n  ----> System.TimeoutException : The operation was canceled.\n  ----> System.Threading.Tasks.TaskCanceledException : The operation was canceled.\n  ----> System.IO.IOException : Unable to read data from the transport connection: Operation canceled.\n  ----> System.Net.Sockets.SocketException : Operation canceled\nTearDown : System.Exception : Ошибка: WebDriver уже был закрыт из-за превышения таймаута более 15 минут.",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnConnectButton_100666275_w_0(Object[])\n   at OdinUiTests.Pages.CallPage.ClickOnConnectButton()\n   at OdinUiTests.Pages.CallPage.СheckCallIsStartedFromChat(Boolean isAdminStartCall) in /azp/_work/1/s/Pages/CallPage.cs:line 189\n   at OdinUiTests.Tests.Chat.ChatCommon.CallInChat(IWebDriver driver, String chatId, Boolean isMinichat, Boolean isAdminStartCall) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 211\n   at OdinUiTests.Tests.Chat.ChatCommon.CallInChat(IWebDriver driver, String chatId) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 221\n   at OdinUiTests.Tests.Chat.GroupChatTests.CheckCallInGroupChat() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 734\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverException\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnConnectButton_100666275_o() in /azp/_work/1/s/Pages/CallPage.cs:line 92\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnConnectButton_100666275_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--TaskCanceledException\n   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n--TimeoutException\n\n--TaskCanceledException\n   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n--IOException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)\n   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n--SocketException\n\n--TearDown\n   at OdinUiTests.Tests.BaseTest.TearDown() in /azp/_work/1/s/Tests/BaseTest.cs:line 164\n   at InvokeStub_BaseTest.TearDown(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"3597776\"",
+          "excluded": false
+        }
+      ],
+      "start": 1760751183430,
+      "stop": 1760751185434
+    },
+    {
+      "name": "Нажать на кнопку звонка в чате",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1760751185434,
+      "stop": 1760751192551
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "The HTTP request to the remote WebDriver server for URL http://localhost:36351/session/f0ae399a92d095f022b12bfb3831f9a3/element/f.F3D718783AD10605A7969190FE582DB2.d.F635AC19AED277DA80FEF36C761D509C.e.224/enabled timed out after 60 seconds.",
+        "trace": "OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:36351/session/f0ae399a92d095f022b12bfb3831f9a3/element/f.F3D718783AD10605A7969190FE582DB2.d.F635AC19AED277DA80FEF36C761D509C.e.224/enabled timed out after 60 seconds.\n ---> System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 60 seconds elapsing.\n ---> System.TimeoutException: The operation was canceled.\n ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.\n ---> System.IO.IOException: Unable to read data from the transport connection: Operation canceled.\n ---> System.Net.Sockets.SocketException (125): Operation canceled\n   --- End of inner exception stack trace ---\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)\n   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   --- End of inner exception stack trace ---\n   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   --- End of inner exception stack trace ---\n   --- End of inner exception stack trace ---\n   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnConnectButton_100666275_o() in /azp/_work/1/s/Pages/CallPage.cs:line 92\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnConnectButton_100666275_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1760751195527,
+      "stop": 1760751280118
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1760751183429,
+  "stop": 1760751340133
+}

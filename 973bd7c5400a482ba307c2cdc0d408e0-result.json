@@ -1,0 +1,132 @@
+{
+  "uuid": "e0ddcde1-4c6f-49df-ae50-fa0fc5d609c1",
+  "historyId": "7536010765f46d8c783f72ae9e5fae7a",
+  "testCaseId": "d898e44cec1e865c977c25a0791b8b48",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineChatTests.CheckSendMessageByTappingEnterInDisciplineChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "266f11a42b30"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendMessageByTappingEnterInDisciplineChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно отправить сообщение по нажатию на Enter в чате дисциплины",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q\\-editor__content\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EnterTextMessageInInputField_100666305_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.EnterTextMessageInInputField(String randomText)\n   at OdinUiTests.Tests.Chat.ChatCommon.SendMessageByTappingEnter(IWebDriver driver, String chatId, Boolean isMinichat) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 368\n   at OdinUiTests.Tests.Chat.ChatCommon.SendMessageByTappingEnter(IWebDriver driver, String chatId) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 375\n   at OdinUiTests.Tests.Chat.DisciplineChatTests.CheckSendMessageByTappingEnterInDisciplineChat() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 106\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(String needToCheck, Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1093\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1119\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EnterTextMessageInInputField_100666305_o(String randomText) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 362\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EnterTextMessageInInputField_100666305_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"1768\"",
+          "excluded": false
+        }
+      ],
+      "start": 1760751569951,
+      "stop": 1760751571649
+    },
+    {
+      "name": "В строке ввода ввести текстовое сообщение",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q\\-editor__content\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(String needToCheck, Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1093\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1119\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EnterTextMessageInInputField_100666305_o(String randomText) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 362\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EnterTextMessageInInputField_100666305_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "randomText",
+          "value": "\"C988AGG3DAA26AF\"",
+          "excluded": false
+        }
+      ],
+      "start": 1760751571649,
+      "stop": 1760751601755
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendMessageByTappingEnterInDisciplineChat.jpg",
+      "source": "aaed7c9c-9002-48cd-a00b-80c4c85e1659-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "afdd2543-dbdd-46f3-947e-42332ef550fb-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1760751569951,
+  "stop": 1760751603533
+}
