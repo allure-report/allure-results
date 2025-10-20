@@ -1,0 +1,94 @@
+{
+  "uuid": "5c26b09e-6529-4c1e-b1bb-76d4fed601c9",
+  "historyId": "5cf285bd742a2c1cbdae7d91de76263a",
+  "testCaseId": "5b5bba297cf2e71f605d5f05e71eea22",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.TestQuestionAnswersValidationTests.CheckRemoveAnswerFromSortingQuestion()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "3a93b7ac6ea0"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckRemoveAnswerFromSortingQuestion"
+    },
+    {
+      "name": "testClass",
+      "value": "TestQuestionAnswersValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Материал"
+    },
+    {
+      "name": "subSuite",
+      "value": "Конструктор теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Материал"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Конструктор теста: можно удалить опцию из вопроса с типом ответа 'Сортировка'",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.ObjectDisposedException : Cannot access a disposed object.\nObject name: 'System.Net.Http.HttpClient'.\nTearDown : System.Exception : Ошибка: WebDriver уже был закрыт, так как количество упавших тестов превысило 60.",
+    "trace": "   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Navigator.GoToUrlAsync(String url)\n   at OpenQA.Selenium.Navigator.<>c__DisplayClass6_0.<<GoToUrl>b__0>d.MoveNext()\n--- End of stack trace from previous location ---\n   at OpenQA.Selenium.Navigator.GoToUrl(String url)\n   at OdinUiTests.Pages.TestCommonEditPage.<>c__DisplayClass59_0.<OpenEditPage>b__0() in /azp/_work/1/s/Pages/TestCommonEditPage.cs:line 96\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.TestCommonEditPage.OpenEditPage(Boolean isTestTrain, String id) in /azp/_work/1/s/Pages/TestCommonEditPage.cs:line 91\n   at OdinUiTests.Tests.Library.TestCreateEditCommon.RemoveSortingOptionFromQuestion(IWebDriver driver, Boolean isTestTrain, String id, Int32 numOfAnswer) in /azp/_work/1/s/Tests/Library/TestCreateEditCommon.cs:line 333\n   at OdinUiTests.Tests.Library.TestQuestionAnswersValidationTests.CheckRemoveAnswerFromSortingQuestion() in /azp/_work/1/s/Tests/Library/TestCreateEditTests.cs:line 602\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--TearDown\n   at OdinUiTests.Tests.BaseTest.TearDown() in /azp/_work/1/s/Tests/BaseTest.cs:line 164\n   at InvokeStub_BaseTest.TearDown(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования теста",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Cannot access a disposed object.\nObject name: 'System.Net.Http.HttpClient'.",
+        "trace": "System.ObjectDisposedException: Cannot access a disposed object.\nObject name: 'System.Net.Http.HttpClient'.\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Navigator.GoToUrlAsync(String url)\n   at OpenQA.Selenium.Navigator.<>c__DisplayClass6_0.<<GoToUrl>b__0>d.MoveNext()\n--- End of stack trace from previous location ---\n   at OpenQA.Selenium.Navigator.GoToUrl(String url)\n   at OdinUiTests.Pages.TestCommonEditPage.<>c__DisplayClass59_0.<OpenEditPage>b__0() in /azp/_work/1/s/Pages/TestCommonEditPage.cs:line 96\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.TestCommonEditPage.OpenEditPage(Boolean isTestTrain, String id) in /azp/_work/1/s/Pages/TestCommonEditPage.cs:line 91\n   at OdinUiTests.Tests.Library.TestCreateEditCommon.RemoveSortingOptionFromQuestion(IWebDriver driver, Boolean isTestTrain, String id, Int32 numOfAnswer) in /azp/_work/1/s/Tests/Library/TestCreateEditCommon.cs:line 333\n   at OdinUiTests.Tests.Library.TestQuestionAnswersValidationTests.CheckRemoveAnswerFromSortingQuestion() in /azp/_work/1/s/Tests/Library/TestCreateEditTests.cs:line 602\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1760942252946,
+      "stop": 1760942252947
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1760942252665,
+  "stop": 1760942252948
+}

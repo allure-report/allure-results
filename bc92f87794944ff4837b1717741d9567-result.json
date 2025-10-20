@@ -1,0 +1,217 @@
+{
+  "uuid": "17e3ce06-5c02-4149-9595-2ddaefcb18c0",
+  "historyId": "665d09fa230308deba1e0c32993fe263",
+  "testCaseId": "31f4dc21b78a985dce5e4c8e4bd6fbdc",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TemplateEditingTests.CheckEditActivityTemplateDescription()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "3a93b7ac6ea0"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditActivityTemplateDescription"
+    },
+    {
+      "name": "testClass",
+      "value": "TemplateEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обычный шаблон активности"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно изменить описание шаблона активности",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 15 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".description-html p\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateDescriptionIsChanged_100666148_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.CheckTemplateDescriptionIsChanged(String description)\n   at OdinUiTests.Pages.ActivityCommonPage.CheckActivityDescriptionIsChanged(String description, Boolean isTemplate) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 598\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditDescription(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 425\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditActivityPlanDescription(IWebDriver driver, String contentId) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 438\n   at OdinUiTests.Tests.Activity.TemplateEditingTests.CheckEditActivityTemplateDescription() in /azp/_work/1/s/Tests/Activity/TemplateTests.cs:line 44\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitAndFind(IWebDriver driver, By selector, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 840\n   at OdinUiTests.Pages.ActivityCommonPage.ActivityDescriptionIsChanged(String description) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 581\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateDescriptionIsChanged_100666148_o(String description) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 593\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateDescriptionIsChanged_100666148_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"1340\"",
+              "excluded": false
+            }
+          ],
+          "start": 1760940075268,
+          "stop": 1760940077073
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"1340\"",
+          "excluded": false
+        }
+      ],
+      "start": 1760940075268,
+      "stop": 1760940077073
+    },
+    {
+      "name": "Редактировать значение в поле 'Описание'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "description",
+          "value": "\"C4E0A7FGF8GD096\"",
+          "excluded": false
+        }
+      ],
+      "start": 1760940077073,
+      "stop": 1760940097361
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1760940097361,
+          "stop": 1760940097774
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1760940097361,
+      "stop": 1760940097774
+    },
+    {
+      "name": "Проверка того, что описание шаблона активности изменилось",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 15 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 15 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".description-html p\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitAndFind(IWebDriver driver, By selector, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 840\n   at OdinUiTests.Pages.ActivityCommonPage.ActivityDescriptionIsChanged(String description) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 581\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateDescriptionIsChanged_100666148_o(String description) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 593\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckTemplateDescriptionIsChanged_100666148_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "description",
+          "value": "\"C4E0A7FGF8GD096\"",
+          "excluded": false
+        }
+      ],
+      "start": 1760940097775,
+      "stop": 1760940113168
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditActivityTemplateDescription.jpg",
+      "source": "97fc4067-6784-4c98-9c96-bef4a0c41144-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "ad0d39c4-1bc6-4d98-8571-e82d96f6b50a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1760940075268,
+  "stop": 1760940113678
+}
