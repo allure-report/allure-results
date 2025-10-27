@@ -1,0 +1,197 @@
+{
+  "uuid": "3b88d272-1565-4e97-a90f-e7640d7181cc",
+  "historyId": "ef484f1078eeeacffda87853ecee0408",
+  "testCaseId": "cd360cce029adba5732b3119e94cf8dc",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineChatTests.CheckPinLastMessageInDisciplineChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "c61c1b98f430"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckPinLastMessageInDisciplineChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно закреплять сообщение в чате дисциплины",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(@class,'action-panel')]/ancestor::div[contains(@class,'message-block')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsPinned_100666425_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.CheckMessageIsPinned(Boolean isMinichat, String chatId, String messageId)\n   at OdinUiTests.Tests.Chat.ChatCommon.PinMessageInChat(IWebDriver driver, String chatId, Boolean isMinichat) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 594\n   at OdinUiTests.Tests.Chat.ChatCommon.PinMessageInChat(IWebDriver driver, String chatId) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 602\n   at OdinUiTests.Tests.Chat.DisciplineChatTests.CheckPinLastMessageInDisciplineChat() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 120\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OdinUiTests.Pages.ChatCommonPage.CheckMessageIsAppearInPinnedBlock(String messageText, String messageId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1438\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsPinned(String messageId, Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1469\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsPinned_100666425_o(Boolean isMinichat, String chatId, String messageId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1477\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsPinned_100666425_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"1768\"",
+          "excluded": false
+        }
+      ],
+      "start": 1761543967461,
+      "stop": 1761543969469
+    },
+    {
+      "name": "Выбрать сообщение для закрепления",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1761543969469,
+      "stop": 1761543976468
+    },
+    {
+      "name": "В меню над сообщением нажать на троеточие",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1761543976680,
+      "stop": 1761543977448
+    },
+    {
+      "name": "Выбрать пункт меню - 'Закрепить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1761543977449,
+      "stop": 1761543978534
+    },
+    {
+      "name": "Нажать на кнопку 'Закрепить' в появившемся окне",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1761543978534,
+      "stop": 1761543982767
+    },
+    {
+      "name": "Проверка того, что сообщение было закреплено",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(@class,'action-panel')]/ancestor::div[contains(@class,'message-block')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+        "trace": "OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(@class,'action-panel')]/ancestor::div[contains(@class,'message-block')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OdinUiTests.Pages.ChatCommonPage.CheckMessageIsAppearInPinnedBlock(String messageText, String messageId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1438\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsPinned(String messageId, Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1469\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsPinned_100666425_o(Boolean isMinichat, String chatId, String messageId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1477\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsPinned_100666425_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"1768\"",
+          "excluded": false
+        },
+        {
+          "name": "messageId",
+          "value": "\"9865706\"",
+          "excluded": false
+        }
+      ],
+      "start": 1761543982767,
+      "stop": 1761543992132
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckPinLastMessageInDisciplineChat.jpg",
+      "source": "68a6c7ad-5546-497f-bd40-8d45e17b9f4a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b8d138ee-4a7b-4ffd-8615-652963d1c0c1-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1761543967461,
+  "stop": 1761543993579
+}
