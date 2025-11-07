@@ -1,0 +1,147 @@
+{
+  "uuid": "2f70364d-095a-4ebc-a74c-4491662a2582",
+  "historyId": "fbe3e644887655f19339e0a9dfbe496a",
+  "testCaseId": "c29554931c886b846b2b951e391ed551",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Division.DivisionPageTests.CheckTransitionToDivisionLibraryPage()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "b1a20fc59d56"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Division"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckTransitionToDivisionLibraryPage"
+    },
+    {
+      "name": "testClass",
+      "value": "DivisionPageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Подразделения"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница подразделения"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Подразделения"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Работает переход к библиотеке подразделения",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckDivLibraryPageIsOpen_100667009_w_0(Object[])\n   at OdinUiTests.Pages.LibraryPage.CheckDivLibraryPageIsOpen(String divisionId)\n   at OdinUiTests.Tests.Division.DivisionPageTests.CheckTransitionToDivisionLibraryPage() in /azp/_work/1/s/Tests/Division/DivisionCommonTests.cs:line 217\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 374\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/1/s/Pages/LibraryPage.cs:line 356\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckDivLibraryPageIsOpen_100667009_o(String divisionId) in /azp/_work/1/s/Pages/LibraryPage.cs:line 1297\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckDivLibraryPageIsOpen_100667009_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу подразделения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "divisionId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1762480256961,
+      "stop": 1762480257843
+    },
+    {
+      "name": "Нажать на кнопку 'Библиотека'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1762480257843,
+      "stop": 1762480260355
+    },
+    {
+      "name": "Проверка того, что произошел корректный переход на страницу библиотеки подразделения",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 374\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/1/s/Pages/LibraryPage.cs:line 356\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckDivLibraryPageIsOpen_100667009_o(String divisionId) in /azp/_work/1/s/Pages/LibraryPage.cs:line 1297\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CheckDivLibraryPageIsOpen_100667009_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "divisionId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1762480260356,
+      "stop": 1762480293347
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckTransitionToDivisionLibraryPage.jpg",
+      "source": "3146e636-6652-49a2-910f-aad41fb8370e-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "39dc783c-03eb-4843-9a58-d3d31ee45cdd-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1762480256950,
+  "stop": 1762480293876
+}

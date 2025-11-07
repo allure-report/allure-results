@@ -1,0 +1,159 @@
+{
+  "uuid": "4b5828a1-1120-4dae-be25-608f87c044c9",
+  "historyId": "c6b62b8b1faa44ae86884ac94da6329b",
+  "testCaseId": "2b692fa33329f073786feeb17934c4d6",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.LibraryInListViewTests.CheckCopyMaterialViaActionsButton()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "b1a20fc59d56"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCopyMaterialViaActionsButton"
+    },
+    {
+      "name": "testClass",
+      "value": "LibraryInListViewTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Библиотека, списочный вид: можно скопировать материал через actions-кнопки",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Exception : Не удалось скопировать материал в каталог",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CopyMaterialToCatalog_100666942_w_0(Object[])\n   at OdinUiTests.Pages.LibraryPage.CopyMaterialToCatalog(String materialName, Boolean isRightClick)\n   at OdinUiTests.Tests.Library.LibraryInListViewTests.CheckCopyMaterialViaActionsButton() in /azp/_work/1/s/Tests/Library/UserLibraryTests.cs:line 415\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--Exception\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CopyMaterialToCatalog_100666942_o(String materialName, Boolean isRightClick) in /azp/_work/1/s/Pages/LibraryPage.cs:line 247\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CopyMaterialToCatalog_100666942_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"20\"",
+          "excluded": false
+        }
+      ],
+      "start": 1762480511066,
+      "stop": 1762480512053
+    },
+    {
+      "name": "Переключить текущий вид Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "withRefresh",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "mode",
+          "value": "\"Список\"",
+          "excluded": false
+        }
+      ],
+      "start": 1762480512053,
+      "stop": 1762480516558
+    },
+    {
+      "name": "Скопировать материал в другой каталог",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Не удалось скопировать материал в каталог",
+        "trace": "System.Exception: Не удалось скопировать материал в каталог\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CopyMaterialToCatalog_100666942_o(String materialName, Boolean isRightClick) in /azp/_work/1/s/Pages/LibraryPage.cs:line 247\n   at OdinUiTests.Pages.LibraryPage.__a$_around_CopyMaterialToCatalog_100666942_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "materialName",
+          "value": "\"Тестовый\"",
+          "excluded": false
+        },
+        {
+          "name": "isRightClick",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1762480521655,
+      "stop": 1762480531070
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCopyMaterialViaActionsButton.jpg",
+      "source": "ab632e25-6174-4396-9561-90087254f4bb-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "5fab21fe-8b64-4194-a4da-51359ceea38e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1762480511062,
+  "stop": 1762480531775
+}
