@@ -1,0 +1,227 @@
+{
+  "uuid": "74273c37-a3e6-4635-9ab6-2075d76830df",
+  "historyId": "e3c9d7d9b34461e85d4a996dcdcf40d5",
+  "testCaseId": "02e8d5d1238311a6085f8c46bb4bafc3",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineMiniChatTests.CheckSendFileMessageInDisciplineMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "2d020e368971"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendFileMessageInDisciplineMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно прикрепить и отправить файл с компьютера в миничате дисциплины",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Файловое сообщение не был отправлен\nAssert.That(condition, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at OdinUiTests.Tests.Chat.DisciplineMiniChatTests.CheckSendFileMessageInDisciplineMiniChat() in /azp/_work/1/s/Tests/Chat/MiniChatTests.cs:line 83\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1762966790591,
+      "stop": 1762966792113
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1762966792113,
+      "stop": 1762966799214
+    },
+    {
+      "name": "В панели чатов найти дисциплину по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Паттерны архитектуры\"",
+          "excluded": false
+        }
+      ],
+      "start": 1762966799214,
+      "stop": 1762966811195
+    },
+    {
+      "name": "В строке ввода нажать на значок скрепки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1762966811196,
+      "stop": 1762966812186
+    },
+    {
+      "name": "В появившемся окне нажать на дропзону и загрузить файл",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "file",
+          "value": "\"download.jpg\"",
+          "excluded": false
+        }
+      ],
+      "start": 1762966812186,
+      "stop": 1762966814204
+    },
+    {
+      "name": "Нажать на кнопку 'Готово'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1762966814204,
+      "stop": 1762966816100
+    },
+    {
+      "name": "Нажать на значок отправки сообщения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1762966816100,
+      "stop": 1762966817191
+    },
+    {
+      "name": "Проверка того, что прикрепленный файл был отправлен",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"1982\"",
+          "excluded": false
+        }
+      ],
+      "start": 1762966817194,
+      "stop": 1762966834091
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendFileMessageInDisciplineMiniChat.jpg",
+      "source": "895c1860-f40a-4621-a7ab-4d86c04373f3-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "8cb60804-6071-4853-bd25-dd233369a093-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1762966790591,
+  "stop": 1762966835586
+}

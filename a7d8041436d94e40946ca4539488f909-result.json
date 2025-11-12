@@ -1,0 +1,209 @@
+{
+  "uuid": "7d8c3513-e338-4772-a1e2-3a315cc73683",
+  "historyId": "9bfd39b8cdee11b168f0ad194112a97b",
+  "testCaseId": "68ac212f65fd694f628922258fdf39ad",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomMiniChatTests.CheckChangeDisciplineChatRoomStatusInMinichat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "2d020e368971"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckChangeDisciplineChatRoomStatusInMinichat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно изменить доступ к добавленной комнате в миничате",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Exception : Полученный статус не соответствует выбранному",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditChatRoomStatus_100666389_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.EditChatRoomStatus(Boolean isClosedRoom)\n   at OdinUiTests.Tests.Chat.DisciplineRoomMiniChatTests.CheckChangeDisciplineChatRoomStatusInMinichat() in /azp/_work/1/s/Tests/Chat/MiniChatTests.cs:line 292\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--Exception\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditChatRoomStatus_100666389_o(Boolean isClosedRoom) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1050\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditChatRoomStatus_100666389_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1762966464712,
+      "stop": 1762966470697
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1762966470697,
+      "stop": 1762966489880
+    },
+    {
+      "name": "В панели чатов найти дисциплину по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"История\"",
+          "excluded": false
+        }
+      ],
+      "start": 1762966489880,
+      "stop": 1762966495609
+    },
+    {
+      "name": "Нажать на выпадающий список комнат",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1762966495610,
+      "stop": 1762966496610
+    },
+    {
+      "name": "Выбрать добавленную комнату чата дисциплины по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"C6E7E67G4170D65\"",
+          "excluded": false
+        }
+      ],
+      "start": 1762966497209,
+      "stop": 1762966498109
+    },
+    {
+      "name": "Нажать на тридот меню и выбрать 'Редактировать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1762966498110,
+      "stop": 1762966501006
+    },
+    {
+      "name": "Поменять значение в поле 'Доступ к комнате' в появившемся окне",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Полученный статус не соответствует выбранному",
+        "trace": "System.Exception: Полученный статус не соответствует выбранному\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditChatRoomStatus_100666389_o(Boolean isClosedRoom) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1050\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditChatRoomStatus_100666389_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isClosedRoom",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1762966501007,
+      "stop": 1762966503300
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckChangeDisciplineChatRoomStatusInMinichat.jpg",
+      "source": "76235ba7-2acd-4dec-98fc-ebef7d89d7ae-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "3c2830f8-2b3a-4308-bdd6-5ddf7ae2cd45-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1762966464711,
+  "stop": 1762966504408
+}
