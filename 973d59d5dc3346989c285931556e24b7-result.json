@@ -1,0 +1,166 @@
+{
+  "uuid": "f968b6cc-ee27-48ff-88b3-6d5ae0bb6416",
+  "historyId": "e1d74318970c88c370e17f3cb1044b2a",
+  "testCaseId": "4b957aa84fef5fcf41f0feba5f237657",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Organization.OrganizationEditingTests.CheckImpossibleRemoveCustomResolutionIfItInUse()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "73d06907a7fe"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Organization"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckImpossibleRemoveCustomResolutionIfItInUse"
+    },
+    {
+      "name": "testClass",
+      "value": "OrganizationEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Организация"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование организации"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Организация"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Нельзя удалить резолюцию, если она выбрана у студента в завершении обучения",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Не появляется ошибка при удалении пользовательской резолюция, которая используется\nAssert.That(isAppear, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at OdinUiTests.Tests.Organization.OrganizationEditingTests.CheckImpossibleRemoveCustomResolutionIfItInUse() in /azp/_work/1/s/Tests/Organization/OrganizationTests.cs:line 193\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования организации",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "organizationId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1764822920290,
+      "stop": 1764822920488
+    },
+    {
+      "name": "Нажать на крестик рядом с добавленной пользователской резолюции",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "resInfo",
+          "value": "{\"block\":\"Не завершил\",\"text\":\"крсфвяйь вхъхй ёэлйе\"}",
+          "excluded": false
+        }
+      ],
+      "start": 1764822920488,
+      "stop": 1764822921670
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1764822921670,
+      "stop": 1764822921744
+    },
+    {
+      "name": "Проверка того, что удаления резолюции, которая используется не сработало",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "resInfo",
+          "value": "{\"block\":\"Не завершил\",\"text\":\"крсфвяйь вхъхй ёэлйе\"}",
+          "excluded": false
+        }
+      ],
+      "start": 1764822921744,
+      "stop": 1764822923338
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckImpossibleRemoveCustomResolutionIfItInUse.jpg",
+      "source": "01fd7d1d-f728-4a20-81a3-bb803ec2dbe3-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "1436e444-c01d-4f68-bfdc-1f63303503b7-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1764822919473,
+  "stop": 1764822923455
+}
