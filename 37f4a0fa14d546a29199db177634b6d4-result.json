@@ -1,0 +1,133 @@
+{
+  "uuid": "0f88a0b7-1954-49fd-8dc9-d3e8985a5dcb",
+  "historyId": "6cc765a5131769192c22a52f21bc68de",
+  "testCaseId": "7aae962d4f7bb201b925c86a0123e1a3",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.LibraryInListViewTests.CheckMoveMaterialViaActionsButton()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "75957abfebe2"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckMoveMaterialViaActionsButton"
+    },
+    {
+      "name": "testClass",
+      "value": "LibraryInListViewTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Библиотека, списочный вид: можно переместить материал через actions-кнопки",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='button-item-title' and contains(text(),'Поиск')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_SetLibraryViewMode_100666977_w_0(Object[])\n   at OdinUiTests.Pages.LibraryPage.SetLibraryViewMode(Boolean withRefresh, String mode)\n   at OdinUiTests.Tests.Library.LibraryInListViewTests.CheckMoveMaterialViaActionsButton() in /azp/_work/2/s/Tests/Library/UserLibraryTests.cs:line 398\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/2/s/Pages/LibraryPage.cs:line 355\n   at OdinUiTests.Pages.LibraryPage.SetLibraryViewModeWithoutAllureStep(Boolean withRefresh, String mode) in /azp/_work/2/s/Pages/LibraryPage.cs:line 260\n   at OdinUiTests.Pages.LibraryPage.__a$_around_SetLibraryViewMode_100666977_o(Boolean withRefresh, String mode) in /azp/_work/2/s/Pages/LibraryPage.cs:line 253\n   at OdinUiTests.Pages.LibraryPage.__a$_around_SetLibraryViewMode_100666977_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"20\"",
+          "excluded": false
+        }
+      ],
+      "start": 1765184186299,
+      "stop": 1765184186548
+    },
+    {
+      "name": "Переключить текущий вид Библиотеки",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='button-item-title' and contains(text(),'Поиск')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/2/s/Pages/LibraryPage.cs:line 355\n   at OdinUiTests.Pages.LibraryPage.SetLibraryViewModeWithoutAllureStep(Boolean withRefresh, String mode) in /azp/_work/2/s/Pages/LibraryPage.cs:line 260\n   at OdinUiTests.Pages.LibraryPage.__a$_around_SetLibraryViewMode_100666977_o(Boolean withRefresh, String mode) in /azp/_work/2/s/Pages/LibraryPage.cs:line 253\n   at OdinUiTests.Pages.LibraryPage.__a$_around_SetLibraryViewMode_100666977_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "withRefresh",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "mode",
+          "value": "\"Список\"",
+          "excluded": false
+        }
+      ],
+      "start": 1765184186548,
+      "stop": 1765184216750
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckMoveMaterialViaActionsButton.jpg",
+      "source": "06af6491-d436-43e6-9d0a-d566e6c4a08f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b2df6913-5934-4e0c-851c-8e247a7db072-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1765184186295,
+  "stop": 1765184216857
+}
