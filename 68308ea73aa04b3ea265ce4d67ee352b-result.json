@@ -1,0 +1,153 @@
+{
+  "uuid": "66e16667-c887-4faa-88cc-3e4d49ba2088",
+  "historyId": "932e560615561d41eefa73b04e1b442f",
+  "testCaseId": "1ed1f77bab19d8c042b7bda41985d7d7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TemplateAddingTests.CheckAddScormPackageActivityTemplate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "a22f40740ab6"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddScormPackageActivityTemplate"
+    },
+    {
+      "name": "testClass",
+      "value": "TemplateAddingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обычный шаблон активности"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно добавить материал типа SCORM из Библиотеки в шаблон активности",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Добавить материалы')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClickOnAddMaterialButton_100666066_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonEditPage.ClickOnAddMaterialButton()\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddMaterialFromLibrary(IWebDriver driver, Boolean isTemplate, String id, String type, String name) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 84\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddScormPackageToActivityPlan(IWebDriver driver, String contentId) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 153\n   at OdinUiTests.Tests.Activity.TemplateAddingTests.CheckAddScormPackageActivityTemplate() in /azp/_work/1/s/Tests/Activity/TemplateTests.cs:line 141\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClickOnAddMaterialButton_100666066_o() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 413\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClickOnAddMaterialButton_100666066_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"861\"",
+              "excluded": false
+            }
+          ],
+          "start": 1765181878992,
+          "stop": 1765181879120
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"861\"",
+          "excluded": false
+        }
+      ],
+      "start": 1765181878992,
+      "stop": 1765181879120
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить материалы'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Добавить материалы')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClickOnAddMaterialButton_100666066_o() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 413\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_ClickOnAddMaterialButton_100666066_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765181879120,
+      "stop": 1765181909626
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddScormPackageActivityTemplate.jpg",
+      "source": "848ca701-a218-413f-a0a9-6b5e64167c37-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "5f489fe1-7885-4da8-9c9e-fff899dd2421-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1765181877930,
+  "stop": 1765181910107
+}
