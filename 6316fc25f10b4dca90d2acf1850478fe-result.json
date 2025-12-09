@@ -1,0 +1,191 @@
+{
+  "uuid": "52dd4d7c-8967-4c81-b507-655a89c772f6",
+  "historyId": "6f2d46923c323853cebc9c2f2583f77b",
+  "testCaseId": "567bd0f04aa49dfec81db9d91967d55c",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.CreateExamPatent()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "edb42563e8fc"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateExamPatent"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Создание экзамена Патент",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  {\"httpStatusCode\":400,\"errors\":[{\"key\":\"\",\"value\":\"An error occurred while saving the entity changes. See the inner exception for details.\"}],\"isSuccess\":false}\nAssert.That(actual, Is.EqualTo(expected))\n  Expected: 200\n  But was:  400\n",
+    "trace": "   at NUnit.Framework.Legacy.ClassicAssert.AreEqual(Object expected, Object actual, String message, Object[] args)\n   at OdinUiTests.Services.CohortService.RemoveCohortById(String cohortId) in /azp/_work/1/s/Services/CohortService.cs:line 151\n   at OdinUiTests.Services.CohortService.RemoveExam(String cohortId) in /azp/_work/1/s/Services/CohortService.cs:line 173\n   at OdinUiTests.Tests.Exams.ExamCreateEditTests.CreateExamPatent() in /azp/_work/1/s/Tests/Exams/TestCenterTests.cs:line 139\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"17316\"",
+          "excluded": false
+        }
+      ],
+      "start": 1765258469869,
+      "stop": 1765258470478
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить' для добавления потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765258470479,
+      "stop": 1765258473587
+    },
+    {
+      "name": "В поле 'Тип экзамена' выбрать значение 'Патент'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765258473588,
+      "stop": 1765258476463
+    },
+    {
+      "name": "Выбрать сегодняшнюю дату для 'Дата начала'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765258476463,
+      "stop": 1765258479582
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765258479582,
+      "stop": 1765258479678
+    },
+    {
+      "name": "Проверка сохранения экзамена ",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortTitle",
+          "value": "\"Патент\"",
+          "excluded": false
+        }
+      ],
+      "start": 1765258479678,
+      "stop": 1765258481802
+    },
+    {
+      "name": "Получить количество студентов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765258481803,
+      "stop": 1765258481824
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CreateExamPatent.jpg",
+      "source": "fce3a621-21b1-482b-8e0d-81fffe1d63cb-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "e3b4968c-b9b8-4be9-8200-3eb86a9120c1-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1765258469863,
+  "stop": 1765258483473
+}
