@@ -1,0 +1,208 @@
+{
+  "uuid": "c3111d6a-e993-4b50-acd4-311f06d97258",
+  "historyId": "69249feba5d16d5b3b5e544a0ceea7bf",
+  "testCaseId": "f21493a6bde948caffe02d6eb09b9ef8",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupMiniChatTests.CheckChangeGroupChatNameInMinichat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "dff330eb74d6"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckChangeGroupChatNameInMinichat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат группового чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно изменить название группового чата в миничате",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q\\-editor__content\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckNameOfGroupChatIsChanged_100666464_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.CheckNameOfGroupChatIsChanged(Boolean isMinichat, String chatId, String randomText)\n   at OdinUiTests.Pages.ChatCommonPage.CheckNameOfChatIsChanged(Boolean isMinichat, String chatId, Boolean isDisRoom, String randomText) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1537\n   at OdinUiTests.Tests.Chat.ChatCommon.EditNameOfChat(IWebDriver driver, String chatId, Boolean isDisRoom, Boolean isMinichat) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 510\n   at OdinUiTests.Tests.Chat.ChatCommon.EditNameOfChatInMinichat(IWebDriver driver, String chatId) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 526\n   at OdinUiTests.Tests.Chat.GroupMiniChatTests.CheckChangeGroupChatNameInMinichat() in /azp/_work/1/s/Tests/Chat/MiniChatTests.cs:line 623\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(String needToCheck, Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1093\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1119\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatPageOrRefreshPage(Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1136\n   at OdinUiTests.Pages.ChatCommonPage.NameOfChatIsChanged(String name, Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1502\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckNameOfGroupChatIsChanged_100666464_o(Boolean isMinichat, String chatId, String randomText) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1510\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckNameOfGroupChatIsChanged_100666464_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765262154722,
+      "stop": 1765262156027
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765262156027,
+      "stop": 1765262159418
+    },
+    {
+      "name": "В панели чатов найти чат по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"чат6\"",
+          "excluded": false
+        }
+      ],
+      "start": 1765262159419,
+      "stop": 1765262173619
+    },
+    {
+      "name": "Нажать на тридот меню и выбрать 'Редактировать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765262173620,
+      "stop": 1765262174624
+    },
+    {
+      "name": "Отредактировать значение в поле 'Название чата' в появившемся окне",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765262174624,
+      "stop": 1765262179011
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765262179011,
+      "stop": 1765262181187
+    },
+    {
+      "name": "Проверка того, что название чата было изменено",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q\\-editor__content\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(String needToCheck, Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1093\n   at OdinUiTests.Pages.ChatCommonPage.WaitIfChatHasSomeMessage(Boolean needToSendMessage) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1119\n   at OdinUiTests.Pages.ChatCommonPage.OpenChatPageOrRefreshPage(Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1136\n   at OdinUiTests.Pages.ChatCommonPage.NameOfChatIsChanged(String name, Boolean isMinichat, String chatId) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1502\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckNameOfGroupChatIsChanged_100666464_o(Boolean isMinichat, String chatId, String randomText) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1510\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckNameOfGroupChatIsChanged_100666464_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"400042\"",
+          "excluded": false
+        },
+        {
+          "name": "randomText",
+          "value": "\"6773A85GE27AG2C\"",
+          "excluded": false
+        }
+      ],
+      "start": 1765262181187,
+      "stop": 1765262215328
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckChangeGroupChatNameInMinichat.jpg",
+      "source": "1a72cb78-e8ab-4c09-8b48-603dc2e1098a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "94ce789b-f141-479f-b41f-91c9411f6a14-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1765262154722,
+  "stop": 1765262216025
+}
