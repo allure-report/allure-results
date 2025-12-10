@@ -1,0 +1,166 @@
+{
+  "uuid": "85b8ff00-8e8a-4eff-9c2a-0d171c6b402d",
+  "historyId": "e1d74318970c88c370e17f3cb1044b2a",
+  "testCaseId": "4b957aa84fef5fcf41f0feba5f237657",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Organization.OrganizationEditingTests.CheckImpossibleRemoveCustomResolutionIfItInUse()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "8ec510440337"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Organization"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckImpossibleRemoveCustomResolutionIfItInUse"
+    },
+    {
+      "name": "testClass",
+      "value": "OrganizationEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Организация"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование организации"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Организация"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Нельзя удалить резолюцию, если она выбрана у студента в завершении обучения",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Не появляется ошибка при удалении пользовательской резолюция, которая используется\nAssert.That(isAppear, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at OdinUiTests.Tests.Organization.OrganizationEditingTests.CheckImpossibleRemoveCustomResolutionIfItInUse() in /azp/_work/2/s/Tests/Organization/OrganizationTests.cs:line 193\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования организации",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "organizationId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1765350846973,
+      "stop": 1765350847750
+    },
+    {
+      "name": "Нажать на крестик рядом с добавленной пользователской резолюции",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "resInfo",
+          "value": "{\"block\":\"Не завершил\",\"text\":\"пхфч шэня оцдс\"}",
+          "excluded": false
+        }
+      ],
+      "start": 1765350847750,
+      "stop": 1765350851371
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765350851371,
+      "stop": 1765350851741
+    },
+    {
+      "name": "Проверка того, что удаления резолюции, которая используется не сработало",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "resInfo",
+          "value": "{\"block\":\"Не завершил\",\"text\":\"пхфч шэня оцдс\"}",
+          "excluded": false
+        }
+      ],
+      "start": 1765350851741,
+      "stop": 1765350853890
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckImpossibleRemoveCustomResolutionIfItInUse.jpg",
+      "source": "065b7858-c36d-482d-9edd-0e2fe86a6942-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "da67a21c-fd60-4cd2-9fe4-826d7f3d2737-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1765350842778,
+  "stop": 1765350854179
+}
