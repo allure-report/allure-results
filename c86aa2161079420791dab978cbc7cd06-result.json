@@ -1,0 +1,122 @@
+{
+  "uuid": "d82711c6-b719-48c6-81de-3d9493388619",
+  "historyId": "f0492797dfce5b0c6e68ca3ac7142b65",
+  "testCaseId": "fcf57f606cf94868b0b0260a32f6dd34",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.BulkActionsLibraryTests.CheckChooseButtonExistInMenu()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "b4b614d8bd6b"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckChooseButtonExistInMenu"
+    },
+    {
+      "name": "testClass",
+      "value": "BulkActionsLibraryTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Библиотека: наличие пункта “Выбрать” в меню при правом клике на каталог или материал",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RightClickOnRandomItem_100666983_w_0(Object[])\n   at OdinUiTests.Pages.LibraryPage.RightClickOnRandomItem()\n   at OdinUiTests.Tests.Library.BulkActionsLibraryTests.CheckChooseButtonExistInMenu() in /azp/_work/1/s/Tests/Library/UserLibraryTests.cs:line 627\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 374\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/1/s/Pages/LibraryPage.cs:line 356\n   at OdinUiTests.Pages.LibraryPage.RightClickOnItem() in /azp/_work/1/s/Pages/LibraryPage.cs:line 694\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RightClickOnRandomItem_100666983_o() in /azp/_work/1/s/Pages/LibraryPage.cs:line 362\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RightClickOnRandomItem_100666983_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"18925\"",
+          "excluded": false
+        }
+      ],
+      "start": 1765779861549,
+      "stop": 1765779863251
+    },
+    {
+      "name": "Сделать правый клик на рандомного каталога или материала",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitUntilSpinnersIsDisappear(IWebDriver driver) in /azp/_work/1/s/Services/CommonService.cs:line 374\n   at OdinUiTests.Pages.LibraryPage.WaitLibraryLoading() in /azp/_work/1/s/Pages/LibraryPage.cs:line 356\n   at OdinUiTests.Pages.LibraryPage.RightClickOnItem() in /azp/_work/1/s/Pages/LibraryPage.cs:line 694\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RightClickOnRandomItem_100666983_o() in /azp/_work/1/s/Pages/LibraryPage.cs:line 362\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RightClickOnRandomItem_100666983_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765779863252,
+      "stop": 1765779896791
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckChooseButtonExistInMenu.jpg",
+      "source": "e2cb841c-3104-4cfd-aabf-e85b22decafb-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "203f3363-56de-46f8-b04a-dc96aa0e9b55-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1765779861549,
+  "stop": 1765779896947
+}
