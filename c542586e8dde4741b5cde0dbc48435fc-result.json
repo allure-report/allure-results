@@ -1,0 +1,157 @@
+{
+  "uuid": "c634a1a8-969c-41cc-962e-0b6f8b47dc7c",
+  "historyId": "c91c99b0f5c3c178017fe8013e47aabc",
+  "testCaseId": "f155106b70b61337fb6e2ad4eec8f4d8",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.ActivityDurationTests.CheckEditActivityVolumeWithCorrectValues()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "a2d837d4fe5f"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditActivityVolumeWithCorrectValues"
+    },
+    {
+      "name": "testClass",
+      "value": "ActivityDurationTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Обычная активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование активности"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Успешное сохранение при корректных значениях в поле Объем в академических часах",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[contains(@aria-label,'Объём')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/1/s/Services/CommonService.cs:line 427\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass107_0.<EditValueInVolumeField>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 475\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInVolumeField(String volume) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 473\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolume(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 560\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditActivityVolume(IWebDriver driver, String activityId) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 568\n   at OdinUiTests.Tests.Activity.ActivityDurationTests.CheckEditActivityVolumeWithCorrectValues() in /azp/_work/1/s/Tests/Activity/ActivityTests.cs:line 555\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "activityId",
+              "value": "\"377\"",
+              "excluded": false
+            }
+          ],
+          "start": 1765973196717,
+          "stop": 1765973197644
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"377\"",
+          "excluded": false
+        }
+      ],
+      "start": 1765973196717,
+      "stop": 1765973197644
+    },
+    {
+      "name": "В поле 'Объем в академических часах' ввести значение 20.7",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[contains(@aria-label,'Объём')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/1/s/Services/CommonService.cs:line 427\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass107_0.<EditValueInVolumeField>b__0() in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 475\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInVolumeField(String volume) in /azp/_work/1/s/Pages/ActivityCommonEditPage.cs:line 473\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolume(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 560\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditActivityVolume(IWebDriver driver, String activityId) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 568\n   at OdinUiTests.Tests.Activity.ActivityDurationTests.CheckEditActivityVolumeWithCorrectValues() in /azp/_work/1/s/Tests/Activity/ActivityTests.cs:line 555\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765973197645,
+      "stop": 1765973229344
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditActivityVolumeWithCorrectValues.jpg",
+      "source": "a850da66-8825-4ed7-9ddf-abd3267d6a05-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "5e0dea84-1313-439e-bfd7-f12b63a428e8-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1765973196716,
+  "stop": 1765973229506
+}

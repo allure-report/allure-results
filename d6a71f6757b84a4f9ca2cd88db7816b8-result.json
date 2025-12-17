@@ -1,0 +1,207 @@
+{
+  "uuid": "76c19c2e-5c6b-4c56-b275-ca9b2ec570f1",
+  "historyId": "286952c0d6c65452c7e0eba7ebc2c968",
+  "testCaseId": "c12b1940cc5970ccf10b1118dd7981fa",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestCommandActivityTests.CheckEditTeamInCommandControlActivity()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "a2d837d4fe5f"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditTeamInCommandControlActivity"
+    },
+    {
+      "name": "testClass",
+      "value": "TestCommandActivityTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно редактировать команду в командной контрольной",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <a data-v-88af4abf=\"\" class=\"group-link\">...</a> is not clickable at point (610, 585). Other element would receive the click: <div class=\"q-dialog__backdrop fixed-full q-transition--fade-leave-active q-transition--fade-leave-to\" aria-hidden=\"true\" tabindex=\"-1\" style=\"--q-transition-duration: 300ms;\"></div>\n  (Session info: chrome=140.0.7339.127)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckNewStudentsAreAdded_100666220_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.CheckNewStudentsAreAdded(String teamName, List`1 students)\n   at OdinUiTests.Tests.Activity.TestCommandActivityTests.CheckEditTeamInCommandControlActivity() in /azp/_work/1/s/Tests/Activity/TestActivityTests.cs:line 316\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonPage.ClickOnTeamName(String teamName) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 229\n   at OdinUiTests.Pages.ActivityCommonPage.CheckStudentsAreAdded(String teamName, List`1 students, Boolean isNewTeam) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 950\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckNewStudentsAreAdded_100666220_o(String teamName, List`1 students) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 970\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckNewStudentsAreAdded_100666220_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"6751\"",
+          "excluded": false
+        }
+      ],
+      "start": 1765973416639,
+      "stop": 1765973417012
+    },
+    {
+      "name": "Открыть существующую команду по имени",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "teamName",
+          "value": "\"2GB861E\"",
+          "excluded": false
+        }
+      ],
+      "start": 1765973426903,
+      "stop": 1765973439434
+    },
+    {
+      "name": "Нажать на кнопку 'Редактировать' для редактирования команды",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765973439434,
+      "stop": 1765973441733
+    },
+    {
+      "name": "Добавить еще одного студента в команду",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765973441733,
+      "stop": 1765973447061
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1765973447061,
+      "stop": 1765973448037
+    },
+    {
+      "name": "Проверка того, что выбранный студент был добавлен",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <a data-v-88af4abf=\"\" class=\"group-link\">...</a> is not clickable at point (610, 585). Other element would receive the click: <div class=\"q-dialog__backdrop fixed-full q-transition--fade-leave-active q-transition--fade-leave-to\" aria-hidden=\"true\" tabindex=\"-1\" style=\"--q-transition-duration: 300ms;\"></div>\n  (Session info: chrome=140.0.7339.127)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <a data-v-88af4abf=\"\" class=\"group-link\">...</a> is not clickable at point (610, 585). Other element would receive the click: <div class=\"q-dialog__backdrop fixed-full q-transition--fade-leave-active q-transition--fade-leave-to\" aria-hidden=\"true\" tabindex=\"-1\" style=\"--q-transition-duration: 300ms;\"></div>\n  (Session info: chrome=140.0.7339.127)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonPage.ClickOnTeamName(String teamName) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 229\n   at OdinUiTests.Pages.ActivityCommonPage.CheckStudentsAreAdded(String teamName, List`1 students, Boolean isNewTeam) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 950\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckNewStudentsAreAdded_100666220_o(String teamName, List`1 students) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 970\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_CheckNewStudentsAreAdded_100666220_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "teamName",
+          "value": "\"2GB861E\"",
+          "excluded": false
+        },
+        {
+          "name": "students",
+          "value": "[\"Вернер Александр Александрович\"]",
+          "excluded": false
+        }
+      ],
+      "start": 1765973448038,
+      "stop": 1765973450263
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditTeamInCommandControlActivity.jpg",
+      "source": "1e77af5d-5e71-43ef-b972-b6ad9e761208-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "2b4db5dd-1d84-42de-a106-93c4ea88c49f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1765973416639,
+  "stop": 1765973450489
+}
