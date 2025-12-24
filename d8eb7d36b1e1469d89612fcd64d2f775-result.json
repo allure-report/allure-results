@@ -1,0 +1,165 @@
+{
+  "uuid": "921fd500-d107-42cd-aa6b-b24ecc1e968b",
+  "historyId": "8ecea75a0baa4e560258a9f2696e2d78",
+  "testCaseId": "53b5f5c29bd449dff8298b9f5bd41e72",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.IOTThemesAndModulesTests.CheckCreatingBlockWithOtherData(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "3078f8b719d8"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreatingBlockWithOtherData"
+    },
+    {
+      "name": "testClass",
+      "value": "IOTThemesAndModulesTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Дисциплина с ИОТ"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница дисциплины с ИОТ: при создании модуля или темы можно задать часы",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".graph\\-component\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddBlockWithEnablingOtherParameters_100666766_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonInfoPage.AddBlockWithEnablingOtherParameters(String kindOfBlock, String nameOfBlock, String parametr)\n   at OdinUiTests.Tests.Discipline.IOTThemesAndModulesTests.CheckCreatingBlockWithOtherData(String parameter) in /azp/_work/1/s/Tests/Discipline/DisCreateEditTests.cs:line 316\n   at InvokeStub_IOTThemesAndModulesTests.CheckCreatingBlockWithOtherData(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddBlockWithEnablingOtherParameters_100666766_o(String kindOfBlock, String nameOfBlock, String parametr) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 577\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddBlockWithEnablingOtherParameters_100666766_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Рандомна получить вид блока для добавления",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "countOfBlock",
+          "value": "1",
+          "excluded": false
+        }
+      ],
+      "start": 1766550458888,
+      "stop": 1766550458888
+    },
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"160325\"",
+          "excluded": false
+        }
+      ],
+      "start": 1766550458888,
+      "stop": 1766550473917
+    },
+    {
+      "name": "Добавить блок с соответствующими параметрами",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".graph\\-component\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddBlockWithEnablingOtherParameters_100666766_o(String kindOfBlock, String nameOfBlock, String parametr) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 577\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_AddBlockWithEnablingOtherParameters_100666766_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "kindOfBlock",
+          "value": "\"Тема\"",
+          "excluded": false
+        },
+        {
+          "name": "nameOfBlock",
+          "value": "\"A864EG9714EA011\"",
+          "excluded": false
+        },
+        {
+          "name": "parametr",
+          "value": "\"withHours\"",
+          "excluded": false
+        }
+      ],
+      "start": 1766550473917,
+      "stop": 1766550504166
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreatingBlockWithOtherData.jpg",
+      "source": "79fb3272-1409-4f65-8d6b-92150a0d3e7f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "f35dbc48-e886-4f72-af5e-1e466d84328b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "parameter",
+      "value": "\"withHours\"",
+      "excluded": false
+    }
+  ],
+  "start": 1766550458884,
+  "stop": 1766550504252
+}
