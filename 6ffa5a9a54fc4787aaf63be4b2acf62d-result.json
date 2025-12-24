@@ -1,0 +1,343 @@
+{
+  "uuid": "1510678a-4fa2-46b9-b4fa-c1d8fd1e97c3",
+  "historyId": "aee0808ccb282d7c9685a6614eb4f54c",
+  "testCaseId": "abae5c128adfa4a6ae28364a46e733e7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.CheckResultOfPassingDependOnSettings(System.String,System.Int32,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "87cb02cd5e67"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckResultOfPassingDependOnSettings"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityStatusWithTwoOrMoreAttemptsTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Прохождение теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Результат тестирования в попытках зависит от настройки За последнюю попытку в индивидуальной контрольной",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <svg data-v-88af4abf=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" fill=\"none\" id=\"expand36957\" class=\"\" aria-hidden=\"true\">...</svg> is not clickable at point (1112, 519). Other element would receive the click: <div data-v-bdeb60c3=\"\" class=\"q-card call-block q-pt-sm q-pb-lg q-pl-sm q-pr-sm q-card\">...</div>\n  (Session info: chrome=140.0.7339.127)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_TestResultsDependOnLastTrySetting_100666231_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.TestResultsDependOnLastTrySetting()\n   at OdinUiTests.Pages.ActivityCommonPage.CheckTestResultsDependOnSetting(String attemptSetting) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1074\n   at OdinUiTests.Tests.Activity.TestActivityStatusWithTwoOrMoreAttemptsTests.CheckResultOfPassingDependOnSettings(String actId, Int32 evaluation, String attemptSetting) in /azp/_work/1/s/Tests/Activity/TestActivityTests.cs:line 697\n   at InvokeStub_TestActivityStatusWithTwoOrMoreAttemptsTests.CheckResultOfPassingDependOnSettings(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonPage.TestResultDependOnSettings(Int32 attempts, String attemptSettings, Int32 minThresold) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1088\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_TestResultsDependOnLastTrySetting_100666231_o() in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1066\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_TestResultsDependOnLastTrySetting_100666231_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"5209\"",
+          "excluded": false
+        }
+      ],
+      "start": 1766554324663,
+      "stop": 1766554325500
+    },
+    {
+      "name": "Пройти одну попытку прохождения теста",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Перейти к тесту' со страницы активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766554325500,
+          "stop": 1766554334780
+        },
+        {
+          "name": "Нажать на кнопку 'Приступить'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766554334781,
+          "stop": 1766554340949
+        },
+        {
+          "name": "Ответить на все вопросы и ожидать появления фразы 'Сохранено успешно'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766554340950,
+          "stop": 1766554355804
+        },
+        {
+          "name": "Нажать на кнопку 'Отправить на проверку'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766554355804,
+          "stop": 1766554356382
+        },
+        {
+          "name": "Нажать на кнопку 'Отправить на проверку' в модалке",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766554356382,
+          "stop": 1766554364205
+        },
+        {
+          "name": "Нажать на кнопку 'Пройти еще раз'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766554364205,
+          "stop": 1766554366485
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766554325500,
+      "stop": 1766554366485
+    },
+    {
+      "name": "Пройти еще одну попытку прохождения теста",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Приступить'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766554366485,
+          "stop": 1766554372589
+        },
+        {
+          "name": "Ответить на все вопросы и ожидать появления фразы 'Сохранено успешно'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766554372589,
+          "stop": 1766554391377
+        },
+        {
+          "name": "Нажать на кнопку 'Отправить на проверку'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766554391377,
+          "stop": 1766554391612
+        },
+        {
+          "name": "Нажать на кнопку 'Отправить на проверку' в модалке",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766554391612,
+          "stop": 1766554398365
+        },
+        {
+          "name": "Нажать на кнопку 'К активности'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766554398365,
+          "stop": 1766554405867
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766554366485,
+      "stop": 1766554405867
+    },
+    {
+      "name": "Проверка того, что результаты теста зависят от настройки теста 'За последнюю попытку'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <svg data-v-88af4abf=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" fill=\"none\" id=\"expand36957\" class=\"\" aria-hidden=\"true\">...</svg> is not clickable at point (1112, 519). Other element would receive the click: <div data-v-bdeb60c3=\"\" class=\"q-card call-block q-pt-sm q-pb-lg q-pl-sm q-pr-sm q-card\">...</div>\n  (Session info: chrome=140.0.7339.127)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <svg data-v-88af4abf=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" fill=\"none\" id=\"expand36957\" class=\"\" aria-hidden=\"true\">...</svg> is not clickable at point (1112, 519). Other element would receive the click: <div data-v-bdeb60c3=\"\" class=\"q-card call-block q-pt-sm q-pb-lg q-pl-sm q-pr-sm q-card\">...</div>\n  (Session info: chrome=140.0.7339.127)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonPage.TestResultDependOnSettings(Int32 attempts, String attemptSettings, Int32 minThresold) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1088\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_TestResultsDependOnLastTrySetting_100666231_o() in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 1066\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_TestResultsDependOnLastTrySetting_100666231_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766554405868,
+      "stop": 1766554415570
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckResultOfPassingDependOnSettings.jpg",
+      "source": "5882c5a1-55b8-40dd-a20e-abfcf6cf271f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "05c5a9b6-4572-4c45-9f03-08ea98970f14-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "actId",
+      "value": "\"5209\"",
+      "excluded": false
+    },
+    {
+      "name": "evaluation",
+      "value": "2",
+      "excluded": false
+    },
+    {
+      "name": "attemptSetting",
+      "value": "\"lastTry\"",
+      "excluded": false
+    }
+  ],
+  "start": 1766554322783,
+  "stop": 1766554416076
+}
