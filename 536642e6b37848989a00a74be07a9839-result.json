@@ -1,0 +1,143 @@
+{
+  "uuid": "7f3f9e6d-5ee7-429f-8030-59bd8ddd4442",
+  "historyId": "60d9ffcb44f1d81a26ed4da887f1ed26",
+  "testCaseId": "00274d10fd04efc9ef3624854ea5cc6d",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckChangeDisciplineChatRoomStatus()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "0d2ce73e582e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckChangeDisciplineChatRoomStatus"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно изменить доступ к чату комнаты дисциплины",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Exception : Полученный статус не соответствует выбранному",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditChatRoomStatus_100666425_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.EditChatRoomStatus(Boolean isClosedRoom)\n   at OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckChangeDisciplineChatRoomStatus() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 328\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--Exception\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditChatRoomStatus_100666425_o(Boolean isClosedRoom) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1050\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditChatRoomStatus_100666425_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"4056626\"",
+          "excluded": false
+        }
+      ],
+      "start": 1766638565244,
+      "stop": 1766638566866
+    },
+    {
+      "name": "Нажать на тридот меню и выбрать 'Редактировать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766638566866,
+      "stop": 1766638572855
+    },
+    {
+      "name": "Поменять значение в поле 'Доступ к комнате' в появившемся окне",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Полученный статус не соответствует выбранному",
+        "trace": "System.Exception: Полученный статус не соответствует выбранному\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditChatRoomStatus_100666425_o(Boolean isClosedRoom) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1050\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_EditChatRoomStatus_100666425_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isClosedRoom",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1766638572855,
+      "stop": 1766638574766
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckChangeDisciplineChatRoomStatus.jpg",
+      "source": "93c7d274-7af5-4744-a88e-c59af8c36590-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "9452987e-c446-4749-a746-c61555eb8a8f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1766638564776,
+  "stop": 1766638575865
+}
