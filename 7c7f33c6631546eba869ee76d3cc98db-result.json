@@ -1,0 +1,141 @@
+{
+  "uuid": "249e4fb4-e9f5-4a09-adff-5272cb5ae6a8",
+  "historyId": "4f4656f7256df57f754217afbcaa0c6d",
+  "testCaseId": "db1b0fc289c5c481a3a4b66f73123302",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.TestTrainBlocksAndVariantsValidationTests.CheckRemoveTestTrainQuestion()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "74646b99d5a5"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckRemoveTestTrainQuestion"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTrainBlocksAndVariantsValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Материал"
+    },
+    {
+      "name": "subSuite",
+      "value": "Конструктор тест-тренажера"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Материал"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Конструктор теста-тренажера: можно удалить вопрос",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementNotInteractableException : element not interactable\n  (Session info: chrome=140.0.7339.127)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.TestCommonEditPage.__a$_around_ClickOnThreeDotsInLastQuestion_100667258_w_0(Object[])\n   at OdinUiTests.Pages.TestCommonEditPage.ClickOnThreeDotsInLastQuestion()\n   at OdinUiTests.Tests.Library.TestCreateEditCommon.RemoveQuestion(IWebDriver driver, String id) in /azp/_work/3/s/Tests/Library/TestCreateEditCommon.cs:line 440\n   at OdinUiTests.Tests.Library.TestTrainBlocksAndVariantsValidationTests.CheckRemoveTestTrainQuestion() in /azp/_work/3/s/Tests/Library/TestTrainCreateEditTests.cs:line 170\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementNotInteractableException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.TestCommonEditPage.__a$_around_ClickOnThreeDotsInLastQuestion_100667258_o() in /azp/_work/3/s/Pages/TestCommonEditPage.cs:line 576\n   at OdinUiTests.Pages.TestCommonEditPage.__a$_around_ClickOnThreeDotsInLastQuestion_100667258_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу материала",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"69826\"",
+          "excluded": false
+        }
+      ],
+      "start": 1766726598021,
+      "stop": 1766726599239
+    },
+    {
+      "name": "Нажать на кнопку “Редактировать”",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766726609450,
+      "stop": 1766726614885
+    },
+    {
+      "name": "Нажать на троеточие последнего вопроса",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element not interactable\n  (Session info: chrome=140.0.7339.127)",
+        "trace": "OpenQA.Selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome=140.0.7339.127)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.TestCommonEditPage.__a$_around_ClickOnThreeDotsInLastQuestion_100667258_o() in /azp/_work/3/s/Pages/TestCommonEditPage.cs:line 576\n   at OdinUiTests.Pages.TestCommonEditPage.__a$_around_ClickOnThreeDotsInLastQuestion_100667258_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766726614885,
+      "stop": 1766726618313
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckRemoveTestTrainQuestion.jpg",
+      "source": "b2ce038b-21d4-4283-8c1c-a9ea082f5cba-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "b4c98b96-883b-42f7-8c1e-f79276ffd86e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1766726598020,
+  "stop": 1766726618425
+}
