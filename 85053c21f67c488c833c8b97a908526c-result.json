@@ -1,0 +1,158 @@
+{
+  "uuid": "d02a7640-f5f2-4886-a232-293440d4a32f",
+  "historyId": "04e156b87f92b6b5c25f0a5a8b250b67",
+  "testCaseId": "6894c71232d2348be39184f83b10d5e2",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.UserProfile.AddressAndContactsEditingTests.CheckUnlockContactFieldsAfterInterPassword()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "ad0b787872fb"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.UserProfile"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckUnlockContactFieldsAfterInterPassword"
+    },
+    {
+      "name": "testClass",
+      "value": "AddressAndContactsEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Профиль"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Профиль"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование профиля пользователя: после ввода пароля можно разблокировать полей 'Контакты'",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_ContactsFieldIsNotDisable_100667348_w_0(Object[])\n   at OdinUiTests.Pages.UserProfilePage.ContactsFieldIsNotDisable()\n   at OdinUiTests.Tests.UserProfile.AddressAndContactsEditingTests.CheckUnlockContactFieldsAfterInterPassword() in /azp/_work/1/s/Tests/UserProfile/UserProfileTests.cs:line 261\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_ContactsFieldIsNotDisable_100667348_o() in /azp/_work/1/s/Pages/UserProfilePage.cs:line 457\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_ContactsFieldIsNotDisable_100667348_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу профиля пользователя",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"36855\"",
+          "excluded": false
+        }
+      ],
+      "start": 1766719161235,
+      "stop": 1766719161523
+    },
+    {
+      "name": "Нажать на кнопку 'Редактировать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766719161523,
+      "stop": 1766719168110
+    },
+    {
+      "name": "Разблокировать поля 'Контакты'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "user",
+          "value": "13",
+          "excluded": false
+        }
+      ],
+      "start": 1766719168110,
+      "stop": 1766719170064
+    },
+    {
+      "name": "Проверка того, что поля 'Контакты' кликабельны",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_ContactsFieldIsNotDisable_100667348_o() in /azp/_work/1/s/Pages/UserProfilePage.cs:line 457\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_ContactsFieldIsNotDisable_100667348_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766719170065,
+      "stop": 1766719200312
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckUnlockContactFieldsAfterInterPassword.jpg",
+      "source": "51a08de9-1314-4b49-8983-38ab5cd928c8-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "31699b66-d26e-4033-a489-bf875a272505-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1766719161232,
+  "stop": 1766719200412
+}

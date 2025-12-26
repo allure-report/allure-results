@@ -1,0 +1,135 @@
+{
+  "uuid": "421b919e-fe8b-466f-bb45-3b20f7fa404a",
+  "historyId": "b2bdf4a3c866876ffeea9094faeab3c6",
+  "testCaseId": "7596084d62d2f3feb4ec94a30773086c",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskWithoutSolutionStudentTests.CheckSendEmptySolution()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "ad0b787872fb"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendEmptySolution"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskWithoutSolutionStudentTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница решения задания для студента"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Появление ошибки при отправке пустого решения",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1175, 914). Other element would receive the click: <div data-v-bdeb60c3=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=140.0.7339.127)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnSendSolutionButton_100666285_w_0(Object[])\n   at OdinUiTests.Pages.ActivitySolutionPage.ClickOnSendSolutionButton()\n   at OdinUiTests.Tests.Activity.TaskWithoutSolutionStudentTests.CheckSendEmptySolution() in /azp/_work/1/s/Tests/Activity/TaskActivityTests.cs:line 33\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnSendSolutionButton_100666285_o() in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 305\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnSendSolutionButton_100666285_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу решения задания",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"2115530\"",
+          "excluded": false
+        },
+        {
+          "name": "studentName",
+          "value": "\"Smith\"",
+          "excluded": false
+        }
+      ],
+      "start": 1766717130923,
+      "stop": 1766717132723
+    },
+    {
+      "name": "Нажать на кнопку 'Отправить решение' на странице решения задания",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1175, 914). Other element would receive the click: <div data-v-bdeb60c3=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=140.0.7339.127)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1175, 914). Other element would receive the click: <div data-v-bdeb60c3=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=140.0.7339.127)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnSendSolutionButton_100666285_o() in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 305\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnSendSolutionButton_100666285_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766717132723,
+      "stop": 1766717143892
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendEmptySolution.jpg",
+      "source": "9c08e490-d704-4038-9b44-dac90c0e7e9f-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "9037d9a7-ad2e-4f5f-a435-a64fdb1b5f7e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1766717130922,
+  "stop": 1766717144524
+}
