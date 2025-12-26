@@ -1,0 +1,175 @@
+{
+  "uuid": "0556d31f-4d95-49a4-a33c-1528b2499785",
+  "historyId": "6cc765a5131769192c22a52f21bc68de",
+  "testCaseId": "7aae962d4f7bb201b925c86a0123e1a3",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.LibraryInListViewTests.CheckMoveMaterialViaActionsButton()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "b036a6efd035"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckMoveMaterialViaActionsButton"
+    },
+    {
+      "name": "testClass",
+      "value": "LibraryInListViewTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Библиотека, списочный вид: можно переместить материал через actions-кнопки",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Exception : Удаленная сущность не исчезает из библиотеки",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveMaterialToCatalog_100666977_w_0(Object[])\n   at OdinUiTests.Pages.LibraryPage.MoveMaterialToCatalog(String materialName, Boolean isRightClick)\n   at OdinUiTests.Tests.Library.LibraryInListViewTests.CheckMoveMaterialViaActionsButton() in /azp/_work/2/s/Tests/Library/UserLibraryTests.cs:line 402\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--Exception\n   at OdinUiTests.Pages.LibraryPage.CheckMaterialsOrCatalogIsRemoved(String name, Int32 count, Boolean isCatalog) in /azp/_work/2/s/Pages/LibraryPage.cs:line 493\n   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveMaterialToCatalog_100666977_o(String materialName, Boolean isRightClick) in /azp/_work/2/s/Pages/LibraryPage.cs:line 211\n   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveMaterialToCatalog_100666977_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"20\"",
+          "excluded": false
+        }
+      ],
+      "start": 1766725886341,
+      "stop": 1766725886639
+    },
+    {
+      "name": "Переключить текущий вид Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "withRefresh",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "mode",
+          "value": "\"Список\"",
+          "excluded": false
+        }
+      ],
+      "start": 1766725886639,
+      "stop": 1766725895038
+    },
+    {
+      "name": "Переместить материал в другой каталог",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Удаленная сущность не исчезает из библиотеки",
+        "trace": "System.Exception: Удаленная сущность не исчезает из библиотеки\n   at OdinUiTests.Pages.LibraryPage.CheckMaterialsOrCatalogIsRemoved(String name, Int32 count, Boolean isCatalog) in /azp/_work/2/s/Pages/LibraryPage.cs:line 493\n   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveMaterialToCatalog_100666977_o(String materialName, Boolean isRightClick) in /azp/_work/2/s/Pages/LibraryPage.cs:line 211\n   at OdinUiTests.Pages.LibraryPage.__a$_around_MoveMaterialToCatalog_100666977_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Проверка существование каталога в Библиотеке",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766725917063,
+          "stop": 1766725928247
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "materialName",
+          "value": "\"Новый тест123\"",
+          "excluded": false
+        },
+        {
+          "name": "isRightClick",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1766725911467,
+      "stop": 1766725959648
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckMoveMaterialViaActionsButton.jpg",
+      "source": "3f6241be-3c20-4adb-9308-834dcdd38f6e-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "24395d65-edb2-44f9-9fa2-27426f937213-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1766725886337,
+  "stop": 1766725960256
+}

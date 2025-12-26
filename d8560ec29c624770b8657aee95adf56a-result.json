@@ -1,0 +1,210 @@
+{
+  "uuid": "5f392c33-f0de-4519-91e7-422d28a58b3c",
+  "historyId": "4e8228aaffc4fac4d0ed3e32afb00762",
+  "testCaseId": "0b219fb438de00090a56cd527b822bf0",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.ActivityDurationTests.CheckEditActivityVolumeWithIncorrectValue(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "b036a6efd035"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditActivityVolumeWithIncorrectValue"
+    },
+    {
+      "name": "testClass",
+      "value": "ActivityDurationTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Обычная активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование активности"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Отображение ошибки валидации для поля Объем в академических часах со значением больше 100",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 5 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[role='alert']\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_CheckErrorAlertIsAppear_100666125_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonEditPage.CheckErrorAlertIsAppear()\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolumeWithIncorrectValue(IWebDriver driver, Boolean isTemplate, String id, String volume) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 592\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolumeWithIncorrectValueInActivity(IWebDriver driver, String activityId, String volume) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 596\n   at OdinUiTests.Tests.Activity.ActivityDurationTests.CheckEditActivityVolumeWithIncorrectValue(String volume) in /azp/_work/2/s/Tests/Activity/ActivityTests.cs:line 565\n   at InvokeStub_ActivityDurationTests.CheckEditActivityVolumeWithIncorrectValue(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_CheckErrorAlertIsAppear_100666125_o() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 1027\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_CheckErrorAlertIsAppear_100666125_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "activityId",
+              "value": "\"377\"",
+              "excluded": false
+            }
+          ],
+          "start": 1766724641224,
+          "stop": 1766724641642
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"377\"",
+          "excluded": false
+        }
+      ],
+      "start": 1766724641224,
+      "stop": 1766724641642
+    },
+    {
+      "name": "В поле 'Объем в академических часах' ввести значение 110",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766724641642,
+      "stop": 1766724663989
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить' и подтвердить сохранение",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766724663989,
+          "stop": 1766724671907
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1766724663989,
+      "stop": 1766724671907
+    },
+    {
+      "name": "Проверка отображения ошибки валидации",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 5 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 5 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[role='alert']\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_CheckErrorAlertIsAppear_100666125_o() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 1027\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_CheckErrorAlertIsAppear_100666125_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766724671907,
+      "stop": 1766724677157
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditActivityVolumeWithIncorrectValue.jpg",
+      "source": "9cac3220-884b-4a25-af9b-97288eaa389a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "7eafac9a-19c4-455b-9c48-55a6c4f6d461-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "volume",
+      "value": "\">100\"",
+      "excluded": false
+    }
+  ],
+  "start": 1766724641224,
+  "stop": 1766724677363
+}
