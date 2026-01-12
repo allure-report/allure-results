@@ -1,0 +1,143 @@
+{
+  "uuid": "733cf781-ba6b-48e9-86a7-56545aed4fdd",
+  "historyId": "39f0f4e634f7cc87ea9ccdda3afe8824",
+  "testCaseId": "91009728b66897a34d58e4563bfa9a11",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.CheckSendExamToArchive()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "2fd572cc7475"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendExamToArchive"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Отправка экзамена в архив",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[text()='Отправить в архив']\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnArchiveButton_100667134_w_0(Object[])\n   at OdinUiTests.Pages.ProgramInfoPage.ClickOnArchiveButton()\n   at OdinUiTests.Tests.Exams.ExamCreateEditTests.CheckSendExamToArchive() in /azp/_work/1/s/Tests/Exams/TestCenterTests.cs:line 223\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnArchiveButton_100667134_o() in /azp/_work/1/s/Pages/ProgramInfoPage.cs:line 140\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnArchiveButton_100667134_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"18488\"",
+          "excluded": false
+        }
+      ],
+      "start": 1768191352497,
+      "stop": 1768191352729
+    },
+    {
+      "name": "Нажать на тридот экзамена по ее названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "examName",
+          "value": "\"C10DFDE2220826B\"",
+          "excluded": false
+        }
+      ],
+      "start": 1768191352730,
+      "stop": 1768191353349
+    },
+    {
+      "name": "Нажать на тридот экзамена по ее названию",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[text()='Отправить в архив']\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnArchiveButton_100667134_o() in /azp/_work/1/s/Pages/ProgramInfoPage.cs:line 140\n   at OdinUiTests.Pages.ProgramInfoPage.__a$_around_ClickOnArchiveButton_100667134_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1768191353350,
+      "stop": 1768191383660
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendExamToArchive.jpg",
+      "source": "d2c1aacb-b8ce-4abf-8f59-dd2c05477b7a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "17662a44-7857-4a9f-a4c3-7411bb24d2b6-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1768191351958,
+  "stop": 1768191383806
+}
