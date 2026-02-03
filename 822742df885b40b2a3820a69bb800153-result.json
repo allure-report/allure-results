@@ -1,0 +1,230 @@
+{
+  "uuid": "cf24569a-22d5-4aca-a6a4-dba02eb645e3",
+  "historyId": "1f6f64720fc5fbdcd9657037bed27386",
+  "testCaseId": "57071a05f58a8c66d87ca6f1017d1653",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityAddingTests.CheckAddFileToControlTypeActivity()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "c1d9f76ca07f"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddFileToControlTypeActivity"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityAddingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно загрузить материал типа Файл с компьютера в контрольную",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class*='q-page activity'] [href*='Content/Info']\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitAndFind(IWebDriver driver, By selector, Int32 timeoutSeconds) in /azp/_work/3/s/Services/CommonService.cs:line 848\n   at OdinUiTests.Pages.ActivityCommonPage.<>c__DisplayClass125_0.<CheckMaterialIsAdded>b__0() in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 800\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonPage.CheckMaterialIsAdded(String type, Boolean isUploading, Boolean isTemplate, String name) in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 798\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddFileMaterial(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 62\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddFileMaterialToActivity(IWebDriver driver, String activityId) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 72\n   at OdinUiTests.Tests.Activity.TestActivityAddingTests.CheckAddFileToControlTypeActivity() in /azp/_work/3/s/Tests/Activity/TestActivityTests.cs:line 118\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "activityId",
+              "value": "\"10085\"",
+              "excluded": false
+            }
+          ],
+          "start": 1770096150603,
+          "stop": 1770096151544
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"10085\"",
+          "excluded": false
+        }
+      ],
+      "start": 1770096150603,
+      "stop": 1770096151544
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить материалы'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770096151544,
+      "stop": 1770096160573
+    },
+    {
+      "name": "Загрузить материал типа 'Файл' с компьютера",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"download.jpg\"",
+          "excluded": false
+        }
+      ],
+      "start": 1770096160574,
+      "stop": 1770096166043
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить' и подтвердить сохранение",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770096166043,
+          "stop": 1770096171832
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1770096166043,
+      "stop": 1770096171832
+    },
+    {
+      "name": "Проверка того, что материал типа 'Файл' был загружен в активность",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class*='q-page activity'] [href*='Content/Info']\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitAndFind(IWebDriver driver, By selector, Int32 timeoutSeconds) in /azp/_work/3/s/Services/CommonService.cs:line 848\n   at OdinUiTests.Pages.ActivityCommonPage.<>c__DisplayClass125_0.<CheckMaterialIsAdded>b__0() in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 800\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonPage.CheckMaterialIsAdded(String type, Boolean isUploading, Boolean isTemplate, String name) in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 798\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddFileMaterial(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 62\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddFileMaterialToActivity(IWebDriver driver, String activityId) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 72\n   at OdinUiTests.Tests.Activity.TestActivityAddingTests.CheckAddFileToControlTypeActivity() in /azp/_work/3/s/Tests/Activity/TestActivityTests.cs:line 118\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770096171832,
+      "stop": 1770096202202
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddFileToControlTypeActivity.jpg",
+      "source": "5ec1a3fa-3e4d-4ebd-a8a7-c0b60777e948-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "1dbc46b7-13a0-484e-9ce6-e6515f9e6eb1-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1770096147922,
+  "stop": 1770096202604
+}
