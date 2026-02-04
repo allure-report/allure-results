@@ -1,0 +1,222 @@
+{
+  "uuid": "2c1b91ba-5ca8-4687-ab41-83ccedcd68ba",
+  "historyId": "bc4f47aa481c86be9ca81629edb16228",
+  "testCaseId": "89184c9ff7fcb0e355da1a70628ed050",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Library.RemovingTemplatesTests.CheckDeleteDisciplineTemplateFromWhichDisciplineIsCreated()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "e74c2a464774"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Library"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteDisciplineTemplateFromWhichDisciplineIsCreated"
+    },
+    {
+      "name": "testClass",
+      "value": "RemovingTemplatesTests"
+    },
+    {
+      "name": "suite",
+      "value": "Библиотека"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Библиотека"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Страница библиотеки: можно удалить шаблон дисциплины по которому была создана дисциплина",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(@class,'content-item')]//span[contains(text(),'Длинное название дисциплины')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveMaterial_100666979_w_0(Object[])\n   at OdinUiTests.Pages.LibraryPage.RemoveMaterial(String materialName, Boolean withRightClick)\n   at OdinUiTests.Tests.Library.RemovingTemplatesTests.CheckDeleteDisciplineTemplateFromWhichDisciplineIsCreated() in /azp/_work/1/s/Tests/Library/UserLibraryTests.cs:line 580\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.LibraryPage.ScrollUntilMaterialOrCatalogIsInView(Boolean isMaterial, String name) in /azp/_work/1/s/Pages/LibraryPage.cs:line 555\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveMaterial_100666979_o(String materialName, Boolean withRightClick) in /azp/_work/1/s/Pages/LibraryPage.cs:line 139\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveMaterial_100666979_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"345\"",
+          "excluded": false
+        }
+      ],
+      "start": 1770164830119,
+      "stop": 1770164830478
+    },
+    {
+      "name": "Открыть каталог по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "dirName",
+          "value": "\"Длинное название дисциплины\"",
+          "excluded": false
+        }
+      ],
+      "start": 1770164830478,
+      "stop": 1770164836889
+    },
+    {
+      "name": "Удалить материал из Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "materialName",
+          "value": "\"Длинное название дисциплины\"",
+          "excluded": false
+        },
+        {
+          "name": "withRightClick",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1770164836889,
+      "stop": 1770164854506
+    },
+    {
+      "name": "Открыть страницу Библиотеки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"18927\"",
+          "excluded": false
+        }
+      ],
+      "start": 1770164854506,
+      "stop": 1770164854716
+    },
+    {
+      "name": "Открыть каталог по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "dirName",
+          "value": "\"Длинное название дисциплины\"",
+          "excluded": false
+        }
+      ],
+      "start": 1770164854716,
+      "stop": 1770164861014
+    },
+    {
+      "name": "Удалить материал из Библиотеки",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(@class,'content-item')]//span[contains(text(),'Длинное название дисциплины')]\"}\n  (Session info: chrome=140.0.7339.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Pages.LibraryPage.ScrollUntilMaterialOrCatalogIsInView(Boolean isMaterial, String name) in /azp/_work/1/s/Pages/LibraryPage.cs:line 555\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveMaterial_100666979_o(String materialName, Boolean withRightClick) in /azp/_work/1/s/Pages/LibraryPage.cs:line 139\n   at OdinUiTests.Pages.LibraryPage.__a$_around_RemoveMaterial_100666979_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "materialName",
+          "value": "\"Длинное название дисциплины\"",
+          "excluded": false
+        },
+        {
+          "name": "withRightClick",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1770164861014,
+      "stop": 1770164902324
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDeleteDisciplineTemplateFromWhichDisciplineIsCreated.jpg",
+      "source": "92ca14e1-dbc5-4371-9f0c-1515807ca39a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "d8169a7c-a445-4a63-ba9f-471eae8bb270-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1770164823482,
+  "stop": 1770164902673
+}
