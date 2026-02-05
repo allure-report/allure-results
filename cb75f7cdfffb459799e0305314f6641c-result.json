@@ -1,0 +1,213 @@
+{
+  "uuid": "e3d177fd-072a-4a2c-9452-c997cead52f2",
+  "historyId": "694386f50d99e19297f790589132da19",
+  "testCaseId": "a52e900ec6213abc05cbd450673f1513",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomMiniChatTests.CheckChangeDisciplineChatRoomNameInMinichat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "76d8cadcb44b"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckChangeDisciplineChatRoomNameInMinichat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomMiniChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно изменить название добавленной комнаты в миничате",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.Exception : Текст уведомления не совпадает с текстом 'Чат успешно изменен'",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSaveButton_100666402_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.ClickOnSaveButton()\n   at OdinUiTests.Tests.Chat.ChatCommon.EditNameOfChat(IWebDriver driver, String chatId, Boolean isDisRoom, Boolean isMinichat) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 510\n   at OdinUiTests.Tests.Chat.ChatCommon.EditNameOfDisRoomChatInMinichat(IWebDriver driver, String chatId) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 530\n   at OdinUiTests.Tests.Chat.DisciplineRoomMiniChatTests.CheckChangeDisciplineChatRoomNameInMinichat() in /azp/_work/1/s/Tests/Chat/MiniChatTests.cs:line 315\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--Exception\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSaveButton_100666402_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 763\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSaveButton_100666402_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770258595277,
+      "stop": 1770258596456
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770258596456,
+      "stop": 1770258600647
+    },
+    {
+      "name": "В панели чатов найти дисциплину по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"История\"",
+          "excluded": false
+        }
+      ],
+      "start": 1770258600647,
+      "stop": 1770258646573
+    },
+    {
+      "name": "Нажать на выпадающий список комнат",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770258646573,
+      "stop": 1770258647339
+    },
+    {
+      "name": "Выбрать добавленную комнату чата дисциплины по названию",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"7D8FDED07A36G39\"",
+          "excluded": false
+        }
+      ],
+      "start": 1770258647339,
+      "stop": 1770258647962
+    },
+    {
+      "name": "Нажать на тридот меню и выбрать 'Редактировать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770258647962,
+      "stop": 1770258650048
+    },
+    {
+      "name": "Отредактировать значение в поле 'Название комнаты' в появившемся окне",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770258650048,
+      "stop": 1770258657960
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Текст уведомления не совпадает с текстом 'Чат успешно изменен'",
+        "trace": "System.Exception: Текст уведомления не совпадает с текстом 'Чат успешно изменен'\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSaveButton_100666402_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 763\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnSaveButton_100666402_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770258657960,
+      "stop": 1770258659251
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckChangeDisciplineChatRoomNameInMinichat.jpg",
+      "source": "9f1307c3-e53b-4c93-ace7-974768b89538-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "5fa3764d-e329-47c8-bdf6-4714ff341a8e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1770258595277,
+  "stop": 1770258659779
+}
