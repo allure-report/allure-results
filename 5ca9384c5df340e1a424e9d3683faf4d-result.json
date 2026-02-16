@@ -1,0 +1,135 @@
+{
+  "uuid": "d1370835-a37f-477f-bef2-b80deb6639ef",
+  "historyId": "9f70348833465ec9075236a1dac4b6b8",
+  "testCaseId": "0e54ef4620af3863f8ea6c147112a5fd",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatTests.CheckAddGroupChatWithUsers()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "5220c41d9935"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddGroupChatWithUsers"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно добавить новый групповой чат для групп и студентов",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div class=\"q-tab__label\">...</div> is not clickable at point (858, 289). Other element would receive the click: <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Название чата*\" id=\"f_5cd2dd46-747c-4b44-ab93-a5e1cf60b643\" type=\"text\">\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnGroupTab_100666412_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.ClickOnGroupTab()\n   at OdinUiTests.Tests.Chat.ChatCommon.AddGroupChatWithUsers(IWebDriver driver, Int32 cohortId, Int32 groupId) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 758\n   at OdinUiTests.Tests.Chat.GroupChatTests.CheckAddGroupChatWithUsers() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 788\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnGroupTab_100666412_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 852\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnGroupTab_100666412_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть список чатов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771225824126,
+      "stop": 1771225825221
+    },
+    {
+      "name": "Нажать на кнопку добавления чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771225825222,
+      "stop": 1771225827720
+    },
+    {
+      "name": "Выбрать групповой чат",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <div class=\"q-tab__label\">...</div> is not clickable at point (858, 289). Other element would receive the click: <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Название чата*\" id=\"f_5cd2dd46-747c-4b44-ab93-a5e1cf60b643\" type=\"text\">\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <div class=\"q-tab__label\">...</div> is not clickable at point (858, 289). Other element would receive the click: <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Название чата*\" id=\"f_5cd2dd46-747c-4b44-ab93-a5e1cf60b643\" type=\"text\">\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnGroupTab_100666412_o() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 852\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ClickOnGroupTab_100666412_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771225827720,
+      "stop": 1771225828919
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddGroupChatWithUsers.jpg",
+      "source": "aa6cd6cd-e20a-4fd8-b5d4-22c8a08ad8bc-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "7cc7f926-0a8d-4371-ab95-7eaf3e625f0d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1771225804225,
+  "stop": 1771225829102
+}
