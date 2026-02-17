@@ -1,0 +1,188 @@
+{
+  "uuid": "7e728c32-3efb-4976-a620-8fd5ba51985d",
+  "historyId": "6e8bf03df5971c037fd4db8425490a5a",
+  "testCaseId": "603d5319feb7b5d7129e38d46c646bfd",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.UserProfile.GeneralUserInfoEditingTests.CheckUserNameFiledsInTransliteration()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "a52902320b44"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.UserProfile"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckUserNameFiledsInTransliteration"
+    },
+    {
+      "name": "testClass",
+      "value": "GeneralUserInfoEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Профиль"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Профиль"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование профиля пользователя: можно изменить ФИО в транслитерации",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.StaleElementReferenceException : stale element reference: stale element not found in the current frame\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SwitchUserLanguageToEng_100667328_w_0(Object[])\n   at OdinUiTests.Pages.UserProfilePage.SwitchUserLanguageToEng()\n   at OdinUiTests.Tests.UserProfile.GeneralUserInfoEditingTests.CheckUserNameFiledsInTransliteration() in /azp/_work/1/s/Tests/UserProfile/UserProfileTests.cs:line 184\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--StaleElementReferenceException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.get_Displayed()\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitAndFind(IWebDriver driver, By selector, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 848\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SwitchUserLanguageToEng_100667328_o() in /azp/_work/1/s/Pages/UserProfilePage.cs:line 189\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SwitchUserLanguageToEng_100667328_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу профиля пользователя",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "id",
+          "value": "\"37065\"",
+          "excluded": false
+        }
+      ],
+      "start": 1771309570244,
+      "stop": 1771309570927
+    },
+    {
+      "name": "Нажать на кнопку 'Редактировать'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771309570927,
+      "stop": 1771309577668
+    },
+    {
+      "name": "Переключить свитч транслитерации",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771309577668,
+      "stop": 1771309578384
+    },
+    {
+      "name": "Редактировать ФИО пользователя в транслитерации",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "fullName",
+          "value": "\"JFBJED DGAIECIFEH AAICAIFE\"",
+          "excluded": false
+        }
+      ],
+      "start": 1771309578384,
+      "stop": 1771309595650
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771309595651,
+      "stop": 1771309595809
+    },
+    {
+      "name": "Переключить язык интерфейса на английский",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "stale element reference: stale element not found in the current frame\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+        "trace": "OpenQA.Selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.get_Displayed()\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at OdinUiTests.Services.CommonService.WaitAndFind(IWebDriver driver, By selector, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 848\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SwitchUserLanguageToEng_100667328_o() in /azp/_work/1/s/Pages/UserProfilePage.cs:line 189\n   at OdinUiTests.Pages.UserProfilePage.__a$_around_SwitchUserLanguageToEng_100667328_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771309595809,
+      "stop": 1771309596447
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckUserNameFiledsInTransliteration.jpg",
+      "source": "2784cfe7-4edd-4e5a-9592-d79c8caf7bbd-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "1de2084e-e84c-4407-812d-8ad470bfb656-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1771309570244,
+  "stop": 1771309596682
+}

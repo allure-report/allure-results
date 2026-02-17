@@ -1,0 +1,160 @@
+{
+  "uuid": "f047acb9-605c-492c-b3ed-c6cb6e4ef187",
+  "historyId": "f1902c83841ddc7b3fa1796865892fde",
+  "testCaseId": "946f81cd5d5de98c0b04249b9852c56a",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineChatTests.CheckCallInDisciplineChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "a52902320b44"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCallInDisciplineChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно сделать звонок в чате дисциплины",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.UnhandledAlertException : unexpected alert open: {Alert text : Failed to create WebGL canvas context when passing video frame.}\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.GetScreenshot()\n   at OdinUiTests.Pages.CallPage.GetScreenshotIfTestFailsBeforeEndOfCall() in /azp/_work/1/s/Pages/CallPage.cs:line 176\n   at OdinUiTests.Pages.CallPage.ClickOnEndCallButton() in /azp/_work/1/s/Pages/CallPage.cs:line 184\n   at OdinUiTests.Tests.Chat.ChatCommon.CallInChat(IWebDriver driver, String chatId, Boolean isMinichat, Boolean isAdminStartCall) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 215\n   at OdinUiTests.Tests.Chat.ChatCommon.CallInChat(IWebDriver driver, String chatId) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 221\n   at OdinUiTests.Tests.Chat.DisciplineChatTests.CheckCallInDisciplineChat() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 64\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"1768\"",
+          "excluded": false
+        }
+      ],
+      "start": 1771308212213,
+      "stop": 1771308213530
+    },
+    {
+      "name": "Нажать на кнопку звонка в чате",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771308213530,
+      "stop": 1771308219553
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771308227456,
+      "stop": 1771308242353
+    },
+    {
+      "name": "Проверка того, что звонок был начат",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isAdminStartCall",
+          "value": "true",
+          "excluded": false
+        }
+      ],
+      "start": 1771308242353,
+      "stop": 1771308243552
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCallInDisciplineChat.jpg",
+      "source": "ba23814d-3661-4396-aa07-62f0fe8e6b84-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "76bb08ce-5f7d-4ccf-8809-be91a91d645a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1771308212212,
+  "stop": 1771308245080
+}
