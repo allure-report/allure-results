@@ -1,0 +1,126 @@
+{
+  "uuid": "251351e6-c89d-481e-b0f4-95d0a9ced056",
+  "historyId": "07ae255c6a24f6ec18a193b2bc86d1af",
+  "testCaseId": "1405047b821754dcda6b388bab18186f",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupChatTests.CheckDisciplineRoomIsOpened()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "f989ede689ee"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDisciplineRoomIsOpened"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Групповой чат"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно открыть групповой чат",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenListOfGroupsAndChooseChatByName_100666403_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.OpenListOfGroupsAndChooseChatByName(String chatName)\n   at OdinUiTests.Tests.Chat.GroupChatTests.CheckDisciplineRoomIsOpened() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 724\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.ChatCommonPage.WaitUntilSpinnersDisappearFromChat() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1079\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenListOfGroupsAndChooseChatByName_100666403_o(String chatName) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 781\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenListOfGroupsAndChooseChatByName_100666403_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть список чатов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771389823914,
+      "stop": 1771389825125
+    },
+    {
+      "name": "Открыть список групповых чатов и выбрать случайный чат",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.ChatCommonPage.WaitUntilSpinnersDisappearFromChat() in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 1079\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenListOfGroupsAndChooseChatByName_100666403_o(String chatName) in /azp/_work/1/s/Pages/ChatCommonPage.cs:line 781\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_OpenListOfGroupsAndChooseChatByName_100666403_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Маркова Светлана Константиновна\"",
+          "excluded": false
+        }
+      ],
+      "start": 1771389825126,
+      "stop": 1771389857510
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDisciplineRoomIsOpened.jpg",
+      "source": "0e2317fa-52a9-4c74-a56c-b7952512bb53-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "87679d1d-d71b-4502-a86b-274e5e6aaef6-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1771389823644,
+  "stop": 1771389857747
+}
