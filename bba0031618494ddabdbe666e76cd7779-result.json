@@ -1,0 +1,168 @@
+{
+  "uuid": "1de2ef22-6d13-41ce-aa05-fb350bffe2c0",
+  "historyId": "e1d74318970c88c370e17f3cb1044b2a",
+  "testCaseId": "4b957aa84fef5fcf41f0feba5f237657",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Organization.OrganizationEditingTests.CheckImpossibleRemoveCustomResolutionIfItInUse()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "38d0cee99da4"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Organization"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckImpossibleRemoveCustomResolutionIfItInUse"
+    },
+    {
+      "name": "testClass",
+      "value": "OrganizationEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Организация"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование организации"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Организация"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Нельзя удалить резолюцию, если она выбрана у студента в завершении обучения",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q-notification__message\"}\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_CheckErrorIsAppear_100667114_w_0(Object[])\n   at OdinUiTests.Pages.OrganizationCommonPage.CheckErrorIsAppear(Dictionary`2 resInfo)\n   at OdinUiTests.Tests.Organization.OrganizationEditingTests.CheckImpossibleRemoveCustomResolutionIfItInUse() in /azp/_work/2/s/Tests/Organization/OrganizationTests.cs:line 187\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_CheckErrorIsAppear_100667114_o(Dictionary`2 resInfo) in /azp/_work/2/s/Pages/OrganizationCommonPage.cs:line 752\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_CheckErrorIsAppear_100667114_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования организации",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "organizationId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1771480485137,
+      "stop": 1771480485423
+    },
+    {
+      "name": "Нажать на крестик рядом с добавленной пользователской резолюции",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "resInfo",
+          "value": "{\"block\":\"Приостановил\",\"text\":\"ъехубвыщ бдфу аёщжлышхф\"}",
+          "excluded": false
+        }
+      ],
+      "start": 1771480485424,
+      "stop": 1771480486685
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771480486686,
+      "stop": 1771480486783
+    },
+    {
+      "name": "Проверка того, что удаления резолюции, которая используется не сработало",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".q-notification__message\"}\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_CheckErrorIsAppear_100667114_o(Dictionary`2 resInfo) in /azp/_work/2/s/Pages/OrganizationCommonPage.cs:line 752\n   at OdinUiTests.Pages.OrganizationCommonPage.__a$_around_CheckErrorIsAppear_100667114_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "resInfo",
+          "value": "{\"block\":\"Приостановил\",\"text\":\"ъехубвыщ бдфу аёщжлышхф\"}",
+          "excluded": false
+        }
+      ],
+      "start": 1771480486783,
+      "stop": 1771480517244
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckImpossibleRemoveCustomResolutionIfItInUse.jpg",
+      "source": "5e4c8d58-9c79-497b-9c6e-17cfa9083867-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "bf23d595-c92d-44e3-abf0-fbe96ac1cc97-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1771480484362,
+  "stop": 1771480517507
+}
