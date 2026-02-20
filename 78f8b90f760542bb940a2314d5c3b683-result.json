@@ -1,0 +1,137 @@
+{
+  "uuid": "17fda385-6a58-440a-9284-1c1efa1e80ef",
+  "historyId": "4fd93db7c771d3a18afb4e31e563ae6d",
+  "testCaseId": "935462565ed62810047343214ccdd45d",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomChatCallTests.CheckSendTextMessageInDisciplineRoomCallChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "b07311325f91"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendTextMessageInDisciplineRoomCallChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomChatCallTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат звонка комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно отправить текстовое сообщение в миничате звонка комнаты дисциплины",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.UnhandledAlertException : unexpected alert open: {Alert text : Failed to create WebGL canvas context when passing video frame.}\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666319_w_0(Object[])\n   at OdinUiTests.Pages.CallPage.ClickOnChatButton()\n   at OdinUiTests.Tests.Chat.DisciplineRoomChatCallTests.SetUp() in /azp/_work/1/s/Tests/Chat/CallChatTests.cs:line 133\n   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--UnhandledAlertException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElements(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__11_1(ISearchContext context)\n   at OpenQA.Selenium.By.FindElements(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElements(By by)\n   at OdinUiTests.Services.CommonService.<>c__DisplayClass57_0.<WaitForElementOrFailOnNotification>b__0(IWebDriver drv) in /azp/_work/1/s/Services/CommonService.cs:line 832\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Services.CommonService.WaitForElementOrFailOnNotification(IWebDriver driver, By elementLocator, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 829\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666319_o() in /azp/_work/1/s/Pages/CallPage.cs:line 159\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666319_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу звонка по id чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"776804\"",
+          "excluded": false
+        }
+      ],
+      "start": 1771550849899,
+      "stop": 1771550853410
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771550853410,
+      "stop": 1771550869700
+    },
+    {
+      "name": "Нажать на кнопку чата в звонке",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "unexpected alert open: {Alert text : Failed to create WebGL canvas context when passing video frame.}\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.UnhandledAlertException: unexpected alert open: {Alert text : Failed to create WebGL canvas context when passing video frame.}\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElements(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__11_1(ISearchContext context)\n   at OpenQA.Selenium.By.FindElements(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElements(By by)\n   at OdinUiTests.Services.CommonService.<>c__DisplayClass57_0.<WaitForElementOrFailOnNotification>b__0(IWebDriver drv) in /azp/_work/1/s/Services/CommonService.cs:line 832\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Services.CommonService.WaitForElementOrFailOnNotification(IWebDriver driver, By elementLocator, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 829\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666319_o() in /azp/_work/1/s/Pages/CallPage.cs:line 159\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666319_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771550869700,
+      "stop": 1771550869796
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendTextMessageInDisciplineRoomCallChat.jpg",
+      "source": "874c6d56-0af9-4382-a8a8-3e47ae1122f4-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "bb1870fd-e2fe-4e91-abde-261c0de764d8-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1771550849898,
+  "stop": 1771550870510
+}

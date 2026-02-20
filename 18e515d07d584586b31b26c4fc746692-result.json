@@ -1,0 +1,137 @@
+{
+  "uuid": "71dc1b2b-f559-4b3e-8997-3094b12ad637",
+  "historyId": "e9761f765d4da1141c40fdad3bdf1077",
+  "testCaseId": "31a03edd90f96f26b811c6240d3bbb6c",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomChatCallTests.CheckSendEmojiInDisciplineRoomCallChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "b07311325f91"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendEmojiInDisciplineRoomCallChat"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomChatCallTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат звонка комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно отправить смайлики в миничате звонка комнаты дисциплины",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666319_w_0(Object[])\n   at OdinUiTests.Pages.CallPage.ClickOnChatButton()\n   at OdinUiTests.Tests.Chat.DisciplineRoomChatCallTests.SetUp() in /azp/_work/1/s/Tests/Chat/CallChatTests.cs:line 133\n   at InvokeStub_DisciplineRoomChatCallTests.SetUp(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Services.CommonService.WaitForElementOrFailOnNotification(IWebDriver driver, By elementLocator, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 829\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666319_o() in /azp/_work/1/s/Pages/CallPage.cs:line 159\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666319_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу звонка по id чата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"776804\"",
+          "excluded": false
+        }
+      ],
+      "start": 1771550973819,
+      "stop": 1771550974707
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771550974707,
+      "stop": 1771550998196
+    },
+    {
+      "name": "Нажать на кнопку чата в звонке",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Services.CommonService.WaitForElementOrFailOnNotification(IWebDriver driver, By elementLocator, Int32 timeoutSeconds) in /azp/_work/1/s/Services/CommonService.cs:line 829\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666319_o() in /azp/_work/1/s/Pages/CallPage.cs:line 159\n   at OdinUiTests.Pages.CallPage.__a$_around_ClickOnChatButton_100666319_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771550998196,
+      "stop": 1771551028357
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendEmojiInDisciplineRoomCallChat.jpg",
+      "source": "3a6d3cd1-37fe-4f37-803f-d08095118ef2-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "6d5dea3a-7c02-48c3-8fda-27433328f7a1-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1771550973819,
+  "stop": 1771551028517
+}
