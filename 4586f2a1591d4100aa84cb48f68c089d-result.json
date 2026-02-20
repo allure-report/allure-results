@@ -1,0 +1,130 @@
+{
+  "uuid": "6af81324-a76e-47a2-b956-c3baaff4be08",
+  "historyId": "c6591dfda9b90232d952fe037c836fa9",
+  "testCaseId": "fa28fb0a3e327a871dfe6df62208afed",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityPassingTests.CheckUnablePassTestAfterTheEndOfActivity()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "36b6ea746d53"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckUnablePassTestAfterTheEndOfActivity"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityPassingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Прохождение теста"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Невозможно пройти тест после окончания активности",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div data-v-43c7e7d6=\"\">...</div> is not clickable at point (1051, 438). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"q-card__section q-card__section--vert text-center q-pa-none\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnGotoTestButton_100666162_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.ClickOnGotoTestButton()\n   at OdinUiTests.Tests.Activity.TestActivityPassingTests.CheckUnablePassTestAfterTheEndOfActivity() in /azp/_work/1/s/Tests/Activity/TestActivityTests.cs:line 422\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnGotoTestButton_100666162_o() in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 315\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnGotoTestButton_100666162_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"814\"",
+          "excluded": false
+        }
+      ],
+      "start": 1771566682405,
+      "stop": 1771566683017
+    },
+    {
+      "name": "Нажать на кнопку 'Перейти к тесту' со страницы активности",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <div data-v-43c7e7d6=\"\">...</div> is not clickable at point (1051, 438). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"q-card__section q-card__section--vert text-center q-pa-none\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <div data-v-43c7e7d6=\"\">...</div> is not clickable at point (1051, 438). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"q-card__section q-card__section--vert text-center q-pa-none\">...</div>\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnGotoTestButton_100666162_o() in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 315\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnGotoTestButton_100666162_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771566683017,
+      "stop": 1771566685869
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckUnablePassTestAfterTheEndOfActivity.jpg",
+      "source": "b80e9eb2-4018-4e46-a31d-ec929be18c3a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "eb3be4ae-7813-4d5a-9559-f4a07dd21258-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1771566682405,
+  "stop": 1771566686006
+}
