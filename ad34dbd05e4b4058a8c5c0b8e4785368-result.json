@@ -1,0 +1,135 @@
+{
+  "uuid": "4532e508-7d16-47b1-92e6-791cba0b5006",
+  "historyId": "1abb559ffa102104677e3a964457dd05",
+  "testCaseId": "b1d625fd346a72fe6baa1f8f58ad3786",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TaskWithSolutionStudentTests.CheckEditSolution()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "36b6ea746d53"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditSolution"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskWithSolutionStudentTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Задание"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница решения задания для студента"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно изменить текст и файл решения",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1178, 914). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnChangeSolutionButton_100666288_w_0(Object[])\n   at OdinUiTests.Pages.ActivitySolutionPage.ClickOnChangeSolutionButton()\n   at OdinUiTests.Tests.Activity.TaskWithSolutionStudentTests.CheckEditSolution() in /azp/_work/1/s/Tests/Activity/TaskActivityTests.cs:line 139\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnChangeSolutionButton_100666288_o() in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 297\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnChangeSolutionButton_100666288_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу решения задания",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "activityId",
+          "value": "\"2115160\"",
+          "excluded": false
+        },
+        {
+          "name": "studentName",
+          "value": "\"Smith\"",
+          "excluded": false
+        }
+      ],
+      "start": 1771565941847,
+      "stop": 1771565942498
+    },
+    {
+      "name": "Нажать на кнопку 'Изменить решение' на странице решения задания",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1178, 914). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1178, 914). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnChangeSolutionButton_100666288_o() in /azp/_work/1/s/Pages/ActivitySolutionPage.cs:line 297\n   at OdinUiTests.Pages.ActivitySolutionPage.__a$_around_ClickOnChangeSolutionButton_100666288_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1771565942499,
+      "stop": 1771565951882
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditSolution.jpg",
+      "source": "cdff870a-a976-4ebd-b5d1-db59a9d1d6e8-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "6149e48b-fabc-49d9-93e1-2aceed628568-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1771565939973,
+  "stop": 1771565952213
+}
