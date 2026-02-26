@@ -1,0 +1,172 @@
+{
+  "uuid": "f32d8bea-13f8-498d-b664-deed597e6098",
+  "historyId": "3512c63e42c75f1e3a303fdfd92a4308",
+  "testCaseId": "f493b7e78697aba7d3be3432d9c0459f",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.NotesChatTests.CheckSendMessageByTappingEnterInNotesChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "008a00ab34a9"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSendMessageByTappingEnterInNotesChat"
+    },
+    {
+      "name": "testClass",
+      "value": "NotesChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат для заметок"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно отправить сообщения по нажатию на Enter в чате для заметок",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.InvalidOperationException : Sequence contains no elements",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsSent_100666445_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.CheckMessageIsSent(Boolean isMinichat, String chatId, String randomText)\n   at OdinUiTests.Tests.Chat.ChatCommon.SendMessageByTappingEnter(IWebDriver driver, String chatId, Boolean isMinichat) in /azp/_work/3/s/Tests/Chat/ChatCommon.cs:line 368\n   at OdinUiTests.Tests.Chat.ChatCommon.SendMessageByTappingEnter(IWebDriver driver) in /azp/_work/3/s/Tests/Chat/ChatCommon.cs:line 379\n   at OdinUiTests.Tests.Chat.NotesChatTests.CheckSendMessageByTappingEnterInNotesChat() in /azp/_work/3/s/Tests/Chat/ChatTests.cs:line 1032\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--InvalidOperationException\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsSent(String message, Boolean isMinichat, String chatId) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 1237\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsSent_100666445_o(Boolean isMinichat, String chatId, String randomText) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 1246\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsSent_100666445_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть личный чат для заметок",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772088933648,
+      "stop": 1772088938905
+    },
+    {
+      "name": "В строке ввода ввести текстовое сообщение",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "randomText",
+          "value": "\"C34187A98254A93\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772088938905,
+      "stop": 1772088941410
+    },
+    {
+      "name": "Отправить сообщение нажатем на Enter",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772088941410,
+      "stop": 1772088941698
+    },
+    {
+      "name": "Проверка того, что текстовое сообщение было отправлено",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Sequence contains no elements",
+        "trace": "System.InvalidOperationException: Sequence contains no elements\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.MessageIsSent(String message, Boolean isMinichat, String chatId) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 1237\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsSent_100666445_o(Boolean isMinichat, String chatId, String randomText) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 1246\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_CheckMessageIsSent_100666445_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isMinichat",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "chatId",
+          "value": "\"\"",
+          "excluded": false
+        },
+        {
+          "name": "randomText",
+          "value": "\"C34187A98254A93\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772088941698,
+      "stop": 1772088953583
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSendMessageByTappingEnterInNotesChat.jpg",
+      "source": "90d37148-f551-4f44-baed-4de7a9c78c6b-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "4bcaa29c-fdce-4c7d-981c-c0b85bbc271b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1772088933648,
+  "stop": 1772088954984
+}

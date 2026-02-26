@@ -1,0 +1,126 @@
+{
+  "uuid": "6b4ef29e-6f28-4651-ad0a-7cf9b262e1f6",
+  "historyId": "7df111657b333dfec26a8445914b8a4a",
+  "testCaseId": "58b1e2f608923eb2c0b70b7cc54425da",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.TaskChatTests.CheckEditLastMessageInTaskChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "008a00ab34a9"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditLastMessageInTaskChat"
+    },
+    {
+      "name": "testClass",
+      "value": "TaskChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обсуждение решения"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно редактировать сообщение в течение 4 часов после отправки в обсуждении решения",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> System.InvalidOperationException : Sequence contains no elements",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChoozeMessageToEdit_100666366_w_0(Object[])\n   at OdinUiTests.Pages.ChatCommonPage.ChoozeMessageToEdit()\n   at OdinUiTests.Tests.Chat.ChatCommon.EditLastMessage(IWebDriver driver, String chatId, Boolean isMinichat) in /azp/_work/3/s/Tests/Chat/ChatCommon.cs:line 78\n   at OdinUiTests.Tests.Chat.ChatCommon.EditLastMessage(IWebDriver driver, String chatId) in /azp/_work/3/s/Tests/Chat/ChatCommon.cs:line 88\n   at OdinUiTests.Tests.Chat.TaskChatTests.CheckEditLastMessageInTaskChat() in /azp/_work/3/s/Tests/Chat/ChatTests.cs:line 468\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--InvalidOperationException\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChoozeMessageToEdit_100666366_o() in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 436\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChoozeMessageToEdit_100666366_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть чат по прямой ссылке",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatId",
+          "value": "\"2227\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772088884394,
+      "stop": 1772088885306
+    },
+    {
+      "name": "Выбрать сообщение для редактирования",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Sequence contains no elements",
+        "trace": "System.InvalidOperationException: Sequence contains no elements\n   at System.Linq.ThrowHelper.ThrowNoElementsException()\n   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChoozeMessageToEdit_100666366_o() in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 436\n   at OdinUiTests.Pages.ChatCommonPage.__a$_around_ChoozeMessageToEdit_100666366_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772088885306,
+      "stop": 1772088889483
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditLastMessageInTaskChat.jpg",
+      "source": "759d0266-8189-4d6d-b3ef-6e0018abafd5-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "e66ac51d-eb5c-49c2-8e2c-0a07bb3a9150-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1772088884393,
+  "stop": 1772088890770
+}
