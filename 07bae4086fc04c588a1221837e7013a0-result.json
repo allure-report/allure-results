@@ -1,0 +1,87 @@
+{
+  "uuid": "c8136b0c-5eb2-4fe0-91cc-3783c2fc6c46",
+  "historyId": "8409a17977699a7430e121115044ebb2",
+  "testCaseId": "38fc8476b27543bc46385294025b7960",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineChatTests.CheckSwitchToAnotherDisciplineChatRoom()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "f7dd271fa0da"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSwitchToAnotherDisciplineChatRoom"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно переключаться между комнатами чатов дисциплины",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.AggregateException : One or more errors occurred. (Connection refused (test11.odin.study:443))\n  ----> System.Net.Http.HttpRequestException : Connection refused (test11.odin.study:443)\n  ----> System.Net.Sockets.SocketException : Connection refused",
+    "trace": "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\n   at OdinUiTests.Services.ChatService.GetChatRooms(String userName, String chatId, Boolean isArchive) in /azp/_work/1/s/Services/ChatService.cs:line 38\n   at OdinUiTests.Services.ChatService.GetRandomRoomChatName(Int32 disChatId, String userName, String typeOfChat) in /azp/_work/1/s/Services/ChatService.cs:line 43\n   at OdinUiTests.Services.ChatService.GetRandomRoomChatName(Int32 disChatId, String userName) in /azp/_work/1/s/Services/ChatService.cs:line 60\n   at OdinUiTests.Tests.Chat.DisciplineChatTests.CheckSwitchToAnotherDisciplineChatRoom() in /azp/_work/1/s/Tests/Chat/ChatTests.cs:line 134\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--HttpRequestException\n   at RestSharp.RestClientExtensions.GetAsync(IRestClient client, RestRequest request, CancellationToken cancellationToken)\n--SocketException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "CheckSwitchToAnotherDisciplineChatRoom.jpg",
+      "source": "197da115-d904-4c9c-ad03-996771c381f3-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "8a0d57b2-a837-4640-a519-e3df4e413dff-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1772171324715,
+  "stop": 1772171325432
+}
