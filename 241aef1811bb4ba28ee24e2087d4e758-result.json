@@ -1,0 +1,142 @@
+{
+  "uuid": "99aa4f0f-ec48-4535-a8aa-7494c2048bfe",
+  "historyId": "acf86d03bd2c4371b70eba8fbc483dd2",
+  "testCaseId": "f78d3472a9fa945473a019caae0fe034",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisTemplateTests.CheckCreateDisTemplateIfRequiredFieldsNotFilled()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "063bff0e865b"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateDisTemplateIfRequiredFieldsNotFilled"
+    },
+    {
+      "name": "testClass",
+      "value": "DisTemplateTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Шаблон дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Невозможно создать шаблон дисциплины, если не заполнены обязательные поля",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.StaleElementReferenceException : stale element reference: stale element not found in the current frame\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FillAllFieldsExceptRequired_100666714_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonEditPage.FillAllFieldsExceptRequired(String year, String volume, String credit)\n   at OdinUiTests.Tests.Discipline.DisTemplateTests.CheckCreateDisTemplateIfRequiredFieldsNotFilled() in /azp/_work/1/s/Tests/Discipline/DisTemplateTests.cs:line 66\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--StaleElementReferenceException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FillAllFieldsExceptRequired_100666714_o(String year, String volume, String credit) in /azp/_work/1/s/Pages/DisCommonEditPage.cs:line 475\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FillAllFieldsExceptRequired_100666714_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания шаблона дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "directoryId",
+          "value": "\"18595\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772412328446,
+      "stop": 1772412328685
+    },
+    {
+      "name": "Заполнить все поля кроме обязательных",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "stale element reference: stale element not found in the current frame\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+        "trace": "OpenQA.Selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FillAllFieldsExceptRequired_100666714_o(String year, String volume, String credit) in /azp/_work/1/s/Pages/DisCommonEditPage.cs:line 475\n   at OdinUiTests.Pages.DisCommonEditPage.__a$_around_FillAllFieldsExceptRequired_100666714_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "year",
+          "value": "\"1925\"",
+          "excluded": false
+        },
+        {
+          "name": "volume",
+          "value": "\"72\"",
+          "excluded": false
+        },
+        {
+          "name": "credit",
+          "value": "\"8\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772412328685,
+      "stop": 1772412330555
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateDisTemplateIfRequiredFieldsNotFilled.jpg",
+      "source": "5aa40963-2a43-42d8-97df-4624b9618b5e-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "12919b4d-0103-41a0-8792-d935f57794e9-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1772412328446,
+  "stop": 1772412330842
+}
