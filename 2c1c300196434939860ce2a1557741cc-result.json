@@ -1,0 +1,162 @@
+{
+  "uuid": "2fd9d625-0c5f-4458-9652-502df1129088",
+  "historyId": "8392f081873215b7aa37d1f23dc6948e",
+  "testCaseId": "6338e3979bb92242c2fcd5ff1db040e0",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckAddRoomForGroupsAndStudents()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "944ad3564769"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddRoomForGroupsAndStudents"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRoomChatTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Чат комнаты дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно добавить комнату для групп и студентов",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.ChatCommonPage.<>c__DisplayClass171_0.<SelectValueInAccessToRoomField>b__0() in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 882\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ChatCommonPage.SelectValueInAccessToRoomField(String value) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 868\n   at OdinUiTests.Tests.Chat.ChatCommon.AddDisciplineRoomForGroupsAndStudents(IWebDriver driver) in /azp/_work/3/s/Tests/Chat/ChatCommon.cs:line 731\n   at OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckAddRoomForGroupsAndStudents() in /azp/_work/3/s/Tests/Chat/ChatTests.cs:line 366\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть список чатов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772514458971,
+      "stop": 1772514459806
+    },
+    {
+      "name": "Открыть раздел 'Дисциплины' и выбрать дисциплину",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineName",
+          "value": "\"Основы ООП\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772514459806,
+      "stop": 1772514464880
+    },
+    {
+      "name": "Нажать на тридот меню и выбрать 'Добавить комнату'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772514464880,
+      "stop": 1772514465487
+    },
+    {
+      "name": "Ввести значение в поле 'Название комнаты' в появившемся окне",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772514465487,
+      "stop": 1772514465893
+    },
+    {
+      "name": "В поле 'Доступ к комнате' выбрать значение – 'Отдельным студентам'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.ChatCommonPage.<>c__DisplayClass171_0.<SelectValueInAccessToRoomField>b__0() in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 882\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ChatCommonPage.SelectValueInAccessToRoomField(String value) in /azp/_work/3/s/Pages/ChatCommonPage.cs:line 868\n   at OdinUiTests.Tests.Chat.ChatCommon.AddDisciplineRoomForGroupsAndStudents(IWebDriver driver) in /azp/_work/3/s/Tests/Chat/ChatCommon.cs:line 731\n   at OdinUiTests.Tests.Chat.DisciplineRoomChatTests.CheckAddRoomForGroupsAndStudents() in /azp/_work/3/s/Tests/Chat/ChatTests.cs:line 366"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772514465893,
+      "stop": 1772514497274
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddRoomForGroupsAndStudents.jpg",
+      "source": "e8d993f6-cfde-4a7a-be9c-8419ed6e9ffe-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "5a59b8ba-21bc-4fbd-91ee-1b5177ccbdf6-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1772514456297,
+  "stop": 1772514497705
+}
