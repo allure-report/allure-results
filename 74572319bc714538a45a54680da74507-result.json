@@ -1,0 +1,146 @@
+{
+  "uuid": "88d2925e-6d4c-47c2-a4fc-2560c40436b5",
+  "historyId": "65d568df2674e867ed6d65e0318f0cc9",
+  "testCaseId": "6264ec7d87de42354b5be1fa8bd15bca",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortEditingValidationTests.CheckEditCohortIfStartAndEndDateNotFilled()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "079b5bf0166e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditCohortIfStartAndEndDateNotFilled"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortEditingValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование потока: ошибка валидации, если даты начала и окончания не заполнены",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1198, 898). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnSaveButton_100666531_w_0(Object[])\n   at OdinUiTests.Pages.CohortCreateEditPage.ClickOnSaveButton()\n   at OdinUiTests.Tests.Cohort.CohortEditingValidationTests.CheckEditCohortIfStartAndEndDateNotFilled() in /azp/_work/1/s/Tests/Cohort/CohortCreateEditTests.cs:line 605\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnSaveButton_100666531_o() in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 301\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnSaveButton_100666531_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирование потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortId",
+          "value": "\"10\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772609366234,
+      "stop": 1772609366477
+    },
+    {
+      "name": "Очистить значение в поле 'Дата начала'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772609366477,
+      "stop": 1772609368219
+    },
+    {
+      "name": "Очистить значение в поле 'Дата окончания'",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772609368219,
+      "stop": 1772609374488
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1198, 898). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1198, 898). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnSaveButton_100666531_o() in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 301\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickOnSaveButton_100666531_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772609374488,
+      "stop": 1772609375595
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditCohortIfStartAndEndDateNotFilled.jpg",
+      "source": "ec22ec01-e877-41cc-96c7-d532839e8403-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "fe6975b3-145f-4aff-866e-dcc38268ce0f-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1772609366234,
+  "stop": 1772609375715
+}

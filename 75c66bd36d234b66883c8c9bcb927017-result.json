@@ -1,0 +1,128 @@
+{
+  "uuid": "1b21b9f0-12c5-4f5c-9ad9-633665ea49a5",
+  "historyId": "ca3743cc5b4ca98a1d77ed6e062d9f9a",
+  "testCaseId": "e431efe9486217932fadfcb4018bc0a9",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Cohort.CohortEditingTests.CheckCancelCohortEditingByDirectLink(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "079b5bf0166e"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Cohort"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCancelCohortEditingByDirectLink"
+    },
+    {
+      "name": "testClass",
+      "value": "CohortEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Поток"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование потока"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Поток"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Редактирование потока ВО: работает кнопка 'Отмена', если страница редактирование был открыть по прямой ссылке",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1022, 898). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickCancelButtonInEditing_100666535_w_0(Object[])\n   at OdinUiTests.Pages.CohortCreateEditPage.ClickCancelButtonInEditing()\n   at OdinUiTests.Tests.Cohort.CohortEditingTests.CheckCancelCohortEditingByDirectLink(String cohortId) in /azp/_work/1/s/Tests/Cohort/CohortCreateEditTests.cs:line 436\n   at InvokeStub_CohortEditingTests.CheckCancelCohortEditingByDirectLink(Object, Span`1)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickCancelButtonInEditing_100666535_o() in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 339\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickCancelButtonInEditing_100666535_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирование потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortId",
+          "value": "\"1940\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772609296105,
+      "stop": 1772609296234
+    },
+    {
+      "name": "Нажать на кнопку 'Отмена'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1022, 898). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <span class=\"block\">...</span> is not clickable at point (1022, 898). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickCancelButtonInEditing_100666535_o() in /azp/_work/1/s/Pages/CohortCreateEditPage.cs:line 339\n   at OdinUiTests.Pages.CohortCreateEditPage.__a$_around_ClickCancelButtonInEditing_100666535_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772609296235,
+      "stop": 1772609303087
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCancelCohortEditingByDirectLink.jpg",
+      "source": "380d5a15-f10c-4919-81b0-a5e19e0038da-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "f3d5ee85-0dad-467a-a69a-706b70f1a890-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "cohortId",
+      "value": "\"1940\"",
+      "excluded": false
+    }
+  ],
+  "start": 1772609296105,
+  "stop": 1772609303204
+}
