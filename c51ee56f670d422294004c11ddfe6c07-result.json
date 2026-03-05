@@ -1,0 +1,157 @@
+{
+  "uuid": "ac0f1ae2-8db0-45b3-97f0-d273ada1e94f",
+  "historyId": "513a0bb70a4e8ee2dd3c8f23872410a4",
+  "testCaseId": "575b60cf41b7d40d18803134241e75f6",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckSuccessEditingNumOfAttemptsWithCorrectValue()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "cd6f42a1404c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSuccessEditingNumOfAttemptsWithCorrectValue"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateEditingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование шаблона контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Успешное сохранение при корректных значениях в поле Количество попыток сдачи",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Количество попыток сдачи*\" title=\"\" id=\"f_947693cf-3569-49a8-8853-eebe7f6370bb\" type=\"number\"> is not clickable at point (983, 833). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/2/s/Services/CommonService.cs:line 427\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass108_0.<EditValueInAttemptsField>b__0() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 485\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInAttemptsField(String attempt) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 483\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditAttemptsWithCorrectValue(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 206\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditAttemptsWithCorrectValueInActivityPlan(IWebDriver driver, String contentId) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 219\n   at OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckSuccessEditingNumOfAttemptsWithCorrectValue() in /azp/_work/2/s/Tests/Activity/TestTemplateTests.cs:line 131\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"58205\"",
+              "excluded": false
+            }
+          ],
+          "start": 1772682473029,
+          "stop": 1772682473236
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"58205\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772682473029,
+      "stop": 1772682473236
+    },
+    {
+      "name": "В поле 'Количество попыток сдачи' ввести значение 15",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Количество попыток сдачи*\" title=\"\" id=\"f_947693cf-3569-49a8-8853-eebe7f6370bb\" type=\"number\"> is not clickable at point (983, 833). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Количество попыток сдачи*\" title=\"\" id=\"f_947693cf-3569-49a8-8853-eebe7f6370bb\" type=\"number\"> is not clickable at point (983, 833). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/2/s/Services/CommonService.cs:line 427\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass108_0.<EditValueInAttemptsField>b__0() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 485\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInAttemptsField(String attempt) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 483\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditAttemptsWithCorrectValue(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 206\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditAttemptsWithCorrectValueInActivityPlan(IWebDriver driver, String contentId) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 219\n   at OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckSuccessEditingNumOfAttemptsWithCorrectValue() in /azp/_work/2/s/Tests/Activity/TestTemplateTests.cs:line 131"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772682473236,
+      "stop": 1772682475810
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSuccessEditingNumOfAttemptsWithCorrectValue.jpg",
+      "source": "bd7e05f8-2429-4ae6-aadd-efb4bc1018ea-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "bb4c532b-b155-4631-9247-ecfe69c8cd23-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1772682473029,
+  "stop": 1772682475957
+}

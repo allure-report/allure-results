@@ -1,0 +1,157 @@
+{
+  "uuid": "1b3f2c3e-9013-455f-b9f8-b102fa148dde",
+  "historyId": "1c12d7468acca5a1d27bf9ff35bc8268",
+  "testCaseId": "97d7fd0a80690382e70b8d42373e0bea",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckEditScoreValueInControlActivityPlan()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "cd6f42a1404c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditScoreValueInControlActivityPlan"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateEditingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование шаблона контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно переключать значения в поле Оценка в шаблон контрольной",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div class=\"q-field__native row items-center\" equalfieldwidth=\"true\" hideremovebutton=\"false\" isuserawoption=\"false\" iscompactstyle=\"false\" placeholder=\"\" isserverfilter=\"false\" useinputforce=\"false\">...</div> is not clickable at point (971, 833). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_EditValueInScoreField_100666113_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInScoreField()\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditScoreValue(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 228\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditScoreValueInActivityPlan(IWebDriver driver, String contentId) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 242\n   at OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckEditScoreValueInControlActivityPlan() in /azp/_work/2/s/Tests/Activity/TestTemplateTests.cs:line 138\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_EditValueInScoreField_100666113_o() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 871\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_EditValueInScoreField_100666113_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"58205\"",
+              "excluded": false
+            }
+          ],
+          "start": 1772682475958,
+          "stop": 1772682476289
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"58205\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772682475958,
+      "stop": 1772682476289
+    },
+    {
+      "name": "Переключить значение в поле 'Оценка'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <div class=\"q-field__native row items-center\" equalfieldwidth=\"true\" hideremovebutton=\"false\" isuserawoption=\"false\" iscompactstyle=\"false\" placeholder=\"\" isserverfilter=\"false\" useinputforce=\"false\">...</div> is not clickable at point (971, 833). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <div class=\"q-field__native row items-center\" equalfieldwidth=\"true\" hideremovebutton=\"false\" isuserawoption=\"false\" iscompactstyle=\"false\" placeholder=\"\" isserverfilter=\"false\" useinputforce=\"false\">...</div> is not clickable at point (971, 833). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_EditValueInScoreField_100666113_o() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 871\n   at OdinUiTests.Pages.ActivityCommonEditPage.__a$_around_EditValueInScoreField_100666113_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772682476289,
+      "stop": 1772682478786
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditScoreValueInControlActivityPlan.jpg",
+      "source": "eff02e25-cbd0-4557-821a-8b81f97049c5-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "e41a2903-7f97-4177-9b11-9250b3dbbdfa-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1772682475958,
+  "stop": 1772682478947
+}

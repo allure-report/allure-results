@@ -1,0 +1,159 @@
+{
+  "uuid": "1e83db17-219d-4361-9169-5494fa22b2da",
+  "historyId": "15ae6b75062dc8e5d81bf8dcc4bc09a5",
+  "testCaseId": "f7c038cf6b435f3349cb4e5194c9a410",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TemplateEditingValidationTests.CheckEditActivityTemplateVolumeWithIncorrectValue(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "cd6f42a1404c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditActivityTemplateVolumeWithIncorrectValue"
+    },
+    {
+      "name": "testClass",
+      "value": "TemplateEditingValidationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обычный шаблон активности"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Ошибка валидации в поле Объем в академических часах, если введено значение 0",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Объём в академических часах\" title=\"\" id=\"f_74f18f09-89be-42ba-b722-4c7429da1381\" type=\"number\"> is not clickable at point (983, 371). Other element would receive the click: <div data-v-42ced167=\"\" data-v-8f8b8097=\"\" class=\"custom-avatar\" aria-hidden=\"true\" style=\"background-color: rgb(0, 129, 227); font-size: 50px;\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/2/s/Services/CommonService.cs:line 427\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass107_0.<EditValueInVolumeField>b__0() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 475\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInVolumeField(String volume) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 473\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolumeWithIncorrectValue(IWebDriver driver, Boolean isTemplate, String id, String volume) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 588\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolumeWithIncorrectValueInActivityPlan(IWebDriver driver, String contentId, String volume) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 600\n   at OdinUiTests.Tests.Activity.TemplateEditingValidationTests.CheckEditActivityTemplateVolumeWithIncorrectValue(String volume) in /azp/_work/2/s/Tests/Activity/TemplateTests.cs:line 91\n   at InvokeStub_TemplateEditingValidationTests.CheckEditActivityTemplateVolumeWithIncorrectValue(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"1340\"",
+              "excluded": false
+            }
+          ],
+          "start": 1772682217885,
+          "stop": 1772682218526
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"1340\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772682217885,
+      "stop": 1772682218526
+    },
+    {
+      "name": "В поле 'Объем в академических часах' ввести значение 0",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Объём в академических часах\" title=\"\" id=\"f_74f18f09-89be-42ba-b722-4c7429da1381\" type=\"number\"> is not clickable at point (983, 371). Other element would receive the click: <div data-v-42ced167=\"\" data-v-8f8b8097=\"\" class=\"custom-avatar\" aria-hidden=\"true\" style=\"background-color: rgb(0, 129, 227); font-size: 50px;\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Объём в академических часах\" title=\"\" id=\"f_74f18f09-89be-42ba-b722-4c7429da1381\" type=\"number\"> is not clickable at point (983, 371). Other element would receive the click: <div data-v-42ced167=\"\" data-v-8f8b8097=\"\" class=\"custom-avatar\" aria-hidden=\"true\" style=\"background-color: rgb(0, 129, 227); font-size: 50px;\">...</div>\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/2/s/Services/CommonService.cs:line 427\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass107_0.<EditValueInVolumeField>b__0() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 475\n   at Allure.Net.Commons.AllureApi.<>c__DisplayClass34_0.<Step>b__0()\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.ExecuteStep[T](String name, Func`1 action)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInVolumeField(String volume) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 473\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolumeWithIncorrectValue(IWebDriver driver, Boolean isTemplate, String id, String volume) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 588\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolumeWithIncorrectValueInActivityPlan(IWebDriver driver, String contentId, String volume) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 600\n   at OdinUiTests.Tests.Activity.TemplateEditingValidationTests.CheckEditActivityTemplateVolumeWithIncorrectValue(String volume) in /azp/_work/2/s/Tests/Activity/TemplateTests.cs:line 91\n   at InvokeStub_TemplateEditingValidationTests.CheckEditActivityTemplateVolumeWithIncorrectValue(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772682218526,
+      "stop": 1772682221760
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditActivityTemplateVolumeWithIncorrectValue.jpg",
+      "source": "b0e23fc3-c5a2-4be7-8954-0eede8f3564b-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "02bdb9e9-bcbd-4646-9cb1-903482b449cc-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "volume",
+      "value": "\"=0\"",
+      "excluded": false
+    }
+  ],
+  "start": 1772682217884,
+  "stop": 1772682222025
+}

@@ -1,0 +1,153 @@
+{
+  "uuid": "a9beddfe-13e0-44af-8a28-7d136ae01eaa",
+  "historyId": "6903068077fede7d3f5b6e4f7dc8802b",
+  "testCaseId": "f294f344f70d60f8ade611a5359cc07f",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TemplateEditingTests.CheckOpenEditActivityTemplatePage()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "cd6f42a1404c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckOpenEditActivityTemplatePage"
+    },
+    {
+      "name": "testClass",
+      "value": "TemplateEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Обычный шаблон активности"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Работает кнопка Редактировать для автора шаблона",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <a href=\"/ru/ActivityPlan/Edit/1340\" class=\"flex items-center\">...</a> is not clickable at point (1296, 212). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnEditButton_100666157_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.ClickOnEditButton()\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditPage(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 359\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditActivityPlan(IWebDriver driver, String contentId) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 371\n   at OdinUiTests.Tests.Activity.TemplateEditingTests.CheckOpenEditActivityTemplatePage() in /azp/_work/2/s/Tests/Activity/TemplateTests.cs:line 23\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--ElementClickInterceptedException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnEditButton_100666157_o() in /azp/_work/2/s/Pages/ActivityCommonPage.cs:line 271\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnEditButton_100666157_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу активности/шаблона активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"1340\"",
+              "excluded": false
+            }
+          ],
+          "start": 1772682197274,
+          "stop": 1772682197683
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"1340\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772682197274,
+      "stop": 1772682197683
+    },
+    {
+      "name": "Нажать на кнопку 'Редактировать'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <a href=\"/ru/ActivityPlan/Edit/1340\" class=\"flex items-center\">...</a> is not clickable at point (1296, 212). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"/ru/ActivityPlan/Edit/1340\" class=\"flex items-center\">...</a> is not clickable at point (1296, 212). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnEditButton_100666157_o() in /azp/_work/2/s/Pages/ActivityCommonPage.cs:line 271\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_ClickOnEditButton_100666157_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772682197683,
+      "stop": 1772682206689
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckOpenEditActivityTemplatePage.jpg",
+      "source": "36eef839-970e-4e2e-a348-8e4be676f1fc-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "59038959-0720-47ea-b67f-44da8379b29a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1772682197273,
+  "stop": 1772682207030
+}

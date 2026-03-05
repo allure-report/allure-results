@@ -1,0 +1,163 @@
+{
+  "uuid": "d0727d14-5514-4010-b244-9bbe2cdd08fe",
+  "historyId": "7a923c8689c846b1c56a0b18108898b9",
+  "testCaseId": "8109f79a95a06913e5898c2d07d43da5",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckErrorInEditingNumOfAttemptsWithIncorrectValue(System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "cd6f42a1404c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorInEditingNumOfAttemptsWithIncorrectValue"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateEditingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование шаблона контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Ошибка валидации в поле Количество попыток сдачи, если введено отрицательное значение",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Количество попыток сдачи*\" title=\"\" id=\"f_090a532d-9d9e-409b-b5a9-d48bef68023f\" type=\"number\"> is not clickable at point (983, 833). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/2/s/Services/CommonService.cs:line 427\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass108_0.<EditValueInAttemptsField>b__0() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 485\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInAttemptsField(String attempt) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 483\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditAttemptsWithIncorrectValue(IWebDriver driver, Boolean isTemplate, String id, String attempt) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 185\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditAttemptsWithIncorrectValueInActivityPlan(IWebDriver driver, String contentId, String attempt) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 197\n   at OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckErrorInEditingNumOfAttemptsWithIncorrectValue(String attempt) in /azp/_work/2/s/Tests/Activity/TestTemplateTests.cs:line 124\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)\n   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"58205\"",
+              "excluded": false
+            }
+          ],
+          "start": 1772682461506,
+          "stop": 1772682461877
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"58205\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772682461506,
+      "stop": 1772682461877
+    },
+    {
+      "name": "В поле 'Количество попыток сдачи' ввести значение -82",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Количество попыток сдачи*\" title=\"\" id=\"f_090a532d-9d9e-409b-b5a9-d48bef68023f\" type=\"number\"> is not clickable at point (983, 833). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Количество попыток сдачи*\" title=\"\" id=\"f_090a532d-9d9e-409b-b5a9-d48bef68023f\" type=\"number\"> is not clickable at point (983, 833). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/2/s/Services/CommonService.cs:line 427\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass108_0.<EditValueInAttemptsField>b__0() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 485\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInAttemptsField(String attempt) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 483\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditAttemptsWithIncorrectValue(IWebDriver driver, Boolean isTemplate, String id, String attempt) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 185\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditAttemptsWithIncorrectValueInActivityPlan(IWebDriver driver, String contentId, String attempt) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 197\n   at OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckErrorInEditingNumOfAttemptsWithIncorrectValue(String attempt) in /azp/_work/2/s/Tests/Activity/TestTemplateTests.cs:line 124"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772682461877,
+      "stop": 1772682465552
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckErrorInEditingNumOfAttemptsWithIncorrectValue.jpg",
+      "source": "1dd1caed-7fcf-4c7f-96ed-975ba35c6d40-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "145bb50f-1d89-4b86-b812-235826fb2a03-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "attempt",
+      "value": "\"<0\"",
+      "excluded": false
+    }
+  ],
+  "start": 1772682461505,
+  "stop": 1772682465709
+}

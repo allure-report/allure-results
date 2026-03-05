@@ -1,0 +1,157 @@
+{
+  "uuid": "3ba7119f-de06-40b9-b40b-2f9fec0ce3d3",
+  "historyId": "2f74f2ffecb439d301d688befc9d0c8d",
+  "testCaseId": "9bc01dcf496894abbbffc5226a52b46c",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckSuccessEditingMinThresholdWithCorrectValue()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "cd6f42a1404c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSuccessEditingMinThresholdWithCorrectValue"
+    },
+    {
+      "name": "testClass",
+      "value": "TestTemplateEditingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Шаблон активности контрольной"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование шаблона контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Успешное сохранение при корректных значениях в поле Минимальный порог баллов",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Минимальный порог баллов*\" title=\"\" id=\"f_057e4492-b0b8-4051-98cb-b8c8e62715be\" type=\"number\"> is not clickable at point (983, 833). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/2/s/Services/CommonService.cs:line 427\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass111_0.<EditValueInMinThresholdField>b__0() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 514\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInMinThresholdField(String threshold) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 512\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditMinThresholdWithCorrectValue(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 294\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditMinThresholdWithCorrectValueInActivityPlan(IWebDriver driver, String contentId) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 307\n   at OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckSuccessEditingMinThresholdWithCorrectValue() in /azp/_work/2/s/Tests/Activity/TestTemplateTests.cs:line 152\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования шаблона активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "contentId",
+              "value": "\"58205\"",
+              "excluded": false
+            }
+          ],
+          "start": 1772682482856,
+          "stop": 1772682483250
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"58205\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772682482856,
+      "stop": 1772682483250
+    },
+    {
+      "name": "В поле 'Минимальный порог баллов' ввести значение 12",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Минимальный порог баллов*\" title=\"\" id=\"f_057e4492-b0b8-4051-98cb-b8c8e62715be\" type=\"number\"> is not clickable at point (983, 833). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <input class=\"q-field__native q-placeholder\" tabindex=\"0\" aria-label=\"Минимальный порог баллов*\" title=\"\" id=\"f_057e4492-b0b8-4051-98cb-b8c8e62715be\" type=\"number\"> is not clickable at point (983, 833). Other element would receive the click: <div data-v-8f8b8097=\"\" class=\"call-notifications-component full-window window-height window-width\">...</div>\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at OdinUiTests.Services.CommonService.ClearValuesInDigitInputFields(IWebDriver driver, By selector) in /azp/_work/2/s/Services/CommonService.cs:line 427\n   at OdinUiTests.Pages.ActivityCommonEditPage.<>c__DisplayClass111_0.<EditValueInMinThresholdField>b__0() in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 514\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonEditPage.EditValueInMinThresholdField(String threshold) in /azp/_work/2/s/Pages/ActivityCommonEditPage.cs:line 512\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditMinThresholdWithCorrectValue(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 294\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditMinThresholdWithCorrectValueInActivityPlan(IWebDriver driver, String contentId) in /azp/_work/2/s/Tests/Activity/ActivityCommon.cs:line 307\n   at OdinUiTests.Tests.Activity.TestTemplateEditingTests.CheckSuccessEditingMinThresholdWithCorrectValue() in /azp/_work/2/s/Tests/Activity/TestTemplateTests.cs:line 152"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772682483250,
+      "stop": 1772682486127
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckSuccessEditingMinThresholdWithCorrectValue.jpg",
+      "source": "5a012938-c8f3-4b9e-8808-3214969c0f94-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "f64e1e11-7970-42be-bea7-a195e827a472-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1772682482855,
+  "stop": 1772682486281
+}
