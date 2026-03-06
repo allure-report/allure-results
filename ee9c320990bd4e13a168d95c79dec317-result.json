@@ -1,0 +1,198 @@
+{
+  "uuid": "1fe2faf7-5d25-41dd-afad-b9903b7525fe",
+  "historyId": "15a8fa7358717ba730b37f66509080db",
+  "testCaseId": "8a12bca6eef8ab4ffe8bcfe9f96054fe",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Exams.ExamCreateEditTests.ImportStudentsExam()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "4504c205a1ff"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Exams"
+    },
+    {
+      "name": "testMethod",
+      "value": "ImportStudentsExam"
+    },
+    {
+      "name": "testClass",
+      "value": "ExamCreateEditTests"
+    },
+    {
+      "name": "suite",
+      "value": "Экзамен"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "Экзамен"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Импорт студентов через файл",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Файл со студентами не был импортирован\nAssert.That(condition, Is.True)\n  Expected: True\n  But was:  False\n",
+    "trace": "   at NUnit.Framework.Legacy.ClassicAssert.True(Boolean condition, String message, Object[] args)\n   at OdinUiTests.Tests.Exams.ExamCreateEditTests.ImportStudentsExam() in /azp/_work/3/s/Tests/Exams/TestCenterTests.cs:line 232\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу образовательной программы",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"18428\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772758324117,
+      "stop": 1772758324504
+    },
+    {
+      "name": "Получить количество студентов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"18428\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772758324504,
+      "stop": 1772758324685
+    },
+    {
+      "name": "Нажать на кнопку Импорт экзамена",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772758324685,
+      "stop": 1772758330799
+    },
+    {
+      "name": "В появившемся окне нажать на дропзону и загрузить файл",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "file",
+          "value": "\"import-exam-students-template.xlsx\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772758330801,
+      "stop": 1772758331928
+    },
+    {
+      "name": "Нажать на кнопку 'Импорт'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1772758331928,
+      "stop": 1772758332027
+    },
+    {
+      "name": "Проверка появление уведомления и изменение количества студентов",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "programId",
+          "value": "\"18428\"",
+          "excluded": false
+        }
+      ],
+      "start": 1772758332027,
+      "stop": 1772758413024
+    }
+  ],
+  "attachments": [
+    {
+      "name": "ImportStudentsExam.jpg",
+      "source": "b387c04b-02e4-498c-899f-247cb8ba2087-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "956d04cc-8f45-452d-bf9b-a3e32db87deb-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1772758324117,
+  "stop": 1772758413175
+}
