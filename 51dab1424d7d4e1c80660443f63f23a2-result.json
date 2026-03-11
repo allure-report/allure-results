@@ -1,0 +1,126 @@
+{
+  "uuid": "bd0578dd-17fe-489b-a25a-0907a619d548",
+  "historyId": "045abe82feb9297102dcc37ff695c3a9",
+  "testCaseId": "863d1eb9f5f9ba09c34b76715c782cc1",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisciplineRightMenuTests.CheckPinDisciplineForTeacher()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "f11c07ae6b06"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckPinDisciplineForTeacher"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineRightMenuTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Страница дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Работает кнопка закрепления/открепления из главного меню для преподавателя",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),'Открепить из главного меню')]\"}\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.DisCommonInfoPage.<>c__DisplayClass122_0.<ClickOnPinOrUnpinButton>b__0() in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 372\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.DisCommonInfoPage.ClickOnPinOrUnpinButton(Boolean isPinned) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 368\n   at OdinUiTests.Tests.Discipline.DisciplineRightMenuTests.CheckPinDisciplineForTeacher() in /azp/_work/1/s/Tests/Discipline/DisInfoTests.cs:line 25\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"171\"",
+          "excluded": false
+        }
+      ],
+      "start": 1773193075928,
+      "stop": 1773193077325
+    },
+    {
+      "name": "Нажать на кнопку 'Открепить из главного меню'",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),'Открепить из главного меню')]\"}\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.DisCommonInfoPage.<>c__DisplayClass122_0.<ClickOnPinOrUnpinButton>b__0() in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 372\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.DisCommonInfoPage.ClickOnPinOrUnpinButton(Boolean isPinned) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 368\n   at OdinUiTests.Tests.Discipline.DisciplineRightMenuTests.CheckPinDisciplineForTeacher() in /azp/_work/1/s/Tests/Discipline/DisInfoTests.cs:line 25"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1773193077326,
+      "stop": 1773193107629
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckPinDisciplineForTeacher.jpg",
+      "source": "073322f8-8307-43e4-b875-136d4c4258c7-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "69b67d1d-6b43-4282-9cb4-e1a88632b634-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1773193075349,
+  "stop": 1773193107925
+}
