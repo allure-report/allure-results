@@ -1,0 +1,104 @@
+{
+  "uuid": "2e28756f-f381-451a-bb8f-f4d59ec58940",
+  "historyId": "861f60080d9de56beb355dd5d59e26b6",
+  "testCaseId": "18b8d591cc1d3e423046732634c73c4c",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.ActivityCreatingTests.CreateActivityInModule()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "a18b5ce9e67c"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateActivityInModule"
+    },
+    {
+      "name": "testClass",
+      "value": "ActivityCreatingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Обычная активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание активности"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать активность в дисциплине (в модуле)",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:44715/session/146ed8051e2f1712dab319f3a16f4014/url timed out after 60 seconds.\n  ----> System.Threading.Tasks.TaskCanceledException : The request was canceled due to the configured HttpClient.Timeout of 60 seconds elapsing.\n  ----> System.TimeoutException : The operation was canceled.\n  ----> System.Threading.Tasks.TaskCanceledException : The operation was canceled.\n  ----> System.IO.IOException : Unable to read data from the transport connection: Operation canceled.\n  ----> System.Net.Sockets.SocketException : Operation canceled\nTearDown : System.Exception : Ошибка: WebDriver уже был закрыт из-за превышения таймаута более 15 минут.",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_OpenDisciplineInfoPage_100666743_w_0(Object[])\n   at OdinUiTests.Pages.DisCommonInfoPage.OpenDisciplineInfoPage(String disciplineId)\n   at OdinUiTests.Tests.Activity.ActivityCreatingTests.CreateActivityInModule() in /azp/_work/1/s/Tests/Activity/ActivityTests.cs:line 49\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverException\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Navigator.GoToUrlAsync(String url)\n   at OpenQA.Selenium.Navigator.<>c__DisplayClass6_0.<<GoToUrl>b__0>d.MoveNext()\n--- End of stack trace from previous location ---\n   at OpenQA.Selenium.Navigator.GoToUrl(String url)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_OpenDisciplineInfoPage_100666743_o(String disciplineId) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 153\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_OpenDisciplineInfoPage_100666743_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--TaskCanceledException\n   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n--TimeoutException\n\n--TaskCanceledException\n   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n--IOException\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)\n   at System.Net.Http.HttpConnection.<CheckUsabilityOnScavenge>g__ReadAheadWithZeroByteReadAsync|39_0()\n   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n--SocketException\n\n--TearDown\n   at OdinUiTests.Tests.BaseTest.TearDown() in /azp/_work/1/s/Tests/BaseTest.cs:line 164\n   at InvokeStub_BaseTest.TearDown(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу дисциплины",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "The HTTP request to the remote WebDriver server for URL http://localhost:44715/session/146ed8051e2f1712dab319f3a16f4014/url timed out after 60 seconds.",
+        "trace": "OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:44715/session/146ed8051e2f1712dab319f3a16f4014/url timed out after 60 seconds.\n ---> System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 60 seconds elapsing.\n ---> System.TimeoutException: The operation was canceled.\n ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.\n ---> System.IO.IOException: Unable to read data from the transport connection: Operation canceled.\n ---> System.Net.Sockets.SocketException (125): Operation canceled\n   --- End of inner exception stack trace ---\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)\n   at System.Net.Http.HttpConnection.<CheckUsabilityOnScavenge>g__ReadAheadWithZeroByteReadAsync|39_0()\n   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   --- End of inner exception stack trace ---\n   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   --- End of inner exception stack trace ---\n   --- End of inner exception stack trace ---\n   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Navigator.GoToUrlAsync(String url)\n   at OpenQA.Selenium.Navigator.<>c__DisplayClass6_0.<<GoToUrl>b__0>d.MoveNext()\n--- End of stack trace from previous location ---\n   at OpenQA.Selenium.Navigator.GoToUrl(String url)\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_OpenDisciplineInfoPage_100666743_o(String disciplineId) in /azp/_work/1/s/Pages/DisCommonInfoPage.cs:line 153\n   at OdinUiTests.Pages.DisCommonInfoPage.__a$_around_OpenDisciplineInfoPage_100666743_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"379\"",
+          "excluded": false
+        }
+      ],
+      "start": 1774502990354,
+      "stop": 1774503050386
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1774502990118,
+  "stop": 1774503110388
+}
