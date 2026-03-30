@@ -1,0 +1,219 @@
+{
+  "uuid": "b720d5ba-6ff2-4692-9623-8680d59b2f0c",
+  "historyId": "3934132eb7eea45c144d91c1cf41e7fe",
+  "testCaseId": "fded874aeda4dc77ccbd842d4940e675",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.TestActivityAddingTests.CheckAddTestTrainToControlTypeActivity()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "c9b2239914f0"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddTestTrainToControlTypeActivity"
+    },
+    {
+      "name": "testClass",
+      "value": "TestActivityAddingTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Контрольная"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование контрольной"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно добавить материал типа Тест-тренажёр из Библиотеки в контрольную",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class*='q-page activity'] [href*='Content/Info']\"}\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Services.CommonService.WaitAndFind(IWebDriver driver, By selector, Int32 timeoutSeconds) in /azp/_work/3/s/Services/CommonService.cs:line 848\n   at OdinUiTests.Pages.ActivityCommonPage.<>c__DisplayClass125_0.<CheckMaterialIsAdded>b__0() in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 800\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonPage.CheckMaterialIsAdded(String type, Boolean isUploading, Boolean isTemplate, String name) in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 798\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddMaterialFromLibrary(IWebDriver driver, Boolean isTemplate, String id, String type, String name) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 84\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddTestTrainToActivity(IWebDriver driver, String activityId) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 115\n   at OdinUiTests.Tests.Activity.TestActivityAddingTests.CheckAddTestTrainToControlTypeActivity() in /azp/_work/3/s/Tests/Activity/TestActivityTests.cs:line 132\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "activityId",
+              "value": "\"10085\"",
+              "excluded": false
+            }
+          ],
+          "start": 1774869952671,
+          "stop": 1774869953019
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"10085\"",
+          "excluded": false
+        }
+      ],
+      "start": 1774869952671,
+      "stop": 1774869953019
+    },
+    {
+      "name": "Нажать на кнопку 'Добавить материалы'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1774869953019,
+      "stop": 1774869964625
+    },
+    {
+      "name": "Выбрать материал типа 'Тест-тренажер' из Библиотеки по названию и подтвердить выбор",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1774869964625,
+      "stop": 1774870005662
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить' и подтвердить сохранение",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1774870005662,
+          "stop": 1774870011262
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1774870005662,
+      "stop": 1774870011262
+    },
+    {
+      "name": "Проверка того, что материал типа 'Тест-тренажер' был добавлен в активность",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class*='q-page activity'] [href*='Content/Info']\"}\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Services.CommonService.WaitAndFind(IWebDriver driver, By selector, Int32 timeoutSeconds) in /azp/_work/3/s/Services/CommonService.cs:line 848\n   at OdinUiTests.Pages.ActivityCommonPage.<>c__DisplayClass125_0.<CheckMaterialIsAdded>b__0() in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 800\n   at Allure.Net.Commons.AllureApi.ExecuteAction[T](String name, Action`1 start, Func`1 action, Action`1 resolve)\n   at Allure.Net.Commons.AllureApi.Step(String name, Action action)\n   at OdinUiTests.Pages.ActivityCommonPage.CheckMaterialIsAdded(String type, Boolean isUploading, Boolean isTemplate, String name) in /azp/_work/3/s/Pages/ActivityCommonPage.cs:line 798\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddMaterialFromLibrary(IWebDriver driver, Boolean isTemplate, String id, String type, String name) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 84\n   at OdinUiTests.Tests.Activity.ActivityCommon.AddTestTrainToActivity(IWebDriver driver, String activityId) in /azp/_work/3/s/Tests/Activity/ActivityCommon.cs:line 115\n   at OdinUiTests.Tests.Activity.TestActivityAddingTests.CheckAddTestTrainToControlTypeActivity() in /azp/_work/3/s/Tests/Activity/TestActivityTests.cs:line 132"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1774870011262,
+      "stop": 1774870041750
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckAddTestTrainToControlTypeActivity.jpg",
+      "source": "152c9265-c1de-4150-beb8-480ab3f5d7df-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "481fc1b5-c205-47e2-83d0-fe1b5f582c47-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1774869926494,
+  "stop": 1774870041929
+}

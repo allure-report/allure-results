@@ -1,0 +1,203 @@
+{
+  "uuid": "b7a16f3e-1a26-4aeb-bb51-603e71363375",
+  "historyId": "ad7cb5b4ca03d5a9c32cdbf42c15b8a5",
+  "testCaseId": "29b1003d3c3d29534572a80823fc5d1b",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Discipline.DisciplineEditingTests.CheckDeleteDisciplineWithoutGrades()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "c9b2239914f0"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Discipline"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckDeleteDisciplineWithoutGrades"
+    },
+    {
+      "name": "testClass",
+      "value": "DisciplineEditingTests"
+    },
+    {
+      "name": "suite",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование дисциплины"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дисциплина"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно удалить дисциплину без оценок",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckDisciplineIsDeleted_100666600_w_0(Object[])\n   at OdinUiTests.Pages.CohortInfoPage.CheckDisciplineIsDeleted(Int32 cohortId, List`1 disAndCohortNames)\n   at OdinUiTests.Tests.Discipline.DisciplineEditingTests.CheckDeleteDisciplineWithoutGrades() in /azp/_work/3/s/Tests/Discipline/DisCreateEditTests.cs:line 627\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckDisciplineIsDeleted_100666600_o(Int32 cohortId, List`1 disAndCohortNames) in /azp/_work/3/s/Pages/CohortInfoPage.cs:line 611\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckDisciplineIsDeleted_100666600_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disciplineId",
+          "value": "\"169629\"",
+          "excluded": false
+        }
+      ],
+      "start": 1774870854546,
+      "stop": 1774870855450
+    },
+    {
+      "name": "Получить название дисциплины и потока",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1774870855451,
+      "stop": 1774870857956
+    },
+    {
+      "name": "Нажать на кнопку Удалить дисциплину",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1774870857956,
+      "stop": 1774870858391
+    },
+    {
+      "name": "Вставить соответствующие значения в поля подтверждающей модалки удаления дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "disAndCohortNames",
+          "value": "[\"248C134D1DECDD8\",\"Поток 2020 IT\"]",
+          "excluded": false
+        }
+      ],
+      "start": 1774870858392,
+      "stop": 1774870859391
+    },
+    {
+      "name": "Нажать на кнопку Удалить в подтверждающей модалке удаления дисциплины",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1774870859392,
+      "stop": 1774870859605
+    },
+    {
+      "name": "Проверка того, что удаленная дисциплина не отображается на странице потока",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckDisciplineIsDeleted_100666600_o(Int32 cohortId, List`1 disAndCohortNames) in /azp/_work/3/s/Pages/CohortInfoPage.cs:line 611\n   at OdinUiTests.Pages.CohortInfoPage.__a$_around_CheckDisciplineIsDeleted_100666600_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "cohortId",
+          "value": "7",
+          "excluded": false
+        },
+        {
+          "name": "disAndCohortNames",
+          "value": "[\"248C134D1DECDD8\",\"Поток 2020 IT\"]",
+          "excluded": false
+        }
+      ],
+      "start": 1774870859606,
+      "stop": 1774870890075
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckDeleteDisciplineWithoutGrades.jpg",
+      "source": "afaaf8f3-9bfa-4e4a-961d-1768875207dd-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "7a39f8a6-a2ca-4c6f-8344-2e60f791d120-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1774870839624,
+  "stop": 1774870890459
+}
