@@ -1,0 +1,319 @@
+{
+  "uuid": "06c9fc22-89c5-468b-9903-07ed39f1f552",
+  "historyId": "e9d915a53bc4f7a27dde1c1b3f74e194",
+  "testCaseId": "4a9d2b1c7ca12b717717f239f5cd17a7",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Division.DivisionCreationTests.CheckCreateDivisionWithFillingAllFields()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "2f625d86d3de"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Division"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateDivisionWithFillingAllFields"
+    },
+    {
+      "name": "testClass",
+      "value": "DivisionCreationTests"
+    },
+    {
+      "name": "suite",
+      "value": "Подразделения"
+    },
+    {
+      "name": "subSuite",
+      "value": "Создание подразделения"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "Подразделения"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно создать подразделение, если заполнены все поля",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 30 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".division-info__header__title h1\"}\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckDivisionIsCreatedWithAllData_100666896_w_0(Object[])\n   at OdinUiTests.Pages.DivisionInfoPage.CheckDivisionIsCreatedWithAllData(String name, List`1 typeAndPersons)\n   at OdinUiTests.Tests.Division.DivisionCreationTests.CheckCreateDivisionWithFillingAllFields() in /azp/_work/1/s/Tests/Division/DivisionCommonTests.cs:line 50\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckDivisionIsCreatedWithAllData_100666896_o(String name, List`1 typeAndPersons) in /azp/_work/1/s/Pages/DivisionInfoPage.cs:line 212\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckDivisionIsCreatedWithAllData_100666896_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу создания нового подразделения",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "organizationId",
+          "value": "\"1\"",
+          "excluded": false
+        }
+      ],
+      "start": 1778227650308,
+      "stop": 1778227650685
+    },
+    {
+      "name": "Заполнить поля в блоке 'Описание'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Заполнить поле 'Название'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"C68F8201E\"",
+              "excluded": false
+            }
+          ],
+          "start": 1778227650686,
+          "stop": 1778227651860
+        },
+        {
+          "name": "Заполнить поле 'Краткое название'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"C68F8201E\"",
+              "excluded": false
+            }
+          ],
+          "start": 1778227651860,
+          "stop": 1778227651955
+        },
+        {
+          "name": "Заполнить поле 'Английское название'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"C68F8201E\"",
+              "excluded": false
+            }
+          ],
+          "start": 1778227651955,
+          "stop": 1778227652079
+        },
+        {
+          "name": "Заполнить поле 'Краткое английское название'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "name",
+              "value": "\"C68F8201E\"",
+              "excluded": false
+            }
+          ],
+          "start": 1778227652079,
+          "stop": 1778227652179
+        },
+        {
+          "name": "Выбрать новое значение в поле 'Тип'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1778227652180,
+          "stop": 1778227658627
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"C68F8201E\"",
+          "excluded": false
+        }
+      ],
+      "start": 1778227650686,
+      "stop": 1778227658627
+    },
+    {
+      "name": "Заполнить поля в блоке 'Ответственные лица'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Выбрать значение в поле 'Администраторы'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1778227658628,
+          "stop": 1778227665131
+        },
+        {
+          "name": "Выбрать значение в поле 'Аудиторы'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1778227665132,
+          "stop": 1778227666480
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1778227658627,
+      "stop": 1778227666480
+    },
+    {
+      "name": "Нажать на кнопку 'Сохранить'",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1778227666549,
+      "stop": 1778227666624
+    },
+    {
+      "name": "Проверка того, что новое подразделение было создано",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 30 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 30 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".division-info__header__title h1\"}\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckDivisionIsCreatedWithAllData_100666896_o(String name, List`1 typeAndPersons) in /azp/_work/1/s/Pages/DivisionInfoPage.cs:line 212\n   at OdinUiTests.Pages.DivisionInfoPage.__a$_around_CheckDivisionIsCreatedWithAllData_100666896_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "name",
+          "value": "\"C68F8201E\"",
+          "excluded": false
+        },
+        {
+          "name": "typeAndPersons",
+          "value": "[\"Научно-образовательный центр\",\"Adeeva Veronika\",\"11111 11111\"]",
+          "excluded": false
+        }
+      ],
+      "start": 1778227666624,
+      "stop": 1778227697077
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCreateDivisionWithFillingAllFields.jpg",
+      "source": "d0ea3b32-b721-44ed-b63f-de75de4c535a-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "f509d006-5761-432a-8a88-e36d9d7486a4-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1778227650308,
+  "stop": 1778227697452
+}

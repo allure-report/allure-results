@@ -1,0 +1,210 @@
+{
+  "uuid": "a29b13b2-097d-417f-ae24-9ef5834b3ff4",
+  "historyId": "c91c99b0f5c3c178017fe8013e47aabc",
+  "testCaseId": "f155106b70b61337fb6e2ad4eec8f4d8",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Activity.ActivityDurationTests.CheckEditActivityVolumeWithCorrectValues()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "2f625d86d3de"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Activity"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckEditActivityVolumeWithCorrectValues"
+    },
+    {
+      "name": "testClass",
+      "value": "ActivityDurationTests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Активность"
+    },
+    {
+      "name": "suite",
+      "value": "Обычная активность"
+    },
+    {
+      "name": "subSuite",
+      "value": "Редактирование активности"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Активность"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Успешное сохранение при корректных значениях в поле Объем в академических часах",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//span[contains(text(),'ак.час')])[2]\"}\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_IsActivityVolumeSaved_100666191_w_0(Object[])\n   at OdinUiTests.Pages.ActivityCommonPage.IsActivityVolumeSaved(Double expectedVolume)\n   at OdinUiTests.Pages.ActivityCommonPage.CheckActivityVolumeIsChanged(Double volume, Boolean isTemplate) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 681\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditVolume(IWebDriver driver, Boolean isTemplate, String id) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 560\n   at OdinUiTests.Tests.Activity.ActivityCommon.EditActivityVolume(IWebDriver driver, String activityId) in /azp/_work/1/s/Tests/Activity/ActivityCommon.cs:line 568\n   at OdinUiTests.Tests.Activity.ActivityDurationTests.CheckEditActivityVolumeWithCorrectValues() in /azp/_work/1/s/Tests/Activity/ActivityTests.cs:line 555\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--WebDriverTimeoutException\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_IsActivityVolumeSaved_100666191_o(Double expectedVolume) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 644\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_IsActivityVolumeSaved_100666191_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at OdinUiTests.Pages.ActivityCommonPage.<IsActivityVolumeSaved>b__111_0(IWebDriver drv) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 644\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу редактирования активности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открыть страницу редактирования активности",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "activityId",
+              "value": "\"377\"",
+              "excluded": false
+            }
+          ],
+          "start": 1778226101955,
+          "stop": 1778226102655
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "id",
+          "value": "\"377\"",
+          "excluded": false
+        }
+      ],
+      "start": 1778226101955,
+      "stop": 1778226102655
+    },
+    {
+      "name": "В поле 'Объем в академических часах' ввести значение 5.4",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1778226102655,
+      "stop": 1778226108871
+    },
+    {
+      "name": "Нажать на кнопку ‘Сохранить’",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Нажать на кнопку 'Сохранить' и подтвердить сохранение",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1778226108871,
+          "stop": 1778226114847
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isTemplate",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1778226108871,
+      "stop": 1778226114847
+    },
+    {
+      "name": "Проверка того, что объем активности был изменен",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Timed out after 10 seconds",
+        "trace": "OpenQA.Selenium.WebDriverTimeoutException: Timed out after 10 seconds\n ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//span[contains(text(),'ак.час')])[2]\"}\n  (Session info: chrome=145.0.7632.45); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at OdinUiTests.Pages.ActivityCommonPage.<IsActivityVolumeSaved>b__111_0(IWebDriver drv) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 644\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_IsActivityVolumeSaved_100666191_o(Double expectedVolume) in /azp/_work/1/s/Pages/ActivityCommonPage.cs:line 644\n   at OdinUiTests.Pages.ActivityCommonPage.__a$_around_IsActivityVolumeSaved_100666191_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "expectedVolume",
+          "value": "5.4",
+          "excluded": false
+        }
+      ],
+      "start": 1778226114849,
+      "stop": 1778226125003
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckEditActivityVolumeWithCorrectValues.jpg",
+      "source": "5f4a00b0-61e2-4e94-8702-df648de94af1-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "f01ce5bd-254f-47d1-96dd-d93f7d669740-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1778226101955,
+  "stop": 1778226125257
+}
