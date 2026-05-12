@@ -1,0 +1,196 @@
+{
+  "uuid": "d5e92fb0-9d3c-41d1-8cf4-81dfb736225a",
+  "historyId": "915aaeb7a0b3c5ceece96a8439709f5c",
+  "testCaseId": "80b843181ddd6d6e2f43af7bca67e7c8",
+  "fullName": "OdinUiTests:OdinUiTests.Tests.Chat.GroupMiniChatMessageTests.CheckCallInGroupMiniChat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "3692889724cb"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "OdinUiTests.Tests.Chat"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCallInGroupMiniChat"
+    },
+    {
+      "name": "testClass",
+      "value": "GroupMiniChatMessageTests"
+    },
+    {
+      "name": "suite",
+      "value": "Чат"
+    },
+    {
+      "name": "subSuite",
+      "value": "Миничат группового чата"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Дежурство"
+    },
+    {
+      "name": "tag",
+      "value": "Чат"
+    },
+    {
+      "name": "tag",
+      "value": "Регресс"
+    }
+  ],
+  "links": [],
+  "name": "Можно сделать звонок в миничате группового чата",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.\n  ----> OpenQA.Selenium.UnhandledAlertException : unexpected alert open: {Alert text : Failed to create WebGL canvas context when passing video frame.}\n  (Session info: chrome=145.0.7632.45)",
+    "trace": "   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)\n   at OdinUiTests.Pages.CallPage.__a$_around_CallIsStartedFromChat_100666323_w_0(Object[])\n   at OdinUiTests.Pages.CallPage.CallIsStartedFromChat(Boolean isAdminStartCall)\n   at OdinUiTests.Pages.CallPage.СheckCallIsStartedFromChat(Boolean isAdminStartCall) in /azp/_work/1/s/Pages/CallPage.cs:line 235\n   at OdinUiTests.Tests.Chat.ChatCommon.CallInChat(IWebDriver driver, String chatId, Boolean isMinichat, Boolean isAdminStartCall) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 211\n   at OdinUiTests.Tests.Chat.ChatCommon.CallInMinichat(IWebDriver driver, Boolean isAdminStartCall) in /azp/_work/1/s/Tests/Chat/ChatCommon.cs:line 229\n   at OdinUiTests.Tests.Chat.GroupMiniChatMessageTests.CheckCallInGroupMiniChat() in /azp/_work/1/s/Tests/Chat/MiniChatTests.cs:line 519\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)\n   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--UnhandledAlertException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.CallPage.__a$_around_CallIsStartedFromChat_100666323_o(Boolean isAdminStartCall) in /azp/_work/1/s/Pages/CallPage.cs:line 221\n   at OdinUiTests.Pages.CallPage.__a$_around_CallIsStartedFromChat_100666323_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at InvokeStub_AllureAbstractStepAspect.WrapSync(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Открыть страницу Дашборда",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1778563459555,
+      "stop": 1778563462563
+    },
+    {
+      "name": "Нажать на кнопку 'Чат' для открытия миничата, если миничат еще не открыт",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1778563462563,
+      "stop": 1778563472557
+    },
+    {
+      "name": "В панели чатов найти чат по названию и открыть его",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "chatName",
+          "value": "\"Новый чат\"",
+          "excluded": false
+        }
+      ],
+      "start": 1778563472558,
+      "stop": 1778563475862
+    },
+    {
+      "name": "Нажать на кнопку звонка в чате",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1778563475863,
+      "stop": 1778563476574
+    },
+    {
+      "name": "Нажать на кнопку 'Присоединиться' в предбаннике",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1778563482457,
+      "stop": 1778563492680
+    },
+    {
+      "name": "Проверка того, что звонок был начат",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "unexpected alert open: {Alert text : Failed to create WebGL canvas context when passing video frame.}\n  (Session info: chrome=145.0.7632.45)",
+        "trace": "OpenQA.Selenium.UnhandledAlertException: unexpected alert open: {Alert text : Failed to create WebGL canvas context when passing video frame.}\n  (Session info: chrome=145.0.7632.45)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass19_0.<ElementToBeClickable>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OdinUiTests.Pages.CallPage.__a$_around_CallIsStartedFromChat_100666323_o(Boolean isAdminStartCall) in /azp/_work/1/s/Pages/CallPage.cs:line 221\n   at OdinUiTests.Pages.CallPage.__a$_around_CallIsStartedFromChat_100666323_u(Object[])\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "isAdminStartCall",
+          "value": "false",
+          "excluded": false
+        }
+      ],
+      "start": 1778563492681,
+      "stop": 1778563493647
+    }
+  ],
+  "attachments": [
+    {
+      "name": "CheckCallInGroupMiniChat.jpg",
+      "source": "840fb9fc-e73c-451c-ab12-384ec99a2fbd-attachment.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "name": "Console Output",
+      "source": "e7101c0f-0abf-422a-9386-ec1b8b74d146-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1778563459555,
+  "stop": 1778563494168
+}
